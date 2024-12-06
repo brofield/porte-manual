@@ -1,0 +1,34 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000005RZ00NX"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>CAN通信システム（ＶＳＣなし）&nbsp;&nbsp;システム説明</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000005RZ00NX_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="CD0403____000059Y0000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>概要</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">CAN(Controller　Area　Network)とは、リアルタイム&middot;アプリケーション向けのシリアル通信で、優れたデータ通信速度とエラー検出能力を持つ車載向けの多重通信である。</font><br></p></li>
+<li><p><font class="ptxt">CANはCAN-H、CAN-Lの2本の線を1対とし、差動電圧にて通信を実施している。</font><br></p></li>
+<li><p><font class="ptxt">自動車には多くのECU(センサ)が装備されているが、それらは単独で作動しているわけではなく、他のECU(センサ)と情報を共有して連携しながら作動している。</font><br></p></li>
+<li><p><font class="ptxt">CAN通信の本線には、通信伝達に必要な抵抗が2個入っている。</font><br></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____000059Y0000012step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>用語の定義</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">本線</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">バス(通信線)上に2つ配置された終端回路間のハーネスを本線と定義する。制御系CANの基幹バスとなる。</font><br></p></li></ol>
+<li><p><font class="ptxt">支線</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">CANバスの基幹バスである本線から、ECUまたはセンサへ分岐された線を支線と定義する。</font><br></p></li></ol>
+<li><p><font class="ptxt">終端回路</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">制御系CANの通信電流をバス電圧に変換するために置かれる、抵抗とコンデンサからなる回路を終端回路という。終端回路はバス上に2個用意する必要がある。</font><br></p></li></ol></ol><br clear="all"><br clear="all"><a name="CD0403____000059Y0000013step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>回路説明</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">CANバスには終端回路に120Ωの抵抗を2個使用し、高速通信(500kbps)が可能である。</font><br></p></li></ol><br clear="all"></body></html>

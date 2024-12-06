@@ -1,0 +1,60 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM00000095B000X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>EBD付きABSシステム&nbsp;&nbsp;テストモード</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM00000095B000X_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="CD0403____00000WW0000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>テストモード点検</li></ol>
+<ol class="ptxt"></ol><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">テストモードに入ると、全テストモードコードを一度記憶し、点検時にコンピュータが正常と判断したコードの記憶が消去される。<br></li><li class="atten4">ノーマルモードに戻ると、全てのテストモードコードは消去される。<br></li></ol></p>
+<ol class="step2">
+<li><p><font class="ptxt">テストモード起動方法(TaSCAN)</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">IGスイッチをOFFにして、SSTをDLC3に接続する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">IGスイッチをONにして、SSTの表示画面に従ってテストモードに切り替える。</font><br></p></li></ol><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">テストモード起動方法(DLC3短絡)</font><br></p></li><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c091802.png" name="C091802" alt="C091802" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">IGスイッチOFFで、SSTを使用してDLC3の12(TS)&larr;&rarr;4(CG)端子間を短絡する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br></dd></dl><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">故障の原因となるため、コネクターの接続位置を間違えない。</dd></dl></p></p></li>
+<li><p><font class="ptxt">IGスイッチをONにする。</font><br></p></li></ol><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">テストモード表示確認</font><br></p></li><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/g021662.png" name="G021662" alt="G021662" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">テストモード起動時、ABSウォーニングランプが数秒間点灯後、パルス点滅に切り替わることにより、テストモードに移行したことを確認する。</font><br><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><table border="1" cellspacing="0" cellpadding="2" width="38.6%
+						"><caption class="tbl-title"><span class="atten3">テストモードコードの作動条件&nbsp;
+				</span></caption><colgroup align="center" width="22%
+			"><col align=""></colgroup><colgroup align="center" width="28%
+			"><col align=""></colgroup><colgroup align="center" width="25%
+			"><col align=""></colgroup><colgroup align="center" width="25%
+			"><col align=""></colgroup><tr><td class="atten3">DLC3<br></td><td class="atten3">IGスイッチON<br></td><td class="atten3">IGスイッチOFF<br></td><td class="atten3">IGスイッチOFF&rarr;ON<br></td></tr><tr><td class="atten3">TS-CG端子間短絡<br></td><td class="atten3">記憶保持<br></td><td class="atten3">記憶保持<br></td><td class="atten3">記憶保持<br></td></tr><tr><td class="atten3">TS-CG端子間開放<br></td><td class="atten3">記憶保持<br></td><td class="atten3">記憶保持<br></td><td class="atten3">記憶消去<br></td></tr></table></p></p></li></ol><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">スピードセンサチェック</font><br></p></li><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">ハンドル直進状態でホイールスピンさせずに発進し、任意に時速45km/h以上まで速度を上げ、ABSウォーニングランプが消灯することを確認する。</font><br><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">操舵した状態でセンサチェックを開始した場合、ホイールスピンをさせた場合はスピードセンサチェックが終了しないことがある。<br></li><li class="atten3">ABSウォーニングランプ消灯後、時速80km/h以上で走行すると再度テストモードコードを記憶するため、80km/hに達するまでに減速、停車する。<br></li><li class="atten3">センサチェック未終了の場合、走行中もABSウォーニングランプが点滅となり、ABSは作動しない。<br></li><li class="atten3">スピードセンサ異常時はダイアグノーシスコードが記憶され、ABSウォーニングランプが点灯し、ABSは作動しない。<br></li></ol></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">スピードセンサチェックが正常に終了すると、ABSウォーニングランプは走行中は消灯、停車中はテストモード点滅を行う。</dd></dl></p><div class="full"><br clear="all"><img src="../../img/g025576.png" name="G025576" alt="G025576" border="1" class="full"></div><br clear="all"></p></li></ol>
+<li><p><font class="ptxt">センサチェック終了</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">センサチェックが正常に終了した場合、ABSウォーニングランプ点灯状態は車両停止中は点滅状態(テストモード表示)、車両走行中は消灯状態となる。</font><br><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">スピードセンサが正常に終了した時、センサチェック終了となる。<br></li><li class="atten3">センサチェック未終了の場合は走行中もABSウォーニングランプが点滅となり、ABSは作動しない。<br></li><li class="atten3">センサ異常時はダイアグノーシスコードが記憶され、ABSウォーニングランプが点灯し、ABSは作動しない。<br></li><li class="atten3">テストモード中にダイアグノーシスコードを検出した場合は、ABSウォーニングランプが点灯する。<br></li></ol></p></p></li></ol>
+<li><p><font class="ptxt">SST(TaSCAN)によるテストモードコード読み取り</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">IGスイッチOFFで、SSTをDLC3に接続する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">IGスイッチをONにし、TaSCANの表示画面に従って、テストモードコードを読み取る。</font><br></p></li></ol><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">ウォーニングランプによるテストモードコード読み取り</font><br></p></li><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c099134.png" name="C099134" alt="C099134" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">IGスイッチOFFで、SSTを使用してDLC3の12(TS)、13(TC)&larr;&rarr;4(CG)端子間を短絡する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br></dd></dl><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">故障の原因となるため、コネクターの接続位置を間違えない。<br></li><li class="atten3">車両停止状態で行う。<br></li></ol></p></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/g022597.png" name="G022597" alt="G022597" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">IGスイッチをONにして、ABSウォーニングランプの点滅回数を読み取る。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">テストモードコードとダイアグノーシスコードが表示される。<br></li><li class="atten4">正常な場合は0.25秒点灯、0.25秒消灯を繰り返す。<br></li><li class="atten4">異常コードが1つの場合は4秒の間隔をおいて、同一コードを出力し、複数のコードを出力する場合は、異なるコードを2.5秒間隔で出力し、一巡すると4秒の間隔をおいて再度出力する。<br></li><li class="atten4">複数のコードを出力する場合は、コード番号の小さいものから順に出力する。<br></li></ol></p><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">ダイアグノーシスコードのみ表示された場合、不具合箇所を修理しダイアグノーシスコードを消去する。消去後ABSウォーニングランプが正常であることを確認する。<br></li><li class="atten3">テストモードコードのみ表示された場合、不具合箇所を修理し、再度テストモード点検を行う。<br></li><li class="atten3">ダイアグノーシスコードおよびテストモードコードが表示された場合、不具合箇所を修理しダイアグノーシスコード消去を行い、再度テストモード点検を行う。<br></li></ol></p></p></li></ol>
+<li><p><font class="ptxt">テストモード終了方法(TaSCAN)</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">SST(TaSCAN)の画面表示に従って、テストモード&rarr;ノーマルモードに切り替える。</font><br></p></li>
+<li><p><font class="ptxt">IGスイッチをOFFにして、SSTを取りはずす。</font><br></p></li></ol>
+<li><p><font class="ptxt">テストモード終了方法(DLC3短絡)</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">IGスイッチをOFFにし、DLC3の13(TC)、12(TS)&larr;&rarr;4(CG)端子間を開放する。</font><br></p></li>
+<li><p><font class="ptxt">IGスイッチをONにする。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">TS&larr;&rarr;CG端子を短絡したまま、IGスイッチをONするとテストモードは全開の継続となる。</dd></dl></p></p></li></ol></ol><br clear="all"><br clear="all"><a name="CD0403____00000WW0000012step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>テストモードコード一覧表</li></ol>
+<ol class="ptxt"></ol><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><colgroup align="" width="18%
+			"><col align=""></colgroup><colgroup align="" width="26%
+			"><col align=""></colgroup><colgroup align="" width="30%
+			"><col align=""></colgroup><colgroup align="" width="27%
+			"><col align=""></colgroup><tr><td align="center">コード番号<br>[SAE]<br>ランプ<br></td><td align="center">診断内容<br>[端子記号]<br></td><td align="center">判定内容<br></td><td align="center">点検項目<br></td></tr><tr><td align="center">[C1271]<br>71<br></td><td align="center">SPD FR出力電圧異常<br>[FR+、FR-]<br></td><td>異物の付着、センサとロータとのすき間を判定<br></td><td><ol style="list-style-type: disc"><li>スピードセンサ断線、ショート<br></li><li>スピードセンサ系ワイヤハーネス断線、ショート<br></li><li>コネクター接圧不良、配線抵抗<br></li><li>スピードセンサ取り付け不良<br></li><li>スピードセンサロータ系異常<br></li></ol></td></tr><tr><td align="center">[C1272]<br>72<br></td><td align="center">SPD FL出力電圧異常<br>[FL+、FL-]<br></td><td>異物の付着、センサとロータとのすき間を判定<br></td><td><ol style="list-style-type: disc"><li>スピードセンサ断線、ショート<br></li><li>スピードセンサ系ワイヤハーネス断線、ショート<br></li><li>コネクター接圧不良、配線抵抗<br></li><li>スピードセンサ取り付け不良<br></li><li>スピードセンサロータ系異常<br></li></ol></td></tr><tr><td align="center">[C1273]<br>73<br></td><td align="center">SPD RR出力電圧異常<br>[RR+、RR-]<br></td><td>異物の付着、センサとロータとのすき間を判定<br></td><td><ol style="list-style-type: disc"><li>スピードセンサ断線、ショート<br></li><li>スピードセンサ系ワイヤハーネス断線、ショート<br></li><li>コネクター接圧不良、配線抵抗<br></li><li>スピードセンサ取り付け不良<br></li><li>スピードセンサロータ系異常<br></li></ol></td></tr><tr><td align="center">[C1274]<br>74<br></td><td align="center">SPD RL出力電圧異常<br>[RL+、RL-]<br></td><td>異物の付着、センサとロータとのすき間を判定<br></td><td><ol style="list-style-type: disc"><li>スピードセンサ断線、ショート<br></li><li>スピードセンサ系ワイヤハーネス断線、ショート<br></li><li>コネクター接圧不良、配線抵抗<br></li><li>スピードセンサ取り付け不良<br></li><li>スピードセンサロータ系異常<br></li></ol></td></tr><tr><td align="center">[C1275]<br>75<br></td><td align="center">SPD FR出力電圧異常<br>[FR+、FR-]<br></td><td>センサ入力波形の安定を判定<br></td><td><ol style="list-style-type: disc"><li>スピードセンサロータ系異常<br></li><li>スピードセンサ先端異物付着<br></li></ol></td></tr><tr><td align="center">[C1276]<br>76<br></td><td align="center">SPD FL出力周期異常<br>[FL+、FL-]<br></td><td>センサ入力波形の安定を判定<br></td><td><ol style="list-style-type: disc"><li>スピードセンサロータ系異常<br></li><li>スピードセンサ先端異物付着<br></li></ol></td></tr><tr><td align="center">[C1277]<br>77<br></td><td align="center">SPD RR出力周期異常<br>[RR+、RR-]<br></td><td>センサ入力波形の安定を判定<br></td><td><ol style="list-style-type: disc"><li>スピードセンサロータ系異常<br></li><li>スピードセンサ先端異物付着<br></li></ol></td></tr><tr><td align="center">[C1278]<br>78<br></td><td align="center">SPD RL出力周期異常<br>[RL+、RL-]<br></td><td>センサ入力波形の安定を判定<br></td><td><ol style="list-style-type: disc"><li>スピードセンサロータ系異常<br></li><li>スピードセンサ先端異物付着<br></li></ol></td></tr></table><br clear="all"></body></html>

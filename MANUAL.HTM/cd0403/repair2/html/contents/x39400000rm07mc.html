@@ -1,0 +1,61 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="X39400000RM07MC"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>DTC
+								 &nbsp;&nbsp; P2109/B9 &nbsp;&nbsp; スロットル流量異常</h3></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><h2>準備品一覧<a href="#" onclick="openSeePage('ppr','X39400000RM07MC');return false;"><img border="0" src="../../../../image/extxref.png"></a></h2><br clear="all"><a name="X39400000RM07MC_10"></a><h2>回路説明</h2><br clear="all"><a name="1"></a><ol style="list-style-type: none"><li>エンジンコントロールコンピュータはアイドリング時のスロットルバルブ開度（ISC流量）を制御している。スロットルバルブ にデポジットが付着した場合、ISC流量が低下し、エンストまたはアイドル不安定につながる恐れがあるため、ISC学習および フィードバックによりアイドリングに必要なISC流量を確保している。エンジンコントロールコンピュータはISC流量学習値が制御限界に近づくとDTC を出力する。<br></li></ol><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><colgroup align="" width="20%
+			"><col align=""></colgroup><colgroup align="" width="30%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th align="center">DTC No.<br>SAE/TCCS<br></th><th colspan="2" width="80%
+			" align="center">P2109/B9<br></th></tr><tr><td rowspan="6">DTC検出条件<br></td><td>診断条件<br></td><td>以下の条件が全て揃ったとき、1トリップ成立とする。<br><ol style="list-style-type: decimal"><li>水温45℃以下で始動し、その後暖機されISC学習条件が成立、またはIG ONが1時間以上経過し、エンジンが暖機されISC学習条件が成立<br></li><li>30km/h以上の走行履歴がある。<br></li><li>インテークエアフローメータSUB-ASSYが正常<br></li><li>大気圧が85kPa以上（標高1400m以下）<br></li></ol></td></tr><tr><td>異常状態<br></td><td>ISC流量学習値が通常の3倍程度かつ、アイドリング時の吸入空気量が正常（通常の1.5倍以内）<br></td></tr><tr><td>異常期間<br></td><td>連続10秒以上<br></td></tr><tr><td>トリップ数<br></td><td>5トリップ<br></td></tr><tr><td>検出方法<br></td><td>1トリップ中に1回検出する。（判定後は検出を行わない。）<br></td></tr><tr><td>検出に使用するセンサ<br></td><td><ol style="list-style-type: disc"><li>E.F.I.スロットルポジションセンサ<br></li><li>インテークエアフローメータSUB-ASSY<br></li></ol></td></tr><tr><td>点検部位<br></td><td colspan="2" width="80%
+			">スロットルボデーASSY<br></td></tr></table><br clear="all"><br clear="all"><a name="X39400000RM07MC_11"></a><h2>点検手順</h2><br clear="all"><a name="1"></a><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">SST(TaSCAN) を使用して、フリーズフレームデータを読み取る。フリーズフレームデータとして、不具合発生時のエンジン稼動状態の一部が記録されており、それらの情報がトラブルシュートを行う際に役立つ。<br></li></ol><ol style="list-style-type: disc"><li class="atten4">このDTC はペンディングコードが記憶されないため、修理後の確認作業をDTCの出力の有無で行うと時間が掛かってしま う。修理後の確認作業を行う際はフリーズフレームデータに記憶されたISC流量学習値と修理後のISC流量学習値を比較すると短時 間で行うことが出来る。<br></li></ol></p><br clear="all"><a name="X39400000RM07MC_13_0007"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順1</td><td width="90%" class="s1">フリーズフレームデータ確認（ISC流量学習値）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70201&nbsp;&nbsp;<br></dd></dl>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">SST(TaSCAN)をDLC3に接続する。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">IG ONにする。</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">SST（TaSCAN）を使用して、ISC流量学習値のフリーズフレームデータ を確認する。(要領は<a href="#" onclick="openSeePage('seepage','RM000000CD2061X');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">修理後の確認作業時にフリーズフレームデータに記憶されたISC流量学習値が必要となるため、必ず確認する。</dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">次へ</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="X39400000RM07MC_13_0001"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順2</td><td width="90%" class="s1">スロットル ボデーASSY点検</td></tr></table>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li value="1"><p><font class="ptxt">スロットルボデーASSY内部にデポジットが付着していることを確認する。</font><br><div class="full"><br clear="all"><img src="../../img/a236754j01.png" name="A236754J01" alt="A236754J01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%
+						"><caption class="tbl-title"><span>イラスト内指示文字&nbsp;
+				</span></caption><colgroup align="" width="10%
+			"><col align=""></colgroup><colgroup align="" width="40%
+			"><col align=""></colgroup><colgroup align="" width="10%
+			"><col align=""></colgroup><colgroup align="" width="40%
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>スロットルボデーASSY<br></td><td align="center">*2<br></td><td>ボア<br></td></tr><tr><td align="center">*3<br></td><td>バルブ<br></td><td align="center">*4<br></td><td>デポジット<br></td></tr><tr><td align="center">*a<br></td><td>断面図<br></td><td align="center">*b<br></td><td>バルブ全開時<br></td></tr></table><p><dl class="spec"><dt class="spec">結果</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="70%
+			"><col align=""></colgroup><colgroup align="" width="30%
+			"><col align=""></colgroup><tr><th align="center">結果<br></th><th align="center">飛び先<br></th></tr><tr><td align="center">デポジットが付着している<br></td><td align="center">A<br></td></tr><tr><td align="center">デポジットが付着していない<br></td><td align="center">B<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">スロットル ボデーASSY交換<a href="#" onclick="openSeePage('seepage','RM000000ARK000X');return false;">
+			（要領は
+		<img border="0" src="../../../../image/extxref.png">
+			参照）
+		</a>
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="X39400000RM07MC_13_0009"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順3</td><td width="90%" class="s1">スロットルボデー内、異物除去および清掃</td></tr></table>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li value="1"><p><font class="ptxt">スロットルボデーASSYに付着しているデポジットを清掃する。</font><br><div class="full"><br clear="all"><img src="../../img/a236755j01.png" name="A236755J01" alt="A236755J01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%
+						"><caption class="tbl-title"><span>イラスト内指示文字&nbsp;
+				</span></caption><colgroup align="" width="10%
+			"><col align=""></colgroup><colgroup align="" width="40%
+			"><col align=""></colgroup><colgroup align="" width="10%
+			"><col align=""></colgroup><colgroup align="" width="40%
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>スロットルボデーASSY<br></td><td align="center">*2<br></td><td>ボア<br></td></tr><tr><td align="center">*3<br></td><td>バルブ<br></td><td align="center">*4<br></td><td>デポジット<br></td></tr><tr><td align="center">*a<br></td><td>断面図<br></td><td align="center">*b<br></td><td>バルブ全開時<br></td></tr><tr><td align="center">*c<br></td><td>直接吹き付けによる清掃禁止<br></td><td align="center">-<br></td><td>-<br></td></tr></table><ol class="s3">
+<li><p><font class="ptxt">スロットルバルブを押し開き、エンジンコンディショナー(EFI車用) をしみ込ませたウエスを使用して、バルブおよびボアのカー ボンを拭き取る。</font><br></p></li></ol></p></li></ol><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">バルブに指やウエスをはさまないように注意する。<br></li></ol><ol style="list-style-type: disc"><li class="atten3">異物を混入させないように注意する。<br></li></ol><ol style="list-style-type: disc"><li class="atten3">スロットルボデーASSYは、丸洗いをしたり、エンジンコンディショナー を直接吹き付けない。バルブのシャフト部から洗浄液が侵入し、摺動不良やさび等の不具合を発生する可能性がある。<br></li></ol><ol style="list-style-type: disc"><li class="atten3">バルブ端面にコーティング材が塗布してある場合は剥がしてしまわないよう注意すること。<br></li></ol></p><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">次へ</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="X39400000RM07MC_13_0006"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順4</td><td width="90%" class="s1">作動確認運転実施</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70201&nbsp;&nbsp;<br></dd></dl>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">EFI ヒューズを取りはずし、60秒以上経過後 ヒューズを接続し、ISC流量学習値をリセットする。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">エンジンを始動させ、完全暖機させる。</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">アイドリング状態で3分以上放置し、エンジン回転数が設定回転数に なっていることを確認する。</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">SST(TaSCAN)の画面表示に従い、[ECUデータモニター] - [ISC流量学習値]を読み取る。</font><br></p></li></ol><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec">フリーズフレームデータに記憶されたISC流量学習値より低 い<br></dd></dl></p><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">スロットル ボデーASSY交換<a href="#" onclick="openSeePage('seepage','RM000000ARK000X');return false;">
+			（要領は
+		<img border="0" src="../../../../image/extxref.png">
+			参照）
+		</a>
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">終了&nbsp;
+										</td></tr></table></td></tr></table><br></body></html>

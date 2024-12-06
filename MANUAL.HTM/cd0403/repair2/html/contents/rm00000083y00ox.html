@@ -1,0 +1,21 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM00000083Y00OX"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>CAN通信システム（ＶＳＣなし）&nbsp;&nbsp;フェイルセーフ一覧</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM00000083Y00OX_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="CD0403____00005A20000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>フェールセーフ機能</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">フェールセーフ機能は、いずれかのバス(通信線)がショートなどでフェールした場合、各システムごとで規定されたフェールセーフ処理へ移行し、システムの誤作動を防ぐよう設計されている。</font><br></p></li>
+<li><p><font class="ptxt">通信不能時の各システムへの影響(詳細は各システムを参照する)</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%
+						"><colgroup align="" width="17%
+			"><col align=""></colgroup><colgroup align="" width="17%
+			"><col align=""></colgroup><colgroup align="" width="17%
+			"><col align=""></colgroup><colgroup align="" width="17%
+			"><col align=""></colgroup><colgroup align="" width="17%
+			"><col align=""></colgroup><colgroup align="" width="17%
+			"><col align=""></colgroup><tr><th align="center">機能<br></th><th align="center">舵角センサ<br></th><th align="center">AVN<br></th><th align="center">通信不能時<br>の挙動<br></th><th align="center">ダイアグ検出<br>(ドライバの認識)<br></th><th align="center">ダイアグコード<br>(通信途絶ノード)<br></th></tr><tr><td align="center">バックガイド<br>(バック時の車両進行方向制御)<br></td><td align="center">○<br></td><td align="center">◎<br></td><td align="center">バックモニタのみ<br>ガイド機能停止<br></td><td align="center">不可<br>([システム初期化中][ガイドできません]表示)<br></td><td align="center">ナビ画面にて確認<br>5C-42<br>(舵角センサ)<br></td></tr></table><font class="ptxt">◎:主に制御判断するシステム</font><br><font class="ptxt">○:関連システム</font><br></p></li></ol><br clear="all"></body></html>

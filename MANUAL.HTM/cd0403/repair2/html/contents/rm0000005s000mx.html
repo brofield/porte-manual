@@ -1,0 +1,66 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000005S000MX"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>CAN通信システム（ＶＳＣあり）&nbsp;&nbsp;ダイアグノーシスシステム</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000005S000MX_z0"></a><br clear="all"><a name="1"></a><br clear="all"><br clear="all"><a name="CD0403____00005730000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>CANバス診断(通信異常ダイアグ確認)</li></ol>
+<ol class="ptxt"></ol><table class="float"><tr><td><img src="../../img/g031479.png" name="G031479" alt="G031479" border="1" class="half"><br></td></tr></table><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">SST(TaSCAN)は、CAN通信に関する異常ダイアグコードのみ、ECU別に表示させることができる。</dd></dl></p>
+<ol class="step2">
+<li><p><font class="ptxt">SST(TaSCAN)のTOPメニューの&lsquo;1.診断&rsquo;を選択する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/g026833.png" name="G026833" alt="G026833" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">診断メニュー画面の&lsquo;CANバス診断&rsquo;を選択する。</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/g026834.png" name="G026834" alt="G026834" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">CANバス診断画面の&lsquo;通信異常ダイアグ確認&rsquo;を選択する。</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/g028214.png" name="G028214" alt="G028214" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">画面が表示され、CAN通信に関する異常ダイアグコードがECU別に表示される。</font><br></p></li></ol><br clear="all"><br clear="all"><br clear="all"><a name="CD0403____00005730000012step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>CANバス診断(CANバス接続ECU確認)</li></ol>
+<ol class="ptxt"></ol><table class="float"><tr><td><img src="../../img/g026834.png" name="G026834" alt="G026834" border="1" class="half"><br></td></tr></table><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">SST(TaSCAN)は、正常にCAN通信へ接続されているECU、センサを表示させることができる。</dd></dl></p>
+<ol class="step2">
+<li><p><font class="ptxt">CANバス診断画面の&lsquo;CANバス接続ECU確認&rsquo;を選択する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/g028212.png" name="G028212" alt="G028212" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">画面が表示され、現在正常にCAN通信に接続されているECU、センサが表示される。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">本来接続されているはずのECU、センサが表示されない場合は、その系統の通信途絶である。(<a href="#" onclick="openSeePage('seepage','RM0000005RL00NX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)<br></li><li class="atten4">CANバスに接続されているECU、センサがない場合は&lsquo;現在CANバスに接続されているECUはありません。&rsquo;と表示される。<br></li></ol></p></p></li>
+<li><p><font class="ptxt">約1分間画面表示を確認し、表示&larr;&rarr;非表示する項目がないことを確認する。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">DLC3を除くいずれかの支線で片側断線している場合、断線していないもう一方の通信線出力がノイズとなり、他のECU、センサの応答(表示)に障害をおよぼす場合がある。この場合、表示&larr;&rarr;非表示するECU、センサの支線は正常である。<br></li><li class="atten4">表示&larr;&rarr;非表示する項目がある場合は、応答のない(項目にまったく表示しない)ECU、センサの支線片側断線を修理する。<br></li></ol></p></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00005730000013step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>CAN通信採用システム(ECU、センサ)搭載有無確認</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">CANバス回路接続ECU、センサ</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">ABS&amp;トラクションアクチュエータASSY(VSC ECU)</font><br></p></li>
+<li><p><font class="ptxt">ステアリングセンサ(舵角センサ)</font><br></p></li>
+<li><p><font class="ptxt">ヨーレートセンサ(ヨー&middot;Gセンサ)</font><br></p></li>
+<li><p><font class="ptxt">ナビゲーションレシーバASSY(ナビゲーションECU)</font><br></p></li></ol>
+<li><p><font class="ptxt">CAN通信採用システム(ECU、センサ)は、型式、オプション設定により異なるため、作業車にどのシステム(ECU、センサ)が搭載されているか確認する。</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">TaSCAN表示および搭載有無確認方法</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%
+						"><colgroup align="" width="36%
+			"><col align="center"></colgroup><colgroup align="" width="32%
+			"><col align=""></colgroup><colgroup align="" width="32%
+			"><col align=""></colgroup><tr><th>ECU&middot;センサ名<br></th><th align="center">TaSCAN(CANバス接続ECU確認)表示名<br></th><th align="center">搭載有無確認方法<br></th></tr><tr><td align="left">ABS&amp;トラクションアクチュエータASSY(VSC　ECU)<br></td><td align="center">ABS&middot;VSC<br></td><td>VSC装着車に搭載(イグニッションスイッチON時、コンビネーションメータ内のVSCウォーニングランプ点灯)<br></td></tr><tr><td align="left">ステアリングセンサ(舵角センサ)*1<br></td><td align="center">舵角センサ<br></td><td><ol style="list-style-type: disc"><li>VSC装着車に搭載(イグニッションスイッチON時、コンビネーションメータ内のVSCウォーニングランプ点灯)<br></li><li>ナビゲーションシステム装着車に搭載<br></li></ol></td></tr><tr><td align="left">ヨーレートセンサ(ヨー&middot;Gセンサ)*2<br></td><td align="center">ヨーレート&middot;Gセンサ<br></td><td>VSC装着車に搭載(イグニッションスイッチON時、コンビネーションメータ内のVSCウォーニングランプ点灯)<br></td></tr><tr><td align="left">ナビゲーションレシーバASSY(ナビゲーションECU)<br></td><td align="center">AVN<br></td><td>HDDナビゲーションシステム装着車に搭載<br></td></tr></table><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">*1&middot;&middot;&middot;&middot;&middot;VSCまたはHDDナビゲーションシステムが搭載されていない場合、ステアリングセンサは搭載されない。<br></li><li class="atten4">*2&middot;&middot;&middot;&middot;&middot;VSCが搭載されていない場合、ヨーレートセンサは搭載されない。<br></li></ol></p></p></li></ol></ol><br clear="all"><br clear="all"><a name="CD0403____00005730000014step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>ECU別ダイアグコード一覧</li></ol>
+<ol class="ptxt"></ol><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">CAN通信ではTaSCANにてCAN通信系ダイアグコードをECU別に表示させることができる。<br></li><li class="atten4">CAN通信系のダイアグコードが出力している場合は、ダイアグコードからだけでは不具合を特定することができないため、&lsquo;トラブルシュートの進め方&rsquo;(<a href="#" onclick="openSeePage('seepage','RM0000005RM00NX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)からトラブルシュートを行う。<br></li></ol></p>
+<ol class="step2">
+<li><p><font class="ptxt">ABS &amp; トラクションアクチュエータASSY(VSC　ECU)/ABS&middot;VSC(TaSCAN表示名)</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%
+						"><colgroup align="center" width="50%
+			"><col align=""></colgroup><colgroup align="center" width="50%
+			"><col align=""></colgroup><tr><th>DTC　No<br></th><th>診断項目(TaSCAN表示名)<br></th></tr><tr><td>U0121<br></td><td>CAN通信異常<br></td></tr><tr><td>U0123<br></td><td>ヨーレートセンサ通信異常<br></td></tr><tr><td>U0124<br></td><td>Gセンサ通信異常<br></td></tr><tr><td>U0126<br></td><td>舵角センサ通信異常<br></td></tr></table><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">ダイアグ通信はCAN通信にて行っている。<br></li><li class="atten4">VSC装着車に適応する。<br></li></ol></p></p></li>
+<li><p><font class="ptxt">ナビゲーションレシーバASSY(ナビゲーションECU)/AVN(ナビ画面表示名)</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%
+						"><colgroup align="center" width="50%
+			"><col align=""></colgroup><colgroup align="center" width="50%
+			"><col align=""></colgroup><tr><th>DTC　No<br></th><th>診断項目(ナビ画面表示名)<br></th></tr><tr><td>5C-42<br></td><td>ステアリングセンサ通信線異常<br></td></tr></table><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">ナビゲーションレシーバASSY(ナビゲーションECU)はCAN通信に接続されているが、SST(TaSCAN)によるダイアグコードの読み出しができないため、ナビ画面にて確認する。(要領は<a href="#" onclick="openSeePage('seepage','RM00000230A000X');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)<br></li><li class="atten4">HDDナビゲーションシステム装着車に適応<br></li></ol></p></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00005730000015step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>ダイアグコード組み合わせ表</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">CANバスの接続ECUの現在発生していない異常(過去ダイアグコード出力)は組み合わせ表を参考に不具合発生していた支線を選定し、不具合再現テストを行ってダイアグノーシスコード出力を確認する。(不具合現象のシミュレーション方法は<a href="#" onclick="openSeePage('seepage','RM000000ABY023X');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">発生中の支線断線に関しては、SST(TaSCAN)を使用して&lsquo;CANバス接続ECU確認&rsquo;を行うことにより、断線した支線に接続するECU、センサが応答しない(画面に表示しない)ことで確認することができる。</dd></dl></p><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%
+						"><colgroup align="" width="17%
+			"><col align=""></colgroup><colgroup align="" width="17%
+			"><col align=""></colgroup><colgroup align="" width="17%
+			"><col align=""></colgroup><colgroup align="" width="17%
+			"><col align=""></colgroup><colgroup align="" width="17%
+			"><col align=""></colgroup><colgroup align="" width="16%
+			"><col align=""></colgroup><tr><th colspan="2" width="34%
+			" align="center">ダイアグ結果<br></th><th colspan="4" width="66%
+			" align="center">トラブル内容<br></th></tr><tr><td align="center">出力元<br></td><td align="center">出力DTC<br></td><td align="center">VSC ECU<br>通信途絶モード<br></td><td align="center">舵角センサ<br>通信途絶モード<br></td><td align="center">ヨー&middot;Ｇセンサ<br>通信途絶モード<br></td><td align="center">ナビゲーションECU<br>通信途絶モード<br></td></tr><tr><td rowspan="4">VSC ECU<br>が出力<br></td><td>U0121<br>CAN通信異常<br></td><td align="center">○<br></td><td align="center">&times;<br></td><td align="center">&times;<br></td><td align="center">&times;<br></td></tr><tr><td>U0123<br>ヨーレートセンサ通信異常<br></td><td align="center">&times;<br></td><td align="center">&times;<br></td><td align="center">○<br></td><td align="center">&times;<br></td></tr><tr><td>U0124<br>Gセンサ通信異常<br></td><td align="center">&times;<br></td><td align="center">&times;<br></td><td align="center">○<br></td><td align="center">&times;<br></td></tr><tr><td>U0121<br>舵角センサ通信異常<br></td><td align="center">&times;<br></td><td align="center">○<br></td><td align="center">&times;<br></td><td align="center">&times;<br></td></tr><tr><td>ナビゲーションECUが出力<br></td><td>5C-42<br>ステアリングセンサ通信線異常<br></td><td align="center">&times;<br></td><td align="center">○<br></td><td align="center">&times;<br></td><td align="center">○<br></td></tr></table><font class="ptxt">○&middot;&middot;&middot;出力する。</font><br><font class="ptxt">&times;&middot;&middot;&middot;出力しないが片側断線時等、出力する場合がある。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">症状別一覧(通信途絶モード一覧)は<a href="#" onclick="openSeePage('seepage','RM0000005RL00NX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照</dd></dl></p></p></li></ol><br clear="all"></body></html>

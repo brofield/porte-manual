@@ -1,0 +1,20 @@
+<html>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+	<TITLE></TITLE>
+	<script type="text/javascript" src="../../scripts/connector/search.js"></script>
+	<style>
+		body { color:black; background-color:white; font-size:11pt }
+	</style>
+</head>
+
+<body background="../../icon/bg2.png" onLoad="call_runOnLoadProc()">
+	<input type="radio" name="show" id="name_list" onClick="call_runOnClickName()" />
+		<label for="name_list">部品名称一覧</label><br/>
+	<input type="radio" name="show" id="code_list" onClick="call_runOnClickCode()" />
+		<label for="code_list">コネクタNo.一覧</label><br/>
+	<input type="text" id="edit" size="20" onKeypress="call_runOnKeyPressEdit()">
+	<p> </p>
+	<div align="right"><input type="button" value="検索" onClick="call_runOnClickSearch()"></div>
+</body>
+</html>

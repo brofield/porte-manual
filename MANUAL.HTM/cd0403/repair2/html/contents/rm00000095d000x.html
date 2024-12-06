@@ -1,0 +1,30 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM00000095D000X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>EBD付きABSシステム&nbsp;&nbsp;フリーズフレームデータ／ダイアグ詳細情報</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM00000095D000X_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="CD0403____00000WV0000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>フリーズフレームデータ出力について</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">TaSCANを使用して、システム作動時または異常ダイアグノーシスコード出力時の車両(センサー)状況を記憶し、表示させることができる。</font><br></p></li>
+<li><p><font class="ptxt">システム作動時のフリーズフレームデータ</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">システム作動時にデータを記憶し、システム作動毎にデータが更新される。</font><br></p></li>
+<li><p><font class="ptxt">最後にシステムが作動した時からのIGスイッチOFF&rarr;ONした回数を31回まで記憶し、表示する。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">車両停車状態(車速7km/h未満)でのIGスイッチOFF&rarr;ONはカウントアップされない。<br></li><li class="atten4">IGスイッチONの回数が31回をこえた場合は[31]を表示する。<br></li></ol></p></p></li>
+<li><p><font class="ptxt">異常ダイアグコード発生時のフリーズフレームデータを記憶すると、システム作動時のフリーズフレームデータは消去される。</font><br></p></li></ol>
+<li><p><font class="ptxt">異常ダイアグノーシスコード発生時のフリーズフレームデータ</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">異常ダイアグノーシスコードが出力した場合、異常コード発生時のフリーズフレームデータを記憶する。</font><br></p></li>
+<li><p><font class="ptxt">異常ダイアグノーシスコード発生時のフリーズフレームデータを記憶すると、記憶データ消去(ダイアグノーシスコード消去)されるまでデータ更新はされない。</font><br></p></li>
+<li><p><font class="ptxt">異常ダイアグノーシスコード発生時のフリーズフレームデータでは、フリーズフレームデータ記憶後のIGスイッチON回数は記憶しない。</font><br></p></li></ol></ol><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><caption class="tbl-title"><span>フリーズフレームデータ一覧表&nbsp;
+				</span></caption><colgroup align="center" width="25%
+			"><col align=""></colgroup><colgroup align="center" width="25%
+			"><col align=""></colgroup><colgroup align="center" width="25%
+			"><col align=""></colgroup><colgroup align="center" width="25%
+			"><col align=""></colgroup><tr><td>項目名<br></td><td>出力項目<br></td><td>状況<br></td><td>参考値<br></td></tr><tr><td>作動システム<br></td><td>作動システム<br></td><td>-<br></td><td><ol style="list-style-type: decimal"><li>無し<br></li><li>ABS<br></li></ol></td></tr><tr><td>データフリーズ後からのIG ON回数<br></td><td>IG ON回数<br></td><td>-<br></td><td>0-31<br></td></tr><tr><td>ストップスイッチ<br></td><td>ON/OFF<br></td><td>ブレーキペダル操作<br></td><td>ON&larr;&rarr;OFF<br></td></tr><tr><td>車両スピード<br></td><td>車体速度(km/h)<br></td><td>-<br></td><td>メータの速度表示<br></td></tr></table><br clear="all"></body></html>

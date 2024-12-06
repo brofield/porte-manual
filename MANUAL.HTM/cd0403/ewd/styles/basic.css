@@ -1,0 +1,61 @@
+BODY { 
+/*
+scrollbar-base-color : #9FABB0;
+scrollbar-face-color : #9FABB0;
+scrollbar-track-color: #ECEEEF;
+scrollbar-arrow-color : #CED7DB;
+scrollbar-3dlight-color: #CED7DB;
+scrollbar-highlight-color : #9FABB0;
+scrollbar-shadow-color : #9FABB0;
+scrollbar-darkshadow-color : #CED7DB;
+*/
+}
+
+.gray  { background-color: #717171; font-size: 11pt; color: #FFFFFF; font-weight: bold; height: 20px}
+.gray2 { background-color: #C9C9C9; font-size: 10pt; color: #666666; padding: 5px 10px; text-align: center}
+.gray3 {  font-size: 10pt; color: #666666; background-color: #DDE3E6; padding-left: 5px; ; line-height: 1.3em}
+.gray3-dark-left { background-color: #C7D0D6; padding: 2px 8px; color: #666666; vertical-align: top; font-size: 10pt}
+.gray4 {  background-color: #B4BCC5; font-size: 12pt; color: #FFFFFF; font-weight: bold; padding-left: 10px; padding-top: 5px; padding-bottom: 5px; text-align: right; padding-right: 10px}
+.gray4- { font-size: 10pt; color: #666666; background-color: #EEEEEE; padding: 2px 8px}
+.gray4-no-text { background-color: #EEEEEE; padding: 2px 8px}
+.gray5  { background-color: #C9C9C9; font-size: 10pt; color: #666666; padding: 5px 5px;}
+.color1 {  background-color: #DDE3E6; color: #666666; padding-left: 5px; font-size: 10pt; line-height: 1.5em}
+
+.gray4title { background-color: #B4BCC5; font-size: 12pt; color: #006699; font-weight: bold; padding-left: 10px; padding-top: 5px; padding-bottom: 5px; text-align: right; padding-right: 10px }
+
+.d-image {  background-image: url(../icon/default.png); background-repeat: no-repeat; height: 352px; width: 621px}.text00 {  font-size: 10pt; color: #666666; text-align: right}
+
+.text00 {  font-size: 10pt; color: #666666; border-color: black black #999999; padding-left: 10px; border-style: solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 1px; border-left-width: 0px; padding-bottom: 2px}
+
+
+
+div.titlelist       { background:#C7D0D6; font-size:10pt; color:#666666; padding: 3px 5px; cursor:hand; width:100%; border-color: #A3B5BC; border-style: solid; border-width: 0px 0px 0px 3px; }
+div.titlelist-hover { background:#DDE3E6; font-size:10pt; color:#DC883D; padding: 3px 5px; cursor:hand; width:100%; border-color: #A3B5BC; border-style: solid; border-width: 0px 0px 0px 10px; }
+
+div.list-parts-refs { padding:4; }
+div.list-loads-refs { padding:1; }
+
+div.menu        { background:#FFFFFF; color:#000000; border-color:#CCCCCC; border-style:solid; border-width: 1px; padding: 2px 3px; font-size: 10pt; width: 100%; cursor:hand}
+div.menu-hover  { background:#C6CFD3; color:#FFFFFF; border-color:#CCCCCC; border-style:solid; border-width: 1px; padding: 2px 3px; font-size: 10pt; width: 100%; cursor:hand}
+div.menu-active { background:#A9B2B7; color:#FFFFFF; border-color:#CCCCCC; border-style:solid; border-width: 1px; padding: 2px 3px; font-size: 10pt; width: 100%; cursor:hand}
+
+div.lblIndex { font-size:10pt; font-weight:bold; }
+
+div.category        { background:#FFFFFF; color:#000000; border-color:#CCCCCC; border-style:solid; border-width:1px; font-size:10pt; padding:2px; margin:8px 20px; cursor:hand; }
+div.category-hover  { background:#C6CFD3; color:#FFFFFF; border-color:#CCCCCC; border-style:solid; border-width:1px; font-size:10pt; padding:2px; margin:8px 20px; cursor:hand; }
+div.category-active { background:#A9B2B7; color:#FFFFFF; border-color:#CCCCCC; border-style:solid; border-width:1px; font-size:10pt; padding:2px; margin:8px 20px; cursor:hand; }
+
+div.title { background:#666666; color:#FFFFFF; font-size:10pt; font-weight:bold; width:100%; margin-bottom:20px; margin-top:4px}
+
+
+table.partslist { margin:10px 0px; }
+table.list { margin:8px 0px; }
+div.categorylist { padding:10px }
+p.space{ margin: 30px 0px }
+
+
+td.rect-gray  { background-color: #C9C9C9; font-size: 10pt; color: #666666; padding: 4px 8px; text-align: center; border-color:#006699; cursor:hand; }
+td.rect-white { background-color: #EEEEEE; font-size: 10pt; color: #666666; padding: 4px 8px; text-align: center; border-color:#006699; cursor:hand; }
+
+
+.frame2 { border: #CCCCCC; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; background-color: #ECF0F2; margin:10px 3px;}

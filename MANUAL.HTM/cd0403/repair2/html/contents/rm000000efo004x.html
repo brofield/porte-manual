@@ -1,0 +1,42 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000000EFO004X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>電子制御式オートマチツクトランスアクスル［ECT］システム（U340F）&nbsp;&nbsp;ダイアグコード点検／消去</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM000000EFO004X_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="CD0403____00002AO0000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>TaSCANによるダイアグコード確認</li></ol>
+<ol class="ptxt"></ol><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl>
+<ol class="step2">
+<li><p><font class="ptxt">SST(TaSCAN)を使用して、画面表示に従って操作を行い、[TCCS]画面表示をさせ、[ダイアグコードフリーズデータ]を選択する。</font><br></p></li>
+<li><p><font class="ptxt">画面表示の[ダイアグコード確認]を選択し、ダイアグノーシスコードの確認を行う。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">フリーズフレームデータが記録されている場合は、左端に[F]が表示され、その列の色が変わる。</dd></dl></p></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00002AO0000012step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>TaSCAN-フリーズフレームデータ</li></ol>
+<ol class="ptxt"></ol><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">ダイアグノーシスコード出力時のエンジンの状態(ECUデータ)が分かる。<br></li><li class="atten4">問診内容の不具合現象とダイアグノーシスコード一覧表との整合性を確認する。<br></li><li class="atten4">修理後、上記で確認できた走行状態を参考に確認テストを行う。<br></li></ol></p><br clear="all"><br clear="all"><a name="CD0403____00002AO0000013step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>TaSCANによるダイアグノーシスコード記憶消去</li></ol>
+<ol class="ptxt"></ol><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl>
+<ol class="step2">
+<li><p><font class="ptxt">SST(TaSCAN)を使用して、画面表示に従って操作を行い、[TCCS]画面を表示させ、[ダイアグコードフリーズデータ]を選択する。</font><br></p></li>
+<li><p><font class="ptxt">画面表示の[消去]を選択し、データの消去を行う。</font><br><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">ダイアグノーシスコードとフリーズフレームデータは同時に消去される。</dd></dl></p></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00002AO0000014step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>チェックエンジンウォーニングランプによるダイアグコード確認</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/g022986j01.png" name="G022986J01" alt="G022986J01" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">SSTを使用して、DLC3の13(TC)&larr;&rarr;4(CG)端子間を短絡する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br></dd></dl><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">故障の原因となるため、短絡位置を絶対に間違えない。</dd></dl></p></p></li>
+<li><p><font class="ptxt">イグニッションスイッチをONにする。</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">ダイアグノーシスコード(チェックエンジンウォーニングランプの点滅回数)を読み取る。</font><br><div class="full"><br clear="all"><img src="../../img/a035691.png" name="A035691" alt="A035691" border="1" class="full"></div><br clear="all"><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">正常の場合は、0.26秒点灯、0.26秒消灯を繰り返す。<br></li><li class="atten4">ダイアグコードが1つの場合は、4.5秒の間隔をおいて同一コードを出力し、複数のコードを出力する場合は、異なるコードを2.5秒間隔で出力する。また、一巡すると4.5秒の間隔をおいて再度出力する。<br></li><li class="atten4">2つ以上のコード番号が出力される場合は、コード番号の小さい順に表示する。<br></li></ol></p></p></li>
+<li><p><font class="ptxt">イグニッションスイッチをOFFにする。</font><br></p></li>
+<li><p><font class="ptxt">DLC3の13(TC)&larr;&rarr;4(CG)端子間を開放する。</font><br></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00002AO0000015step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>チェックエンジンウォーニングランプによるダイアグコード記憶消去</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">異常箇所修理後、エンジンルーム内のEFIヒューズを60秒以上はずし、再度接続する。</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/g022986j01.png" name="G022986J01" alt="G022986J01" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">SSTを使用して、DLC3の13(TC)&larr;&rarr;4(CG)端子間を短絡する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br></dd></dl><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">故障の原因となるため、短絡位置を絶対に間違えない。</dd></dl></p></p></li>
+<li><p><font class="ptxt">イグニッションスイッチをONにする。</font><br></p></li>
+<li><p><font class="ptxt">正常コードが出力されることを点検する。</font><br><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">異常コードが出力された場合は、コードに従って再度修理を行う。</dd></dl></p></p></li>
+<li><p><font class="ptxt">イグニッションスイッチをOFFにする。</font><br></p></li>
+<li><p><font class="ptxt">DLC3の13(TC)&larr;&rarr;4(CG)端子間を開放する。</font><br></p></li></ol><br clear="all"></body></html>

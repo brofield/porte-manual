@@ -1,0 +1,41 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000015O3001X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>EBD付きABS&amp;BAシステム（4WD）&nbsp;&nbsp;ダイアグコード点検／消去</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000015O3001X_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="CD0403____00005X70000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>ダイアグノーシスコード出力点検</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">SST(TaSCAN)によるダイアグノーシスコード読み取り</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">IGスイッチOFFにする。</font><br></p></li>
+<li><p><font class="ptxt">SST(TaSCAN)をDLC3に接続する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">IGスイッチONにする。</font><br></p></li>
+<li><p><font class="ptxt">SST(TaSCAN)の表示画面に従って、ダイアグノーシスコードを読み取る。</font><br><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">異常がある場合は、修理後にダイアグノーシスコード記憶を消去する。</dd></dl></p></p></li></ol><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/g022986j01.png" name="G022986J01" alt="G022986J01" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">ウォーニングランプによるダイアグノーシスコード読み取り</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">IGスイッチOFFにする。</font><br></p></li>
+<li><p><font class="ptxt">SSTを使用して、DLC3の13(TC)&larr;&rarr;4(CG)端子間を短絡する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br></dd></dl><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">故障の原因となるため、コネクターの接続位置を間違えない。<br></li><li class="atten3">車両停止状態で行う。<br></li></ol></p></p></li>
+<li><p><font class="ptxt">IGスイッチONにする。</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c040092j03.png" name="C040092J03" alt="C040092J03" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">ABSウォーニングランプの点滅回数を読み取る。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">正常な場合は0.24秒点灯、0.24秒消灯を繰り返す。<br></li><li class="atten4">異常コードが1つの場合、同一コードが4秒間隔で表示される。<br></li><li class="atten4">異常コードが複数の場合、異なるコードが2.5秒間隔で表示され、一巡すると4秒後に再度出力される。<br></li><li class="atten4">複数のコードを出力する場合は、コード番号の小さいものから順に出力する。<br></li></ol></p></p></li>
+<li><p><font class="ptxt">DLC3の13(TC)&larr;&rarr;4(CG)端子間を開放する。</font><br><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">異常がある場合は、修理後にダイアグノーシスコードの記憶を消去する。</dd></dl></p></p></li></ol></ol><br clear="all"><br clear="all"><a name="CD0403____00005X70000012step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>ダイアグノーシスコード、フリーズフレームデータ消去</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">ダイアグノーシスコード消去方法(TaSCAN)</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">IGスイッチOFFにする。</font><br></p></li>
+<li><p><font class="ptxt">SST(TaSCAN)をDLC3に接続する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">IGスイッチONにする。</font><br></p></li>
+<li><p><font class="ptxt">SST(TaSCAN)の表示画面に従って、ダイアグノーシスコードを消去する。</font><br></p></li></ol><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/g022986j01.png" name="G022986J01" alt="G022986J01" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">ダイアグノーシスコード消去方法(DLC3短絡)</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">IGスイッチOFFにする。</font><br></p></li>
+<li><p><font class="ptxt">SSTを使用して、DLC3の13(TC)&larr;&rarr;4(CG)端子間を短絡する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br></dd></dl><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">故障の原因となるため、コネクターの接続位置を間違えない。</dd></dl></p></p></li>
+<li><p><font class="ptxt">IGスイッチONにして、5秒以内に8回以上ブレーキペダルを踏み込む。</font><br></p></li>
+<li><p><font class="ptxt">正常コードが出力されていることを確認する。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">故障が継続しているときは、消去できない場合がある。</dd></dl></p></p></li></ol></ol><br clear="all"></body></html>

@@ -1,0 +1,940 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>スマートドアロックシステム</title>
+<link type="text/css" href="../css/main2.css" rel="stylesheet">
+<link type="text/css" href="../css/style.css" rel="stylesheet">
+<script src="../js/hidden.js" language="JavaScript"></script>
+</head>
+<body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
+<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td align="left"><input onClick="printCheck()" value="印刷" name="submit" type="submit"></td><td align="center">　</td><td align="right"><input onClick="closeWindow()" value="閉じる" name="submit2" type="submit"></td>
+</tr>
+</table>
+<div align="left">
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="blue" width="5%">　</td><td align="center" class="blue" width="80%">スマートドアロックシステム</td><td width="15%" class="blue" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">スマートドアロック用トランスミッターを身に付けているだけで，全ドアロック/アンロック操作をキーを手にとることなく&ldquo;スマート&rdquo;に行うことができる「スマートドアロック」を採用し，150Rおよび130iのCパッケージに標準設定しました。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">スマートドアロックシステムは，トランスミッターと車両の無線通信による電子式IDコードの照合結果を基に，ドアロック制御を行うシステムです。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">スマートドアロック用トランスミッターは，ID照合時の通信中およびボタン操作時に点灯する作動インジケーターランプ（LED）を内蔵し，作動状態やバッテリー切れを確認できるものとしました。またワイヤレスドアロック機能も備えており，トランスミッターと同様に使用することができます。なお，バッテリーにはCR2032を使用します。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">スマートレシーバーを，運転席側インストルメントパネル内に配置しました。また，トランスミッター&rarr;スマートレシーバー間の識別コード送信方法に微弱電波を採用しています。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">識別コード登録機能を採用し，スマートドアロック用トランスミッターの複数使用を可能としました。</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT100001K595K675');chgImg('imT100001K595K675');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT100001K595K675" align="absmiddle"><a name="t100001k595k675">スマートドアロックシステム概要</a></span>
+<br>
+<div id="tmT100001K595K675" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">車室外のスマートドアロック用トランスミッターと車両との無線通信によるIDコード照合結果を基に，スマートECUがボデーECUへ信号を送信することでドアロック制御をしています。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">車両とスマートドアロック用トランスミッターの照合を行うために，スマートECUはエレクトリカルキーオシレーターを介してリクエスト信号を車室外へ発信します。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">リクエスト信号を受信したトランスミッターは，IDコードを発信します。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">スマートレシーバーで受信したIDコードを，スマートECUが判別・照合し自車コードと認識すると，機能に応じてロック/アンロック要求信号をボデーコンピューターへ送信することでドアロック制御します。</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3840111b.png"></td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td colspan="2">
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">スマートドアロック用トランスミッター検知エリア</td>
+</tr>
+</table>
+</td>
+</tr>
+<br>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">スマートECUから送信されるリクエスト信号は，エレクトリカルキーオシレーターから発信され運転席ドアアウトサイドハンドルをアンテナとして，半径約0.7mのスマートドアロック用トランスミッター検知エリアを形成します。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">検知エリアを形成するリクエスト信号は，0.3秒ごとに定期発信されることで常時トランスミッター携帯者の接近を感知しています。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">検知エリアは，下記の条件がすべて成立した場合に形成されます。</div>
+</td>
+</tr>
+</table>
+
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">検知エリア形成（リクエスト信号発信）条件</td>
+</tr>
+</table>
+<br>
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+
+<div class="text">エンジン停止</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">イグニッションキーシリンダーにキー未挿入</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">運転席ドアロック</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">全ドア&ldquo;閉&rdquo;</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3840112b.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT100001K595A387');chgImg('imT100001K595A387');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT100001K595A387" align="absmiddle"><a name="t100001k595a387">スマートドアアンロック機能</a></span>
+<br>
+<div id="tmT100001K595A387" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">検知エリア内でスマートドアロック用トランスミッターを携帯し，運転席アウトサイドハンドルASSYを握ると全ドアがアンロックします。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">アンロック後，アンサーバックとしてハザードウォーニングランプが2回点滅します。</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3840071b.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT100001K595A388');chgImg('imT100001K595A388');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT100001K595A388" align="absmiddle"><a name="t100001k595a388">スマートドアロック機能</a></span>
+<br>
+<div id="tmT100001K595A388" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">全ドア&ldquo;閉&rdquo;のとき，検知エリア内でスマートドアロック用トランスミッターを携帯し，トリガースイッチを押すと全ドアがロックします。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">ロック後，アンサーバックとしてハザードウォーニングランプが1回点滅します。</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3840072b.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT100001K595K678');chgImg('imT100001K595K678');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT100001K595K678" align="absmiddle"><a name="t100001k595k678">ワイヤレスリモートコントロール機能</a></span>
+<br>
+<div id="tmT100001K595K678" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">スマートドアロック用トランスミッターにはロックボタン・アンロック・パワースライドドアボタンが取り付けられており，ドアロック　＆　アンロック機能をはじめとするすべてのワイヤレスリモートコントロールシステム機能が可能です。</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT100001K595K158');chgImg('imT100001K595K158');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT100001K595K158" align="absmiddle"><a name="t100001k595k158">識別コード登録機能</a></span>
+<br>
+<div id="tmT100001K595K158" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">スマートECU側のトランスミッター識別コードを，スマートドアロック用トランスミッター，トランスミッターキー合計で最大7種類まで追加登録することができます（スマートドアロック用トランスミッター，トランスミッターキーのどちらも最大5種類まで登録可能）。その他，識別コードの書き換えおよび登録コード数の確認や，万一スマートドアロック用トランスミッターを紛失した場合に，スマートECUに登録されている識別コードを消去し，スマートドアロックシステムを禁止状態にすることができます。（識別コードの追加・書き換え・確認・禁止方法については，修理書を参照してください。）</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT100001K595K683');chgImg('imT100001K595K683');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT100001K595K683" align="absmiddle"><a name="t100001k595k683">スマートドアロック節電機能</a></span>
+<br>
+<div id="tmT100001K595K683" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td colspan="2">
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">車載バッテリーの節電機能</td>
+</tr>
+</table>
+</td>
+</tr>
+<br>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">スマートドアロックシステムは，0.3秒ごとのリクエスト信号を定期発信することで検知エリアを形成するため，車両を長時間放置すると，車載バッテリーが上がる可能性があります。そこでバッテリー上がりを防止するため下記の制御を設定しています。</div>
+</td>
+</tr>
+</table>
+
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">車載バッテリー節電制御</td>
+</tr>
+</table>
+<br>
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+
+<div class="text">8日以上スマートドアロック用トランスミッターからの応答がない場合，リクエスト信号の定期発信を0.6秒間隔に延長。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">15日以上スマートドアロック用トランスミッターからの応答がない場合，リクエスト信号の定期発信（検知エリアの形成）を停止。</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td colspan="2">
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">スマートドアロック用トランスミッターの節電機能</td>
+</tr>
+</table>
+</td>
+</tr>
+<br>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">スマートドアロック用トランスミッターのロックまたはアンロックボタンを押し続けても，約20秒後に自動的に送信作動を停止します。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">検知エリア内にスマートドアロック用トランスミッターを長時間放置した状態にすると，スマートドアロック用トランスミッターはIDコードをスマートレシーバーへ送信し続けるため，トランスミッターのバッテリーが上がる可能性があります。そこでバッテリー上がりを防止するため下記の制御を設定しています。</div>
+</td>
+</tr>
+</table>
+
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">車載バッテリー節電制御</td>
+</tr>
+</table>
+<br>
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="color1">
+<div class="text">10分以上検知エリアにスマートドアロック用トランスミッターがある場合，リクエスト信号の定期発信（検知エリアの形成）を停止。</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td colspan="2">
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">復帰条件</td>
+</tr>
+</table>
+</td>
+</tr>
+<br>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">下記条件のいづれかが成立すると，節電制御から通常のスマートドアロック制御へ復帰します。</div>
+</td>
+</tr>
+</table>
+
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">復帰条件</td>
+</tr>
+</table>
+<br>
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+
+<div class="text">ワイヤレスドアロックにより，ドアをロック/アンロック。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">エンジン始動。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">運転席ドアアウトサイドハンドルASSYのトリガースイッチを押す。</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT100001K595K674');chgImg('imT100001K595K674');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT100001K595K674" align="absmiddle"><a name="t100001k595k674">スマートドアロックシステム主要構成部品</a></span>
+<br>
+<div id="tmT100001K595K674" style="display:none">
+<br>
+
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3840018b.png"></td>
+</tr>
+</table>
+<br>
+
+
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">スマートドアロックシステム主要構成部品機能一覧</td>
+</tr>
+</table>
+<br>
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">
+<div class="text">構成部品〔略称〕</div>
+</td><td class="gray3_dark">
+<div class="text">主要機能</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">スマートECU</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+
+<div class="text">スマートレシーバーからのIDコードを判別・照合し，システム全体を制御。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">各種スイッチ状態を検知し，エレクトリカルキーオシレーターへリクエスト信号を送信。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">ドアロック/アンロック要求信号をボデーECUへ送信。</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">スマートドアロック用トランスミッター</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+
+<div class="text">運転席ドアアウトサイドハンドルASSY内蔵のアンテナからのリクエスト信号を受信し，スマートレシーバーへ微弱電波（識別コード）を送信。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">送信中に作動インジケーターランプを点灯。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">ワイヤレスドアロック用ロック・アンロックの2つの送信ボタンを装備。</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">エレクトリカルキーオシレーター</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+
+<div class="text">スマートECUからのリクエスト信号を，運転席ドアアウトサイドハンドルASSY内蔵のアンテナへ送信。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">運転席ドアアウトサイドハンドルASSYからのタッチセンサー状態を検知し，スマートECUへ出力。</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">スマートレシーバー</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+
+<div class="text">トランスミッターからの微弱電波（識別コード・機能コード）を受信し，コードデータとしてスマートECUへ出力。</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">運転席ドアアウトサイドハンドルASSY</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+
+<div class="text">内蔵のアンテナにより，エレクトリカルキーオシレーターからのリクエスト信号を発信し検知エリアを形成。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">トリガースイッチ状態（ON/OFF）をスマートECUへ出力。〔スマートドアロック機能〕</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">タッチセンサーを内蔵。〔スマートドアアンロック機能〕</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">ボデーECU</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+
+<div class="text">スマートECUからのロック/アンロック要求信号により，ドアロックコントロールモーターを駆動。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">全ドアロック/アンロック作動完了を確認し，アンサーバック出力（フラッシャーリレー駆動）を実施。</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">ドアロックASSY（運転席，助手席）</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+
+<div class="text">ドアロックコントロールモーターを正転/逆転することにより，ドアをロックまたはアンロック。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">内蔵のドアロックポジションスイッチにより，ドアのロック/アンロック状態（ロック：OFF/アンロック：ON）を検出し，スマートECUなどへ出力。（運転席ドアロックASSY）</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">フラッシャーリレー</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+
+<div class="text">ボデーECU制御により，アンサーバック時にハザードウォーニングランプを点滅。〔アンサーバック機能〕</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">ドアカーテシランプスイッチ</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+
+<div class="text">ドアの開閉（ドア開：ON，ドア閉：OFF）を検出し，スマートECUなどへ出力。</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT100001K595K680');chgImg('imT100001K595K680');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT100001K595K680" align="absmiddle"><a name="t100001k595k680">スマートドアロックシステム回路</a></span>
+<br>
+<div id="tmT100001K595K680" style="display:none">
+<br>
+
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3840075b.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT100001K595K681');chgImg('imT100001K595K681');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT100001K595K681" align="absmiddle"><a name="t100001k595k681">スマートドアアンロック作動</a></span>
+<br>
+<div id="tmT100001K595K681" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">イグニッションスイッチ　OFF，運転席ドアロックポジションスイッチ　OFF（ロック時），全ドアカーテシランプスイッチ　OFFかつスマートドアロック用トランスミッターが検知エリア内に入ると，スマートECUはスマートレシーバーが受信したトランスミッターのIDコードを判別/照合します。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">照合がOKとなると，スマートECUはエレクトリカルキーオシレーターを介して運転席ドアアウトサイドハンドルASSY内蔵のタッチセンサーを起動し，アンロックスタンバイ状態とします。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">運転席ドアアウトサイドハンドルASSYが触られたことをタッチセンサーで検出すると，この信号がエレクトリカルキーオシレーターを介してスマートECUへ入力されます。これにより，スマートECUはドアアンロック要求信号をボデーECUへ送信します。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">ボデーECUは電気式ドアロック作動と同様，ドアロックコントロールモーターを駆動し全ドアをアンロックします。その後，運転席ドアロックポジションスイッチ　ONを検知しドアアンロック状態を確認すると，アンサーバック出力を2回行います。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">スマートECUは運転席ドアロックポジションスイッチ　ONを検知しドアアンロック状態を確認すると，リクエスト信号の発信を停止します。</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT100001K595K682');chgImg('imT100001K595K682');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT100001K595K682" align="absmiddle"><a name="t100001k595k682">スマートドアロック作動</a></span>
+<br>
+<div id="tmT100001K595K682" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">イグニッションスイッチ　OFF，全ドアカーテシランプスイッチ　OFF状態で，スマートECUがトリガースイッチ　ONを検知すると，エレクトリカルキーオシレーターへリクエスト信号を送信し運転席ドアアウトサイドハンドルASSY内蔵のアンテナにより検知エリアが形成されます。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">このとき検知エリア内のスマートドアロック用トランスミッターはIDコードを発信し，これをスマートレシーバーを介してスマートECUが受信します。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">スマートECUはトランスミッターのIDコードを判別・照合し，OKとなるとドアロック要求信号をボデーECUへ送信します。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">ボデーECUは電気式ドアロック作動と同様，ドアロックコントロールモーターを駆動し全ドアをロックします。その後，運転席ドアロックポジションスイッチ　OFFを検知しドアロック状態を確認すると，アンサーバック出力を1回行います。</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT100001K595K684');chgImg('imT100001K595K684');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT100001K595K684" align="absmiddle"><a name="t100001k595k684">その他のスマート制御</a></span>
+<br>
+<div id="tmT100001K595K684" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td colspan="2">
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">他車スマートドアロック用トランスミッターとの衝突回避制御</td>
+</tr>
+</table>
+</td>
+</tr>
+<br>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">スマートドアロックシステム装着車が2台並び，スマートドアロック用トランスミッターが他車の検知エリアに反応し続けて自車の検知エリアに反応できなくなった場合には，衝突回避制御が実行されることがあります。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">他車のスマートECUが検知エリア内のスマートドアロック用トランスミッターに対して3回連続NG判定をした時点でリクエスト信号の送信を3回停止します。これにより，スマートドアロック用トランスミッターは約1秒後に自車の検知エリアに反応し，通常のスマートドアロック制御を行います。</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT100001K595K684I01');chgImg('imT100001K595K684I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT100001K595K684I01" align="absmiddle"><a name="t100001k595k684i01">衝突回避制御</a></span>
+<br>
+<div id="tmT100001K595K684I01" style="display:none">
+<br>
+
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3840073b.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td colspan="2">
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">他車スマートドアロック用トランスミッターによる節電制御</td>
+</tr>
+</table>
+</td>
+</tr>
+<br>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">他車のスマートドアロック用トランスミッターが自車の検知エリア内にある場合は，自車のスマートECUが上記の衝突回避制御を繰り返し実施し，10回連続した場合に節電制御へ移行します。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">節電制御が実行されると，スマートECUはリクエスト信号の定期発信を3秒ごとに変更します。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">自車のスマートドアロック用トランスミッターを検知・ワイヤレスリモートコントロール操作・異なるスマートドアロック用トランスミッターを検知のいづれかを実施することで，節電制御から復帰します。</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT100001K595K684I02');chgImg('imT100001K595K684I02');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT100001K595K684I02" align="absmiddle"><a name="t100001k595k684i02">節電制御</a></span>
+<br>
+<div id="tmT100001K595K684I02" style="display:none">
+<br>
+
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3840074b.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</body>
+</html>

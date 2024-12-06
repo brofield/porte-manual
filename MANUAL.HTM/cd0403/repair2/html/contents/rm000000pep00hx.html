@@ -1,0 +1,96 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000000PEP00HX"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>DTC
+								 &nbsp;&nbsp; P0973/62 &nbsp;&nbsp; S1ソレノイド系統(Low)</h3></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr><tr><td width="93%"><h3>DTC
+								 &nbsp;&nbsp; P0974/62 &nbsp;&nbsp; S1ソレノイド系統(High)</h3></td></tr></table><h2>準備品一覧<a href="#" onclick="openSeePage('ppr','RM000000PEP00HX');return false;"><img border="0" src="../../../../image/extxref.png"></a></h2><br clear="all"><a name="RM000000PEP00HX_01"></a><h2>機能説明</h2><br clear="all"><a name="1"></a><font class="ptxt">エンジンコントロールコンピュータからの信号により、トランスミッション3ウエイ ソレノイドASSY(ATM)(S1)およびトランスミッション3ウエイソレノイドASSY NO.2(S2)のON-OFFの組み合わせで1速から4速までの変速を行う。フェイルセーフ機能として、ソレノイドバルブ系統で一方が断線または短絡した場合、エンジンコントロールコンピュータは、他のソレノイドバルブをONまたはOFFさせる。またすべてのソレノイドバルブが故障の場合は、機械的な油圧回路のみとなり、マニュアルシフトとなる。(断線および短絡の場合、エンジンコントロールコンピュータは故障したソレノイドバルブの通電を停止する)</font><br><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><caption class="tbl-title"><span>フェイルセーフ時のソレノイド状態&nbsp;
+				</span></caption><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th align="center">記号<br></th><th align="center">作動状態<br></th></tr><tr><td align="center">○<br></td><td align="center">通電状態<br></td></tr><tr><td align="center">&times;<br></td><td align="center">非通電状態<br></td></tr><tr><td align="center">-<br></td><td align="center">故障状態<br></td></tr><tr><td align="center">&rarr;<br></td><td align="center">フェイルセーフでの変更状態<br></td></tr></table><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><caption class="tbl-title"><span>正常時&nbsp;
+				</span></caption><colgroup align="center" width="25%
+			"><col align=""></colgroup><colgroup align="center" width="25%
+			"><col align=""></colgroup><colgroup align="center" width="25%
+			"><col align=""></colgroup><colgroup align="center" width="25%
+			"><col align=""></colgroup><tr><th>シフト位置<br></th><th>S1<br></th><th>S2<br></th><th>ギヤ位置<br></th></tr><tr><td rowspan="4">Dポジション<br></td><td>○<br></td><td>○<br></td><td>1速<br></td></tr><tr><td>○<br></td><td>&times;<br></td><td>2速<br></td></tr><tr><td>&times;<br></td><td>&times;<br></td><td>3速<br></td></tr><tr><td>&times;<br></td><td>○<br></td><td>4速<br></td></tr><tr><td rowspan="2">2ポジション<br></td><td>○<br></td><td>○<br></td><td>1速<br></td></tr><tr><td>○<br></td><td>&times;<br></td><td>2速<br></td></tr><tr><td>Lポジション<br></td><td>○<br></td><td>○<br></td><td>1速<br></td></tr></table><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><caption class="tbl-title"><span>ソレノイドS1異常時&nbsp;
+				</span></caption><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><tr><th align="center">シフト位置<br></th><th align="center">S1<br></th><th align="center">S2<br></th><th align="center">ギヤ位置<br></th></tr><tr><td rowspan="4" align="center">Dポジション<br></td><td align="center">-<br></td><td align="center">○&rarr;&times;<br></td><td align="center">3速<br></td></tr><tr><td align="center">-<br></td><td align="center">&times;<br></td><td align="center">3速<br></td></tr><tr><td align="center">-<br></td><td align="center">&times;<br></td><td align="center">3速<br></td></tr><tr><td align="center">-<br></td><td align="center">○<br></td><td align="center">4速<br></td></tr><tr><td rowspan="2" align="center">2ポジション<br></td><td align="center">-<br></td><td align="center">○&rarr;&times;<br></td><td align="center">3速<br></td></tr><tr><td align="center">-<br></td><td align="center">&times;<br></td><td align="center">3速<br></td></tr><tr><td align="center">Lポジション<br></td><td align="center">-<br></td><td align="center">○<br></td><td align="center">4速<br></td></tr></table><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><caption class="tbl-title"><span>ソレノイドS2異常時&nbsp;
+				</span></caption><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><tr><th align="center">シフト位置<br></th><th align="center">S1<br></th><th align="center">S2<br></th><th align="center">ギヤ位置<br></th></tr><tr><td rowspan="4" align="center">Dポジション<br></td><td align="center">○<br></td><td align="center">-<br></td><td align="center">2速<br></td></tr><tr><td align="center">○<br></td><td align="center">-<br></td><td align="center">2速<br></td></tr><tr><td align="center">&times;<br></td><td align="center">-<br></td><td align="center">3速<br></td></tr><tr><td align="center">&times;<br></td><td align="center">-<br></td><td align="center">3速<br></td></tr><tr><td rowspan="2" align="center">2ポジション<br></td><td align="center">○<br></td><td align="center">-<br></td><td align="center">2速<br></td></tr><tr><td align="center">○<br></td><td align="center">-<br></td><td align="center">2速<br></td></tr><tr><td align="center">Lポジション<br></td><td align="center">○<br></td><td align="center">-<br></td><td align="center">2速<br></td></tr></table><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><caption class="tbl-title"><span>ソレノイドS1、S2異常時&nbsp;
+				</span></caption><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><tr><th align="center">シフト位置<br></th><th align="center">S1<br></th><th align="center">S2<br></th><th align="center">ギヤ位置<br></th></tr><tr><td rowspan="4" align="center">Dポジション<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">3速<br></td></tr><tr><td align="center">-<br></td><td align="center">-<br></td><td align="center">3速<br></td></tr><tr><td align="center">-<br></td><td align="center">-<br></td><td align="center">3速<br></td></tr><tr><td align="center">-<br></td><td align="center">-<br></td><td align="center">3速<br></td></tr><tr><td rowspan="2" align="center">2ポジション<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">3速<br></td></tr><tr><td align="center">-<br></td><td align="center">-<br></td><td align="center">3速<br></td></tr><tr><td align="center">Lポジション<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">3速<br></td></tr></table><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><colgroup align="" width="20%
+			"><col align=""></colgroup><colgroup align="" width="40%
+			"><col align=""></colgroup><colgroup align="" width="40%
+			"><col align=""></colgroup><tr><th align="center">DTC No.<br>SAE/TCCS<br></th><th align="center">DTC検出条件<br><ol style="list-style-type: decimal"><li>診断条件<br></li><li>異常状態<br></li><li>異常期間<br></li><li>その他<br></li></ol></th><th align="center">点検部位<br></th></tr><tr><td align="center">P0973/62<br></td><td><ol style="list-style-type: decimal"><li>変速を伴う走行中<br></li><li>ソレノイドS1回路の短絡<br></li><li>異常状態を1トリップで2回以上連続 <br></li><li>1トリップ<br></li></ol></td><td rowspan="2"><ol style="list-style-type: disc"><li>ワイヤハーネスおよびコネクター(ソレノイドS1信号系統)<br></li><li>トランスミッションワイヤ<br></li><li>トランスミッション3ウエイ ソレノイドASSY(ATM)(S1)<br></li><li>エンジンコントロールコンピュータ<br></li></ol></td></tr><tr><td align="center">P0974/62<br></td><td><ol style="list-style-type: decimal"><li>変速を伴う走行中<br></li><li>ソレノイドS1回路の断線<br></li><li>異常状態を1トリップで2回以上連続 <br></li><li>1トリップ<br></li></ol></td></tr></table><br clear="all"><br clear="all"><a name="RM000000PEP00HX_02"></a><h2>回路図</h2><br clear="all"><a name="1"></a><div class="full"><br clear="all"><img src="../../img/c225711j10.png" name="C225711J10" alt="C225711J10" border="1" class="full"></div><br clear="all"><br clear="all"><br clear="all"><a name="RM000000PEP00HX_03"></a><h2>点検手順</h2><br clear="all"><a name="1"></a><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">トランスミッション3ウエイ ソレノイドASSY(ATM)(S1)が正常時のON/OFF状態。(シフトレバーDポジション)<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="13%
+			"><col align=""></colgroup><colgroup align="" width="13%
+			"><col align=""></colgroup><colgroup align="" width="13%
+			"><col align=""></colgroup><colgroup align="" width="12%
+			"><col align=""></colgroup><tr><td class="atten4" align="center">ギヤ位置<br></td><td class="atten4" align="center">1速<br></td><td class="atten4" align="center">2速<br></td><td class="atten4" align="center">3速<br></td><td class="atten4" align="center">4速<br></td></tr><tr><td class="atten4" align="center">トランスミッション3ウエイ ソレノイドASSY(ATM)(S1)<br></td><td class="atten4" align="center">ON<br></td><td class="atten4" align="center">ON<br></td><td class="atten4" align="center">OFF<br></td><td class="atten4" align="center">OFF<br></td></tr></table></li><li class="atten4">SST(TaSCAN)を使用してフリーズフレームデータを読み取る。フリーズフレームデータには不具合発生時のエンジン稼動状態の一部が記録されており、それらの情報がトラブルシュートを行う際に役立つ。<br></li></ol></p><br clear="all"><a name="RM000000PEP00HX_04_0001"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順1</td><td width="90%" class="s1">トランスミッション ワイヤ単体点検（トランスミッション3ウエイ ソレノイドASSY(ATM)(S1)）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c225714j03.png" name="C225714J03" alt="C225714J03" border="1" class="half"><br></td></tr></table>
+<li value="1"><p><font class="ptxt">トランスミッションワイヤのコネクターB10を切り離す。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。</font><br><p><dl class="spec"><dt class="spec">抵抗値</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="center" width="50%
+			"><col align=""></colgroup><colgroup align="center" width="25%
+			"><col align=""></colgroup><colgroup align="center" width="25%
+			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>5 (S1) - ボデーアース<br></td><td>20&deg;C<br></td><td>11 to 15Ω<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><caption class="tbl-title"><span>イラスト内指示文字&nbsp;
+				</span></caption><colgroup align="" width="10%
+			"><col align=""></colgroup><colgroup align="" width="90%
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>コネクター非接続状態<br>(トランスミッションワイヤ)<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM000000PEP00HX_04_0008">手順 3 へ
+												</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000000PEP00HX_04_0002"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順2</td><td width="90%" class="s1">ワイヤハーネスおよびコネクター点検（トランスミッションワイヤ - エンジンコントロールコンピュータ）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">点検要領および注意事項は<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照。</dd></dl></p>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c225707j08.png" name="C225707J08" alt="C225707J08" border="1" class="half"><br></td></tr></table>
+<li value="1"><p><font class="ptxt">エンジンコントロールコンピュータのコネクターB37を切り離す。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。</font><br><p><dl class="spec"><dt class="spec">抵抗値</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="center" width="50%
+			"><col align=""></colgroup><colgroup align="center" width="25%
+			"><col align=""></colgroup><colgroup align="center" width="25%
+			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>B37-15 (S1) - ボデーアース<br></td><td>20&deg;C<br></td><td>11 to 15Ω<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><caption class="tbl-title"><span>イラスト内指示文字&nbsp;
+				</span></caption><colgroup align="" width="10%
+			"><col align=""></colgroup><colgroup align="" width="90%
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>コネクター非接続状態<br>(トランスミッションワイヤ)<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ワイヤハーネスまたはコネクター修理または交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">エンジンコントロール コンピュータ交換&nbsp;
+										</td></tr></table></td></tr></table><br><a name="RM000000PEP00HX_04_0008"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順3</td><td width="90%" class="s1">トランスミッション3ウエイ ソレノイドASSY(ATM)(S1)単体点検
+</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c130146j01.png" name="C130146J01" alt="C130146J01" border="1" class="half"><br></td></tr></table>
+<li value="1"><p><font class="ptxt">トランスミッション3ウエイ ソレノイドASSY(ATM)(S1)を取りはずす。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。</font><br><p><dl class="spec"><dt class="spec">抵抗値</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><tr><th align="center">点検端子<br></th><th align="center">点検条件<br></th><th align="center">基準値<br></th></tr><tr><td align="center">トランスミッション3ウエイ ソレノイドASSY(ATM)(S1)コネクター - ボデー<br></td><td align="center">20&deg;C<br></td><td align="center">11 to 15Ω<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><caption class="tbl-title"><span>イラスト内指示文字&nbsp;
+				</span></caption><colgroup align="" width="10%
+			"><col align=""></colgroup><colgroup align="" width="90%
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>コネクター非接続状態<br>(トランスミッション3ウエイ ソレノイドASSY(ATM)(S1))<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">トランスミッション3ウエイ ソレノイドASSY(ATM)(S1)のコネクターにバッテリプラスを接続し、ソレノイドボデーにバッテリマイナスを接続したとき、ソレノイド内のバルブが作動することを点検する。</font><br><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec">作動する(作動音あり)<br></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">トランスミッション3ウエイ ソレノイドASSY(ATM)(S1)交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">トランスミッション ワイヤ修理または交換&nbsp;
+										</td></tr></table></td></tr></table><br></body></html>

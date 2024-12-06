@@ -1,0 +1,895 @@
+/* $Id: contents.css,v 1.33 2004/03/16 11:45:14 t-kato Exp $ */
+
+/* ステータスフレーム表題 */
+h1 {
+	color:#ffffff;
+	background-color: #666666;
+	font-size:11pt;
+	font-weight:bold;
+	text-align: center;
+	margin-top: 4px;
+}
+
+h1.paraname {
+	text-align:center;
+	color:#000000;
+	background-color: #ff99ff;
+	font-size:17pt;
+	font-weight:normal;
+	margin: 10px 0px 0px 10px;
+}
+
+/* 準備品リンク表示 */
+h2 {
+	color:#666666;
+	font-size:11pt;
+	margin: 0px 4px 10px 4px;
+}
+
+/* ダイアグコード表示 */
+h3 {
+	color:#0000ff;
+	font-size:11pt;
+	margin: 4px 0px 4px 0px;
+	color:#ffffff;
+	background-color: #666666;
+	font-weight:bold;
+	padding-left:15px;
+/*	text-align: center;*/
+}
+
+/* content5の<topic>文字色を赤色に */
+h5 {
+	color:#ff0000;
+	font-size:11pt;
+	margin-left:40px;
+}
+
+/* s-1リスト表示で利用 */
+li {
+	font-size:10pt;
+	font-weight:normal;
+}
+
+li .list-ttl {
+	color: #666666;
+}
+
+.list-ttl {
+	font-weight:bold;
+	margin-top: 5px;
+}
+
+a.tbl_pub {
+	text-decoration: none;
+}
+
+a.tbl_pub:link {
+	text-decoration: underline;
+}
+
+a.tbl_pub:visited {
+	text-decoration: underline;
+}
+
+a.tbl_pub:active {
+	text-decoration: underline;
+}
+
+a.tbl_pub:hover {
+	text-decoration: underline;
+}
+
+a {
+	text-decoration:none;
+}
+
+/* バックカラー白にかえた */
+body {
+	background-color: #f7f9f9;
+/*	font-family: sans-serif;*/
+	margin: 3px, 6px, 0px, 6px;
+	font-size: 10pt;
+}
+
+/* 目次用表示。バックカラークリーム色 */
+body.mokuji {
+	background-color: #f7f9f9;
+/*	font-family: Arial;*/
+	margin: 5px 10px 10px 10px;
+}
+
+body.guide {
+	background-color: #ffffff;
+/*	font-family: sans-serif;*/
+	margin: 3px 3px 3px 10px;
+}
+
+div {
+	color: #000000;
+	font-size: 11pt;
+	font-weight: normal;
+}
+
+/* 文字をboldに */
+p {
+	color: #000000;
+/*	font-weight: bold;*/
+}
+
+/* 準備品ステータスバー。色サイズ変えた。 */
+p.location {
+	color:#ffffff;
+	background-color: #666666;
+	font-size:10pt;
+	font-weight:bold;
+	text-align: center;
+	margin: 10px 10px 0px 15px;
+}
+
+p.subname {
+	color: #000000;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+b {
+/*	font-size: 10pt;*/
+}
+
+th {
+	color: #666666;
+	font-size: 10pt;
+	font-weight: normal;
+	word-break: normal;
+}
+td {
+	color: #666666;
+	font-size: 10pt;
+	font-weight: normal;
+	word-break: normal;
+}
+
+
+body.mokuji table table th{
+	background-color:  #c7d0d6;
+	padding: 4px;
+}
+
+body.mokuji table {
+	background-color:  #c7d0d6;
+	padding: 0px;
+	margin: 0px;
+}
+
+table.title {
+	width: 100%;
+	border-style: solid;
+	border-width: 2px;
+}
+
+
+table.para {
+	width: 98%;
+	border-style: none;
+	border-width: 0px;
+	margin-left: 4px;
+}
+
+td.para {
+	color: #000000;
+	background-color: #ff99ff;
+	font-size: 13pt;
+	font-weight: bold;
+	text-indent: 5px;
+	border-style: none;
+	border-color: #cccccc;
+}
+
+table.s1 {
+	width: 100%;
+	height:25px;
+	margin-top: 0px;
+	margin-left: 4px;
+	border: 1px solid #cccccc;
+}
+
+table.s1r {
+	width: 100%;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+/* s1テーブルフォントを黒色に */
+td.s1r {
+	color: #666666;
+	font-size: 10pt;
+	font-weight: bold;
+	padding: 3px 5px 3px 10px;
+	background-color:#dfedf0;
+	border-color: #666666;
+	border-width: 0px 1px 1px 0px;
+	border-style: solid;
+/*	border: 1px solid #cccccc;*/
+}
+
+td.s1t {
+	color: #666666;
+	background-color: #dfedf0;
+	font-size: 11pt;
+	font-weight: bold;
+	text-indent: 0px;
+	border-style: none;
+	border-color: #cccccc;
+}
+
+td.s1 {
+	height: 25px;
+	color: #666666;
+	background-color: #dfedf0;
+	font-size: 10pt;
+	font-weight: bold;
+	text-indent: 0px;
+	border-style: none;
+	border-color: #cccccc;
+}
+
+/*フォント色黒に変えた（これはつかわない）td.s1でいい*/
+td.xrefcolor {
+	color: #000000;
+	font-size: 11pt;
+	font-weight: bold;
+	text-indent: 18px;
+	border-style: none;
+}
+
+td.xrefcolort {
+	color: #666666;
+	background-color:#ffe4e1;
+	font-size: 10pt;
+	font-weight: bold;
+	text-indent: 0px;
+	border-style: none;
+	border-color: #cccccc;
+}
+
+th.pointdisplaytitle {
+	background-color: #cccccc;
+}
+
+td.pointdisplaycolor {
+	background-color: #f5f7f8;
+}
+
+dl {
+	color: #1b6384;
+	font-size: 11pt;
+	font-weight: normal;
+/*	margin-bottom: 1em;*//*IE4対応でdd毎にdlで囲むため*/
+}
+
+dt {
+	color: #1b6384;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+dd {
+	color: #0000ff;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+ul {
+	color: #000000;
+	font-size: 11pt;
+	font-weight: normal;
+	margin-left: 25px;
+}
+
+
+/* 黒色、weight=boldに */
+ol {
+	color: #666666;
+	font-weight: normal;
+	margin-left: 30px;
+	list-style-type: decimal;
+}
+
+ol li {
+	font-weight: normal;
+}
+
+ol.step1 {
+	color: #666666;
+	font-weight:bold;
+	background-color:#dfedf0;
+/*	border: 1px solid #cccccc;*/
+	border-color: #666666;
+	border-width: 0px 1px 1px 0px;
+	border-style: solid;
+	list-style-type: none;
+	padding: 3px 5px 3px 10px;
+	margin-left: 0px;
+}
+
+ol.step1 li{
+	font-weight:bold;
+	list-style-type: none;
+	padding: 0px 5px 0px 10px;
+
+}
+
+ol.step1 table li{
+	font-weight:normal;
+}
+
+/* 青色に */
+ol.step2 {
+	color: #5b80a4;
+	font-weight: bold;
+	list-style-type: lower-alpha;
+	margin-left: 40px;
+}
+
+ol.step2 li{
+	font-size:11pt;
+	font-weight:bold;
+}
+
+ol.step2 table li{
+	font-size:10pt;
+	font-weight:normal;
+}
+
+ol.step2 li li{
+	font-weight:normal;
+}
+
+/* 青色に */
+ol.s2 {
+	color: #000000;
+	font-weight: normal;
+	list-style-type: lower-alpha;
+	margin-left: 50px;
+}
+
+ol.s2 li{
+	color: #5b80a4;
+	font-size:11pt;
+	font-weight:bold;
+}
+
+ol.s2 table li{
+	color: #666666;
+	font-size:10pt;
+	font-weight:normal;
+}
+
+/* 赤色に変えた */
+ol.s3 {
+	color: #55969d;
+	font-weight: bold;
+	list-style-type: lower-roman;
+	margin-left: 20px;
+}
+
+ol ol.s3 li {
+	font-weight: bold;
+}
+
+ol ol.s3 ol li {
+	font-weight: normal;
+}
+
+ol.content5{
+	margin:0px 0px 0px 0px;
+}
+
+dt.warning {
+	color: #ff0000;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+dd.warning {
+	color: #ff0000;
+	font-size: 10pt;
+	font-weight: normal;
+	margin-left: 10px;
+}
+
+dd.warning th {
+	color: #ff0000;
+}
+
+dd.warning td {
+	color: #ff0000;
+}
+
+dd.warning caption {
+	color: #ff0000;
+}
+
+dt.caution {
+	color: #e88517;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+dd.caution {
+	color: #e88517;
+	font-size: 10pt;
+	font-weight: normal;
+	margin-left: 10px;
+}
+
+dd.caution th {
+	color: #e88517;
+}
+
+dd.caution td {
+	color: #e88517;
+}
+
+dd.caution caption {
+	color: #e88517;
+}
+
+dt.reference {
+	color: #008000;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+dd.reference {
+	color: #008000;
+	font-size: 10pt;
+	font-weight: normal;
+	margin-left: 10px;
+}
+
+dd.reference th {
+	color: #008000;
+}
+
+dd.reference td {
+	color: #008000;
+}
+
+dd.reference caption {
+	color: #008000;
+}
+
+dl.torque {
+	color: #1b6384;
+	font-weight: bold;
+}
+
+dt.torque {
+	color: #1b6384;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+dd.torque {
+	color: #1b6384;
+	font-size: 10pt;
+	font-weight: bold;
+	margin-left: 15px;
+}
+
+dl.spec {
+	color: #1b6384;
+	font-weight: bold;
+}
+dt.spec {
+	color: #1b6384;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+dd.spec {
+	color: #1b6384;
+	font-size: 10pt;
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+/* [SST] */
+dl.sst {
+	color: #fc9b87;
+}
+dt.sst {
+	color: #fc9b87;
+	font-size: 10pt;
+	font-weight: bold;
+	font-style: italic;
+}
+
+dd.sst {
+	color: #fc9b87;
+	font-size: 10pt;
+	font-weight: bold;
+	margin-left: 15px;
+}
+
+/* [コマ絵] class=half */
+img.half {
+	width: 330px;
+/*	border: solid 1px #333333;*//* NN4.x NG */
+	border-color: #333333 #333333;
+	margin: 8px 0px 8px 8px;
+/*	position: relative;*/
+	float: none;
+}
+
+/* [コマ絵] classr=full */
+img.full {
+	width: 690px;
+/*	border: solid 1px #333333;*//* NN4.x NG */
+	border-color: #333333 #333333;
+	margin: 8px 0px 5px 8px;
+/*	position: relative;
+  float: right;*/
+}
+
+div.full {
+  text-align: center;
+  width: 100%;
+  float: right;
+}
+
+/* [コマ絵] class=none */
+img.none {
+/*	border: solid 1px #333333;*/
+	border: none;
+	margin: 8px 0px 8px 8px;
+/*	position: relative;*/
+}
+
+img.dummy {
+	height: 1px;
+	border: none;
+	margin: 0px;
+	position: relative;
+	float: none;
+}
+
+table.float {
+	border: 0px;
+	margin: 0px;
+/*	position: relative;*//* NN4.x NG */
+	float: right;
+}
+/* 目次等テーブル＜本文＞のスタイルバックカラー・カラー */
+a.tbl-para {
+	width: 100%;
+	height: 20px;
+	font-size: 10pt;
+	text-decoration: none;
+	border: solid 0px #a3b5bc;
+	padding-top: 3px;
+	padding-left: 5px;
+}
+
+a.tbl-para:link {
+	color: #666666;
+	background-color: #c7d0d6;
+}
+
+a.tbl-para:visited {
+	color: #666666;
+	background-color: #c7d0d6;
+}
+
+a.tbl-para:hover {
+	color: #db883d;
+	background-color: #dde3e6;
+}
+
+a.tbl-para:active {
+	color: #ffffff;
+	background-color: #a9b2b7;
+}
+
+a.pointdisplay {
+	color: #1b6384;
+	font-size: 10pt;
+	text-decoration: none;
+}
+/* 目次のテーブルpara(ダイアグコード）/ダイアグコード・症状一覧(本文） 色白*/
+
+.tbl-par {
+	background-color: #c7d0d6;
+	border-style: solid;
+	border-width: 1px 1px 1ppx 5px;
+	border-color: #ffffff #ffffff #ffffff #a3b5bc;
+	padding-left: 0px;
+}
+/* ダイアグコード・症状一覧(seepageimg）/.tbl-parにarign="center"つけた */
+.tbl-see {
+	text-align: center;
+	background-color: #ffffff;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0;
+	padding-left: 0px;
+}
+
+.tbl-sec {
+	color: #ffffff;
+	background-color: #a8c0ce;
+	font-size: 9pt;
+	text-align: center;
+}
+
+/* 目次のテーブルpara(ダイアグコード）/ダイアグコード・症状一覧(ttl） */
+.tbl-ttl {
+	color: #666666;
+	background-color: #dde3e6;
+	font-size: 9pt;
+	border-style: solid;
+	border-color: #ffffff #ffffff #ffffff #ffffff;
+	border-width: 1px 2px 1px 1px;
+	padding-left: 5px;
+}
+
+/* ダイアグコード一覧(ダミー) */
+.tbl-dtclist {
+	color: #666666;
+	background-color: #c7d0d6;
+	font-size: 9pt;
+	border-color: #c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0;
+	border-width: 1px 1px 1px 1px;
+	padding-left: 5px;
+}
+
+/* ダイアグコード・症状一覧(head） 色白・太字に変えた。 */
+.tbl {
+	color: #000000;
+	background-color: #ffffff;
+	font-size: 11pt;
+	font-weight:bold;
+	border-style: solid;
+	border-color: #c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0;
+	border-width: 1px 1px 1px 1px;
+	padding-left: 5px;
+}
+
+/* 目次のテーブルhead　バック色/色を変えた。 */
+.tbl-head {
+	color: #666666;
+	font-weight: normal;
+	background-color: #c9c9c9;
+	font-size: 10pt;
+	text-align: center;
+	padding-top: 5px;
+/*	padding-bottom: 5px;*/
+	padding-left: 10px;
+	border-width: 1px 2px 1px 1px;
+	border-color: #ffffff;
+	border-style: solid;
+}
+
+.tbl-symptom {
+	color: #666666;
+	background-color: #ffffff;
+	font-size: 10pt;
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 0px;
+}
+
+.tbl-symlist {
+	color: #666666;
+	background-color: #ffffff;
+	font-size: 10pt;
+	line-height: 1.2;
+	padding: 5px;
+}
+
+.subpara {
+	width: 100%;
+	color: #000099;
+	background-color: #ffffff;
+	font-size: 12pt;
+	font-weight: bold;
+	text-align: left;
+}
+
+.gray {
+	color: #ffffff;
+	background-color: #717171;
+	font-size: 10t;
+}
+
+.gray2 {
+	color: #ffffff;
+	background-color: #bcbcbc;
+	font-size: 10pt;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+
+.gray4 {
+	color: #ffffff;
+	background-color: #b4bcc5;
+	font-size: 11pt;
+	font-weight: bold;
+	text-align: left;
+	padding: 5px 10px 5px 10px;
+}
+
+.gray5 {
+	color: #006699;
+	background-color: #b4bcc5;
+	font-size: 12pt;
+	font-weight: bold;
+	text-align: right;
+	padding: 5px 10px 5px 10px;
+}
+
+.message {
+	width: 550px;
+	height: 550px;
+	color: #5b80a4;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.tbl-title {
+	padding-top: 6px;
+	color: #5b80a4;
+	font-size: 10pt;
+	font-weight: bold;
+	text-align: left	
+}
+
+.diag-fin {
+	color: #333333;
+	background-color: #ffc673;
+	font-size: 10pt;
+	font-weight: bold;
+ 	text-align: center;
+	vertical-align: middle;
+	border-style: solid;
+	border-color: #ff0000; 
+	border-width: 1px;
+}
+
+.diag-next {
+	color: #333333;
+	background-color: #caff33;
+	font-size: 10pt;
+	font-weight: bold;
+ 	text-align: center;
+	vertical-align: middle;
+	border-style: solid;
+	border-color: #339966;
+	border-width: 1px;
+}
+
+.initial-display {
+	background-image: url(../img/initial.png);
+	background-repeat: no-repeat;
+	width: 621px;
+	height: 352px;
+}
+
+.illustId {
+	color: #333333;
+	font-size: 9pt;
+	text-align: right;
+}
+
+.pages {
+	color: #333333;
+	font-size: 9pt;
+	text-align: center;
+}	
+
+font.ptxt {
+	color:#000000;
+	font-size:10pt;
+	font-weight:normal;
+}
+
+/* atten2,3,4内にlist,tableがあった場合のスタイル */
+ol li.atten2 {
+	font-size:10pt;
+	color:#ff0000;
+	font-weight:normal;
+}
+
+ol ol li.atten2 {
+	color:#ff0000;
+}
+
+span.atten2 {
+	color:#ff0000;
+}
+
+th.atten2 {
+	color:#ff0000;
+}
+
+td.atten2 {
+	color:#ff0000;
+}
+
+ol li.atten3 {
+	font-size:10pt;
+	color:  #e88517;
+	font-weight:normal;
+}
+
+ol ol li.atten3 {
+	color:  #e88517;
+}
+
+span.atten3 {
+	color:  #e88517;
+}
+
+th.atten3 {
+	color:  #e88517;
+}
+
+td.atten3 {
+	color:  #e88517;
+}
+
+ol li.atten4 {
+	font-size:10pt;
+	color:#008000;
+	font-weight:normal;
+}
+
+ol ol li.atten4 {
+	color:#008000;
+}
+
+span.atten4 {
+	color:#008000;
+}
+
+th.atten4 {
+	color:#008000;
+}
+
+td.atten4 {
+	color:#008000;
+}
+
+a.subwindow-button {
+	height: 5px;
+	color: #cccccc;
+	background-color: #86a2b0;
+	font-size: 11pt;
+	text-decoration: none;
+	border: solid 1px #cccccc;
+	padding: 2px 8px 2px 8px;
+}
+
+a.subwindow-button:link {
+	color: #ffffff;
+}
+
+a.subwindow-button:visited {
+	color: #ffffff;
+}
+
+a.subwindow-button:hover {
+	color: #cccccc;
+}
+
+a.subwindow-button:active {
+	color: #cccccc;
+}
+
+br.beforePng {
+	font-size:	0pt;
+}

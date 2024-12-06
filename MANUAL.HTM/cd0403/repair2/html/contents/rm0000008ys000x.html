@@ -1,0 +1,39 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000008YS000X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>EFIシステム&nbsp;&nbsp;ダイアグコード点検／消去</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000008YS000X_z0"></a><br clear="all"><a name="1"></a><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">TaSCANを使用すると、ノーマルモードだけでなくチェックモードの選択ができ、ノーマルモードに比べて異常検出感度を向上させることができます。<br></li><li class="atten4">チェックモードによる点検は、各センサの信号系統の異常が考えられるにもかかわらず、ノーマルモードでは正常コードを出力する場合に行う。<br></li></ol></p><br clear="all"><br clear="all"><a name="CD0403____00000610000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>点検前準備</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">スロットルバルブが全閉であることを確認する。</font><br></p></li>
+<li><p><font class="ptxt">シフト位置をNレンジまたはPレンジにする。</font><br></p></li>
+<li><p><font class="ptxt">エアコンをOFFにする。</font><br></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00000610000012step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>ダイアグノーシスコード点検(TaSCANによる読み取り)</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">DLC3にTaSCANを接続する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991 -70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">画面表示に従って操作を行い[診断]&rarr;[モード移行]画面を表示させノーマルモードまたはチェックモードを選択し、ダイアグノーシスコードを確認する。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">コードを表示しない(ランプが点滅しない)場合は、TC端子系の断線またはコンピュータ不良が考えられる。<br></li><li class="atten4">チェックエンジンウォーニングランプが常時点灯している場合は、ワイヤハーネスのショート(かみ込みなど)またはコンピュータ不良が考えられる。<br></li><li class="atten4">意味のないコードを出力する場合は、コンピュータ不良が考えられる。<br></li><li class="atten4">1000r/min以上でチェックエンジンウォーニングランプが点灯し、コードを出力しない場合は、一度イグニッションスイッチをOFFにした後、再点検する。<br></li></ol></p></p></li></ol><br clear="all"><br clear="all"><br clear="all"><a name="CD0403____00000610000013step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>ダイアグノーシスコード点検(チェックエンジンウォーニングランプによる読み取り)</li></ol>
+<ol class="ptxt"></ol><table class="float"><tr><td><img src="../../img/a065375.png" name="A065375" alt="A065375" border="1" class="half"><br></td></tr></table><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">ダイアグノーシスコードを読み取る前にイグニッションスイッチをONにし、チェックエンジンウォーニングランプが点灯することを確認する。<br></li><li class="atten3">チェックモードの点検はできない。<br></li></ol></p>
+<ol class="step2">
+<li><p><font class="ptxt">イグニッションスイッチをOFFにする。</font><br></p></li>
+<li><p><font class="ptxt">ダイアグノーシスチェックワイヤNo.2を使用して、DLC3の13(TC) &larr;&rarr;4(CG)端子間を短絡する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040 &nbsp;&nbsp;<br></dd></dl><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">コネクタの接続位置を間違えると故障の原因となるため絶対に間違えない。</dd></dl></p></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">イグニッションスイッチをONにして、チェックエンジンウォーニングランプの点滅回数を読み取る。</font><br><div class="full"><br clear="all"><img src="../../img/a065376.png" name="A065376" alt="A065376" border="1" class="full"></div><br clear="all"><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">コードを表示しない(ランプが点滅しない)場合は、TC端子系の断線またはコンピュータ不良が考えられる。<br></li><li class="atten4">チェックエンジンウォーニングランプが常時点灯している場合は、ワイヤハーネスのショート(かみ込みなど)またはコンピュータ不良が考えられる。<br></li><li class="atten4">意味のないコードを出力する場合は、コンピュータ不良が考えられる。<br></li><li class="atten4">1000r/min以上でチェックエンジンウォーニングランプが点灯し、コードを出力しない場合は、一度イグニッションスイッチをOFFにした後、再点検する。<br></li></ol></p></p></li>
+<li><p><font class="ptxt">ダイアグノーシスチェックワイヤNo.2を取りはずす。</font><br></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00000610000014step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>ダイアグノーシスコード記憶消去(TaSCANによる消去)</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">画面表示に従って操作を行い[診断]&rarr;[ダイアグコードフリーズデータ]画面を表示させダイアグノーシスコードを消去する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">消去できない場合は、一度イグニッションスイッチをOFFにした後、再度やり直す。<br></li><li class="atten3">原因解明までは、TaSCANによるダイアグコード消去を行わない。<br></li></ol></p></p></li></ol><br clear="all"><br clear="all"><br clear="all"><a name="CD0403____00000610000015step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>ダイアグノーシスコード消去(ヒューズ抜き取りによる消去)</li></ol>
+<ol class="ptxt"></ol><table class="float"><tr><td><img src="../../img/a067447.png" name="A067447" alt="A067447" border="1" class="half"><br></td></tr></table>
+<ol class="step2">
+<li><p><font class="ptxt">E.F.I.ヒューズ(15A)を取りはずし、15秒以上経過後ヒューズを接続する。</font><br><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">EFIシステムの点検修理後は、必ずダイアグノーシスコードの記憶を一旦消去した後、正常コードが出力されることを確認する。<br></li><li class="atten3">原因解明までは、バッテリクリア(ヒューズ抜き取り)によるダイアグノーシスコード消去を行わない。<br></li></ol></p></p></li></ol><br clear="all"></body></html>

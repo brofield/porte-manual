@@ -1,0 +1,64 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../js/hidden.js" languaeg="JavaScript"></script><script languaeg="JavaScript">
+<!--
+function openPDF(ID){
+pdfPlace = document.form('_'+ID);
+if(pdfPlace != null){
+	pdfFile = pdfPlace.value;
+		if(pdfFile == ''){
+			alert('先に「型式」「類別区分」を選択してください。');
+		}else{
+			window.open('../pdf/' + pdfFile,'','width=800,height=600,toolbar=0,menubar=0,scrollbars=1');
+		}
+	}else{
+		alert('先に「型式」「類別区分」を選択してください。');
+	}
+}
+function showList(){
+	Div = document.all.tags('div');
+	for(i = 0; i < Div.length; i++){
+		if(Div[i].style.display == 'block'){
+			Div[i].style.display = 'none';
+//		alert(Div[i].style.display);
+		}
+	}
+}
+//--></script>
+<title>主要諸元</title>
+<link type="text/css" href="../css/main2.css" rel="stylesheet">
+<link type="text/css" href="../css/style.css" rel="stylesheet">
+</head>
+<body onLoad="boVis(5)">
+
+<table width="100%" cellpadding="2" cellspacing="0" border="0">
+<tr>
+<td align="center" class="gray">主要諸元</td>
+</tr>
+</table>
+<br>
+
+
+<form name="form">
+<table width="95%" border="1" cellspacing="0" cellpadding="5" bordercolor="#FFFFFF">
+<tr style="background-color:#C7D0D6;padding-top:2px;padding-left:2px;color:#666666;text-align:center" class="gray3_dark_left" align="center" valign="top">
+<td>型式(指定番号)</td><td>類別区分</td><td></td>
+</tr>
+<tr class="color1" align="center" valign="top">
+<td><select style="width:150px" size="20" name="katasiki" onChange="showList();document.all(this[this.selectedIndex].value).style.display='block'"><option value="CBA-NNP15">CBA-NNP15</option></select></td><td>
+<div style="display:block" id="empty">
+<select style="width:150px" size="20" name="_empty"><option></option></select>
+</div>
+<div style="display:none" id="CBA-NNP15">
+<select style="width:150px" size="20" name="_CBA-NNP15"><option value="k3840010k.pdf">001～002</option></select>
+</div>
+<br>
+</td><td><input type="button" onClick="openPDF(document.form.katasiki.value)" value="PDFを開く"></td>
+</tr>
+</table>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="X39400000QX04IC"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>DTC
+								 &nbsp;&nbsp; P0010/39 &nbsp;&nbsp; VVT OCV系統</h3></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><h2>準備品一覧<a href="#" onclick="openSeePage('ppr','X39400000QX04IC');return false;"><img border="0" src="../../../../image/extxref.png"></a></h2><br clear="all"><a name="X39400000QX04IC_10"></a><h2>回路説明</h2><br clear="all"><a name="1"></a><ol style="list-style-type: none"><br clear="all"><li>VVTシステムは、各走行条件に対応した最適なバルブタイミングを供給するために、インテークカムシャフトを制御する。この制御は、吸入空気量、スロットルポジション、エンジン冷却水温などの条件をもとに行う。エンジンコントロールコンピュータはそれら各センサからの信号にもとづき、オイルコントロールバルブを調整し、その結果としてカムシャフトの相対的位置は最適なものとなりエンジンのトルクおよび燃費が向上し排気ガスも清浄化される。またエンジンコントロールコンピュータはカムポジションセンサからの信号を使って実際のバルブタイミングを検出し、フィードバック制御を行い理想とするバルブタイミングを達成している。<br><br clear="all"><div class="full"><br clear="all"><img src="../../img/a145886j06.png" name="A145886J06" alt="A145886J06" border="1" class="full"></div><br clear="all"></li></ol><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><colgroup align="" width="12%
+			"><col align=""></colgroup><colgroup align="" width="44%
+			"><col align=""></colgroup><colgroup align="" width="44%
+			"><col align=""></colgroup><tr><th align="center">DTC No.<br>SAE/TCCS<br></th><th align="center">DTC検出条件<br><ol style="list-style-type: decimal"><li>診断条件<br></li><li>異常状態<br></li><li>異常期間<br></li><li>その他<br></li></ol></th><th align="center">点検部位<br></th></tr><tr><td align="center">P0010/39<br></td><td align="left"><ol style="list-style-type: decimal"><li>IG ON<br></li><li>オイルコントロールバルブ回路の断線または短絡<br></li><li>1秒以上<br></li><li>1トリップ<br></li></ol></td><td align="left"><ol style="list-style-type: disc"><li>カムシャフトタイミングオイルコントロールバルブASSY<br></li><li>ワイヤハーネスおよびコネクター<br></li><li>エンジンコントロールコンピュータ<br></li></ol></td></tr></table><br clear="all"><br clear="all"><a name="X39400000QX04IC_11"></a><h2>回路図</h2><br clear="all"><a name="1"></a><div class="full"><br clear="all"><img src="../../img/a145881j34.png" name="A145881J34" alt="A145881J34" border="1" class="full"></div><br clear="all"><br clear="all"><br clear="all"><a name="X39400000QX04IC_12"></a><h2>点検手順</h2><br clear="all"><a name="1"></a><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">SST(TaSCAN)を用いてフリーズフレームデータを読み取る。フリーズフレームデータには、不具合発生時のエンジン稼動状態の一部が記録されており、それらの情報がトラブルシュートを行う際に役立つ。</dd></dl></p><br clear="all"><a name="X39400000QX04IC_13_0001"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順1</td><td width="90%" class="s1">TaSCANアクティブテスト実施（VVT制御）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70201&nbsp;&nbsp;<br></dd></dl>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">SST(TaSCAN)をDLC3に接続する。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">エンジン停止状態で、IG ONにする。</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">SST(TaSCAN)の画面表示に従い、[アクティブテスト]-[VVT制御]を選択する。</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">エンジンアイドル回転状態にして、[実施/未実施]を実行する。</font><br><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="center" width="50%
+			"><col align=""></colgroup><colgroup align="center" width="50%
+			"><col align=""></colgroup><tr><th>アクティブテスト(オイルコントロールバルブの状態)<br></th><th>エンジンの状態<br></th></tr><tr><td>未実施(作動しない)<br></td><td>通常のアイドル回転数<br></td></tr><tr><td>実施(作動する)<br></td><td>エンスト、ラフアイドルになる<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">結果</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="center" width="50%
+			"><col align=""></colgroup><colgroup align="center" width="50%
+			"><col align=""></colgroup><tr><th>結果<br></th><th>飛び先<br></th></tr><tr><td>異常<br></td><td>A<br></td></tr><tr><td>正常<br></td><td>B<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">常時発生しない問題の点検<a href="#" onclick="openSeePage('seepage','RM0000008YV000X');return false;">
+			（要領は
+		<img border="0" src="../../../../image/extxref.png">
+			参照）
+		</a>
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="X39400000QX04IC_13_0002"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順2</td><td width="90%" class="s1">カムシャフトタイミングオイルコントロール バルブASSY単体点検</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a160397j04.png" name="A160397J04" alt="A160397J04" border="1" class="half"><br></td></tr></table>
+<li value="1"><p><font class="ptxt">カムシャフトタイミングオイル コントロールバルブASSYを取りはずす。</font><br><ol class="s3">
+<li><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。</font><br><p><dl class="spec"><dt class="spec">抵抗値</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="37.8%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><tr><th align="center">点検端子<br></th><th align="center">点検条件<br></th><th align="center">基準値<br></th></tr><tr><td align="center">1 - 2<br></td><td align="center">約20&deg;C<br></td><td align="center">6.9 to 7.9Ω<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><caption class="tbl-title"><span>イラスト内指示文字&nbsp;
+				</span></caption><colgroup align="" width="10%
+			"><col align=""></colgroup><colgroup align="" width="90%
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>コネクター非接続状態<br>(カムシャフトタイミングオイル コントロールバルブASSY)<br></td></tr></table></p></li></ol></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">カムシャフトタイミングオイルコントロール バルブASSY交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="X39400000QX04IC_13_0004"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順3</td><td width="90%" class="s1">ワイヤハーネスおよびコネクター点検（エンジコントロールコンピュータ - カムシャフトタイミングオイルコントロールバルブASSY）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">点検要領および注意事項は<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照。</dd></dl></p>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">エンジンコントロールコンピュータのコネクターB36を切り離す。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">カムシャフトタイミングオイルコントロールバルブASSYのコネクターB14を切り離す。</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。(端子配列は<a href="#" onclick="openSeePage('seepage','X39400000QV058D');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)</font><br><p><dl class="spec"><dt class="spec">抵抗値(断線点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><tr><th align="center">点検端子<br></th><th align="center">点検条件<br></th><th align="center">基準値<br></th></tr><tr><td align="center">B36-15 (OC1+) - B14-2<br></td><td align="center">常時<br></td><td align="center">1Ω未満<br></td></tr><tr><td align="center">B36-14 (OC1-) - B14-1<br></td><td align="center">常時<br></td><td align="center">1Ω未満<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">抵抗値(短絡点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><tr><th align="center">点検端子<br></th><th align="center">点検条件<br></th><th align="center">基準値<br></th></tr><tr><td align="center">B36-15 (OC1+)およびB14-2 - 他の端子間およびボデーアース間<br></td><td align="center">常時<br></td><td align="center">10ｋΩ以上<br></td></tr><tr><td align="center">B36-14 (OC1-)およびB14-1 - 他の端子間およびボデーアース間<br></td><td align="center">常時<br></td><td align="center">10ｋΩ以上<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ワイヤハーネスまたはコネクター修理または交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">エンジンコントロール コンピュータ交換&nbsp;
+										</td></tr></table></td></tr></table><br></body></html>

@@ -1,0 +1,51 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000000B17000X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>SRSエアバッグシステム&nbsp;&nbsp;ダイアグコード点検／消去</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM000000B17000X_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="CD0403____00001190000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>TaSCANによるダイアグコード読み取り(通常モード)</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">IGスイッチをOFF(LOCK)にする。</font><br></p></li>
+<li><p><font class="ptxt">SSTをDLC3に接続する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">IGスイッチをON後、SSTの画面表示に従って操作を行い[ダイアグコード確認]画面を表示させ通常モードを選択しダイアグコードを読み取る。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00001190000012step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>TaSCANによるダイアグコード読み取り(チェックモード) </li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">IGスイッチをOFF(LOCK)にする。</font><br></p></li>
+<li><p><font class="ptxt">SSTをDLC3に接続する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">IGスイッチをON後、SSTの画面表示に従って操作を行い[ダイアグコード確認]画面を表示させチェックモードを選択しダイアグコードを読み取る。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">SSTの[ダイアグコード確認]画面を表示させチェックモードを選択すると、それまでに出力されているダイアグコード(現在および過去)が消去される。</dd></dl></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">チェックモードは通常モードに比べ故障(異常)検出感度を向上させることができる。 <br></li><li class="atten4">チェックモードによる点検は、各センサの信号系故障(異常)が考えられるにもかかわらず、通常モードでダイアグコードを読みだした際、正常コードを出力する場合に行う。<br></li><li class="atten4">トラブルシューティングを実施する際、ダイアグコードがチェックモードに対応していることをダイアグコード一覧で確認する。<br></li></ol></p></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00001190000013step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>TaSCANによるダイアグコード消去 </li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">IGスイッチをOFF(LOCK)にする。</font><br></p></li>
+<li><p><font class="ptxt">SSTをDLC3に接続する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">IGスイッチをON後、SSTの画面表示に従ってダイアグコードを消去する。</font><br></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00001190000014step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>ウォーニングランプによるダイアグコード読み取り </li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">現在故障</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">IGスイッチをONにして、60秒間待機する。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">エアバッグセンサASSY　CTRがシステムすべての自己診断を完了するのに約60秒間かかる。</dd></dl></p></p></li>
+<li><p><font class="ptxt">SSTを使用して、DLC3の13(TC)&larr;&rarr;4(CG)端子間を短絡しウォーニングランプの点滅回数を読み取る。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">ダイアグコードが複数ある場合、数字の小さい順に出力し、全コード出力後2回目の表示を行う。</dd></dl></p></p></li></ol><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">過去故障</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">SSTを使用して、DLC3の13(TC)&larr;&rarr;4(CG)端子間を短絡する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br></dd></dl></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c054376.png" name="C054376" alt="C054376" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">IGスイッチをONにして、ウォーニングランプ消灯後の点滅回数を読み取る。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">ダイアグコードが複数ある場合、数字の小さい順に出力し、全コード出力後2回目の表示を行う。<br></li><li class="atten4">現在故障がある場合、現在および過去故障が同時に出力される。 <br></li></ol></p></p></li></ol></ol><br clear="all"><div class="full"><br clear="all"><img src="../../img/c092973.png" name="C092973" alt="C092973" border="1" class="full"></div><br clear="all"><br clear="all"><br clear="all"><a name="CD0403____00001190000015step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>ウォーニングランプによるダイアグコード消去</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c054376.png" name="C054376" alt="C054376" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">SSTを使用して、DLC3の13(TC)端子&larr;&rarr;4(CG)端子間を短絡し、IGスイッチをONにする。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">ダイアグコードが出力され始めてから3秒後から10秒以内にDLC3の13(TC)端子をオープンし、3秒後にウォーニングランプが点灯するか確認する。</font><br></p></li>
+<li><p><font class="ptxt">ウォーニングランプが点灯し始めてから2.0秒後-4.0秒以内にDLC3の13(TC)&larr;&rarr;4(CG)端子間を短絡する。</font><br></p></li>
+<li><p><font class="ptxt">DLC3の13(TC)&larr;&rarr;(CG)端子間を短絡してから2.0秒後-4.0秒後にウォーニングランプが消灯し、消灯後2.0後&#65293;4.0秒以内にDLC3の13(TC)端子をオープンする。</font><br></p></li>
+<li><p><font class="ptxt">DLC3の13(TC)端子をオープンしてから2.0秒後-4.0秒後再びウォーニングランプが点灯し、点灯後2.0秒後-4.0秒以内にDLC3の13(TC)&larr;&rarr;4(CG)端子間を短絡する。</font><br></p></li>
+<li><p><font class="ptxt">DLC3の13(TC)端子&larr;&rarr;4(CG)端子間を短絡してから2.0-4.0秒後にウォーニングランプが消灯し、消灯後1.0秒以内に正常コードが出力されるか確認する。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">正常コードが出力されない場合は、ダイアグコードが消去されていないので再度行う。</dd></dl></p></p></li></ol><br clear="all"><div class="full"><br clear="all"><img src="../../img/c063050.png" name="C063050" alt="C063050" border="1" class="full"></div><br clear="all"><br clear="all"></body></html>

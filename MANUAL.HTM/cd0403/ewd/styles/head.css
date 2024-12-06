@@ -1,0 +1,12 @@
+.button  { background-color: #86A2B0; border: 1px #CCCCCC solid; ; font-size: 9pt; text-align: center; color: #CCCCCC; padding: 3px 12px;}
+.button2 { background-color: #5C7D8D; font-size: 9pt; text-align: center; color: #CCCCCC; font-weight: normal; adding-left: 2px }
+.button3 { background-color: #86A2B0; border: 1px #CCCCCC solid; ; font-size: 9pt; text-align: center; color: #CCCCCC; padding: 3px; width: 90px;}
+
+.space  { width: 8px}
+
+body {  background-image: url(../icon/bg_head.png)}
+
+A:link    { color: #FFFFFF;  text-decoration: none; }
+A:visited { color: #FFFFFF;  text-decoration: none; }
+A:active  { color: #FFFFFF;  text-decoration: underline; }
+A:hover   { color: #CCCCCC;  text-decoration: none; }

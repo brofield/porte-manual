@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE TOYOTA [ -->
+<!NOTATION CGM PUBLIC "-//USA-DOD//NOTATION Computer Graphics Metafile//EN" >
+
+<!--j2008
+Version 4.1, June 1, 1998
+
+This DTD is best viewed and printed using a FIXED FONT such as courier- new.
+-->
+<!NOTATION CGMBIN PUBLIC "ISO 8632:1993//NOTATION Binary encoding//EN" >
+
+<!NOTATION CGMGREX PUBLIC "-//ATA//NOTATION 3.3.2 Graphics Exchange GREXV2.4//EN" >
+
+<!NOTATION CGMIGEX PUBLIC "-//ATA//NOTATION 3.3.4 Intelligent Graphics Exchange IGEXV2.4//EN" >
+
+<!NOTATION SAETIFF PUBLIC "-//USA-SAE//NOTATION tiff//EN" >
+
+<!ELEMENT TOYOTA  (SCT+) >
+
+<!ATTLIST TOYOTA
+               MODELNAME  CDATA    #REQUIRED 
+               REVDATE  CDATA    #REQUIRED 
+               MODELYEAR  CDATA    #REQUIRED  >
+
+<!ELEMENT MECA  (TITLE,SUBTITLE*,(PTXT | LIST1 | TABLE | FIGURE | DEFLIST | SPEC | 
+               INDICATE | SECRET | WARNING | CAUTION | HINT | TOPIC)+) >
+
+<!ATTLIST MECA
+               ID  ID    #REQUIRED 
+               UPDATE (DELETE | CHANGE | ORIGINAL)   #REQUIRED 
+               LDUP  CDATA    #REQUIRED 
+               MECATYPE (ACTUATE | GENERAL)  "GENERAL" 
+               UNPRINT (ON | OFF)  "OFF" 
+               INDSW (ON | OFF)  "ON" >
+
+<!ELEMENT BIND  (TITLE?,PARA+) >
+
+<!ATTLIST BIND
+               ID  ID    #REQUIRED 
+               INDSW (ON | OFF)  "ON" >
+
+<!ELEMENT CALLOUT  (TABLE) >
+
+<!ELEMENT CAPTION  (#PCDATA | EMPH | SUB | SUP | FTNOTE | PARTS | XREF | XLINK | HINTREF | SYMBOL)* >
+
+<!ELEMENT CAUTION  (TITLE?,(PTXT | LIST1 | FIGURE | TABLE)+) >
+
+<!ELEMENT COLSPEC   EMPTY  >
+
+<!ATTLIST COLSPEC
+               COLNUM  NMTOKEN    #IMPLIED 
+               COLNAME  NMTOKEN    #IMPLIED 
+               ALIGN (LEFT | RIGHT | CENTER | JUSTIFY | CHAR)   #IMPLIED 
+               CHAROFF  CDATA    #IMPLIED 
+               CHAR  CDATA    #IMPLIED 
+               COLWIDTH  CDATA    #IMPLIED 
+               COLSEP  NMTOKEN    #IMPLIED 
+               ROWSEP  NMTOKEN    #IMPLIED  >
+
+<!ELEMENT DEF  (PTXT | FIGURE | TABLE | LIST1 | INDICATE | WARNING | CAUTION | HINT)+ >
+
+<!ELEMENT DEFLIST  (TERM,DEF)+ >
+
+<!ELEMENT EMPH  (#PCDATA | EMPH | SUB | SUP | FTNOTE | PARTS | XREF | XLINK | HINTREF | SYMBOL)* >
+
+<!ATTLIST EMPH
+               ETYPE (BOLD | BOLDITAL | ITAL | ROMAN)   #IMPLIED  >
+
+<!ELEMENT PARTS  (#PCDATA) >
+
+<!ATTLIST PARTS
+                              ID  CDATA    #IMPLIED   >
+
+<!ELEMENT ENTRY  (TITLE?,(PTXT | DEFLIST | LIST1 | WARNING | CAUTION | HINT | 
+               GRAPHIC)*) >
+
+<!ATTLIST ENTRY
+               COLNAME  NMTOKEN    #IMPLIED 
+               NAMEST  NMTOKEN    #IMPLIED 
+               NAMEEND  NMTOKEN    #IMPLIED 
+               SPANNAME  NMTOKEN    #IMPLIED 
+               MOREROWS  NMTOKEN    #IMPLIED 
+               COLSEP  NMTOKEN    #IMPLIED 
+               ROWSEP  NMTOKEN    #IMPLIED 
+               ROTATE  NMTOKEN    #IMPLIED 
+               VALIGN (TOP | MIDDLE | BOTTOM)   #IMPLIED 
+               ALIGN (LEFT | RIGHT | CENTER | JUSTIFY | CHAR)   #IMPLIED 
+               CHAROFF  CDATA    #IMPLIED 
+               CHAR  CDATA    #IMPLIED  
+	       TYPE  CDATA    #IMPLIED 
+               CONSPIC  CDATA    #IMPLIED  >
+
+<!ELEMENT FIGURE  ((TITLE,SUBTITLE*)?,((WARNING | CAUTION | HINT)*,(GRAPHIC,CAPTION?))+,
+               CALLOUT?) >
+
+<!ATTLIST FIGURE
+               FIGURETYPE  CDATA    #IMPLIED 
+               ID  ID    #IMPLIED  >
+
+<!ELEMENT FTNOTE  (#PCDATA | EMPH | SUB | SUP | FTNOTE | PARTS | XREF | XLINK | HINTREF | SYMBOL)* >
+
+<!ATTLIST FTNOTE
+               TYPE (FOOT | TABLE)  "FOOT"
+               ID  ID    #IMPLIED  >
+
+<!ELEMENT GRAPHIC   EMPTY  >
+
+<!ATTLIST GRAPHIC
+               GRAPHICNAME  ENTITY    #REQUIRED 
+               WIDTH  CDATA    #IMPLIED 
+               HEIGHT  CDATA    #IMPLIED 
+               ID  ID    #IMPLIED  >
+
+<!ELEMENT HINT  (TITLE?,(PTXT | LIST1 | FIGURE | TABLE)+) >
+
+<!ELEMENT INDICATE  (TITLE,(PTXT | FIGURE | TABLE | LIST1 | SPEC)+) >
+
+<!ATTLIST INDICATE
+               ID  ID    #REQUIRED 
+               INDSW (ON | OFF)  "ON"
+               SELECT  CDATA    #IMPLIED  >
+
+<!ELEMENT INFOSUB  ((TITLE,SUBTITLE*)?,(PTXT | LIST1 | TABLE | FIGURE | DEFLIST | SPEC | 
+               INDICATE | SECRET | WARNING | CAUTION | HINT | TOPIC)+) >
+
+<!ATTLIST INFOSUB
+               ID  ID    #REQUIRED 
+               INDSW (ON | OFF)  "ON"
+               SELECT  CDATA    #IMPLIED  >
+
+<!ELEMENT ITEM  (PTXT | FIGURE | DEFLIST | TABLE | INDICATE | WARNING | CAUTION | 
+               HINT)+ >
+
+<!ATTLIST ITEM
+               LABEL  CDATA    #IMPLIED  >
+
+<!ELEMENT LEGEND  (TITLE?,(PTXT | DEFLIST | LIST1 | WARNING | CAUTION | HINT)+) >
+
+<!ELEMENT LIST1  (TITLE?,FIGURE*,SYMBOL*,ITEM,((SYMBOL*,ITEM) | LIST2)*) >
+
+<!ATTLIST LIST1
+               TYPE (ORDERED | UNORDERED)   #IMPLIED  >
+
+<!ELEMENT LIST2  (TITLE?,FIGURE*,SYMBOL*,ITEM,((SYMBOL*,ITEM) | LIST3)*) >
+
+<!ATTLIST LIST2
+               TYPE (ORDERED | UNORDERED)   #IMPLIED  >
+
+<!ELEMENT LIST3  (TITLE?,FIGURE*,SYMBOL*,ITEM,(SYMBOL*,ITEM)*) >
+
+<!ATTLIST LIST3
+               TYPE (ORDERED | UNORDERED)   #IMPLIED  >
+
+<!ELEMENT PARA  (TITLE,SUBTITLE*,(INFOSUB* | (PTXT | 
+               LIST1 | TABLE | FIGURE | DEFLIST | SPEC | INDICATE | SECRET | WARNING | CAUTION | 
+               HINT))+, MECA*) >
+
+<!ATTLIST PARA
+               INFOID  ID    #REQUIRED 
+               UPDATE (DELETE | CHANGE | ORIGINAL)   #REQUIRED 
+               LDUP  CDATA    #REQUIRED 
+               INFOTYPE (SYSTEM | PARTS)   #REQUIRED 
+               INDSW (ON | OFF)  "ON" 
+               UNPRINT (ON | OFF)  "OFF" 
+               SELECT  CDATA    #IMPLIED  >
+
+<!ELEMENT PTXT  (#PCDATA | EMPH | SUB | SUP | FTNOTE | PARTS | XREF | XLINK | HINTREF | SYMBOL)* >
+
+<!ATTLIST PTXT       ID  ID    #IMPLIED >
+
+<!ELEMENT ROW  (ENTRY+) >
+
+<!ATTLIST ROW
+               ROWSEP  NMTOKEN    #IMPLIED  >
+
+<!ELEMENT SCREF   EMPTY  >
+
+<!ATTLIST SCREF
+               REFID  IDREF    #REQUIRED  >
+
+<!ELEMENT PARAREF   EMPTY  >
+
+<!ATTLIST PARAREF
+               REFID  IDREF    #REQUIRED  >
+
+<!ELEMENT SCT  (SCTOC?,SECTION+) >
+
+<!ATTLIST SCT
+               SCTNBR  NMTOKEN    #REQUIRED  
+               CHAPNBR  CDATA    #REQUIRED  >
+
+<!ELEMENT SCTITLE  (#PCDATA | EMPH | SUB | SUP | FTNOTE | PARTS | XREF | XLINK | HINTREF | SYMBOL)* >
+
+<!ELEMENT SCTOC      (TOC_SCREF, (TOC_SCREF | TOC_PARAREF)*) >
+
+<!ELEMENT TOC_SCREF  (SCREF) >
+
+<!ELEMENT TOC_PARAREF    (PARAREF) >
+
+<!ELEMENT SECTION  (SCTITLE,FIGURE*,PARA+,BIND*) >
+
+<!ATTLIST SECTION
+               SCID  ID    #REQUIRED >
+
+<!ELEMENT SPANSPEC   EMPTY  >
+
+<!ATTLIST SPANSPEC
+               NAMEST  NMTOKEN    #REQUIRED 
+               NAMEEND  NMTOKEN    #REQUIRED 
+               SPANNAME  NMTOKEN    #REQUIRED 
+               ALIGN (LEFT | RIGHT | CENTER | JUSTIFY | CHAR)   #IMPLIED 
+               CHAROFF  CDATA    #IMPLIED 
+               CHAR  CDATA    #IMPLIED 
+               COLSEP  NMTOKEN    #IMPLIED 
+               ROWSEP  NMTOKEN    #IMPLIED  >
+
+<!ELEMENT SPEC  (TITLE?,TABLE+) >
+
+<!ATTLIST SPEC
+               ID  ID    #REQUIRED 
+               INDSW (ON | OFF)  "ON" >
+
+<!ELEMENT SECRET  (TITLE?,(PTXT | FIGURE | TABLE | LIST1)+) >
+
+<!ATTLIST SECRET
+               ID  ID    #IMPLIED >
+
+<!ELEMENT SUB  (#PCDATA) >
+
+<!ELEMENT SUBTITLE  (#PCDATA | EMPH | SUB | SUP | FTNOTE | PARTS | XREF | XLINK | HINTREF | SYMBOL)* >
+
+<!ELEMENT SUP  (#PCDATA) >
+
+<!ELEMENT SYMBOL   EMPTY  >
+
+<!ATTLIST SYMBOL
+               NAME  ENTITY    #REQUIRED 
+               WIDTH  CDATA    #IMPLIED 
+               HEIGHT  CDATA    #IMPLIED  >
+
+<!ELEMENT TABLE  (TITLE?,(PTXT | WARNING | CAUTION | HINT)*,TGROUP+,LEGEND*) >
+
+<!ATTLIST TABLE
+               FRAME (TOP | BOTTOM | TOPBOT | ALL | SIDES | NONE)   #IMPLIED 
+               COLSEP  NMTOKEN    #IMPLIED 
+               ROWSEP  NMTOKEN    #IMPLIED 
+               PGWIDE  NMTOKEN    #IMPLIED 
+               ID  ID    #IMPLIED  >
+
+<!ELEMENT TBODY  (ROW+) >
+
+<!ATTLIST TBODY
+               VALIGN (TOP | MIDDLE | BOTTOM)   #IMPLIED  >
+
+<!ELEMENT TERM  (#PCDATA | EMPH | SUB | SUP | FTNOTE | PARTS | XREF | XLINK | HINTREF | SYMBOL)* >
+
+<!ELEMENT TGROUP  (COLSPEC*,SPANSPEC*,THEAD?,TBODY) >
+
+<!ATTLIST TGROUP
+               COLS  NMTOKEN    #REQUIRED 
+               COLSEP  NMTOKEN    #IMPLIED 
+               ROWSEP  NMTOKEN    #IMPLIED 
+               ALIGN (LEFT | RIGHT | CENTER | JUSTIFY | CHAR)   #IMPLIED 
+               CHAROFF  CDATA    #IMPLIED 
+               CHAR  CDATA    #IMPLIED 
+               TGROUPSTYLE  NMTOKEN    #IMPLIED  >
+
+<!ELEMENT THEAD  (COLSPEC*,ROW+) >
+
+<!ATTLIST THEAD
+               VALIGN (TOP | MIDDLE | BOTTOM)   #IMPLIED  >
+
+<!ELEMENT TITLE  (#PCDATA | EMPH | SUB | SUP | FTNOTE | PARTS | XREF | XLINK | HINTREF | SYMBOL)* >
+
+<!ELEMENT TOPIC  ((TITLE,SUBTITLE*)?,(PTXT | LIST1 | TABLE | FIGURE | DEFLIST | SPEC | 
+               INDICATE | SECRET | WARNING | CAUTION | HINT)+) >
+
+<!ATTLIST TOPIC
+               ID  ID    #IMPLIED  >
+
+<!ELEMENT WARNING  (TITLE?,(PTXT | LIST1 | FIGURE | TABLE)+) >
+
+<!ELEMENT XLINK   (#PCDATA | EMPH | SUB | SUP | FTNOTE | PARTS | XREF | XLINK | HINTREF | SYMBOL)* >
+
+<!ATTLIST XLINK
+               REFID  CDATA    #REQUIRED 
+               TYPE  CDATA    #IMPLIED  >
+
+<!ELEMENT XREF   EMPTY  >
+
+<!ATTLIST XREF
+               REFID  CDATA    #REQUIRED 
+               TYPE  CDATA    #IMPLIED  >
+
+<!ELEMENT HINTREF   EMPTY  >
+
+<!ATTLIST HINTREF
+               REFID  CDATA    #REQUIRED  >
+
+
+<!-- ]> -->

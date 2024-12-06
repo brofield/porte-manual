@@ -1,0 +1,72 @@
+.button{
+	background-color:#86A2B0;
+	border-color:#CCCCCC #CCCCCC #CCCCCC #CCCCCC;
+	border:1px #CCCCCC solid;
+	;
+	font-size:9pt;
+	text-align:center;
+	color:#CCCCCC;
+	vertical-align:middle;
+	padding-right:2px;
+	padding-left:2px;
+	padding-top:2px
+}
+.button2{
+	background-color:#5C7D8D;
+	font-size:9pt;
+	text-align:center;
+	color:#CCCCCC;
+	font-weight:normal;
+	adding-left:2px
+}
+.gray{
+	background-image:url(../images/bg_head.gif)
+}
+.space{
+	width:2px
+}
+.tab_ac{
+	font-size:8pt;
+	color:#666666;
+	background-color:#DBDFE0;
+	height:20px;
+	text-align:center
+}
+.tab_non{
+	background-color:#ADB7BC;
+	font-size:8pt;
+	color:#FFFFFF;
+	height:20px;
+	text-align:center
+}
+.text01{
+	font-size:8pt;
+	color:#FFFFFF
+}
+.top{
+	background-color:#75858C;
+	height:5px
+}
+.white{
+	background-color:#FFFFFF
+}
+
+body{
+	background-image:url(../images/bg_head.gif)
+}
+A:link{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+A:visited{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+A:active{
+	color:#FFFFFF;
+	text-decoration:underline;
+}
+A:hover{
+	color:#CCCCCC;
+	text-decoration:none;
+}

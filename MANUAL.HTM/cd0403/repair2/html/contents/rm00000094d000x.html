@@ -1,0 +1,31 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM00000094D000X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>EBD付きABSシステム&nbsp;&nbsp;問診表</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM00000094D000X_z0"></a><br clear="all"><a name="1"></a><div class="full"><br clear="all"><img src="../../img/c099122.png" name="C099122" alt="C099122" border="1" class="full"></div><br clear="all"><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><caption class="tbl-title"><span>ダイアグノーシスコード確認&nbsp;
+				</span></caption><colgroup align="" width="55%
+			"><col align=""></colgroup><colgroup align="" width="45%
+			"><col align=""></colgroup><tr><td align="center">ABSシステム<br></td><td align="center">出力コード<br></td></tr><tr><td align="center">初回<br></td><td><br></td></tr><tr><td align="center">2回目<br></td><td><br></td></tr><tr><td align="center">　回目<br></td><td><br></td></tr><tr><td align="center">ABSシステム以外の異常ダイアグコード<br></td><td><br></td></tr></table><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><caption class="tbl-title"><span>フリーズフレームデータ&nbsp;
+				</span></caption><colgroup align="" width="38%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="12%
+			"><col align="center"></colgroup><tr><td align="center">項目名<br></td><td align="center">記録値<br></td><td>単位<br></td></tr><tr><td align="center">作動システム<br></td><td align="center">ABS　/　作動履歴なし<br></td><td>-<br></td></tr><tr><td align="center">データフリーズからのIG ON回数<br></td><td align="center"><br></td><td>回<br></td></tr><tr><td align="center">ストップスイッチ<br></td><td align="center">ON　/　OFF<br></td><td>-<br></td></tr><tr><td align="center">車両スピード<br></td><td><br></td><td>G<br></td></tr><tr><td align="center">前後G(推定)<br></td><td><br></td><td>G<br></td></tr></table><br clear="all"><br clear="all"><a name="CD0403____00000WF0000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>フリーズフレームデータによる不具合発生状況の確認について</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">異常ダイアグコード発生時のフリーズフレームデータ</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">異常ダイアグコード発生時のフリーズフレームデータを記憶している場合は、ダイアグノーシスコードの表示画面で該当ダイアグコードに[*フリーズデータ有り]が表示される。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">異常コード発生時のフリーズフレームデータを記憶すると、システム作動時のフリーズフレームデータは消去される。<br></li><li class="atten4">異常コード発生時のフリーズフレームデータを記憶した場合、記憶データ消去(ダイアグノーシスコード消去)されるまでデータの更新は行われない。<br></li></ol></p></p></li></ol>
+<li><p><font class="ptxt">システム作動時のフリーズフレームデータ</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">システム作動時のフリーズフレームデータは、システム作動毎に新しいデータに更新される。</font><br></p></li>
+<li><p><font class="ptxt">最後にシステムが作動した時からのIGスイッチOFF&rarr;ONした回数を31回まで記憶し、表示する。</font><br></p></li>
+<li><p><font class="ptxt">データフリーズからのIGスイッチON回数を使用して、表示データがお客様が指摘の不具合発生時のデータなのかを次の算出式を目安として確認することができる。([1日当たりのIGスイッチON回数]&times;[不具合発生時からの日数]=[データフリーズからのIGスイッチON回数])</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">車両停車状態(車速が7km/h以下)でのIGスイッチOFF&rarr;ONはカウントされない。<br></li><li class="atten4">データフリーズからのIGスイッチONの回数は、31回をこえた場合は[31]を表示する。<br></li></ol></p></p></li></ol></ol><br clear="all"></body></html>

@@ -1,0 +1,43 @@
+<!-- $Id: global.html,v 1.9 2004/03/09 11:51:19 t-kato Exp $ -->
+<html>
+<head>
+<title>[電子技術マニュアル] - 修理書グローバルナビ</title>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link href="../css/global.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+<!---
+// ボタン画像の設定
+var g_name ="closeNavi";
+function init() {
+	dispNavi.innerHTML = "<a class='other-rpr-button' href='#dummy' style='width: 120px; visibility: visible; display: inline' onclick='moveNavi(\""+g_name+"\")' name='"+g_name+"'>"+"ナビゲーション無"+"</a>";
+}
+//フレームの開閉
+function moveNavi(navi) {
+	var img;
+	if(navi=="openNavi") {
+	        link = "ナビゲーション無";
+		parent.frame1.cols="25%,*";
+		g_name = "closeNavi";
+	}	else {
+	 	link = "ナビゲーション有";
+		parent.frame1.cols="0%,*";
+		g_name ="openNavi";
+	}
+	dispNavi.innerHTML = "<a class='other-rpr-button' href='#dummy' style='width: 120px; visibility: visible; display: inline' onclick='moveNavi(\"" +g_name+ "\")' name='" +g_name+"'>" + link + "</a>";
+}
+//--->
+</script>
+</head>
+<body onload="init()" marginwidth="0" marginheight="0" leftmargin=0 topmargin=0>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  	<tr><td class="top" colspan="4"></td></tr>
+  	<tr><td colspan="4"></td></tr>
+	<tr>
+		<td align="left"><div class="other-rpr" id="dispNavi"></div></td>
+		<td align="right"><div class="other-rpr"><a class="other-rpr-button" href="#dummy" onClick="parent.history.back();return false;">戻る</a></div></td>
+		<td align="center"><div class="other-rpr"><a class="other-rpr-button" href="../../index2.html" target="_top">修理書メニュー</a></div></td>
+		<td align="left"><div class="other-rpr"><a class="other-rpr-button" href="#dummy" onClick="window.open('../../index2.html');return false;">別画面表示</a></div></td>
+	</tr>
+</table>
+</body>
+</html>

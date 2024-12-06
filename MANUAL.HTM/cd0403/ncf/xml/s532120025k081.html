@@ -1,0 +1,118 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>オド／トリップメーター</title>
+<link type="text/css" href="../css/main2.css" rel="stylesheet">
+<link type="text/css" href="../css/style.css" rel="stylesheet">
+<script src="../js/hidden.js" language="JavaScript"></script>
+</head>
+<body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
+<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td align="left"><input onClick="printCheck()" value="印刷" name="submit" type="submit"></td><td align="center">　</td><td align="right"><input onClick="closeWindow()" value="閉じる" name="submit2" type="submit"></td>
+</tr>
+</table>
+<div align="left">
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%">　</td><td align="center" class="gray" width="80%">オド／トリップメーター</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">オド/トリップメーターは，コンビネーションメーター中央下部の同一位置に，スイッチによる切り替えによって表示されます。走行距離を，LCDによる6セグメント構成のアラビア数字でデジタル表示します。表示範囲は，オドメーターは1km刻みで最大999999kmまで，トリップメーターは0.1km刻みで最大9999.9kmまでとしました。なお，トリップメーターはAとBの 2個の表示機能を持ち，オドメーターも含めて3チャンネル表示としました。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">各モードの切り替えは，コンビネーションメーター内右側に配置された，オド/トリップ切り替え・トリップメーターリセットスイッチをONすることによって行い，オドメーター&rarr;トリップメーターA&rarr;トリップメーターB&rarr;レオスタット表示（テールランプ　ON時のみ）の順に表示します。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">トリップメーターAまたはB表示中にオド/トリップ切り替え・トリップメーターリセットスイッチを約0.8秒以上押すことにより現在表示中のトリップメーターの走行距離表示を0.0kmに戻し，オド/トリップ切り替え・トリップメーターリセットスイッチをOFFにした時点から再び計測を開始します。</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3840081b.png"></td>
+</tr>
+</table>
+<br>
+
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120025K081K084');chgImg('imT120025K081K084');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120025K081K084" align="absmiddle"><a name="t120025k081k084">オド/トリップメーター作動</a></span>
+<br>
+<div id="tmT120025K081K084" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">メーターコンピューターがスキッドコントロールコンピューターからの車速パルス信号をカウント・積算することにより走行距離データを算出し，ドライバーを介して該当するLCDのセグメントを点灯させることで，走行距離の表示を行います。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">オド/トリップ切り替え・トリップメーターリセットスイッチの操作信号をメーターコンピューターが入力すると，オドメーター&rarr;トリップメーターA&rarr;トリップメーターB&rarr;レオスタット表示（テールランプ　ON時のみ）の各表示切り替え，またはトリップメーターのリセット（トリップメーターA・B表示時のみ）を行います。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">走行距離データの保持は，メーターコンピューターが行っており，オドメーターの数値は不揮発性メモリーIC<a href="#H532120025K081K08401"><sup>*
+					</sup></a>を使用して＋B電源OFF後もデータを記憶しています。</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">参　考</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="27">＊</td><td class="text"><a name="H532120025K081K08401"></a>
+<div class="text">電源が供給されなくてもデータを記憶し続けるメモリーIC。</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3840082b.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</body>
+</html>

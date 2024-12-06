@@ -1,0 +1,133 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000026XZ01SX"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>DTC
+								 &nbsp;&nbsp; P0443/94 &nbsp;&nbsp; エバポパージ制御D-VSV断線</h3></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><h2>準備品一覧<a href="#" onclick="openSeePage('ppr','RM0000026XZ01SX');return false;"><img border="0" src="../../../../image/extxref.png"></a></h2><br clear="all"><a name="RM0000026XZ01SX_05"></a><h2>回路説明</h2><br clear="all"><a name="1"></a><ol style="list-style-type: none"><li>フューエルタンクASSYから発生する燃料蒸発ガスは、ガス排出抑止のため、チャコールキャニスタASSYを通りインテークエアサージタンクASSYに送られ、シリンダー内で燃焼する。キャニスターパージ量は、エンジンコントロールコンピュータがデュティバキュームスイッチングバルブの開閉を制御することにより、運転状態に応じて流量が変化している。<br></li></ol><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><colgroup align="" width="15%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="35%
+			"><col align=""></colgroup><tr><th align="center">DTC No.<br>SAE/TCCS<br></th><th align="center">DTC検出条件<br><ol style="list-style-type: decimal"><li>診断条件<br></li><li>異常状態<br></li><li>異常期間<br></li><li>その他<br></li></ol></th><th align="center">点検部位<br></th></tr><tr><td align="center">P0443/94<br></td><td align="left"><ol style="list-style-type: decimal"><li>(a) +B電圧が10 V以上<br>(b) エンジンコントロールコンピュータ内部のバキュームスイッチングバルブドライブ信号のデューティ比が5 to 95 %<br></li><li>以下の条件が全て揃った時<br></li><ol style="list-style-type: decimal"><li>制御目標値と実際の制御値が合致しない状態で10秒以上経過<br></li><li>制御目標値と実際の制御値が合致しない状態を80回以上検出した時<br></li></ol><li>10秒以上<br></li><li>1トリップ<br></li></ol></td><td><ol style="list-style-type: disc"><li>デュティバキュームスイッチングバルブ<br></li><li>ワイヤハーネスおよびコネクター<br></li><li>エンジンコントロールコンピュータ<br></li></ol></td></tr></table><br clear="all"><br clear="all"><a name="RM0000026XZ01SX_02"></a><h2>回路図</h2><br clear="all"><a name="1"></a><div class="full"><br clear="all"><img src="../../img/a241010j01.png" name="A241010J01" alt="A241010J01" border="1" class="full"></div><br clear="all"><br clear="all"><br clear="all"><a name="RM0000026XZ01SX_06"></a><h2>機能説明</h2><br clear="all"><a name="1"></a><font class="ptxt">確認走行<br><font class="ptxt">確認走行を行う事により、ダイアグコードの再現確認をすることができる。</font><br><br clear="all"><div class="full"><br clear="all"><img src="../../img/a179391j02.png" name="A179391J02" alt="A179391J02" border="1" class="full"></div><br clear="all"></font><br clear="all"><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70201&nbsp;&nbsp;<br></dd></dl><br clear="all"><ol style="list-style-type: decimal"><li>SST(TaSCAN)をDLC3に接続する。<br></li><li>IG ONにする。<br></li><li>SST(TaSCAN)の画面表示に従って、ダイアグコードを消去する。(要領は<a href="#" onclick="openSeePage('seepage','RM0000008YS000X');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)<br></li><li>IG OFFにして30秒間待つ。<br></li><li>エンジンを始動し、すべてのアクセサリスイッチをOFFにして、エンジン冷却水温が安定するまで暖機する。（エンジン冷却水温が75&deg;C 以上） (A)<br></li><li>15分以上アイドリングする。(B)<br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">SST(TaSCAN)の[ECUデータモニター] - [パージVSV駆動Duty比]を確認する。この値が5から95%の範囲の時にダイアグコード判定結果の判定が行われる。</dd></dl></p></li><li>SST(TaSCAN)の画面表示に従って、ダイアグコード判定結果を確認する。<br><p><dl class="warning"><dt class="warning">■   警   告   ■</dt><dt class="warning"></dt></dl><dl class="warning"><dd class="warning">この走行テストを行う時は、制限速度等の道路交通法を必ず守って実施すること。</dd></dl></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">ダイアグコード判定結果が判定中又は判定不可の場合は、車両を40 to 60 km/hで10分以上走行(C)後、ダイアグコード判定結果を確認する。</dd></dl></p></li></ol><br clear="all"><br clear="all"><a name="RM0000026XZ01SX_03"></a><h2>点検手順</h2><br clear="all"><a name="1"></a><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">トラブルシュートを実施する前に、この回路のヒューズを点検すること。</dd></dl></p><br clear="all"><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">SST(TaSCAN)を用いてフリーズフレームデータを読み取る。フリーズフレームデータには、不具合発生時のエンジン稼動状態の一部を記録してあり、それらの情報がトラブルシュートを行う際に役立つ。</dd></dl></p><br clear="all"><a name="RM0000026XZ01SX_04_0001"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順1</td><td width="90%" class="s1">TaSCANアクティブテスト実施（パージVSV）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70201&nbsp;&nbsp;<br></dd></dl>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">SST(TaSCAN)をDLC3に接続する。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">IG ONにする。</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">SST(TaSCAN)の画面表示に従って、[アクティブテスト] - [パージVSV]を選択する。</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%
+						"><caption class="tbl-title"><span>[診断メニュー &rarr; パワートレイン &rarr; TCCS &rarr; アクティブテスト]&nbsp;
+				</span></caption><colgroup align="" width="33%
+			"><col align=""></colgroup><colgroup align="" width="33%
+			"><col align=""></colgroup><colgroup align="" width="33%
+			"><col align=""></colgroup><tr><th align="center">項目<br></th><th align="center">内容<br></th><th align="center">制約条件<br></th></tr><tr><td align="center">パージVSV<br></td><td>パージ制御VSVの通電/非通電(通電時デューティ比 30 %)<br></td><td align="center">IG ON<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">デュティバキュームスイッチングバルブのバキュームホース2本を切り離す。</font><br></p></li></ol>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a236723j01.png" name="A236723J01" alt="A236723J01" border="1" class="half"><br></td></tr></table>
+<li value="5"><p><font class="ptxt">デュティバキュームスイッチングバルブを作動させ、通気があるかを確認する。</font><br><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="30%
+			"><col align=""></colgroup><colgroup align="" width="70%
+			"><col align=""></colgroup><tr><th align="center">アクティブテスト<br>(パージVSV)<br></th><th align="center">基準<br></th></tr><tr><td align="center">ON<br></td><td align="center">EポートからFポートへ通気あり<br></td></tr><tr><td align="center">OFF<br></td><td align="center">EポートからFポートへ通気なし<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">イラスト内指示文字</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="10%
+			"><col align=""></colgroup><colgroup align="" width="90%
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>VSV ON<br></td></tr><tr><td align="center">*b<br></td><td>VSV OFF<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><caption class="tbl-title"><span>結果&nbsp;
+				</span></caption><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th align="center">結果<br></th><th align="center">飛び先<br></th></tr><tr><td align="center">異常<br></td><td align="center">A<br></td></tr><tr><td align="center">正常<br></td><td align="center">B<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">常時発生しない問題の点検<a href="#" onclick="openSeePage('seepage','RM0000008YV000X');return false;">
+			（要領は
+		<img border="0" src="../../../../image/extxref.png">
+			参照）
+		</a>
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000026XZ01SX_04_0002"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順2</td><td width="90%" class="s1">デュティバキュームスイッチング バルブ単体点検</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a236724j01.png" name="A236724J01" alt="A236724J01" border="1" class="half"><br></td></tr></table>
+<li value="1"><p><font class="ptxt">デュティバキュームスイッチングバルブのコネクターB25を切り離す。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。</font><br><p><dl class="spec"><dt class="spec">抵抗値</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><tr><th align="center">点検端子<br></th><th align="center">点検条件<br></th><th align="center">基準値<br></th></tr><tr><td align="center">1 - 2<br></td><td align="center">20&deg;C<br></td><td align="center">27 to 33 Ω<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><caption class="tbl-title"><span>イラスト内指示文字&nbsp;
+				</span></caption><colgroup align="" width="10%
+			"><col align=""></colgroup><colgroup align="" width="90%
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>コネクター非接続状態<br>(デュティバキュームスイッチングバルブ)<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">デュティバキュームスイッチング バルブ交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000026XZ01SX_04_0003"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順3</td><td width="90%" class="s1">ワイヤハーネスおよびコネクター点検（デュティバキュームスイッチングバルブ電源電圧）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">点検要領および注意事項は<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照。</dd></dl></p>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a107917j35.png" name="A107917J35" alt="A107917J35" border="1" class="half"><br></td></tr></table>
+<li value="1"><p><font class="ptxt">デュティバキュームスイッチングバルブのコネクターB25を切り離す。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">IG ONにする。</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の電圧を測定する。</font><br><p><dl class="spec"><dt class="spec">電圧値</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><tr><th align="center">点検端子<br></th><th align="center">点検条件<br></th><th align="center">基準値<br></th></tr><tr><td align="center">B25-2 (+B) - ボデーアース<br></td><td align="center">IG ON<br></td><td align="center">11 to 14 V<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><caption class="tbl-title"><span>イラスト内指示文字&nbsp;
+				</span></caption><colgroup align="" width="10%
+			"><col align=""></colgroup><colgroup align="" width="90%
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>車両ワイヤハーネスコネクター前側<br>(デュティバキュームスイッチングバルブ接続コネクター)<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM0000026XZ01SX_04_0013">手順 7 へ
+												</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000026XZ01SX_04_0004"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順4</td><td width="90%" class="s1">ワイヤハーネスおよびコネクター点検（デュティバキュームスイッチングバルブ  - エンジンコントロールコンピュータ）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">点検要領および注意事項は<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照。</dd></dl></p>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">デュティバキュームスイッチングバルブのコネクターB25を切り離す。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">エンジンコントロールコンピュータのコネクターB36を切り離す。</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。(端子配列は<a href="#" onclick="openSeePage('seepage','X39400000QV058D');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)</font><br><p><dl class="spec"><dt class="spec">抵抗値(断線点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><tr><th align="center">点検端子<br></th><th align="center">点検条件<br></th><th align="center">基準値<br></th></tr><tr><td align="center">B25-1 (EVP1) - B36-12 (PRG)<br></td><td align="center">常時<br></td><td align="center">1 Ω未満<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">抵抗値(短絡点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><tr><th align="center">点検端子<br></th><th align="center">点検条件<br></th><th align="center">基準値<br></th></tr><tr><td align="center">B25-1 (EVP1)およびB36-12 (PRG) - 他の端子間およびボデーアース間<br></td><td align="center">常時<br></td><td align="center">10 kΩ以上<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ワイヤハーネスまたはコネクター修理または交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000026XZ01SX_04_0010"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順5</td><td width="90%" class="s1">ダイアグコード消去</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70201&nbsp;&nbsp;<br></dd></dl>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">SST(TaSCAN)をDLC3に接続する。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">IG ONにする。</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">SST(TaSCAN)の画面表示に従ってダイアグコードを消去する。(要領は<a href="#" onclick="openSeePage('seepage','RM0000008YS000X');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">次へ</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000026XZ01SX_04_0011"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順6</td><td width="90%" class="s1">作動確認運転実施</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70201&nbsp;&nbsp;<br></dd></dl>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">IG OFFにして30秒間待つ。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">SST(TaSCAN)をDLC3に接続する。</font><br></p></li></ol>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li value="3"><p><font class="ptxt">エンジンを始動し、すべてのアクセサリスイッチをOFFにして、エンジン冷却水温が安定するまで暖機する。（エンジン水温が75&deg;C 以上） (A)</font><br><div class="full"><br clear="all"><img src="../../img/a179391j02.png" name="A179391J02" alt="A179391J02" border="1" class="full"></div><br clear="all"></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">15分以上アイドリングする。(B)</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">SST(TaSCAN)の画面表示に従って、メインメニュー[診断] - 診断メニュー[パワトレ] - [TCCS] - システム診断メニュー[ダイアグ判定結果確認] - [ダイアグコード別確認]を選択する。</font><br></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">次画面にて、確認を行うダイアグコードを入力する。</font><br></p></li></ol>
+<ol class="s2">
+<li value="7"><p><font class="ptxt">ダイアグコード判定結果を確認する。</font><br><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><caption class="tbl-title"><span>結果&nbsp;
+				</span></caption><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><th align="center">結果<br></th><th align="center">飛び先<br></th></tr><tr><td align="center">異常<br></td><td align="center">A<br></td></tr><tr><td align="center">正常<br></td><td align="center">B<br></td></tr></table><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="75%
+			"><col align=""></colgroup><tr><th class="atten4" align="center">表示項目<br></th><th class="atten4" align="center">内容<br></th></tr><tr><td class="atten4" align="center">正常<br></td><td class="atten4"><ol style="list-style-type: disc"><li class="atten4">ダイアグコードの判定が完了<br></li><li class="atten4">システム正常<br></li></ol></td></tr><tr><td class="atten4" align="center">異常<br></td><td class="atten4"><ol style="list-style-type: disc"><li class="atten4">ダイアグコードの判定が完了<br></li><li class="atten4">システム異常<br></li></ol></td></tr><tr><td class="atten4" align="center">判定中<br></td><td class="atten4"><ol style="list-style-type: disc"><li class="atten4">ダイアグコードの判定が未完了<br></li><li class="atten4">検出条件を確認後、走行テストを実施<br></li></ol></td></tr><tr><td class="atten4" align="center">判定不可<br></td><td class="atten4"><ol style="list-style-type: disc"><li class="atten4">ダイアグコードの判定が実施できない<br></li><li class="atten4">前提条件が成立していないダイアグコード数がECUに記憶できる上限に達している  <br></li><li class="atten4">検出条件を確認後、走行テストを実施<br></li></ol></td></tr></table></p><p><dl class="warning"><dt class="warning">■   警   告   ■</dt><dt class="warning"></dt></dl><dl class="warning"><dd class="warning">この走行テストを行う時は、制限速度等の道路交通法を必ず守って実施すること。</dd></dl></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">ダイアグコード判定結果が判定中又は判定不可の場合は、車両を40 to 60 km/hで10分以上走行(C)後、ダイアグコード判定結果を確認する。</dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">常時発生しない問題の点検<a href="#" onclick="openSeePage('seepage','RM0000008YV000X');return false;">
+			（要領は
+		<img border="0" src="../../../../image/extxref.png">
+			参照）
+		</a>
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">エンジンコントロール コンピュータ交換&nbsp;
+										</td></tr></table></td></tr></table><br><a name="RM0000026XZ01SX_04_0013"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順7</td><td width="90%" class="s1">ワイヤハーネスおよびコネクター点検（EFI MAINリレー - デュティバキュームスイッチングバルブ）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">点検要領および注意事項は<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照。</dd></dl></p>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">エンジンルームリレーブロックからEFI MAINリレーを取りはずす。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">デュティバキュームスイッチングバルブのコネクターB25を切り離す。</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。</font><br><p><dl class="spec"><dt class="spec">抵抗値(断線点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><tr><th align="center">点検端子<br></th><th align="center">点検条件<br></th><th align="center">基準値<br></th></tr><tr><td align="center">EFI MAINリレーホルダの3端子 - B25-2 (+B)<br></td><td align="center">常時<br></td><td align="center">1 Ω未満<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">抵抗値(短絡点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><tr><th align="center">点検端子<br></th><th align="center">点検条件<br></th><th align="center">基準値<br></th></tr><tr><td align="center">EFI リレーホルダの3端子およびB25-2 (+B) - 他の端子間およびボデーアース間<br></td><td align="center">常時<br></td><td align="center">10 kΩ以上<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ワイヤハーネスまたはコネクター修理または交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">電源回路点検&nbsp;
+										</td></tr></table></td></tr></table><br></body></html>

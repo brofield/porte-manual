@@ -1,0 +1,37 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000008IT003X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>バックガイドモニターシステム&nbsp;&nbsp;機能説明</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000008IT003X_z0"></a><br clear="all"><a name="1"></a><br clear="all"><br clear="all"><a name="CD0403____00003L80000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>通信システム(&ldquo;ワイドマルチAVステーション&rdquo;装着車)</li></ol>
+<ol class="ptxt"></ol><div class="full"><br clear="all"><img src="../../img/e100440j03.png" name="E100440J03" alt="E100440J03" border="1" class="full"></div><br clear="all">
+<ol class="step2">
+<li><p><font class="ptxt">&ldquo;ワイドマルチAVステーション&rdquo;のバックガイドモニターシステムは、AVC-LANにより機器間の通信を行う。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">&ldquo;縦列ガイドモード&rdquo;ではナビゲーションコンピュータからAVC-LANを通じて送信される車両角度データ(ナビゲーションコンピュータでナビ内蔵ジャイロのヨーレートを積分して算出)により判断している。</dd></dl></p></p></li>
+<li><p><font class="ptxt">AVC-LANのマスターとなる機器はナビゲーションレシーバASSYである。</font><br></p></li>
+<li><p><font class="ptxt">ナビゲーションレシーバASSY内部に通信伝達に必要な抵抗(TX+端子&larr;&rarr;TX-端子間60-80Ω)が入っている。</font><br></p></li>
+<li><p><font class="ptxt">AVC-LAN回路において、断線またはショートが起きた場合は、通信の中断に伴い&ldquo;ワイドマルチＡＶステーション&rdquo;および、バックガイドモニターシステムは正常に作動しない。</font><br></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00003L80000012step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>ダイアグノーシス機能</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">バックガイドモニターシステムの調整は、ナビゲーションレシーバASSY(&ldquo; ワイドマルチＡＶステーション&rdquo;)、のダイアグノーシス画面で行なう。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">下表に示す作業が発生した時は、ダイアグ検査画面での調整&middot;点検が必要となる。</dd></dl></p><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%
+						"><colgroup align="left" width="46%
+			"><col align=""></colgroup><colgroup align="left" width="33%
+			"><col align=""></colgroup><colgroup align="left" width="21%
+			"><col align=""></colgroup><tr><th align="center">作業実施部位<br></th><th align="center">調整項目<br></th><th align="center">参照先<br></th></tr><tr><td><ol style="list-style-type: disc"><li>テレビジョンカメラASSYの車体取付け角度が何らかの原因でずれた時(テレビジョンカメラASSYの脱着など) <br></li><li>テレビジョンカメラASSYの交換 <br></li></ol></td><td><ol style="list-style-type: disc"><li>カメラ光軸調整<br></li></ol></td><td rowspan="3" align="center">
+<a href="#" onclick="openSeePage('seepage','RM000000JZ6000X');return false;"><img border="0" src="../../../../image/extxref.png"></a>
+<br></td></tr><tr><td><ol style="list-style-type: disc"><li>テレビジョンカメラコントローラの交換 (&ldquo; ワイドマルチＡＶステーション&rdquo;装着車)<br></li></ol></td><td><ol style="list-style-type: disc"><li>舵角中立点の記憶<br></li><li>左右最大舵角の記憶<br></li><li>カメラ光軸調整 <br></li></ol></td></tr><tr><td><ol style="list-style-type: disc"><li>バッテリー端子をはずしたとき <br></li><li>ステアリングセンサーを交換または脱着したとき <br></li><li>進路表示モード時の予想進路が表示されず、かつステアリングセンサーに異常が無い時 <br></li></ol></td><td><ol style="list-style-type: disc"><li>舵角中立点の記憶<br></li></ol></td></tr></table></p></li>
+<li><p><font class="ptxt">バックガイドモニターシステムにはダイアグノーシス機能がある。{ナビゲーションレシーバASSY(&ldquo;ワイドマルチＡＶステーション&rdquo;)に表示}</font><br></p></li>
+<li><p><font class="ptxt">AVC-LANを構成する各機器は、機器コード(物理アドレス)と呼ばれる3桁の数字(16進数で表記)が設定されている。</font><br></p></li>
+<li><p><font class="ptxt">AVC-LANの内部を構成する各機能(ユニット)は、論理アドレスと呼ばれる2桁の数字(16進数で表記)が設定されている。</font><br></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00003L80000013step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>ステアリングセンサ</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">異常時</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">ステアリングセンサ異常データを受信した時、またはステアリングセンサの信号が受信できない時、ダイアグノーシス画面で確認することができる。</font><br></p></li></ol></ol><br clear="all"></body></html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<link rel="stylesheet" href="../css/main2.css" type="text/css" />
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+
+<title></title>
+
+
+
+<script language="JavaScript1.2" src="../js/hidden.js"></script>
+<script language="JavaScript">
+<!--
+function setXml(){
+var url=window.dialogArguments;
+document.getElementById("ss_syuyousyogen").setAttribute("src",url)
+here.innerHTML=ss_syuyousyogen.transformNode(ss_syuyousyogen0.documentElement);
+
+}
+//-->
+</script>
+
+</head>
+<body onLoad="setXml(); printAndCloseZ();">
+<xml id="ss_syuyousyogen"></xml>
+<xml id="ss_syuyousyogen0" src="../xsl/toyota_ncf_t.xsl"></xml>
+<div id="here" align="center">
+</div>
+</body>
+</html>

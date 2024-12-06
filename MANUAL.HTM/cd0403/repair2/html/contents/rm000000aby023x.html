@@ -1,0 +1,36 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000000ABY023X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>ECU制御システムのトラブルシューティングの方法&nbsp;&nbsp;不具合現象のシミュレーション方法</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM000000ABY023X_z0"></a><br clear="all"><a name="1"></a><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">トラブルシューティングで最も難しいのは不具合現象が現れないことである。そのような場合は、顧客からの不具合分析を徹底的に行う必要があり、顧客の車両で不具合が発生したときと同様な状況&middot;環境で再現する必要がある。不具合現象を確認せずにトラブルシューティングを実施すると、修理作業において重要な点を見逃すことになったり、勘違いをして、結局行き詰まる事になる。例えば、エンジンが冷えている状態で起きた不具合について、または運転中道路状況に起因して振動が発生した不具合について、エンジンが熱い状態または車両が停止している状態で確認する限り、不具合がどこにあるかは決して特定できない。振動、熱または水(湿度)による侵入などは再現性のない不具合の原因であるが、ここで紹介する不具合現象再現手法は停止状態の車両に外的要因を与えるという点で効果的な方法である。不具合シミュレーションテストの重要な点:不具合現象再現手法では不具合現象はもちろん確認するべきであるが、不具合の範囲&middot;部位もまた見つけ出す必要がある。これらを行うため、テストを実施する前に不具合現象に基づき不具合を含んでいる回路を絞り込み、事前にテスターを接続しておく。その後、不具合再現手法を実施し、テスト中の回路が不良か正常かを判断し、同時に不具合現象を確認する。不具合現象の原因を絞り込むには、システム毎の不具合現象一覧表を参考にする。</dd></dl></p><br clear="all"><br clear="all"><br clear="all"><a name="CD0403____00005530000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>加振法:振動により不具合が発生すると思われる場合</li></ol>
+<ol class="ptxt"></ol><table class="float"><tr><td><img src="../../img/d020016j01.png" name="D020016J01" alt="D020016J01" border="1" class="half"><br></td></tr></table>
+<ol class="step2">
+<li><p><font class="ptxt">部品とセンサー</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">推定原因系の部品に手で軽く叩くなどの振動を与え、不具合の発生がないか点検する。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">リレー類は、強い衝撃を与えるとポイントが開くことがある。</dd></dl></p></p></li></ol>
+<li><p><font class="ptxt">コネクター</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">コネクターを軽く上下、左右にゆする。</font><br></p></li></ol>
+<li><p><font class="ptxt">ワイヤハーネス</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">ワイヤハーネスを軽く上下、左右にゆすり、不具合の発生がないか点検する。(特にワイヤハーネスではコネクターの付け根、振動の支点、ボデーの貫通部を重点的にチェックする。)</font><br></p></li></ol></ol><br clear="all"><br clear="all"><br clear="all"><a name="CD0403____00005530000012step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>冷熱法:冷間時または温間時に不具合が発生すると思われる場合</li></ol>
+<ol class="ptxt"></ol><table class="float"><tr><td><img src="../../img/d020021j01.png" name="D020021J01" alt="D020021J01" border="1" class="half"><br></td></tr></table>
+<ol class="step2">
+<li><p><font class="ptxt">ヘアドライヤー、冷却剤を用いて、推定不具合系の部品を加熱または冷却し、不具合の発生がないか点検する。</font><br><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">加熱する場合は、+60&deg;C(手でさわれる程度)以上にしない。 <br></li><li class="atten3">ECU等のフタを開けて直接電子部品を加熱、冷却しない。 <br></li></ol></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">冷却剤は電子部品販売店で入手できる。</dd></dl></p></p></li></ol><br clear="all"><br clear="all"><br clear="all"><a name="CD0403____00005530000013step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>水かけ法:雨天または高温時に不具合が発生すると思われる場合  </li></ol>
+<ol class="ptxt"></ol><table class="float"><tr><td><img src="../../img/d100119j01.png" name="D100119J01" alt="D100119J01" border="1" class="half"><br></td></tr></table>
+<ol class="step2">
+<li><p><font class="ptxt">車両に水をかけ不具合の発生がないか点検する。</font><br><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">エンジンルームには直接水をかけないで、ラジエーター前面に霧吹き状に吹き付け、間接的に温度、湿度を変える。 <br></li><li class="atten3">電子部品に直接水をかけない。 <br></li></ol></p></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00005530000014step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>その他:電気的負荷が過剰な時に不具合が発生すると思われる場合 </li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">ヒータブロワ、ヘッドランプ、リヤデフォッガなどの電気部品を作動させて電気的負荷をあげ、不具合の発生がないか点検する。</font><br></p></li></ol><br clear="all"></body></html>

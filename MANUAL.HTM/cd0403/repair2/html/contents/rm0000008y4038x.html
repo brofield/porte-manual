@@ -1,0 +1,124 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000008Y4038X"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>DTC
+								 &nbsp;&nbsp; P0115/22 &nbsp;&nbsp; 水温センサ系統</h3></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr><tr><td width="93%"><h3>DTC
+								 &nbsp;&nbsp; P0117/22 &nbsp;&nbsp; 水温センサ断線(Low)</h3></td></tr><tr><td width="93%"><h3>DTC
+								 &nbsp;&nbsp; P0118/22 &nbsp;&nbsp; 水温センサ断線(High)</h3></td></tr></table><h2>準備品一覧<a href="#" onclick="openSeePage('ppr','RM0000008Y4038X');return false;"><img border="0" src="../../../../image/extxref.png"></a></h2><br clear="all"><a name="RM0000008Y4038X_02"></a><h2>回路説明</h2><br clear="all"><a name="1"></a><font class="ptxt">E.F.I.ウォータテンパラチャセンサ内に設けられているサーミスタは水温の変化にしたがって抵抗値が変化する。E.F.I.ウォータテンパラチャセンサとエンジンコントロールコンピュータの接続方法は、インレットエアテンパラチャセンサと同じ。</font><br><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><colgroup align="" width="17%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="33%
+			"><col align=""></colgroup><tr><th align="center">DTC No.<br>SAE/TCCS<br></th><th align="center">DTC検出条件<br><ol style="list-style-type: decimal"><li>診断条件<br></li><li>異常状態<br></li><li>異常期間<br></li><li>その他<br></li></ol></th><th align="center">点検部位<br></th></tr><tr><td align="center">P0115/22<br></td><td><ol style="list-style-type: decimal"><li>IG ON<br></li><li>E.F.I.ウォータテンパラチャセンサセンサ回路の断線または短絡<br></li><li>0.5秒以上<br></li><li>1トリップ<br></li></ol></td><td><ol style="list-style-type: disc"><li>ワイヤハーネスおよびコネクター<br></li><li>E.F.I.ウォータテンパラチャセンサ<br></li><li>エンジンコントロールコンピユータ<br></li></ol></td></tr><tr><td align="center">P0117/22<br></td><td><ol style="list-style-type: decimal"><li>IG ON<br></li><li>E.F.I.ウォータテンパラチャセンサセンサ回路の短絡<br></li><li>0.5秒以上<br></li><li>1トリップ<br></li></ol></td><td><ol style="list-style-type: disc"><li>ワイヤハーネスおよびコネクター<br></li><li>E.F.I.ウォータテンパラチャセンサ<br></li><li>エンジンコントロールコンピユータ<br></li></ol></td></tr><tr><td align="center">P0118/22<br></td><td><ol style="list-style-type: decimal"><li>IG ON<br></li><li>E.F.I.ウォータテンパラチャセンサセンサ回路の断線<br></li><li>0.5秒以上<br></li><li>1トリップ<br></li></ol></td><td><ol style="list-style-type: disc"><li>ワイヤハーネスおよびコネクター<br></li><li>E.F.I.ウォータテンパラチャセンサ<br></li><li>エンジンコントロールコンピユータ<br></li></ol></td></tr></table><br clear="all"><br clear="all"><a name="RM0000008Y4038X_03"></a><h2>回路図</h2><br clear="all"><a name="1"></a><div class="full"><br clear="all"><img src="../../img/a215117j17.png" name="A215117J17" alt="A215117J17" border="1" class="full"></div><br clear="all"><br clear="all"><br clear="all"><a name="RM0000008Y4038X_04"></a><h2>点検手順</h2><br clear="all"><a name="1"></a><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">DTC P0110/24(吸気温センサ系統)、P0115/22(水温センサ系統)、P0120/41(スロットルセンサ系統)、P0550/75(PS圧力センサ系統)が連続して出力されるなら、E2等(アース系統)が断線している可能性がある。<br></li><li class="atten4">SST(TaSCAN)を使用してフリーズフレームデータを読み取る。フリーズフレームデータには不具合発生時のエンジン稼動状態の一部が記録されており、それらの情報がトラブルシュートを行う際に役立つ。<br></li></ol></p><br clear="all"><a name="RM0000008Y4038X_01_0001"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順1</td><td width="90%" class="s1">TaSCANデータ読み取り（エンジン冷却水温）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70201&nbsp;&nbsp;<br></dd></dl>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">SST(TaSCAN)をDLC3に接続する。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">IG ONにする。</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">SST(TaSCAN)の画面表示に従い、[ECUデータモニター]-[エンジン冷却水温]を選択する。</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">エンジン停止状態でSST(TaSCAN)に表示されるエンジン冷却水温を読み取る。</font><br><p><dl class="spec"><dt class="spec">結果</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="70%
+			"><col align=""></colgroup><colgroup align="" width="30%
+			"><col align=""></colgroup><tr><th align="center">結果<br></th><th align="center">飛び先<br></th></tr><tr><td align="center">-40&deg;C(断線)<br></td><td align="center">A<br></td></tr><tr><td align="center">140&deg;C(ショート)<br></td><td align="center">B<br></td></tr><tr><td align="center">実水温と同等<br></td><td align="center">C<br></td></tr></table></dd></dl></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">SST(TaSCAN)の表示が-40&deg;Cの場合、断線状態である。<br></li><li class="atten4">SST(TaSCAN)の表示が140&deg;Cの場合、ショート状態である。<br></li></ol></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM0000008Y4038X_01_0016">手順 6 へ
+												</a></td></tr></table></td></tr><tr><td height="4px"></td></tr><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">C</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">常時発生しない問題の点検<a href="#" onclick="openSeePage('seepage','RM0000008YV000X');return false;">
+			（要領は
+		<img border="0" src="../../../../image/extxref.png">
+			参照）
+		</a>
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000008Y4038X_01_0002"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順2</td><td width="90%" class="s1">TaSCANデータ読み取り（ワイヤハーネス断線点検）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br>09991-70201&nbsp;&nbsp;<br></dd></dl>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a162186j20.png" name="A162186J20" alt="A162186J20" border="1" class="half"><br></td></tr></table>
+<li value="1"><p><font class="ptxt">E.F.I.ウォータテンパラチャセンサのコネクターB34を切り離す。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">SST(ダイアグノーシスチェックワイヤNo.2)を使用して、E.F.I.ウオータテンパラチャセンサ B34-2&larr;&rarr;B34-1端子間を短絡する。</font><br><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><caption class="tbl-title"><span>イラスト内指示文字&nbsp;
+				</span></caption><colgroup align="" width="10%
+			"><col align=""></colgroup><colgroup align="" width="90%
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>E.F.I.ウォータテンパラチャセンサ<br></td></tr><tr><td align="center">*2<br></td><td>エンジンコントロールコンピュータ<br></td></tr><tr><td align="center">*a<br></td><td>車両ワイヤハーネスコネクター前側<br>(E.F.I.ウォータテンパラチャセンサ接続コネクター)<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">SST(TaSCAN)をDLC3に接続する。</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">IG ONにする。</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">SST(TaSCAN)の画面表示に従い、[ECUデータモニター]-[エンジン冷却水温]を選択する。</font><br></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">SST(TaSCAN)に表示されるエンジン冷却水温を読み取る。</font><br><p><dl class="spec"><dt class="spec">基準値</dt><dd class="spec">140&deg;C<br></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM0000008Y4038X_01_0013">手順 3 へ
+												</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">E.F.I. ウォータテンパラチャ センサ交換&nbsp;
+										</td></tr></table></td></tr></table><br><a name="RM0000008Y4038X_01_0013"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順3</td><td width="90%" class="s1">ワイヤハーネスおよびコネクター点検（E.F.I.ウォータテンパラチャセンサ - エンジンコントロールコンピュータ）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">点検要領および注意事項は<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照。</dd></dl></p>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a137383j06.png" name="A137383J06" alt="A137383J06" border="1" class="half"><br></td></tr></table>
+<li value="1"><p><font class="ptxt">E.F.I.ウォータテンパラチャセンサのコネクターB34を切り離す。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">IG ONにする。</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の電圧を測定する。</font><br><p><dl class="spec"><dt class="spec">電圧値</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><tr><th align="center">点検端子<br></th><th align="center">点検条件<br></th><th align="center">基準値<br></th></tr><tr><td align="center">B34-2 - ボデーアース<br></td><td align="center">IG ON<br></td><td align="center">4.5 to 5.5 V<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。</font><br><p><dl class="spec"><dt class="spec">抵抗値</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><tr><th align="center">点検端子<br></th><th align="center">点検条件<br></th><th align="center">基準値<br></th></tr><tr><td align="center">B34-1 - ボデーアース<br></td><td align="center">常時<br></td><td align="center">1 Ω未満<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><caption class="tbl-title"><span>イラスト内指示文字&nbsp;
+				</span></caption><colgroup align="" width="10%
+			"><col align=""></colgroup><colgroup align="" width="90%
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>車両ワイヤハーネスコネクター前側<br>(E.F.I.ウォータテンパラチャセンサ接続コネクター)<br></td></tr></table><p><dl class="spec"><dt class="spec">結果</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="70%
+			"><col align=""></colgroup><colgroup align="" width="30%
+			"><col align=""></colgroup><tr><th align="center">結果<br></th><th align="center">飛び先<br></th></tr><tr><td align="center">THW電圧が基準値外の場合<br></td><td align="center">A<br></td></tr><tr><td align="center">E2端子とボデーアース間が導通なしの場合<br></td><td align="center">B<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM0000008Y4038X_01_0015">手順 5 へ
+												</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000008Y4038X_01_0014"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順4</td><td width="90%" class="s1">ワイヤハーネスおよびコネクター点検（THW回路断線点検）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">点検要領および注意事項は<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照。</dd></dl></p>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">E.F.I.ウォータテンパラチャセンサのコネクターB34を切り離す。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">エンジンコントロールコンピュータのコネクターB36を切り離す。</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。(端子配列は<a href="#" onclick="openSeePage('seepage','X39400000QV058D');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)</font><br><p><dl class="spec"><dt class="spec">抵抗値</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><tr><th align="center">点検端子<br></th><th align="center">点検条件<br></th><th align="center">基準値<br></th></tr><tr><td align="center">B34-2 - B36-19 (THW)<br></td><td align="center">常時<br></td><td align="center">1 Ω未満<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ワイヤハーネスまたはコネクター修理または交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">エンジンコントロール コンピュータ交換&nbsp;
+										</td></tr></table></td></tr></table><br><a name="RM0000008Y4038X_01_0015"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順5</td><td width="90%" class="s1">ワイヤハーネスおよびコネクター点検（ETHW回路断線点検）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">点検要領および注意事項は<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照。</dd></dl></p>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">E.F.I.ウォータテンパラチャセンサのコネクターB34を切り離す。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">エンジンコントロールコンピュータのコネクターB36を切り離す。</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。(端子配列は<a href="#" onclick="openSeePage('seepage','X39400000QV058D');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)</font><br><p><dl class="spec"><dt class="spec">抵抗値</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><tr><th align="center">点検端子<br></th><th align="center">点検条件<br></th><th align="center">基準値<br></th></tr><tr><td align="center">B34-1 - B36-28 (E2)<br></td><td align="center">常時<br></td><td align="center">1 Ω未満<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ワイヤハーネスまたはコネクター修理または交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">エンジンコントロール コンピュータ交換&nbsp;
+										</td></tr></table></td></tr></table><br><a name="RM0000008Y4038X_01_0016"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順6</td><td width="90%" class="s1">TaSCANデータ読み取り（ワイヤハーネス短絡点検）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70201&nbsp;&nbsp;<br></dd></dl>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a162185j21.png" name="A162185J21" alt="A162185J21" border="1" class="half"><br></td></tr></table>
+<li value="1"><p><font class="ptxt">E.F.I.ウォータテンパラチャセンサのコネクターB34を切り離す。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">SST(TaSCAN)をDLC3に接続する。</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">IG ONにする。</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">SST(TaSCAN)の画面表示に従い、[ECUデータモニター]-[エンジン冷却水温]を選択する。</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">SST(TaSCAN)に表示された冷却水温を読み取る。</font><br><p><dl class="spec"><dt class="spec">基準値</dt><dd class="spec">-40&deg;C<br></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><caption class="tbl-title"><span>イラスト内指示文字&nbsp;
+				</span></caption><colgroup align="" width="10%
+			"><col align=""></colgroup><colgroup align="" width="90%
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>E.F.I.ウォータテンパラチャセンサ<br></td></tr><tr><td align="center">*2<br></td><td>エンジンコントロールコンピュータ<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM0000008Y4038X_01_0017">手順 7 へ
+												</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">E.F.I. ウォータテンパラチャ センサ交換&nbsp;
+										</td></tr></table></td></tr></table><br><a name="RM0000008Y4038X_01_0017"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順7</td><td width="90%" class="s1">ワイヤハーネスおよびコネクター点検（E.F.I.ウォータテンパラチャセンサ - エンジンコントロールコンピュータ）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">点検要領および注意事項は<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照。</dd></dl></p>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">E.F.I.ウォータテンパラチャセンサのコネクターB34を切り離す。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">エンジンコントロールコンピュータのコネクターB36を切り離す。</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。(端子配列は<a href="#" onclick="openSeePage('seepage','X39400000QV058D');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)</font><br><p><dl class="spec"><dt class="spec">抵抗値</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
+						"><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><colgroup align="" width="25%
+			"><col align=""></colgroup><tr><th align="center">点検端子<br></th><th align="center">点検条件<br></th><th align="center">基準値<br></th></tr><tr><td align="center">B34-2およびB36-19 (THW) - 他の端子間およびボデーアース間<br></td><td align="center">常時<br></td><td align="center">10 kΩ以上<br></td></tr><tr><td align="center">B34-1およびB36-28 (E2) - 他の端子間およびボデーアース間<br></td><td align="center">常時<br></td><td align="center">10 kΩ以上<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ワイヤハーネスまたはコネクター修理または交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">エンジンコントロール コンピュータ交換&nbsp;
+										</td></tr></table></td></tr></table><br></body></html>

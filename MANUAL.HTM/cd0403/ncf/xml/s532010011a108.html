@@ -1,0 +1,101 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>R-ISCV</title>
+<link type="text/css" href="../css/main2.css" rel="stylesheet">
+<link type="text/css" href="../css/style.css" rel="stylesheet">
+<script src="../js/hidden.js" language="JavaScript"></script>
+</head>
+<body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
+<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td align="left"><input onClick="printCheck()" value="印刷" name="submit" type="submit"></td><td align="center">　</td><td align="right"><input onClick="closeWindow()" value="閉じる" name="submit2" type="submit"></td>
+</tr>
+</table>
+<div align="left">
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%">　</td><td align="center" class="gray" width="80%">R-ISCV</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">スロットルボデーに取り付けられており，エンジンコントロールコンピューターからのデューティー信号によりロータリーバルブの角度を変化させ，スロットルバルブをバイパスする空気量を制御します。空気量はエンジンコントロールコンピューターからの信号のON・OFFの時間の比（デューティー比）によって決めています。また，駆動回路をIC化し，R-ISCV内に内蔵しました。</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3840081p.png"></td>
+</tr>
+</table>
+<br>
+
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010011A108A231');chgImg('imT010011A108A231');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT010011A108A231" align="absmiddle"><a name="t010011a108a231">R-ISCV作動</a></span>
+<br>
+<div id="tmT010011A108A231" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">始動時補助</div>
+</td><td class="color1">
+<div class="text">エンジン始動時および始動後数秒間，デューティー比を上げてR-ISCV通過空気量を多くし，エンジンの始動性を確保しています。始動後は冷却水温に応じてデューティー比を変えて，エンジン回転数を制御します。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">予測制御</div>
+</td><td class="color1">
+<div class="text">電気負荷が変化したとき，エアコンスイッチを切り換えたときエンジンにかかる負荷が変わりエンジン回転数が変化します。これらの信号を検出したとき，R-ISCVにそれぞれの条件に応じた信号を送り，R-ISCV通過空気量を変化させてエンジン回転数の変動を抑えます。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">フィードバック制御および    電気負荷アイドルアップ</div>
+</td><td class="color1">
+<div class="text">一定時間エンジン回転数を計測してアイドル回転数と目標回転数とに差がある場合に，R-ISCVに信号を送りR-ISCV通過空気量を変化させ目標回転数に近づけます。また，電気負荷に応じてアイドル回転数を上昇させ，エンジンアイドル時の安定化をはかっています。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">エアコン作動時 アイドルアップ回転数可変制御</div>
+</td><td class="color1">
+<div class="text">エアコン作動時のアイドルアップ回転数をエアコンの負荷によって2段階に制御し，必要最小限のアイドルアップ回転数にすることにより，燃費および運転性の確保をはかりました。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">パワーステアリング作動時    アイドルアップ回転数制御</div>
+</td><td class="color1">
+<div class="text">パワーステアリング作動時のアイドルアップ回転数を,パワーステアリング油圧センサーの信号を受けたエンジンコントロールコンピューターによって制御し，運転性の確保をはかりました。</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</body>
+</html>

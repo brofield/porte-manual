@@ -1,0 +1,23 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000000P1U000X"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>DTC
+								 &nbsp;&nbsp; C0226/21 &nbsp;&nbsp; ABSソレノイドFR系統異常</h3></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr><tr><td width="93%"><h3>DTC
+								 &nbsp;&nbsp; C0236/22 &nbsp;&nbsp; ABSソレノイドFL系統異常</h3></td></tr><tr><td width="93%"><h3>DTC
+								 &nbsp;&nbsp; C0246/23 &nbsp;&nbsp; ABSソレノイドRR系統異常</h3></td></tr><tr><td width="93%"><h3>DTC
+								 &nbsp;&nbsp; C0256/24 &nbsp;&nbsp; ABSソレノイドRL系統異常</h3></td></tr><tr><td width="93%"><h3>DTC
+								 &nbsp;&nbsp; C1225/25 &nbsp;&nbsp; BA/TRCソレノイド異常</h3></td></tr></table><br clear="all"><a name="RM000000P1U000X_01"></a><h2>機能説明</h2><br clear="all"><a name="1"></a><ol style="list-style-type: none"><li>各ソレノイドは各ホイールシリンダに作用する圧力を調整し、車両の制御を行う。<br></li><li>異常ダイアグノーシスコード出力中はフェイルセーフ機能によりソレノイドが強制ＯＦＦされるため、ソレノイドはＯＮしない。<br></li><li>ソレノイドリレーおよびソレノイドはブレーキアクチュエータ内に内蔵されている。<br></li></ol><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><colgroup align="" width="14%
+			"><col align=""></colgroup><colgroup align="" width="42%
+			"><col align=""></colgroup><colgroup align="" width="44%
+			"><col align=""></colgroup><tr><th align="center">DTCNo.<br></th><th align="center">DTC検出条件<br></th><th align="center">DTC出力関連項目<br></th></tr><tr><td align="center">C0226/21<br>C0236/22<br>C0246/23<br>C0256/24<br></td><td align="left">ソレノイドの断線またはショート状態が0.05秒以上継続<br></td><td align="left">ブレーキアクチュエータASSY内部異常<br></td></tr><tr><td align="center">C1225/25<br></td><td align="left"><ol style="list-style-type: disc"><li>切替ソレノイド(SM1またはSM2)ON中に過電流が0.05秒以上継続<br></li><li>切替ソレノイド(SM1またはSM2)OFF中に断線状態が0.05秒以上継続<br></li><li>切替ソレノイドON中に出力電流0.348A以上出力時、SM1、SM2の出力デューティー比が2.08以上またが0.48未満が0.2秒以上継続<br></li><li>切替ソレノイド(SM1またはSM2)OFF出力中に出力電流モニタ0.15A以上が0.05秒以上継続<br></li><li>切替ソレノイドON中に出力電流0.348A以上出力時、電流モニタと目標値の比が2より大きい状態が0.1秒、もしくは0.15未満の状態が0.05秒以上継続<br></li></ol></td><td align="left">ブレーキアクチュエータASSY内部異常<br></td></tr></table><br clear="all"><br clear="all"><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><colgroup align="" width="42%
+			"><col align=""></colgroup><colgroup align="" width="58%
+			"><col align=""></colgroup><tr><th class="atten4" align="center">DTC No.<br></th><th class="atten4" align="center">該当ソレノイド<br></th></tr><tr><td class="atten4" align="center">C0226/21<br></td><td class="atten4" align="center">SFRH、SFRR<br></td></tr><tr><td class="atten4" align="center">C0236/22<br></td><td class="atten4" align="center">SFLH、SFLR<br></td></tr><tr><td class="atten4" align="center">C0246/23<br></td><td class="atten4" align="center">SRRH、SRRR<br></td></tr><tr><td class="atten4" align="center">C0256/24<br></td><td class="atten4" align="center">SRLH、SRLR<br></td></tr><tr><td class="atten4" align="center">C1225/25<br></td><td class="atten4" align="center">SM1、SM2<br></td></tr></table></p><br clear="all"><br clear="all"><a name="RM000000P1U000X_02"></a><h2>点検手順</h2><a name="RM000000P1U000X_03_0001"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順1</td><td width="90%" class="s1">ブレーキ アクチュエータASSY交換</td></tr></table><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">ブレーキアクチュエータ内ソレノイドもしくはスキッドコントロールコンピュータの異常により出力するコードであるため、ブレーキアクチュエータASSYを交換する。</dd></dl></p><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;"><br></td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ヨーレート&amp;Gセンサ0点取得およびテストモード点検&nbsp;
+										</td></tr></table></td></tr></table><br></body></html>

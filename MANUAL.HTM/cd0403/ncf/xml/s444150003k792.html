@@ -1,0 +1,253 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CAN通信システム</title>
+<link type="text/css" href="../css/main2.css" rel="stylesheet">
+<link type="text/css" href="../css/style.css" rel="stylesheet">
+<script src="../js/hidden.js" language="JavaScript"></script>
+</head>
+<body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
+<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td align="left"><input onClick="printCheck()" value="印刷" name="submit" type="submit"></td><td align="center">　</td><td align="right"><input onClick="closeWindow()" value="閉じる" name="submit2" type="submit"></td>
+</tr>
+</table>
+<div align="left">
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="blue" width="5%">　</td><td align="center" class="blue" width="80%">CAN通信システム</td><td width="15%" class="blue" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">通信回路によってデジタル信号に変換された複数項目の情報やデータを，一対の通信線（ツイストペア結線）で伝送するCAN<a href="#H444150003K79201"><sup>*
+					1</sup></a>[ISO11898]通信システムを採用しました。これにより，入力系（センサー・スイッチなど）・制御ユニット・出力系（モーターなど）をそれぞれ結ぶシステムに対して，ワイヤハーネスの削減および電子制御システムのスリム化をはかりました。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">CAN通信システムは，CAN HighとCAN Lowの2本の通信線（バス）を一対としてその差動電圧によりバスのレベル<a href="#H444150003K79202"><sup>*
+					2</sup></a>を判断し，これを専用の通信プロトコル(通信規則)に準じたデジタル信号として500kbps<a href="#H444150003K79203"><sup>*
+					3</sup></a>の速度で伝達されます。</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">参　考</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="27">＊1</td><td class="text"><a name="H444150003K79201"></a>
+<div class="text">CANとはController　Area　Networkの略称で，ISO（国際標準化機構）の規格に準拠したシリアル通信です。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="27">＊2</td><td class="text"><a name="H444150003K79202"></a>
+<div class="text">バスのレベルにはドミナント（優性）レベルとレセッシブ（劣性）レベルとがあり，CAN通信システムでは論理的にドミナントは&ldquo;0&rdquo;，レセッシブは&ldquo;1&rdquo;と判断されます。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="27">＊3</td><td class="text"><a name="H444150003K79203"></a>
+<div class="text">信号の伝達速度を表す単位。&ldquo;500kbps&rdquo;は1秒間に500000ビットのデータが伝送されることを表します。</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/k3940169e.png"></td>
+</tr>
+</table>
+<br>
+
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT150003K792W080');chgImg('imT150003K792W080');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT150003K792W080" align="absmiddle"><a name="t150003k792w080">CAN通信ネットワーク</a></span>
+<br>
+<div id="tmT150003K792W080" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">ナビゲーションシステムの変更に伴い，従来より採用のCAN通信システムのネットワークに新たにHDDナビゲーションシステムを追加しました。</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT150003K792W080I01');chgImg('imT150003K792W080I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT150003K792W080I01" align="absmiddle"><a name="t150003k792w080i01">CAN通信ネットワークブロック図</a></span>
+<br>
+<div id="tmT150003K792W080I01" style="display:none">
+<br>
+
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/k3840317b.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">CAN通信システム対応コンピューター（ECU）・センサー（追加分のみ）</td>
+</tr>
+</table>
+<br>
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">
+<div class="text">コンピューター・センサー名称</div>
+</td><td class="gray3_dark">
+<div class="text">主な機能</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">HDDナビゲーション</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+
+<div class="text">ナビゲーションシステム・バックガイドモニターシステムの制御</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT150003K792W081');chgImg('imT150003K792W081');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT150003K792W081" align="absmiddle"><a name="t150003k792w081">CAN通信システム構成</a></span>
+<br>
+<div id="tmT150003K792W081" style="display:none">
+<br>
+
+<br>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3840094e.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT150003K792W082');chgImg('imT150003K792W082');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT150003K792W082" align="absmiddle"><a name="t150003k792w082">CAN通信プロトコル（通信規則）</a></span>
+<br>
+<div id="tmT150003K792W082" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">CAN通信システムは，ネットワークを構成するすべてのコンピューター（ECU）・センサーが，一対の通信線（バス）を利用し，時間をずらしながらデータを送信することも受信することも可能とした，時分割多重双方向通信システムです。このため，通信がスムースかつ確実に行われるよう，各ECU・センサーは共通の通信プロトコル（通信規則）に従って通信を行っています。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">CAN通信プロトコルには，すべてのECU・センサーにデータ送信を開始する権利を持たせながら一対の通信線を共有できるよう，通信線へデータを送り出す規則としてCSMA/CD（衝突検出付き搬送波感知多重アクセス）方式<a href="#H444150003K792W08201"><sup>*
+					</sup></a>を採用しています。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">各ECU・センサーはCANバスに他のデータが流れていない状態でデータ送信を開始しますが，同時に2つ以上のECU・センサーが送信を開始したときには，送信されるデータ自体が含むIDの情報に応じて，送信優先順位の判定を行うシステムとしました。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">CAN通信システムで用いられるデータは，「ID」・「DLC」・「DATA」・「CRC」・「ACK」などで一つのフレームを構成しています。</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">参　考</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="27">＊</td><td class="text"><a name="H444150003K792W08201"></a>
+<div class="text">Carrier Sense
+Multiple Access with Collision Detection　常時各ECUが通信線の状態（搬送波）を感知し，通信線に他のデータが流れていないときに限りデータ送信を開始する通信アクセス制御。またこれに加えて，データが衝突した（他のECUから同時にデータが送信された）ことを検出した場合には，一定時間待機した後，再びデータ送信を行う制御。</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/k3940172e.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>燃料噴射制御（EFI）</title>
+<link type="text/css" href="../css/main2.css" rel="stylesheet">
+<link type="text/css" href="../css/style.css" rel="stylesheet">
+<script src="../js/hidden.js" language="JavaScript"></script>
+</head>
+<body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
+<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td align="left"><input onClick="printCheck()" value="印刷" name="submit" type="submit"></td><td align="center">　</td><td align="right"><input onClick="closeWindow()" value="閉じる" name="submit2" type="submit"></td>
+</tr>
+</table>
+<div align="left">
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="blue" width="5%">　</td><td align="center" class="blue" width="80%">燃料噴射制御（EFI）</td><td width="15%" class="blue" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">エアフローメーターにより吸入空気量を検出して燃料噴射量を制御するEFI-L方式を採用しました。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">噴射方式は,独立噴射方式（クランクシャフト2回転で各気筒1回ずつ噴射）を採用しました。始動時は,グループ噴射（＃1＋＃4,＃2＋＃3）を行いクランクシャフト1回転で1回噴射します。エンジン回転数が規定値以上に達すると独立噴射に切り替えます。なお,エンジンを一旦止めた後の再始動時など水温が高い場合には始動時より独立噴射を行います。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">燃料噴射には基本噴射時間に各センサーからの信号による補正を加え常に同じ位置で噴射する同期噴射と，クランク角度に関係なく各センサーからの信号により噴射要求を検出した時点で噴射する非同期噴射があります。また，エンジン保護および燃費向上のため，運転状態に応じて燃料噴射を一時的に停止するフューエルカットを行います。</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010011A070A202');chgImg('imT010011A070A202');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT010011A070A202" align="absmiddle"><a name="t010011a070a202">非同期噴射</a></span>
+<br>
+<div id="tmT010011A070A202" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">始動性および加速時の応答性確保のため，通常の燃料噴射（同期噴射）とは別に各センサーからの信号が入った直後だけ全気筒同時に一定量の噴射を行います。また，同期噴射中は噴射時間を非同期分だけ延長します。</div>
+</td>
+</tr>
+</table>
+
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">非同期噴射</td>
+</tr>
+</table>
+<br>
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">
+<div class="text">始動時非同期噴射</div>
+</td><td class="color1">
+<div class="text">スターター信号が入力された直後に，一回非同期噴射を行い始動性を向上させます。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">加速時非同期噴射</div>
+</td><td class="color1">
+<div class="text">スロットル開度の増加量が設定値以上のとき非同期噴射を行い，加速時の応答性を向上させます。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">エンジン回転低下時非同期噴射</div>
+</td><td class="color1">
+<div class="text">フューエルカット中およびフューエルカットから復帰時に，エンジン回転が急激に低下した場合，非同期噴射を行い運転を確保します。</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010011A070A201');chgImg('imT010011A070A201');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010011A070A201" align="absmiddle"><a name="t010011a070a201">同期噴射</a></span>
+<br>
+<div id="tmT010011A070A201" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">同期噴射時間は以下の式で表すことができます。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">なお，エンジン始動時はエンジン回転数，バッテリー電圧および冷却水温により噴射時間を決定します。また，始動時の過噴射を防止するため，クランキング時間により噴射量の増減を行います。</div>
+</td>
+</tr>
+</table>
+
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">同期噴射　＝　A.基本噴射時間　＋　B.補正噴射時間　＋　C.無効噴射時間</td>
+</tr>
+</table>
+<br>
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">A.基本噴射時間</div>
+</td><td class="color1">
+<div class="text">吸入空気量およびエンジン回転数により決まる基本となる噴射時間です。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">B.補正噴射時間</div>
+</td><td class="color1">
+<div class="text">各センサーの信号により,そのときのエンジン状態に応じて適切な空燃比の混合気にするための係数です。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">B-1吸気温補正</div>
+</td><td class="color1">
+<div class="text">吸入空気温度が低いときは,空気密度が高くなるため,増量します。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">B-2暖機増量補正</div>
+</td><td class="color1">
+<div class="text">冷却水温が低いときは増量し,冷間時の運転性を確保します。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">B-3始動後増量補正</div>
+</td><td class="color1">
+<div class="text">エンジン始動後に冷却水温,エンジン回転数に応じて増量し,始動後のエンジン回転を安定させます。増量比は始動直後が最大で,その後徐々に減少します。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">B-4過渡時空燃比補正</div>
+</td><td class="color1">
+<div class="text">吸入空気量の変化から加減速を判定し,状態に応じた増量または減量を行います。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">B-5壁面付着補正</div>
+</td><td class="color1">
+<div class="text">燃料の壁面付着を,冷却水温・エンジン回転数・スロットル開度から算出し補正します。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">B-6高負荷増量補正</div>
+</td><td class="color1">
+<div class="text">各センサーからの信号により高負荷運転を判定し,増量することにより排気温度上昇を防止します。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">B-7空燃比フィードバック制御</div>
+</td><td class="color1">
+<div class="text">O<SUB>2</SUB>センサーからの信号により補正を行い,空燃比を三元触媒の浄化性能の高い理論空燃比近辺の狭い範囲に制御します。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">C.無効噴射時間</div>
+</td><td class="color1">
+<div class="text">インジェクターの作動遅れを補正します。</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010011A070A187');chgImg('imT010011A070A187');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT010011A070A187" align="absmiddle"><a name="t010011a070a187">フューエルカット</a></span>
+<br>
+<div id="tmT010011A070A187" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">エンジン保護および燃費向上のため,燃料噴射を一時的に停止します。</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010011A070A187I01');chgImg('imT010011A070A187I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010011A070A187I01" align="absmiddle"><a name="t010011a070a187i01">フューエルカット</a></span>
+<br>
+<div id="tmT010011A070A187I01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">減速時フューエルカット</div>
+</td><td class="color1">
+<div class="text">減速時（エンジンコントロールコンピューターがスロットルOFFと判断時）でエンジン回転数が規定値以上の場合,燃料噴射を停止して失火による触媒過熱防止,および燃費の向上をはかります。冷却水温が低い場合は,フューエルカット回転数および復帰回転数は高くなります。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">エンジン回転数によるフューエルカット</div>
+</td><td class="color1">
+<div class="text">エンジン回転数が規定値以上の場合,燃料噴射を停止して過回転を防止します。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">"N"&rarr;"D"レンジシフト時フューエルカット</div>
+</td><td class="color1">
+<div class="text">エンジン回転数が規定値以上の場合,シフトレバー操作時に燃料噴射を停止して変速ショックの低減,およびA/Tの保護をはかります。</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010011A070A187X02');chgImg('imT010011A070A187X02');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010011A070A187X02" align="absmiddle"><a name="t010011a070a187x02">減速時フューエルカット回転数（2NZ-FE・1NZ-FE	共通）</a></span>
+<br>
+<div id="tmT010011A070A187X02" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark" rowspan="2" valign="MIDDLE">
+<div class="text">フューエルカット回転数　[r/min]　</div>
+</td><td class="gray3_dark">
+<div class="text">ロックアップ制御作動時</div>
+</td><td class="color1" align="CENTER">
+<div class="text">900</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark">
+<div class="text">ロックアップ制御非作動時</div>
+</td><td class="color1" align="CENTER">
+<div class="text">1200</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010011A070A187X03');chgImg('imT010011A070A187X03');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010011A070A187X03" align="absmiddle"><a name="t010011a070a187x03">高回転時フューエルカット回転数（2NZ-FE・1NZ-FE	共通）</a></span>
+<br>
+<div id="tmT010011A070A187X03" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">
+<div class="text">フューエルカット回転数　[r/min]　</div>
+</td><td class="color1" align="CENTER">
+<div class="text">6600</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</body>
+</html>

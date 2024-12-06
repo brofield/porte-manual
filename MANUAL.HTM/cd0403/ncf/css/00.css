@@ -1,0 +1,32 @@
+.title{
+	background-image:url(../images/title.gif);
+	background-repeat:no-repeat;
+	height:113px;
+	width:813px
+}
+.gray{
+	background-color:#717171;
+}
+.gray2{
+	background-color:#8C8C8C;
+}
+body{
+	background-image:url(../images/bg.gif);
+}
+
+A:link{
+	color:#666666;
+	text-decoration:none;
+}
+A:visited{
+	color:#666666;
+	text-decoration:none;
+}
+A:active {
+	color:#B7C3CA;
+	text-decoration:underline;
+}
+A:hover{
+	color:#444444;
+	text-decoration:underline;
+}

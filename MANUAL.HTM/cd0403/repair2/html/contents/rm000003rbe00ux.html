@@ -1,0 +1,35 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000003RBE00UX"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>DTC
+								 &nbsp;&nbsp; P0711/38 &nbsp;&nbsp; 油温センサー系統(レンジ外れ)</h3></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><h2>準備品一覧<a href="#" onclick="openSeePage('ppr','RM000003RBE00UX');return false;"><img border="0" src="../../../../image/extxref.png"></a></h2><br clear="all"><a name="RM000003RBE00UX_01"></a><h2>機能説明</h2><br clear="all"><a name="1"></a><font class="ptxt">オートマチック トランスアクスルASSY内に取り付けられた油温センサは、トランスアクスル油圧制御回路内の油温を検出し、エンジンコントロールコン ピュータへ油温に応じた信号を出力している。エンジンコントロールコンピュータは、走行時間、エンジン水温、吸入空気温などによりAT油温を推定し、AT油温センサのレンジ外れを検出する。</font><br><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
+							98%
+						"><colgroup align="" width="18%
+			"><col align=""></colgroup><colgroup align="" width="42%
+			"><col align=""></colgroup><colgroup align="" width="40%
+			"><col align=""></colgroup><tr><th align="center">DTC No.<br>SAE/TCCS<br></th><th align="center">DTC検出条件<br><ol style="list-style-type: decimal"><li>診断条件<br></li><li>異常状態<br></li><li>異常期間<br></li><li>その他<br></li></ol></th><th align="center">点検部位<br></th></tr><tr><td rowspan="2" align="center">P0711/38<br></td><td><ol style="list-style-type: decimal"><li>エンジン始動時のエンジン冷却水温および吸入空気温度が-10&deg;C以上で、30分かつ11km以上走行<br></li><li>ATフルード油温(THO1)が20&deg;C未満<br></li><li>3秒以上<br></li><li>2トリップ<br></li></ol></td><td rowspan="2"><ol style="list-style-type: disc"><li>オートマチックトランスアクスルフルード量<br></li><li>トランスミッションワイヤ(油温センサ)<br></li></ol></td></tr><tr><td><ol style="list-style-type: decimal"><li>エンジン始動時のエンジン冷却水温35&deg;C未満<br></li><li>ATフルード油温(THO1)が100&deg;C以上<br></li><li>10秒以上<br></li><li>2トリップ<br></li></ol></td></tr></table><br clear="all"><br clear="all"><a name="RM000003RBE00UX_02"></a><h2>点検手順</h2><br clear="all"><a name="1"></a><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">SST(TaSCAN)を使用してフリーズフレームデータを読み取る。フリーズフレームデータには不具合発生時のエンジン稼動状態の一部が記録されており、それらの情報がトラブルシュートを行う際に役立つ。</dd></dl></p><br clear="all"><a name="RM000003RBE00UX_03_0001"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順1</td><td width="90%" class="s1">ダイアグコード読み取り</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70201&nbsp;&nbsp;<br></dd></dl>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">SST(TaSCAN)をDLC3に接続する。</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">IG ONにする。</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">SST(TaSCAN)の画面表示に従いダイアグコードを確認する。(要領は<a href="#" onclick="openSeePage('seepage','RM000000EFO000X');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)</font><br><table border="1" cellspacing="0" cellpadding="2" width="42.6%
+						"><caption class="tbl-title"><span>結果&nbsp;
+				</span></caption><colgroup align="" width="70%
+			"><col align=""></colgroup><colgroup align="" width="30%
+			"><col align=""></colgroup><tr><th align="center">結果<br></th><th align="center">飛び先<br></th></tr><tr><td>P0711/38のみ出力される<br></td><td align="center">A<br></td></tr><tr><td>P0711/38以外のダイアグコードも出力する<br></td><td align="center">B<br></td></tr></table><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">DTC P0711/38以外のダイアグコードが出力された場合は、そのダイアグコードを先にトラブルシュートすること。</dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">関連するダイアグコードチャートへ<a href="#" onclick="openSeePage('seepage','RM00000092800HX');return false;">
+			（要領は
+		<img border="0" src="../../../../image/extxref.png">
+			参照）
+		</a>
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000003RBE00UX_03_0002"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順2</td><td width="90%" class="s1">オートマチックトランスアクスルフルード量点検</td></tr></table><font class="ptxt">(要領は<a href="#" onclick="openSeePage('seepage','RM00000092T000X');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)</font><br><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">オートマチックトランスアクスルフルード点検&middot;調整</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">トランスミッション ワイヤ交換<a href="#" onclick="openSeePage('seepage','RM000000AXL000X');return false;">
+			（要領は
+		<img border="0" src="../../../../image/extxref.png">
+			参照）
+		</a>
+&nbsp;
+										</td></tr></table></td></tr></table><br></body></html>

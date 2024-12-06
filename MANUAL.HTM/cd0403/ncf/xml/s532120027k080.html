@@ -1,0 +1,359 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>オートレベリングシステム</title>
+<link type="text/css" href="../css/main2.css" rel="stylesheet">
+<link type="text/css" href="../css/style.css" rel="stylesheet">
+<script src="../js/hidden.js" language="JavaScript"></script>
+</head>
+<body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
+<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td align="left"><input onClick="printCheck()" value="印刷" name="submit" type="submit"></td><td align="center">　</td><td align="right"><input onClick="closeWindow()" value="閉じる" name="submit2" type="submit"></td>
+</tr>
+</table>
+<div align="left">
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="blue" width="5%">　</td><td align="center" class="blue" width="80%">オートレベリングシステム</td><td width="15%" class="blue" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">ディスチャージヘッドランプ装着車のレベリング機能を，従来の手動レベリングからオートレベリングシステムに変更しました。オートレベリングシステムは，車両姿勢の変化に応じてヘッドランプレベリングアクチュエーターを制御し，光軸の向きを一定に保つことで，対向車や前走車などへの眩惑光を防止するシステムです。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">オートレベリングシステムを制御するヘッドランプレベリングコンピューターをインストルメントパネル内に，車両姿勢の変化を検出するハイトコントロールセンサーをリヤサスペンション部にそれぞれ配置しました。</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120027K080K082');chgImg('imT120027K080K082');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120027K080K082" align="absmiddle"><a name="t120027k080k082">オートレベリング作動</a></span>
+<br>
+<div id="tmT120027K080K082" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">オートレベリングシステムを制御するヘッドランプレベリングコンピューターは，車速信号やハイトコントロールセンサーからの車高変化信号を入力することで，車両の走行状態や姿勢変化に応じてヘッドランプレベリングアクチュエーターを駆動し，ヘッドランプの光軸を制御します。</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/k3760003e.png"></td>
+</tr>
+</table>
+<br>
+
+
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">オートレベリングシステム制御一覧</td>
+</tr>
+</table>
+<br>
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">
+<div class="text">車両状態</div>
+</td><td class="gray3_dark">
+<div class="text">制御モード</div>
+</td><td class="gray3_dark">
+<div class="text">制御内容</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="2">
+<div class="text">ヘッドランプ　ON時</div>
+</td><td class="color1">
+<div class="text">車両停車中</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">ヘッドランプ　OFF&rarr;ON時のピッチ角変化の平均値（1秒間）に応じてヘッドランプレベリングアクチュエーターを駆動します。</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">車両走行中</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">ヘッドランプ　OFF&rarr;ON時に車両走行中の場合は，走行開始前のピッチ角変化の平均値（1秒間）に応じて，ヘッドランプレベリングアクチュエーターを駆動します。</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">車両停車中</div>
+</td><td class="color1">
+<div class="text">停車中制御</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">ヘッドランプ　ON状態で，車両姿勢変化が3秒間継続して安定した場合に，安定時の最後のピッチ角変化の平均値（1秒間）に応じて，ヘッドランプレベリングアクチュエーターを駆動します。</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">車両走行中</div>
+</td><td class="color1">
+<div class="text">走行中制御</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">ヘッドランプ　ON状態で，定速走行の状態が3秒間継続され，かつ悪路を走行していない場合に，ピッチ角変化の平均値（3秒間）に応じて，ヘッドランプレベリングアクチュエーターを駆動します。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">停車&rarr;走行&rarr;停車のあいだに，1回のみ制御を行います。</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">悪路走行中</div>
+</td><td class="color1">
+<div class="text">悪路走行検出</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">ヘッドランプ　ON状態で，車速が30km/h以上での定速走行の状態が検出されている場合に，3秒以内にピッチ角変化を検出した場合は，走行中制御を中止します。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">再度，走行中制御条件が成立した場合に制御を実施します。</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">車両走行中</div>
+</td><td class="color1">
+<div class="text">正確性の判定</div>
+</td><td class="color1">
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">走行中制御終了後に，走行中制御に使用したピッチ角の正確性を判定し，データを誤りと判定した場合は，正確なピッチ角の平均値（3秒間）に応じてヘッドランプレベリングアクチュエーターを駆動します。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">停車&rarr;走行&rarr;停車のあいだに，1回のみ制御を行います。</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120027K080K341');chgImg('imT120027K080K341');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120027K080K341" align="absmiddle"><a name="t120027k080k341">オートレベリングシステムのフェイルセーフ機能</a></span>
+<br>
+<div id="tmT120027K080K341" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">ヘッドランプレベリングコンピューターは，システムに異常を検出した場合に表のようにフェイルセーフを行います。また，ハイトコントロールセンサーに異常が発生した場合は，コンビネーションメーター内のヘッドランプレベリングウォーニングインジケーターランプを点灯させます。</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/k3840097e.png"></td>
+</tr>
+</table>
+<br>
+
+
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">フェイルセーフ機能一覧</td>
+</tr>
+</table>
+<br>
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">
+<div class="text">異常項目</div>
+</td><td class="gray3_dark">
+<div class="text">異常検出条件</div>
+</td><td class="gray3_dark">
+<div class="text">制御内容</div>
+</td><td class="gray3_dark">
+<div class="text">インジケーター ランプ</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">電源過電圧</div>
+</td><td class="color1">
+<div class="text">ヘッドランプレベリングコンピューターの入力端子電圧が18.5V以上</div>
+</td><td class="color1">
+<div class="text">アクチュエーターの駆動を停止</div>
+</td><td class="color1">
+<div class="text">消灯</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">電源低電圧</div>
+</td><td class="color1">
+<div class="text">ヘッドランプレベリングコンピューターの入力端子電圧が9V以下</div>
+</td><td class="color1">
+<div class="text">アクチュエーターの駆動を停止</div>
+</td><td class="color1">
+<div class="text">消灯</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">車速制限超過</div>
+</td><td class="color1">
+<div class="text">車速が一定以上</div>
+</td><td class="color1">
+<div class="text">アクチュエーターの駆動を停止</div>
+</td><td class="color1">
+<div class="text">消灯</div>
+</td>
+</tr>
+<tr>
+<td class="color1" rowspan="2">
+<div class="text">ハイトコントロール センサー異常</div>
+</td><td class="color1">
+<div class="text">信号異常</div>
+</td><td class="color1" rowspan="2">
+<div class="text">アクチュエーターの駆動を停止</div>
+</td><td class="color1" rowspan="2">
+<div class="text">点灯</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">断線・ショート・電圧異常</div>
+</td>
+</tr>
+<tr>
+<td class="color1">
+<div class="text">マイクロコンピューター</div>
+</td><td class="color1">
+<div class="text">自己診断機能による故障検出</div>
+</td><td class="color1">
+<div class="text">マイクロコンピューターリセット</div>
+</td><td class="color1">
+<div class="text">消灯</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT120027K080B');chgImg('imT120027K080B');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_a0.gif" border="0" id="imT120027K080B" align="absmiddle"><a name="t120027k080b">関連部品</a></span>
+<br>
+<div id="tmT120027K080B" style="display:none">
+<br>
+
+<br>
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="gray" width="5%">　</td><td align="center" class="gray" width="80%">ヘッドランプ</td><td width="15%" class="gray" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">ハロゲン仕様，ディスチャージ仕様ともにフロントターンシグナルランプ部のエクステンションに薄グリーン（レクサス色）の塗装を施し，高級感を演出しました。</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/k5160001e.png"></td>
+</tr>
+</table>
+<br>
+
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+</div>
+</body>
+</html>

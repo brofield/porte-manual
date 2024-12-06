@@ -1,0 +1,29 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000000P2L000X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>EBD付きABS&amp;TRC&amp;VSC&amp;BAシステム&nbsp;&nbsp;フリーズフレームデータ／ダイアグ詳細情報</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM000000P2L000X_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="CD0403____00004SD0000011step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>フリーズフレームデータ出力について</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2">
+<li><p><font class="ptxt">TaSCANを使用して、システム作動時または異常ダイアグノーシスコード出力時の車両(センサー)状況を記憶し、表示させることができる。</font><br></p></li>
+<li><p><font class="ptxt">システム作動時のフリーズフレームデータ</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">システム作動時にデータを記憶し、システム作動毎にデータが更新される。</font><br></p></li>
+<li><p><font class="ptxt">最後にシステムが作動した時からのIG OFF&rarr;ONした回数を31回まで記憶し、表示する。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">車両停車状態(車速7ｋｍ/ｈ未満)でのIG OFF&rarr;ONはカウントアップされない。<br></li><li class="atten4">IGスイッチONの回数が31回をこえた場合は[31]を表示する。<br></li></ol></p></p></li>
+<li><p><font class="ptxt">異常ダイアグノーシスコード発生時のフリーズフレームデータを記憶すると、システム作動時のフリーズフレームデータは消去される。</font><br></p></li></ol>
+<li><p><font class="ptxt">異常ダイアグノーシスコード発生時のフリーズフレームデータ</font><br></p></li><br>
+<ol class="s3">
+<li><p><font class="ptxt">異常ダイアグノーシスコードが出力した場合、異常コード発生時のフリーズフレームデータを記憶する。</font><br></p></li>
+<li><p><font class="ptxt">異常ダイアグコード発生時のフリーズフレームデータを記憶すると、記憶データ消去(ダイアグノーシスコード消去)されるまでデータ更新はされない。</font><br></p></li>
+<li><p><font class="ptxt">異常ダイアグノーシスコード発生時のフリーズフレームデータでは、フリーズフレームデータ記憶後のIG ON回数は記憶しない</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%
+						"><caption class="tbl-title"><span>フリーズフレームデータ一覧表&nbsp;
+				</span></caption><colgroup align="" width="33%
+			"><col align=""></colgroup><colgroup align="" width="22%
+			"><col align=""></colgroup><colgroup align="" width="32%
+			"><col align=""></colgroup><colgroup align="" width="13%
+			"><col align=""></colgroup><tr><th align="center">項目名<br></th><th align="center">出力項目<br></th><th align="center">状況<br></th><th align="center">参考値<br></th></tr><tr><td align="center">マスタ圧センサー<br></td><td align="center">出力値(V)<br></td><td align="center">ペダルを放した状態<br></td><td align="center">0.3-0.8<br></td></tr><tr><td align="center">マスタ圧センサー<br></td><td align="center">出力値(V)<br></td><td align="center">ペダルを約49N{5ｋｇｆ} で踏んだ状態<br></td><td align="center">0.8-1.8<br></td></tr><tr><td align="center">マスタ圧センサー<br></td><td align="center">出力値(V)<br></td><td align="center">ペダルを全踏みした状態<br></td><td align="center">3.2-4.5<br></td></tr><tr><td align="center">マスタ圧センサー変化量<br></td><td align="center">センサ勾配(MPa/ｓ)<br></td><td align="center">-<br></td><td align="center">-30-200<br></td></tr><tr><td align="center">車両スピード<br></td><td align="center">車体速度(ｋｍ/ｈ)<br></td><td align="center">-<br></td><td align="center">メータの速度表示<br></td></tr><tr><td align="center">ヨーレートセンサー<br></td><td align="center">出力値(deg/ｓ)<br></td><td align="center">-<br></td><td align="center">-100-100(左旋回が正)<br></td></tr><tr><td align="center">舵角センサ<br></td><td align="center">舵角データ(deg)<br></td><td align="center">-<br></td><td align="center">左転舵で増加、右転舵で減少<br></td></tr><tr><td align="center">アクセル開度<br></td><td align="center">アクセル開度(deg)<br></td><td align="center">ペダルを離した状態<br></td><td align="center">約0<br></td></tr><tr><td align="center">アクセル開度<br></td><td align="center">アクセル開度(deg)<br></td><td align="center">ペダルを全踏みした状態<br></td><td align="center">約90<br></td></tr><tr><td align="center">左右Ｇ<br></td><td align="center">左右G(G)<br></td><td align="center">-<br></td><td align="center">加減速度を表示<br></td></tr><tr><td align="center">前後Ｇ<br></td><td align="center">前後G(G)<br></td><td align="center">-<br></td><td align="center">加減速度を表示<br></td></tr><tr><td align="center">ストップスイッチ<br></td><td align="center">ストップスイッチ<br></td><td align="center">ペダルを操作<br></td><td align="center">ON&larr;&rarr;OFF<br></td></tr><tr><td align="center">データフリーズ後からのＩＧ　ＯＮ回数<br></td><td align="center">IG ON回数<br></td><td align="center">-<br></td><td align="center">0-31<br></td></tr><tr><td align="center">作動システム<br></td><td align="center">作動システム<br></td><td align="center">-<br></td><td align="left"><ol style="list-style-type: disc"><li>ABS<br></li><li>VSC(TRC)<br></li><li>BA<br></li><li>HAB(*1)<br></li></ol></td></tr></table><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">*1 高G助勢制御</dd></dl></p></p></li></ol></ol><br clear="all"></body></html>

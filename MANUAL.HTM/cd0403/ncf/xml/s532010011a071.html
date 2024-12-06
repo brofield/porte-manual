@@ -1,0 +1,248 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>点火時期制御（ESA）</title>
+<link type="text/css" href="../css/main2.css" rel="stylesheet">
+<link type="text/css" href="../css/style.css" rel="stylesheet">
+<script src="../js/hidden.js" language="JavaScript"></script>
+</head>
+<body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
+<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td align="left"><input onClick="printCheck()" value="印刷" name="submit" type="submit"></td><td align="center">　</td><td align="right"><input onClick="closeWindow()" value="閉じる" name="submit2" type="submit"></td>
+</tr>
+</table>
+<div align="left">
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td class="blue" width="5%">　</td><td align="center" class="blue" width="80%">点火時期制御（ESA）</td><td width="15%" class="blue" align="right"></td>
+</tr>
+</table>
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">●</td><td class="text">
+<div class="text">各センサーからの信号により最適な点火時期を選出し,イグナイターに点火信号（IGt）を送ります。点火時期は,以下の式で表すことができます。なお,初期セット点火時期はBTDC5
+゜としています。</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010011A071I01');chgImg('imT010011A071I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010011A071I01" align="absmiddle"><a name="t010011a071i01">点火時期の算出</a></span>
+<br>
+<div id="tmT010011A071I01" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="0" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="blue2">参　考</td>
+</tr>
+</table>
+
+<div class="text">点火時期　＝　A.初期セット点火時期　or　B.基本進角度　＋　C.補正進角度</div>
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">A.固定進角特性</div>
+</td><td class="color1">
+<div class="text">エンジン始動時には,BTDC5&deg;に固定します。また,サービス用端子を短絡し,スロットルオフ時には,BTDC10&deg;に固定されます。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">B.基本進角特性</div>
+</td><td class="color1">
+<div class="text">各センサーの信号をもとに最適な点火時期をマップより選びます。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">C.補正進角特性</div>
+</td><td class="color1">
+<div class="text">各センサーの信号によりそのときのエンジン状態に応じて適切な進角および遅角をします。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">C-1 暖機進角特性</div>
+</td><td class="color1">
+<div class="text">冷却水温が低いときは,運転状態に応じて点火時期を進角し,運転性を向上します。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">C-2 アイドル安定化進角特性</div>
+</td><td class="color1">
+<div class="text">アイドル回転が低くなると,点火時期を進化しアイドル回転数の安定化をはかります。また,高くなると遅角します。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">C-3 フューエルカット復帰時遅角</div>
+</td><td class="color1">
+<div class="text">フューエルカット復帰時に,点火時期を遅角させてショックを軽減します。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">C-4 加速時遅角</div>
+</td><td class="color1">
+<div class="text">加速時に一時的に点火時期を遅角することにより運転性の向上をはかっています。</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark" valign="MIDDLE">
+<div class="text">C-5 ノック補正遅角</div>
+</td><td class="color1">
+<div class="text">ノッキングが発生するとノックセンサーからの信号により,点火時期を補正します。</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010011A071A205');chgImg('imT010011A071A205');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT010011A071A205" align="absmiddle"><a name="t010011a071a205">ノックコントロールシステム</a></span>
+<br>
+<div id="tmT010011A071A205" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">ノッキングを検出するとノッキングの大小によってノッキングが発生しなくなるまで一定角度ずつ遅角させます。</div>
+</td>
+</tr>
+
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">ノッキングが発生しなくなると一定角度ずつ進角します。この時にノッキングが再発した場合は再度遅角します。</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3840108p.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010011A071A206');chgImg('imT010011A071A206');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT010011A071A206" align="absmiddle"><a name="t010011a071a206">最大・最小進角特性</a></span>
+<br>
+<div id="tmT010011A071A206" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">点火時期が異常に進角または遅角すると,エンジンに悪影響を与えるため,最大および最小進角度を決めています。</div>
+</td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010011A071A206X01');chgImg('imT010011A071A206X01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010011A071A206X01" align="absmiddle"><a name="t010011a071a206x01">最大・最小進角度</a></span>
+<br>
+<div id="tmT010011A071A206X01" style="display:none">
+<br>
+
+<br>
+
+
+<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
+<tr>
+<td class="gray3_dark">
+<div class="text">最大進角度　　　　　　（BTDC）</div>
+</td><td class="color1" align="CENTER">
+<div class="text">50&deg;</div>
+</td>
+</tr>
+<tr>
+<td class="gray3_dark">
+<div class="text">最小進角度　　　　　　（ATDC）</div>
+</td><td class="color1" align="CENTER">
+<div class="text">10&deg;</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+<table cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="frame"><span onClick="treeMenu('tmT010011A071A216');chgImg('imT010011A071A216');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT010011A071A216" align="absmiddle"><a name="t010011a071a216">点火時期の算出</a></span>
+<br>
+<div id="tmT010011A071A216" style="display:none">
+<br>
+
+<br>
+
+<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<tr>
+<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<div class="text">Ne・G<SUB>2</SUB>信号，吸気温信号，スロットルバルブ開度信号，水温信号などをもとにエンジンコントロールコンピューターが運転状態に応じた最適な点火時期を算出し，イグナイター一体型イグニッションコイルへ点火信号を送ります。</div>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img src="../xml/grph_ent/a3840109p.png"></td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+  <head>
+  <title>[電子技術マニュアル]</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000015O8001X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>EBD付きABS&amp;BAシステム（4WD）&nbsp;&nbsp;機能点検</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><h2>準備品一覧<a href="#" onclick="openSeePage('ppr','RM0000015O8001X');return false;"><img border="0" src="../../../../image/extxref.png"></a></h2><br clear="all" class="beforePng"><a name="RM0000015O8001X_01"></a><br clear="all" class="beforePng"><a name="RM0000015O8001X_01_0001"></a><table width="100%" cellspacing="0" border="0" class="s1r"><tr><td class="s1r">1. ブレーキシステム表示ランプイニシャルチェック</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">IGスイッチONにする。  </font><br></p></li>
+<li><p><font class="ptxt">ABSウォーニングランプおよびブレーキウォーニングランプが点灯し、約3秒後に消灯することを点検する。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">ランプが点灯しない場合は、バルブ切れ、メータの出力端子、ブレーキアクチュエータASSYとメータ間のワイヤハーネスを点検する。</dd></dl></p></p></li></ol><br clear="all"><br clear="all" class="beforePng"><a name="RM0000015O8001X_01_0002"></a><table width="100%" cellspacing="0" border="0" class="s1r"><tr><td class="s1r">2. ブレーキアクチュエータ作動点検</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">点検前準備</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">SST(TaSCAN)をDLC3に接続して、エンジンを始動する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
+<li><p><font class="ptxt">SST(TaSCAN)の電源をONにして、&ldquo;メニュー(診断)&rdquo;&rarr;&ldquo;シャシ&rdquo;&rarr;&ldquo;ABS&middot;VSC&rdquo;&rarr;&ldquo;アクティブテスト&rdquo;を選択する。</font><br></p></li></ol></p></li>
+<li><p><font class="ptxt">アクチュエータモータ作動点検</font><br><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">モータ保護のため、モータを5秒以上駆動しない。連続して作動させる場合は、20秒以上の間隔を空ける。</dd></dl></p><br>
+<ol class="s3">
+<li><p><font class="ptxt">モータリレーをONにする。</font><br><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec">モータの駆動音がする<br></dd></dl></p></p></li>
+<li><p><font class="ptxt">モータリレーをOFFにする。</font><br></p></li>
+<li><p><font class="ptxt">ブレーキペダルを一定の力で踏み込んだまま15秒間保持する。</font><br><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec">ペダルが入り込まない<br></dd></dl></p></p></li>
+<li><p><font class="ptxt">ブレーキペダルを踏み込んだ状態で、モータリレーをONにする。</font><br><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec">ペダルに脈動がない<br></dd></dl></p></p></li>
+<li><p><font class="ptxt">モータリレーをOFFにして、ブレーキペダルを離す。</font><br></p></li></ol></p></li>
+<li><p><font class="ptxt">ソレノイド作動点検</font><br><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">モータおよびソレノイド保護のため、モータおよびソレノイドを5秒以上駆動しない。連続して作動させる場合は、20秒以上の間隔を空ける。<br></li><li class="atten3">各ソレノイドのアクティブテスト作動時間は約2秒であり、自動的にOFFになる。<br></li><li class="atten3">減圧弁のみ単独で作動させた状態で、ブレーキペダルを踏み込まない。<br></li><li class="atten3">指示のないソレノイドをONにしない。<br></li></ol></p><br>
+<ol class="s3">
+<li><p><font class="ptxt">ブレーキペダルを踏み込み、そのまま保持する。</font><br></p></li>
+<li><p><font class="ptxt">SFRHとSFRRのソレノイドを同時にONにする。</font><br><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec">ペダルが入り込まない<br></dd></dl></p></p></li>
+<li><p><font class="ptxt">SFRHとSFRRのソレノイドがOFFになったときのブレーキペダルの状態を点検する。</font><br><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec">ペダルが入り込む<br></dd></dl></p></p></li>
+<li><p><font class="ptxt">モータリレーをONにする。</font><br><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec">ペダルが戻される<br></dd></dl></p></p></li>
+<li><p><font class="ptxt">同様にして、他の車輪のソレノイドを点検する。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">フロント右(SFRH、SFRR)、フロント左(SFLH、SFLR)、リヤ右(SRRH、SRRR)、リヤ左(SRLH、SRLR)</dd></dl></p></p></li></ol></p></li></ol><br clear="all"></body></html>
