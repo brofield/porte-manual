@@ -1,64 +1,14 @@
-<html>
-<head>
-<title>定期点検作業要領</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="../Templates/style" rel="stylesheet"type="text/css">
-<script language="JavaScript">
-<!--
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_nbGroup(event, grpName) { //v3.0
-  var i,img,nbArr,args=MM_nbGroup.arguments;
-  if (event == "init" && args.length > 2) {
-    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
-      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
-      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
-      nbArr[nbArr.length] = img;
-      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
-        if (!img.MM_up) img.MM_up = img.src;
-        img.src = img.MM_dn = args[i+1];
-        nbArr[nbArr.length] = img;
-    } }
-  } else if (event == "over") {
-    document.MM_nbOver = nbArr = new Array();
-    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
-      if (!img.MM_up) img.MM_up = img.src;
-      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
-      nbArr[nbArr.length] = img;
-    }
-  } else if (event == "out" ) {
-    for (i=0; i < document.MM_nbOver.length; i++) {
-      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
-  } else if (event == "down") {
-    if ((nbArr = document[grpName]) != null)
-      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
-    document[grpName] = nbArr = new Array();
-    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
-      if (!img.MM_up) img.MM_up = img.src;
-      img.src = img.MM_dn = args[i+1];
-      nbArr[nbArr.length] = img;
-  } }
-}
-//-->
-</script>
+<html><head>
+<title>Regular inspection work guidelines</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link href="../Templates/style" rel="stylesheet" type="text/css"/>
+<script language="JavaScript"><! -Function mm_preloadimages () {//v3.0 var D = document; if (D.images) {if (! D.mm_p) D.mm_p = new array (); var I, j = D.mm_p.length, a = mm_preloadimages.arguments; for (i = 0; i <a.LEngth; i ++) if (a [i] .indexof ("#")! = 0) {D.mm_p [J] = New iMage; d.mm_p [j ++]. SRC = a [i];}}} Function mm_findobj (n, d) {//v4.01 var P, i, x; IF (! D) D = Document; IF (((p = n.indexof ("?")> 0 & parent.frames.length) {d = parent.frames [n.substring (p+1)]. document; n = n.substring (0, p);} if(! (X = D [n]) & & D.All) x = D.ALL [n]; for (i = 0;!for (I = 0;! x & d.layers & I <D.Layers.length; i ++) x = mm_findobj (n, D.Layers [i] .document); IF (! X & D.Getelementbyid) x = d.getelementbyid (n); function mm_nbgroup (event, grpName) {//v3.0 var, nbarr, args = mm_nbgroup.Arguments; == "INIT" & ARGS.LENGTH> 2){if ((img = mm_findobj (args [2]))! = null & &! img.mm_init = true; img.mm_up = args [3]; img.mm_dn = img.src; IF ((()NBARR = document [GRPNAME]) == NULL [GRPNAME] = NEW ARRAY (); I+= 2)IF ((img = mm_findobj (args [i]))! = null) {if (! Img.mm_up) img.mm_up = img.src; img.src = img.mm_dn = args [I+1]; nbarr [nbarr.length] = img;}}} else if (event == "over") {document.mm_nbover = nbarr = new array (); for (i = 1; i <ARGS.LENGTH-1;+= 3)IF ((img = mm_findobj (args [i]))! = null) {if (! Img.mm_up) img.mm_up = img.src; img.src = (img.mm_dn & args [i+2])?ARGS [I+2]: ARGS [I+1]; nbarr [nbarr.length] = img;}} else if (event == "out") {for (I = 0; i <document.mm_NBOVER.LENGTH;I ++) {img = document.mm_nbover [i]; img.src = (img.mm_dn)? Img.mm_dn: img.mm_up;}} else IF (EVENT == "Down") NT [GRPNAME]! = Null) for (i = 0; i ++) {img = nbarr [i]; img.src = img.mm_dn = 0;} document = nbar R= New Array (); for (i = 2; i <args.length-1; i+2) IF ((img = mm_findobj (Args [i]))! = Null) {IF (! Img.mm_up) Img.Mm_up = img.src; img.src = img.mm_dn = args [i+1]; nbarr [nbarr.length] = img;}} /----></script>
 </head>
-<body bgcolor="#FFFFFF" text="#000000" leftmargin="20" topmargin="20" marginwidth="0" marginheight="20">
-<table width="100%" border="0" cellspacing="2" cellpadding="3">
-  <tr valign="top"> 
-    <td width="80"><a href="#" onClick="window.print();MM_nbGroup('down','group1','top_insatu','../img/top_insatu.gif',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','top_insatu','../img/top_insatu2.gif','../img/top_insatu2.gif',1)"><img src="../img/top_insatu.gif" width="80" height="30" border="0" name="top_insatu" alt="印刷"></a></td>
-    <td width="80"><a href="#" onClick="window.close();MM_nbGroup('down','group1','top_close','../img/top_close.gif',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','top_close','../img/top_close2.gif','../img/top_close2.gif',1)"><img src="../img/top_close.gif" width="80" height="30" border="0" name="top_close"></a></td>
+<body bgcolor="#FFFFFF" leftmargin="20" marginheight="20" marginwidth="0" text="#000000" topmargin="20">
+<table border="0" cellpadding="3" cellspacing="2" width="100%">
+  <tbody><tr valign="top"> 
+    <td width="80"><a href="#" onclick="window.print();MM_nbGroup('down','group1','top_insatu','../img/top_insatu.gif',1)" onmouseout="MM_nbGroup('out')" onmouseover="MM_nbGroup('over','top_insatu','../img/top_insatu2.gif','../img/top_insatu2.gif',1)"><img alt="印刷" border="0" height="30" name="top_insatu" src="../img/top_insatu.gif" width="80"/></a></td>
+    <td width="80"><a href="#" onclick="window.close();MM_nbGroup('down','group1','top_close','../img/top_close.gif',1)" onmouseout="MM_nbGroup('out')" onmouseover="MM_nbGroup('over','top_close','../img/top_close2.gif','../img/top_close2.gif',1)"><img border="0" height="30" name="top_close" src="../img/top_close.gif" width="80"/></a></td>
     <td width="100">　</td>
     <td>　</td>
     <td width="50"> 
@@ -68,29 +18,30 @@ function MM_nbGroup(event, grpName) { //v3.0
       <div align="center"></div>
     </td>
   </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 <div align="center">
-  <h3>定期点検作業要領</h3>
+  <h3>Regular inspection work guidelines</h3>
 </div>
-<table width="100%" border="1" cellspacing="0" cellpadding="5" bordercolor="#000000">
-  <tr> 
-    <td height="50" bgcolor="#99CCFF"> 
+<table border="1" bordercolor="#000000" cellpadding="5" cellspacing="0" width="100%">
+  <tbody><tr> 
+    <td bgcolor="#99CCFF" height="50"> 
       <div align="center">
-        <h2>序</h2>
+        <h2>Introduction</h2>
       </div>
     </td>
   </tr>
   <tr> 
     <td height="750" valign="top">
-<p>現在の点検整備の仕組みは、昭和26年の道路運送車両法施行時に定められましたが、近年の自動車技術の進歩による耐久性、信頼性の向上や使用形態の変化による年間走行距離の減少などを背景に、今回、事業用乗用車の1か月点検の廃止や定期点検項目の削減など点検整備制度の改正が施されることになりました。</p>
-      <p>しかし、技術の進歩により耐久性、信頼性が向上したとはいえ、自動車は多くの部品からなり、機械である以上各部品が使用の過程で、摩耗したり、劣化したりすることは避けられません。各部の摩耗や劣化は、性能低下につながり、そのまま使い続けることは安全の確保や公害防止に影響を与え、また、車の寿命を短くする原因にもなるため、車を安全、快適に使用していくには、定期的な点検整備が必要なことに変わりはありません。</p>
-      <p>本書は、今回の車両法改正により、平成12年5月1日より施行の新たな自動車点検基準に基づき、トヨタ車の定期点検整備の作業要領、判定方法および作業手順について説明したもので、定期点検整備の正確で迅速な作業を実施するための資料としてご活用ください。</p>
-      <p>なお、本書はその後の車両の変更により作業要領、判定方法等が変更されることがありますので、あらかじめご承知おきください。</p>
-      <p align="right">平成14年8月</p>
-      <p align="right">(2002‐8)</p>
+<p>The current inspection and maintenance mechanism was stipulated at the time of the enforcement of the Road Transport Vehicle Law in 1958, but the durability due to the progress of automotive technology in recent years, improvement of reliability, and decreased annual mileage due to changes in use.Against this background, this time, the revision of the inspection and maintenance system, such as the abolition of one -month inspection of business passenger cars and reducing regular inspection items.</p>
+      <p>However, although the advances of technology have improved durability and reliability, the car consists of many parts, and as it is a machine, it is avoided to wear or deteriorate each part in the process of use.No.The wear and deterioration of each part can lead to a deterioration of performance, and keeping it as it is affecting safety and pollution prevention, and also causes the life of the car to shorten the life of the car, so the car is safe and comfortable.There is still a need for regular inspection and maintenance to go.</p>
+      <p>This book explains the work guidelines, judgment methods, and work procedures for regular inspection and maintenance of Toyota vehicles based on the new automobile inspection standards that have been enforced from May 1, 2000, based on this revision of the vehicle law.Please use it as a material for conducting accurate and quick work of inspection and maintenance.</p>
+      <p>Please note that this book may change the work guidelines, judgment method, etc. due to subsequent changes in vehicles.</p>
+      <p align="right">August 2002</p>
+      <p align="right">(2002-8)</p>
       </td>
   </tr>
-</table>
-</body>
-</html>
+</tbody></table>
+
+
+</body></html>

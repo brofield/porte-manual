@@ -1,1157 +1,1157 @@
-<html>
-<head>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>コンビネーションメーター</title>
-<link type="text/css" href="../css/main2.css" rel="stylesheet">
-<link type="text/css" href="../css/style.css" rel="stylesheet">
-<script src="../js/hidden.js" language="JavaScript"></script>
+<html><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Combination meter</title>
+<link href="../css/main2.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" src="../js/hidden.js"></script>
 </head>
 <body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
-<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td align="left"><input onClick="printCheck()" value="印刷" name="submit" type="submit"></td><td align="center">　</td><td align="right"><input onClick="closeWindow()" value="閉じる" name="submit2" type="submit"></td>
+<table cellpadding="2" cellspacing="0" id="print" style="display:none" width="100%">
+<tbody><tr>
+<td align="left"><input name="submit" onclick="printCheck()" type="submit" value="印刷"/></td><td align="center">　</td><td align="right"><input name="submit2" onclick="closeWindow()" type="submit" value="閉じる"/></td>
 </tr>
-</table>
+</tbody></table>
 <div align="left">
 
 
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0">
-<tr>
-<td class="blue" width="5%">　</td><td align="center" class="blue" width="80%">コンビネーションメーター</td><td width="15%" class="blue" align="right"></td>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td class="blue" width="5%">　</td><td align="center" class="blue" width="80%">Combination meter</td><td align="right" class="blue" width="15%"></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">VSCの採用に伴い，TRC　＆　VSC搭載車（メーカーオプション設定）のコンビネーションメーター内に，VSCウォーニング・スリップ・TRC　OFFの各インジケーターランプを設定しました。</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">With the adoption of the VSC, each indicator lamp of VSC warning, slip, and TRC off has been set in the combination meter of TRC &amp; VSC -equipped vehicles (manufacturer options).</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">コンビネーションメーターには，文字盤や指針が自発光するオプティトロンメーターを全車に採用しました。</div>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">For the combination meter, all cars are used for all vehicles with the dial and guidelines that spontaneously glow.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">各メーター類の指針駆動用ムーブメントにステッパーモーターを採用しました。</div>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">A stepper motor has been adopted for the movement movement of each meter.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">LCD（液晶ディスプレイ）で表示する電子式のオド/トリップメーターを採用しました。</div>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">An electronic Odo/Trip meter displayed on LCD (liquid crystal display) has been adopted.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">レオスタットを採用し，メーター輝度の切り替えを可能としました。</div>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">Leostat is adopted to make it possible to switch the meter brightness.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">車速信号は，ABS用の車輪速センサーからの信号を，スキッドコントロールコンピューターを介して入力するものとしました。</div>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">The car speed signal shall input signals from a wheel speed sensor for ABS via a skid control computer.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 
 
-<table cellpadding="2" cellspacing="0" border="0" width="100%">
-<tr>
-<td align="center"><img src="../xml/grph_ent/a3840115c.png"></td>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center"><img src="../xml/grph_ent/a3840115c.png"/></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT120025K125K183');chgImg('imT120025K125K183');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120025K125K183" align="absmiddle"><a name="t120025k125k183">スピードメーター仕様</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT120025K125K183');chgImg('imT120025K125K183');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT120025K125K183" src="../images/detail_b0.gif"/><a name="t120025k125k183">Speedometer specification</a></span>
+<br/>
 <div id="tmT120025K125K183" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT120025K125K183X01');chgImg('imT120025K125K183X01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120025K125K183X01" align="absmiddle"><a name="t120025k125k183x01">スピードメーター仕様</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT120025K125K183X01');chgImg('imT120025K125K183X01');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT120025K125K183X01" src="../images/detail0.gif"/><a name="t120025k125k183x01">Speedometer specification</a></span>
+<br/>
 <div id="tmT120025K125K183X01" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
 <td class="gray3_dark">
-<div class="text">表　示</div>
+<div class="text">Indication</div>
 </td><td class="gray3_dark">
-<div class="text">機　能</div>
+<div class="text">function</div>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">表示範囲：0～180km/h</div>
+<div class="text">Load range: 0-180km/h</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">10km/h刻み</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">10km/h chopped</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">ステッパーモーター方式。</div>
+<div class="text">Stepper motor system.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">ABS用車輪速センサーからの矩形波パルス信号を，スキッドコントロールコンピューターを介して入力し，車速を表示。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">A rectangular wave pulse signal from a wheel speed sensor for ABS is input via a skid control computer to display the vehicle speed.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT120025K125K433');chgImg('imT120025K125K433');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120025K125K433" align="absmiddle"><a name="t120025k125k433">タコメーター仕様</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT120025K125K433');chgImg('imT120025K125K433');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT120025K125K433" src="../images/detail_b0.gif"/><a name="t120025k125k433">Tachometer specification</a></span>
+<br/>
 <div id="tmT120025K125K433" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT120025K125K433X01');chgImg('imT120025K125K433X01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120025K125K433X01" align="absmiddle"><a name="t120025k125k433x01">タコメーター仕様</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT120025K125K433X01');chgImg('imT120025K125K433X01');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT120025K125K433X01" src="../images/detail0.gif"/><a name="t120025k125k433x01">Tachometer specification</a></span>
+<br/>
 <div id="tmT120025K125K433X01" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
 <td class="gray3_dark">
-<div class="text">表　示</div>
+<div class="text">Indication</div>
 </td><td class="gray3_dark">
-<div class="text">機　能</div>
+<div class="text">function</div>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">表示範囲：0～7000r/min</div>
+<div class="text">Load range: 0-7000R/min</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">500r/min刻み</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">500R/min chopped</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">レッドゾーン：6400～7000r/min</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Red Zone: 6400-7000R/Min</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">ステッパーモーター方式。</div>
+<div class="text">Stepper motor system.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">エンジンコントロールコンピューターからの矩形波パルス信号（2パルス/rev）を入力し，エンジン回転数を表示。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Enter the rectangular wave pulse signal (2 pulse/REV) from the engine control computer to display the engine speed.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT120025K125K352');chgImg('imT120025K125K352');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120025K125K352" align="absmiddle"><a name="t120025k125k352">フューエルゲージ仕様</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT120025K125K352');chgImg('imT120025K125K352');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT120025K125K352" src="../images/detail_b0.gif"/><a name="t120025k125k352">Fuel gauge specification</a></span>
+<br/>
 <div id="tmT120025K125K352" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT120025K125K352X01');chgImg('imT120025K125K352X01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120025K125K352X01" align="absmiddle"><a name="t120025k125k352x01">フューエルゲージ仕様</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT120025K125K352X01');chgImg('imT120025K125K352X01');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT120025K125K352X01" src="../images/detail0.gif"/><a name="t120025k125k352x01">Fuel gauge specification</a></span>
+<br/>
 <div id="tmT120025K125K352X01" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
 <td class="gray3_dark">
-<div class="text">表　示</div>
+<div class="text">Indication</div>
 </td><td class="gray3_dark">
-<div class="text">機　能</div>
+<div class="text">function</div>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">表示範囲：E～F</div>
+<div class="text">Labeling range: E to F</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">フューエル残量約6.8L以下になると，ウォーニング表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Warning display when the fuel remains of about 6.8L or less</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">デジタル電子遅延方式。</div>
+<div class="text">Digital electronic delay system.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">フューエルセンダーゲージからのフューエルタンク内残量信号とスキッドコントロールコンピューターからの車速信号とを入力し，車両状態に応じた演算処理を行ったデータによりフューエル残量を表示。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Enter the remaining signal in the fuel tank from the fuel sender gauge and the vehicle speed signal from the skid control computer, and display the fuel remaining amount by data that performs calculation processing according to the vehicle status.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT120025K125K085');chgImg('imT120025K125K085');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120025K125K085" align="absmiddle"><a name="t120025k125k085">オド/トリップメーター仕様</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT120025K125K085');chgImg('imT120025K125K085');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT120025K125K085" src="../images/detail_b0.gif"/><a name="t120025k125k085">Odo/Trip meter specification</a></span>
+<br/>
 <div id="tmT120025K125K085" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT120025K125K085X01');chgImg('imT120025K125K085X01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120025K125K085X01" align="absmiddle"><a name="t120025k125k085x01">オド/トリップメーター仕様</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT120025K125K085X01');chgImg('imT120025K125K085X01');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT120025K125K085X01" src="../images/detail0.gif"/><a name="t120025k125k085x01">Odo/Trip meter specification</a></span>
+<br/>
 <div id="tmT120025K125K085X01" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
 <td class="gray3_dark">
-<div class="text">表　示</div>
+<div class="text">Indication</div>
 </td><td class="gray3_dark">
-<div class="text">機　能</div>
+<div class="text">function</div>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">LCDによるデジタル表示</div>
+<div class="text">Digital display by LCD</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">オドメーター表示範囲：0～999999km（1km刻み）</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Odometer display range: 0 to 999999km (1km chopped)</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">トリップメーターA・B表示範囲：0.0～9999.9km（0.1km刻み）</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Trip meter A / B display range: 0.0 to 9999.9km (0.1km chopped)</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">電子式。</div>
-</td>
-</tr>
-
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">ABS用車輪速センサーからの矩形波パルス信号を，スキッドコントロールコンピューターを介して入力し，積算することで走行距離を表示。</div>
+<div class="text">Electronic type.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">交代距離も加算。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Enter a rectangular wave pulse signal from a wheel speed sensor for ABS via a skid control computer, and the mileage is displayed.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">オド/トリップ切り替えスイッチにより，オドメーター&rarr;トリップメーターA&rarr;トリップメーターB&rarr;レオスタットの順に表示。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">The substitute distance is also added.</div>
 </td>
 </tr>
-</table>
+
+<tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">The Odo/Trip switching switch displays in the order of odometer → trip meter A → Trip meter B → Leostat.</div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT120025K125K434');chgImg('imT120025K125K434');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120025K125K434" align="absmiddle"><a name="t120025k125k434">マルチブザー仕様</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT120025K125K434');chgImg('imT120025K125K434');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT120025K125K434" src="../images/detail_b0.gif"/><a name="t120025k125k434">Multi -shooter specification</a></span>
+<br/>
 <div id="tmT120025K125K434" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT120025K125K434X01');chgImg('imT120025K125K434X01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120025K125K434X01" align="absmiddle"><a name="t120025k125k434x01">マルチブザー仕様</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT120025K125K434X01');chgImg('imT120025K125K434X01');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT120025K125K434X01" src="../images/detail0.gif"/><a name="t120025k125k434x01">Multi -shooter specification</a></span>
+<br/>
 <div id="tmT120025K125K434X01" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
 <td class="gray3_dark">
-<div class="text">項　目</div>
+<div class="text">Item</div>
 </td><td class="gray3_dark">
-<div class="text">機　能</div>
+<div class="text">function</div>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">キー抜き忘れウォーニング</div>
+<div class="text">Forget to pull out the key</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">イグニッションキーが差し込んである状態（IG・ACC　OFF）で，運転席のドアを開くと約0.5秒周期で吹鳴。</div>
+<div class="text">In the state where the ignition key is inserted (IG / ACC OFF), when the door of the driver's seat is opened, it bumps in about 0.5 seconds.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">ランプ消し忘れウォーニング</div>
+<div class="text">Lamp to forget to erase</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">ヘッドランプまたはテールランプが点灯した状態でイグニッションキーが抜いてある場合に，運転席のドアを開くと連続音で吹鳴。</div>
+<div class="text">If the ignition key is pulled out with the headlamp or tail lamp lit, open the door of the driver's seat and blew with a continuous sound.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">A/Tリバースウォーニング</div>
+<div class="text">A/T reverse warning</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">シフトポジション「R」（リバース）時に，約0.7秒周期で吹鳴。</div>
+<div class="text">At the time of the shift position "R" (reverse), it bumps in a about 0.7 second cycle.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">シートベルト非着用ウォーニング</div>
+<div class="text">Seat belt non -wearing warning</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">シートベルトを装着していない状態で一定速度以上の走行を行うと，2段階のパターンで吹鳴。</div>
+<div class="text">If you run at a certain speed or higher without the seat belt, it will blow in a two -stage pattern.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT120025K125K144');chgImg('imT120025K125K144');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT120025K125K144" align="absmiddle"><a name="t120025k125k144">作動/ウォーニングインジケーターランプ仕様</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT120025K125K144');chgImg('imT120025K125K144');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT120025K125K144" src="../images/detail_b0.gif"/><a name="t120025k125k144">Operation/warning indicator lamp specification</a></span>
+<br/>
 <div id="tmT120025K125K144" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 
-<table cellpadding="2" cellspacing="0" border="0" width="100%">
-<tr>
-<td align="center"><img src="../xml/grph_ent/a3840303b.png"></td>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center"><img src="../xml/grph_ent/a3840303b.png"/></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT120025K125K144X01');chgImg('imT120025K125K144X01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120025K125K144X01" align="absmiddle"><a name="t120025k125k144x01">作動/ウォーニングインジケーターランプ一覧</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT120025K125K144X01');chgImg('imT120025K125K144X01');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT120025K125K144X01" src="../images/detail0.gif"/><a name="t120025k125k144x01">List of operation/warning indicator lamps</a></span>
+<br/>
 <div id="tmT120025K125K144X01" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
 <td class="gray3_dark">
 <div class="text">No.</div>
 </td><td class="gray3_dark">
-<div class="text">意　匠</div>
+<div class="text">Design</div>
 </td><td class="gray3_dark">
-<div class="text">名称と表示</div>
+<div class="text">Name and display</div>
 </td><td class="gray3_dark">
-<div class="text">機　能</div>
+<div class="text">function</div>
 </td>
 </tr>
 <tr>
 <td class="color1">
 <div class="text">1</div>
 </td><td class="color1">
-<img src="../xml/grph_ent/k3390505e.png"><br>
+<img src="../xml/grph_ent/k3390505e.png"/><br/>
 
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">ハイビーム作動</div>
+<div class="text">High beam operation</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">LEDによりブルーで表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Display blue by LED</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">ハイビームヘッドランプ点灯時にディマスイッチに連動して点灯。</div>
+<div class="text">Lights in conjunction with Dimaswitch when lighting high beam headlamps.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
 <div class="text">2</div>
 </td><td class="color1">
-<img src="../xml/grph_ent/k3390504e.png"><br>
+<img src="../xml/grph_ent/k3390504e.png"/><br/>
 
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">ターンシグナル作動</div>
+<div class="text">Turn signal operation</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">LEDによりグリーンで表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">View green by LED</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">ターンシグナルランプ点灯時に，フラッシャーリレーと同期して点灯。</div>
+<div class="text">Turns on the flasher relley when lighting on the turn signal lamp.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
 <div class="text">3</div>
 </td><td class="color1">
-<img src="../xml/grph_ent/k3390498e.png"><br>
+<img src="../xml/grph_ent/k3390498e.png"/><br/>
 
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">テールランプ作動</div>
+<div class="text">Tail lamp operation</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">LEDにより黄緑で表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Displayed in yellow -green by LED</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">テールランプ点灯時にテールランプリレーがONすることにより点灯。</div>
+<div class="text">Tail lamps are turned on when the tail lamp tray turns on.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
 <div class="text">4</div>
 </td><td class="color1">
-<img src="../xml/grph_ent/k3390508e.png"><br>
+<img src="../xml/grph_ent/k3390508e.png"/><br/>
 
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">半ドアウォーニング</div>
+<div class="text">Half -door warning</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">LEDによりレッドで表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Displayed in red by LED</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">いずれかのドアが開いている場合または半ドア状態の場合に各ドアカーテシランプスイッチがONすることで点灯。</div>
+<div class="text">When any door is open or in a half -door state, each doors curtechi lamp switch is turned on to turn on.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
 <div class="text">5</div>
 </td><td class="color1">
-<img src="../xml/grph_ent/k3390510e.png"><br>
+<img src="../xml/grph_ent/k3390510e.png"/><br/>
 
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">パーキングブレーキ作動/ブレーキ液レベルウォーニング/EBDウォーニング</div>
+<div class="text">Parking brake operation/brake liquid level warning/EBD warning</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">LEDによりレッドで表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Displayed in red by LED</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">パーキングブレーキ作動中にパーキングブレーキスイッチがONすることにより点灯。</div>
+<div class="text">Lights when the parking brake switch turns on while the parking brake is operated.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">ブレーキ液が少ない（LOWレベル以下）場合にブレーキ液レベルスイッチがONすることにより点灯。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">When the brake solution is low (LOW level or less), the brake liquid level switch is turned on.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">ブレーキシステムに異常が発生した場合にスキッドコントロールコンピューターの制御により点灯。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Lights on the control of a skid control computer when an abnormality occurs in the brake system.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
 <div class="text">6</div>
 </td><td class="color1">
-<img src="../xml/grph_ent/k3390512e.png"><br>
+<img src="../xml/grph_ent/k3390512e.png"/><br/>
 
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">チャージウォーニング</div>
+<div class="text">Charge warning</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">LEDによりレッドで表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Displayed in red by LED</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">オルタネーターの端子電圧に異常が発生した場合に点灯。</div>
+<div class="text">Lights when an abnormality occurs in the alternator's terminal voltage.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
 <div class="text">7</div>
 </td><td class="color1">
-<img src="../xml/grph_ent/k3390513e.png"><br>
+<img src="../xml/grph_ent/k3390513e.png"/><br/>
 
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">オイルプレッシャーウォーニング</div>
+<div class="text">Oil pressure warning</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">LEDによりレッドで表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Displayed in red by LED</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">油圧が極端に低下した場合にオイルプレッシャースイッチがONすることにより点灯。</div>
+<div class="text">When the hydraulic pressure is extremely low, the oil pressure switch is turned on to turn on.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
 <div class="text">8</div>
 </td><td class="color1">
-<img src="../xml/grph_ent/k4070241e.png"><br>
+<img src="../xml/grph_ent/k4070241e.png"/><br/>
 
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">O/D　OFF作動</div>
+<div class="text">O/D off operation</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">LEDによりイエローで表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Displayed in yellow by LED</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">O/D　OFF選択時に，エンジンコントロールコンピューターの制御により点灯。</div>
+<div class="text">When the O/D off is selected, it is turned on due to the control of the engine control computer.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
 <div class="text">9</div>
 </td><td class="color1">
-<img src="../xml/grph_ent/k3390502e.png"><br>
+<img src="../xml/grph_ent/k3390502e.png"/><br/>
 
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">チェックエンジンウォーニング</div>
+<div class="text">Check engine warning</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">LEDによりイエローで表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Displayed in yellow by LED</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">エンジンコントロールコンピューターなどのエンジン制御システム関係に異常が発生した場合にエンジンコントロールコンピューターの制御により点灯。</div>
+<div class="text">When an abnormality occurs in the engine control system such as an engine control computer, it is turned on due to the control of the engine control computer.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
 <div class="text">10</div>
 </td><td class="color1">
-<img src="../xml/grph_ent/k3390506e.png"><br>
+<img src="../xml/grph_ent/k3390506e.png"/><br/>
 
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">ABSウォーニング</div>
+<div class="text">ABS warning</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">LEDによりイエローで表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Displayed in yellow by LED</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">ABS関係に異常が発生した場合にスキッドコントロールコンピューターの制御により点灯。</div>
+<div class="text">When an abnormality occurs in the ABS -related, it lights up due to the control of a skid control computer.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
 <div class="text">11</div>
 </td><td class="color1">
-<img src="../xml/grph_ent/k3390507e.png"><br>
+<img src="../xml/grph_ent/k3390507e.png"/><br/>
 
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">運転席シートベルト非着用ウォーニング</div>
+<div class="text">Driving seat seat belt Non -wearing Warning</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">LEDによりレッドで点滅表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Blinking display with red by LED</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">イグニッションスイッチ　ON状態で，運転席のシートベルトを着用していない場合にメーターコンピューターの制御により点滅。</div>
+<div class="text">Flashes by controlling the meter computer when the driver's seat belt is not wearing a driver's seat belt in the ignition switch ON.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
 <div class="text">12</div>
 </td><td class="color1">
-<img src="../xml/grph_ent/k3390509e.png"><br>
+<img src="../xml/grph_ent/k3390509e.png"/><br/>
 
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">SRSエアバッグウォーニング</div>
+<div class="text">SRS Airbag Warning</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">LEDによりレッドで表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Displayed in red by LED</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">SRSエアバッグ関係に異常が発生した場合にセンターエアバッグセンサーASSYの制御により点灯。</div>
+<div class="text">If an abnormality occurs in the SRS airbag, it will light up due to the control of the center airbag sensor ASSY.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
 <div class="text">13</div>
 </td><td class="color1">
-<img src="../xml/grph_ent/a3840077b.png"><br>
+<img src="../xml/grph_ent/a3840077b.png"/><br/>
 
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">低水温</div>
+<div class="text">Low water temperature</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">LEDによりブルーで表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Display blue by LED</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">エンジン冷却液温が約55℃以上（液温上昇時）になるまで，エンジンコントロールコンピューターからの水温信号を入力したメーターコンピューターの制御により点灯。</div>
+<div class="text">Until the engine cooling liquid temperature is about 55 ° C or more (when the liquid temperature rises), it is lit by the control of the meter computer that has entered the water temperature signal from the engine control computer.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
 <div class="text">14</div>
 </td><td class="color1">
-<img src="../xml/grph_ent/a3840077b.png"><br>
+<img src="../xml/grph_ent/a3840077b.png"/><br/>
 
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">高水温</div>
+<div class="text">High water temperature</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">LEDによりレッドで表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Displayed in red by LED</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">エンジン冷却液温が異常高温になった場合に，エンジンコントロールコンピューターからの水温信号を入力したメーターコンピューターの制御により点滅（117℃以上）または点灯（120℃以上）。</div>
+<div class="text">When the engine cooling liquid temperature is abnormal, blinks (117 ° C or higher) or lighting (120 ° C or higher) due to the control of the meter computer entered by the water temperature signal from the engine control computer.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
 <div class="text">15</div>
 </td><td class="color1">
-<img src="../xml/grph_ent/k4070245e.png"><br>
+<img src="../xml/grph_ent/k4070245e.png"/><br/>
 
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">フロントフォグランプ作動</div>
+<div class="text">Front fog lamp operation</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">LEDによりグリーンで表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">View green by LED</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">フロントフォグランプ点灯時にフロントフォグランプリレーがONすることにより点灯。</div>
+<div class="text">The front fog lamp is turned on when the front fog lamp is turned on.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
 <div class="text">16.</div>
 </td><td class="color1">
-<img src="../xml/grph_ent/k3940274e.png"><br>
+<img src="../xml/grph_ent/k3940274e.png"/><br/>
 
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">スリップ</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">slip</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">LEDによりイエローで表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Displayed in yellow by LED</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">VSC作動時にスキッドコントロールコンピュータの制御により点滅</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Flashes due to skid control computers control when VSC operates</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
 <div class="text">17.</div>
 </td><td class="color1">
-<img src="../xml/grph_ent/a3840301b.png"><br>
+<img src="../xml/grph_ent/a3840301b.png"/><br/>
 
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">TRC　OFF作動</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">TRC OFF operation</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">LEDによりイエローで表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Displayed in yellow by LED</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">TRC　OFF時にエンジンコントロールコンピュータの制御により点灯</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Lights up due to the control of the engine control computer during TRC OFF</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
 <div class="text">18.</div>
 </td><td class="color1">
-<img src="../xml/grph_ent/k3730157e.png"><br>
+<img src="../xml/grph_ent/k3730157e.png"/><br/>
 
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">VSCウォーニング</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">VSC warning</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">LEDによりイエローで表示</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Displayed in yellow by LED</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">VSC関係に異常が発生した場合にスキッドコントロールコンピューターの制御により点灯</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Lights on the control of a skid control computer when an abnormality occurs in the VSC -related relationship</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 </div>
-</body>
-</html>
+
+
+</body></html>

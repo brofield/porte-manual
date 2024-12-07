@@ -1,30 +1,29 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="RM0000015O8001X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>EBD付きABS&amp;BAシステム（4WD）&nbsp;&nbsp;機能点検</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><h2>準備品一覧<a href="#" onclick="openSeePage('ppr','RM0000015O8001X');return false;"><img border="0" src="../../../../image/extxref.png"></a></h2><br clear="all" class="beforePng"><a name="RM0000015O8001X_01"></a><br clear="all" class="beforePng"><a name="RM0000015O8001X_01_0001"></a><table width="100%" cellspacing="0" border="0" class="s1r"><tr><td class="s1r">1. ブレーキシステム表示ランプイニシャルチェック</td></tr></table><font class="ptxt"></font>
+		<body onload="seePageAnchor()"><a name="RM0000015O8001X"></a><table cellspacing="0" width="100%"><tbody><tr><td width="93%"><h1>ABS &amp; BA system (4WD) function inspection with EBD</h1></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr></tbody></table><h2>List of preparation<a href="#" onclick="openSeePage('ppr','RM0000015O8001X');return false;"><img border="0" src="../../../../image/extxref.png"/></a></h2><br class="beforePng" clear="all"/><a name="RM0000015O8001X_01"></a><br class="beforePng" clear="all"/><a name="RM0000015O8001X_01_0001"></a><table border="0" cellspacing="0" class="s1r" width="100%"><tbody><tr><td class="s1r">1. Brake system display lamp initial check</td></tr></tbody></table><font class="ptxt"></font>
 <ol class="s2">
-<li><p><font class="ptxt">IGスイッチONにする。  </font><br></p></li>
-<li><p><font class="ptxt">ABSウォーニングランプおよびブレーキウォーニングランプが点灯し、約3秒後に消灯することを点検する。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">ランプが点灯しない場合は、バルブ切れ、メータの出力端子、ブレーキアクチュエータASSYとメータ間のワイヤハーネスを点検する。</dd></dl></p></p></li></ol><br clear="all"><br clear="all" class="beforePng"><a name="RM0000015O8001X_01_0002"></a><table width="100%" cellspacing="0" border="0" class="s1r"><tr><td class="s1r">2. ブレーキアクチュエータ作動点検</td></tr></table><font class="ptxt"></font>
+<li><p><font class="ptxt">Turn on IG switch.</font><br/></p></li>
+<li><p><font class="ptxt">Inspect the ABS Warning Lamp and the brake warnin gland lamps and turns off after about 3 seconds.</font><br/></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">If the lamp does not light up, check out the valve, the output terminal of the meter, and the wire harness between the brake actuator asser and the meter.</dd></dl><p></p><p></p></li></ol><br clear="all"/><br class="beforePng" clear="all"/><a name="RM0000015O8001X_01_0002"></a><table border="0" cellspacing="0" class="s1r" width="100%"><tbody><tr><td class="s1r">2. Brake actuator operation inspection</td></tr></tbody></table><font class="ptxt"></font>
 <ol class="s2">
-<li><p><font class="ptxt">点検前準備</font><br><br>
+<li><p><font class="ptxt">Preparation before inspection</font><br/><br/>
+</p><ol class="s3">
+<li><p><font class="ptxt">Connect SST (Tascan) to DLC3 and start the engine.</font><br/></p><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200<br/></dd></dl><p></p></li>
+<li><p><font class="ptxt">Turn on the SST (Tascan) power, and select "Menu (Diagnosis)" → "Chassis" → "Abs / VSC" → "Active Test".</font><br/></p></li></ol><p></p></li>
+<li><p><font class="ptxt">Actuator motor operation inspection</font><br/></p><p></p><dl class="caution"><dt class="caution">■ Attention ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">The motor does not drive for more than 5 seconds to protect the motor.If you want to operate continuously, you will have a space for more than 20 seconds.</dd></dl><p></p><br/>
 <ol class="s3">
-<li><p><font class="ptxt">SST(TaSCAN)をDLC3に接続して、エンジンを始動する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
-<li><p><font class="ptxt">SST(TaSCAN)の電源をONにして、&ldquo;メニュー(診断)&rdquo;&rarr;&ldquo;シャシ&rdquo;&rarr;&ldquo;ABS&middot;VSC&rdquo;&rarr;&ldquo;アクティブテスト&rdquo;を選択する。</font><br></p></li></ol></p></li>
-<li><p><font class="ptxt">アクチュエータモータ作動点検</font><br><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">モータ保護のため、モータを5秒以上駆動しない。連続して作動させる場合は、20秒以上の間隔を空ける。</dd></dl></p><br>
+<li><p><font class="ptxt">Turn on the motor relay.</font><br/></p><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec">There is a driving noise of the motor<br/></dd></dl><p></p><p></p></li>
+<li><p><font class="ptxt">Turn off the motor relay.</font><br/></p></li>
+<li><p><font class="ptxt">Hold the brake pedal for 15 seconds while stepping on with a certain force.</font><br/></p><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec">The pedal does not enter<br/></dd></dl><p></p><p></p></li>
+<li><p><font class="ptxt">Turn on the motor relay while stepping on the brake pedal.</font><br/></p><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec">There is no pulsation on the pedal<br/></dd></dl><p></p><p></p></li>
+<li><p><font class="ptxt">Turn off the motor relay and release the brake pedal.</font><br/></p></li></ol><p></p></li>
+<li><p><font class="ptxt">Solenoid operation inspection</font><br/></p><p></p><dl class="caution"><dt class="caution">■ Attention ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">Motors and solenoids are not driven for more than 5 seconds to protect motors and solenoids.If you want to operate continuously, you will have a space for more than 20 seconds.<br/></li><li class="atten3">The active testing time of each solenoid is about 2 seconds and is automatically turned off.<br/></li><li class="atten3">The brake pedal is not stepped on only the decompression valve alone.<br/></li><li class="atten3">Do not turn on solenoids without instructions.<br/></li></ol><p></p><br/>
 <ol class="s3">
-<li><p><font class="ptxt">モータリレーをONにする。</font><br><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec">モータの駆動音がする<br></dd></dl></p></p></li>
-<li><p><font class="ptxt">モータリレーをOFFにする。</font><br></p></li>
-<li><p><font class="ptxt">ブレーキペダルを一定の力で踏み込んだまま15秒間保持する。</font><br><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec">ペダルが入り込まない<br></dd></dl></p></p></li>
-<li><p><font class="ptxt">ブレーキペダルを踏み込んだ状態で、モータリレーをONにする。</font><br><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec">ペダルに脈動がない<br></dd></dl></p></p></li>
-<li><p><font class="ptxt">モータリレーをOFFにして、ブレーキペダルを離す。</font><br></p></li></ol></p></li>
-<li><p><font class="ptxt">ソレノイド作動点検</font><br><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">モータおよびソレノイド保護のため、モータおよびソレノイドを5秒以上駆動しない。連続して作動させる場合は、20秒以上の間隔を空ける。<br></li><li class="atten3">各ソレノイドのアクティブテスト作動時間は約2秒であり、自動的にOFFになる。<br></li><li class="atten3">減圧弁のみ単独で作動させた状態で、ブレーキペダルを踏み込まない。<br></li><li class="atten3">指示のないソレノイドをONにしない。<br></li></ol></p><br>
-<ol class="s3">
-<li><p><font class="ptxt">ブレーキペダルを踏み込み、そのまま保持する。</font><br></p></li>
-<li><p><font class="ptxt">SFRHとSFRRのソレノイドを同時にONにする。</font><br><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec">ペダルが入り込まない<br></dd></dl></p></p></li>
-<li><p><font class="ptxt">SFRHとSFRRのソレノイドがOFFになったときのブレーキペダルの状態を点検する。</font><br><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec">ペダルが入り込む<br></dd></dl></p></p></li>
-<li><p><font class="ptxt">モータリレーをONにする。</font><br><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec">ペダルが戻される<br></dd></dl></p></p></li>
-<li><p><font class="ptxt">同様にして、他の車輪のソレノイドを点検する。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">フロント右(SFRH、SFRR)、フロント左(SFLH、SFLR)、リヤ右(SRRH、SRRR)、リヤ左(SRLH、SRLR)</dd></dl></p></p></li></ol></p></li></ol><br clear="all"></body></html>
+<li><p><font class="ptxt">Step the brake pedal and hold it as it is.</font><br/></p></li>
+<li><p><font class="ptxt">Turn on SFRH and SFRR solenoids at the same time.</font><br/></p><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec">The pedal does not enter<br/></dd></dl><p></p><p></p></li>
+<li><p><font class="ptxt">Check the condition of the brake pedal when SFRH and SFRR solenoids are turned off.</font><br/></p><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec">The pedal enters<br/></dd></dl><p></p><p></p></li>
+<li><p><font class="ptxt">Turn on the motor relay.</font><br/></p><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec">The pedal is returned<br/></dd></dl><p></p><p></p></li>
+<li><p><font class="ptxt">Similarly, check the solenoids of other wheels.</font><br/></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">Front right (SFRH, SFRR), front left (SFLH, SFLR), rear right (SRRH, SRRR), rear left (SRLH, SRLR)</dd></dl><p></p><p></p></li></ol><p></p></li></ol><br clear="all"/></body></html>

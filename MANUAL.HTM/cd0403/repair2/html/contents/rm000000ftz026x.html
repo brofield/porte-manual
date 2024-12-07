@@ -1,68 +1,92 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="RM000000FTZ026X"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>DTC
-								 &nbsp;&nbsp; P0712/38 &nbsp;&nbsp; 油温センサ系統(Low)</h3></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr><tr><td width="93%"><h3>DTC
-								 &nbsp;&nbsp; P0713/38 &nbsp;&nbsp; 油温センサ系統(High)</h3></td></tr></table><h2>準備品一覧<a href="#" onclick="openSeePage('ppr','RM000000FTZ026X');return false;"><img border="0" src="../../../../image/extxref.png"></a></h2><br clear="all"><a name="RM000000FTZ026X_01"></a><h2>機能説明</h2><br clear="all"><a name="1"></a><font class="ptxt">油温センサをバルブボデー内に取り付け、トランスミッション油圧制御回路内の油温を検出し、エンジンコントロールコンピュータへ油温に応じた信号を入力している。油温センサに異常が発生した場合は、フェイルセーフ機能として4速およびロックアップ制御を中止する。</font><br><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><colgroup align="" width="20%
-			"><col align=""></colgroup><colgroup align="" width="40%
-			"><col align=""></colgroup><colgroup align="" width="40%
-			"><col align=""></colgroup><tr><th align="center">DTC No.<br>SAE/TCCS<br></th><th align="center">DTC検出条件<br><ol style="list-style-type: decimal"><li>診断条件<br></li><li>異常状態<br></li><li>異常期間<br></li><li>その他<br></li></ol></th><th align="center">点検部位<br></th></tr><tr><td align="center">P0712/38<br></td><td><ol style="list-style-type: decimal"><li>なし<br></li><li>油温センサ回路の短絡<br></li><li>0.5秒以上連続<br></li><li>1トリップ<br></li></ol></td><td rowspan="2"><ol style="list-style-type: disc"><li>ワイヤハーネスおよびコネクター(油温センサ信号系統)<br></li><li>トランスミッションワイヤ(油温センサ)<br></li><li>エンジンコントロールコンピュータ<br></li></ol></td></tr><tr><td align="center">P0713/38<br></td><td><ol style="list-style-type: decimal"><li>エンジン始動後15分以上経過<br></li><li>油温センサ回路の断線<br></li><li>0.5秒以上連続<br></li><li>1トリップ<br></li></ol></td></tr></table><br clear="all"><br clear="all"><a name="RM000000FTZ026X_02"></a><h2>回路図</h2><br clear="all"><a name="1"></a><div class="full"><br clear="all"><img src="../../img/c207051j04.png" name="C207051J04" alt="C207051J04" border="1" class="full"></div><br clear="all"><br clear="all"><br clear="all"><a name="RM000000FTZ026X_03"></a><h2>点検手順</h2><br clear="all"><a name="1"></a><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">DTC P0110/24(吸気温センサ系統)、P0115/22(水温センサ系統)、P0120/41(スロットルセンサ系統)、P0550/75(PS圧力センサ系統)が連続して出力されるなら、E2等(アース系統)が断線している可能性がある。<br></li><li class="atten4">SST(TaSCAN)を使用してフリーズフレームデータを読み取る。フリーズフレームデータには不具合発生時のエンジン稼動状態の一部が記録されており、それらの情報がトラブルシュートを行う際に役立つ。<br></li></ol></p><br clear="all"><a name="RM000000FTZ026X_04_0001"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順1</td><td width="90%" class="s1">TaSCANデータ読み取り（AT油温1）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70201&nbsp;&nbsp;<br></dd></dl>
+		<body onload="seePageAnchor()"><a name="RM000000FTZ026X"></a><table cellpadding="0" width="100%"><tbody><tr><td width="93%"><h3>DTC P0712/38 Oil temperature sensor system (LOW)</h3></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr><tr><td width="93%"><h3>DTC P0713/38 Oil temperature sensor system (High)</h3></td></tr></tbody></table><h2>List of preparation<a href="#" onclick="openSeePage('ppr','RM000000FTZ026X');return false;"><img border="0" src="../../../../image/extxref.png"/></a></h2><br clear="all"/><a name="RM000000FTZ026X_01"></a><h2>Function explanation</h2><br clear="all"/><a name="1"></a><font class="ptxt">The oil temperature sensor is attached to the valve body, the oil temperature in the transmission hydraulic control circuit is detected, and a signal is entered in the engine control computer according to the oil temperature.If an abnormality occurs in the oil temperature sensor, the four -speed and lock -up control will be discontinued as the fail -safe function.</font><br/><br clear="all"/><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><colgroup align="" width="20%
+
+			"><col align=""/></colgroup><colgroup align="" width="40%
+
+			"><col align=""/></colgroup><colgroup align="" width="40%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">DTC No.<br/>SAE/TCCS<br/></th><th align="center">DTC detection conditions<br/><ol style="list-style-type: decimal"><li>Diagnostic condition<br/></li><li>Abnormal state<br/></li><li>Abnormal period<br/></li><li>others<br/></li></ol></th><th align="center">Inspection site<br/></th></tr><tr><td align="center">P0712/38<br/></td><td><ol style="list-style-type: decimal"><li>none<br/></li><li>Short circuit of oil temperature sensor circuit<br/></li><li>0.5 seconds or more continuous<br/></li><li>1 trip<br/></li></ol></td><td rowspan="2"><ol style="list-style-type: disc"><li>Wire harness and connector (oil temperature sensor signal system)<br/></li><li>Transmission wire (oil temperature sensor)<br/></li><li>Engine control computer<br/></li></ol></td></tr><tr><td align="center">P0713/38<br/></td><td><ol style="list-style-type: decimal"><li>15 minutes or more after the engine started<br/></li><li>Cutting of oil temperature sensor circuit<br/></li><li>0.5 seconds or more continuous<br/></li><li>1 trip<br/></li></ol></td></tr></tbody></table><br clear="all"/><br clear="all"/><a name="RM000000FTZ026X_02"></a><h2>Circuit diagram</h2><br clear="all"/><a name="1"></a><div class="full"><br clear="all"/><img alt="C207051J04" border="1" class="full" name="C207051J04" src="../../img/c207051j04.png"/></div><br clear="all"/><br clear="all"/><br clear="all"/><a name="RM000000FTZ026X_03"></a><h2>Inspection procedure</h2><br clear="all"/><a name="1"></a><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">If DTC P0110/24 (intake temperature sensor system), P0115/22 (water temperature sensor system), P0120/41 (throttle sensor system), P0550/75 (PS pressure sensor system) are output continuously, E2 (E2), etc.It is possible that the earth system) may be disconnected.<br/></li><li class="atten4">Read freeze frame data using SST (Tascan).The freeze -frame data records a part of the engine operation state in the event of a problem, which helps you take a trouble shot.<br/></li></ol><p></p><br clear="all"/><a name="RM000000FTZ026X_04_0001"></a><table border="1" height="35" width="100%"><tbody><tr><td class="s1" width="10%">Step 1</td><td class="s1" width="90%">Tascan data reading (at oil temperature 1)</td></tr></tbody></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70201<br/></dd></dl>
 <ol class="s2">
-<li value="1"><p><font class="ptxt">SST(TaSCAN)をDLC3に接続する。</font><br></p></li></ol>
+<li value="1"><p><font class="ptxt">Connect SST (Tascan) to DLC3.</font><br/></p></li></ol>
 <ol class="s2">
-<li value="2"><p><font class="ptxt">IG ONにする。</font><br></p></li></ol>
+<li value="2"><p><font class="ptxt">Ig ON.</font><br/></p></li></ol>
 <ol class="s2">
-<li value="3"><p><font class="ptxt">SST(TaSCAN)を使用して、画面表示に従い[ECUデータモニター]-[AT油圧1]を読み取る。</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%
-						"><caption class="tbl-title"><span>[診断メニュー &rarr; パワトレ &rarr; TCCS &rarr; ECUデータモニター]&nbsp;
-				</span></caption><colgroup align="" width="21%
-			"><col align=""></colgroup><colgroup align="" width="39%
-			"><col align=""></colgroup><colgroup align="" width="39%
-			"><col align=""></colgroup><tr><th align="center">項目名<br></th><th align="center">点検条件<br></th><th align="center">標準値<br></th></tr><tr><td rowspan="2" align="center">AT油温1<br></td><td align="center">冷間時IG ON<br></td><td align="center">外気温相当<br></td></tr><tr><td align="center">ストールテスト後<br></td><td align="center">50 to 100&deg;C<br></td></tr></table><p><dl class="spec"><dt class="spec">結果</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><colgroup align="center" width="70%
-			"><col align=""></colgroup><colgroup align="center" width="30%
-			"><col align=""></colgroup><tr><th>結果<br></th><th>飛び先<br></th></tr><tr><td>データモニターの値が標準値外<br></td><td>A<br></td></tr><tr><td>データモニターの値が標準値内<br></td><td>B<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">エンジンコントロール コンピュータ交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000000FTZ026X_04_0002"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順2</td><td width="90%" class="s1">トランスミッション ワイヤ単体点検（油温センサ）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl>
-<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c225714j01.png" name="C225714J01" alt="C225714J01" border="1" class="half"><br></td></tr></table>
-<li value="1"><p><font class="ptxt">トランスミッションワイヤのコネクターB10を切り離す。</font><br></p></li></ol>
+<li value="3"><p><font class="ptxt">Use SST (Tascan) to read [ECU Data Monitor]-[at hydraulic 1] according to the screen display.</font><br/><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="94.6%
+
+						"><caption class="tbl-title"><span>[Diagnostic menu → PowerTore → TCCS → ECU data monitor]</span></caption><colgroup align="" width="21%
+
+			"><col align=""/></colgroup><colgroup align="" width="39%
+
+			"><col align=""/></colgroup><colgroup align="" width="39%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">Item name<br/></th><th align="center">Inspection condition<br/></th><th align="center">Standard value<br/></th></tr><tr><td align="center" rowspan="2">AT oil temperature 1<br/></td><td align="center">Cold time IG ON<br/></td><td align="center">Equivalent to outside temperature<br/></td></tr><tr><td align="center">After stall test<br/></td><td align="center">50 to 100 ° C<br/></td></tr></tbody></table></p><p></p><dl class="spec"><dt class="spec">result</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><colgroup align="center" width="70%
+
+			"><col align=""/></colgroup><colgroup align="center" width="30%
+
+			"><col align=""/></colgroup><tbody><tr><th>result<br/></th><th>Destination<br/></th></tr><tr><td>The value of the data monitor is out of the standard value<br/></td><td>A<br/></td></tr><tr><td>The value of the data monitor is within the standard value<br/></td><td>B<br/></td></tr></tbody></table></dd></dl><p></p><p></p></li></ol><br clear="all"/><table border="0" cellpadding="4" cellspacing="0" width="96%"><tbody><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img height="100%" src="../../../../image/fin_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Engine control computer replacement</td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="96%"><tbody><tr><td class="diag-next" style="border-bottom-width: 0px;" width="20%">A</td><td width="80%"><br/></td></tr><tr><td align="center" valign="top" width="20%"><img height="13" src="../../../../image/next_down.png" width="100%"/></td><td width="80%"><br/></td></tr></tbody></table><br/><a name="RM000000FTZ026X_04_0002"></a><table border="1" height="35" width="100%"><tbody><tr><td class="s1" width="10%">Step 2</td><td class="s1" width="90%">Trans mission wire single inspection (oil temperature sensor)</td></tr></tbody></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030<br/>09083-00170<br/></dd></dl>
+<ol class="s2"><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="C225714J01" border="1" class="half" name="C225714J01" src="../../img/c225714j01.png"/><br/></td></tr></tbody></table>
+<li value="1"><p><font class="ptxt">Cut the transmission wire connector B10.</font><br/></p></li></ol>
 <ol class="s2">
-<li value="2"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。</font><br><p><dl class="spec"><dt class="spec">抵抗値(断線点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td rowspan="3">1 (OIL) - 6 (E2)<br></td><td>10&deg;C<br></td><td>5 to 8 kΩ<br></td></tr><tr><td>25&deg;C<br></td><td>2.5 to 4.5 kΩ<br></td></tr><tr><td>110&deg;C<br></td><td>0.22 to 0.28 kΩ<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">抵抗値(短絡点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>1 (OIL) - ボデーアース<br></td><td>常時<br></td><td>10kΩ以上<br></td></tr></table></dd></dl></p></p></li></ol><table border="1" cellspacing="0" cellpadding="2" width="
-							45%
-						"><caption class="tbl-title"><span>イラスト内指示文字&nbsp;
-				</span></caption><colgroup align="" width="10%
-			"><col align=""></colgroup><colgroup align="" width="90%
-			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>コネクター非接続状態<br>(トランスミッションワイヤ)<br></td></tr></table><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">トランスミッション ワイヤ交換<a href="#" onclick="openSeePage('seepage','RM0000025XW000X');return false;">
-			（要領は
-		<img border="0" src="../../../../image/extxref.png">
-			参照）
-		</a>
-</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000000FTZ026X_04_0003"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順3</td><td width="90%" class="s1">ワイヤハーネスおよびコネクター点検（トランスミッションワイヤ - エンジンコントロールコンピュータ）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">点検要領および注意事項は<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照。</dd></dl></p>
-<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c225709j03.png" name="C225709J03" alt="C225709J03" border="1" class="half"><br></td></tr></table>
-<li value="1"><p><font class="ptxt">エンジンコントロールコンピュータのコネクターB36を切り離す。</font><br></p></li></ol>
+<li value="2"><p><font class="ptxt">Use SST (Toyota Electrical Tester) to measure resistance between terminals.</font><br/></p><p></p><dl class="spec"><dt class="spec">Resistance value (disconnection inspection)</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td rowspan="3">1 (OIL) --6 (E2)<br/></td><td>10 ° C<br/></td><td>5 to 8 kΩ<br/></td></tr><tr><td>25 ° C<br/></td><td>2.5 to 4.5 kΩ<br/></td></tr><tr><td>110 ° C<br/></td><td>0.22 to 0.28 kΩ<br/></td></tr></tbody></table></dd></dl><p></p><p></p><dl class="spec"><dt class="spec">Resistance value (short circuit inspection)</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>1 (OIL) -Body Earth<br/></td><td>Always<br/></td><td>10kΩ or higher<br/></td></tr></tbody></table></dd></dl><p></p><p></p></li></ol><table border="1" cellpadding="2" cellspacing="0" width="
+
+							45%
+
+						"><caption class="tbl-title"><span>Illustration instructions</span></caption><colgroup align="" width="10%
+
+			"><col align=""/></colgroup><colgroup align="" width="90%
+
+			"><col align=""/></colgroup><tbody><tr><td align="center">*a<br/></td><td>Connector non -connection status<br/>(Transmission wire)<br/></td></tr></tbody></table><br clear="all"/><table border="0" cellpadding="4" cellspacing="0" width="96%"><tbody><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img height="100%" src="../../../../image/fin_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Transmission wire exchange<a href="#" onclick="openSeePage('seepage','RM0000025XW000X');return false;">(The point is<img border="0" src="../../../../image/extxref.png"/>reference)</a>
+</td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="96%"><tbody><tr><td class="diag-next" style="border-bottom-width: 0px;" width="20%">OK</td><td width="80%"><br/></td></tr><tr><td align="center" valign="top" width="20%"><img height="13" src="../../../../image/next_down.png" width="100%"/></td><td width="80%"><br/></td></tr></tbody></table><br/><a name="RM000000FTZ026X_04_0003"></a><table border="1" height="35" width="100%"><tbody><tr><td class="s1" width="10%">Step 3</td><td class="s1" width="90%">Wire harness and connector inspection (transmission wire -engine control computer)</td></tr></tbody></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030<br/>09083-00170<br/></dd></dl><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">Inspection guidelines and precautions<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"/></a>reference.</dd></dl><p></p>
+<ol class="s2"><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="C225709J03" border="1" class="half" name="C225709J03" src="../../img/c225709j03.png"/><br/></td></tr></tbody></table>
+<li value="1"><p><font class="ptxt">Cut the connector B36 of the engine control computer.</font><br/></p></li></ol>
 <ol class="s2">
-<li value="2"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。</font><br><p><dl class="spec"><dt class="spec">抵抗値(断線点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td rowspan="3">B36-30 (THO1) - B36-28 (E2)<br></td><td>10&deg;C<br></td><td>5 to 8 kΩ<br></td></tr><tr><td>25&deg;C<br></td><td>2.5 to 4.5 kΩ<br></td></tr><tr><td>110&deg;C<br></td><td>0.22 to 0.28 kΩ<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">抵抗値(短絡点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>B36-30 (THO1) - ボデーアース<br></td><td>常時<br></td><td>10ｋΩ以上<br></td></tr><tr><td>B36-28 (E2) - ボデーアース<br></td><td>常時<br></td><td>10ｋΩ以上<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="42.6%
-						"><caption class="tbl-title"><span>イラスト内指示文字&nbsp;
-				</span></caption><colgroup align="" width="10%
-			"><col align=""></colgroup><colgroup align="" width="90%
-			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>コネクター非接続状態<br>(エンジンコントロールコンピュータ)<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ワイヤハーネスまたはコネクター修理または交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">エンジンコントロール コンピュータ交換&nbsp;
-										</td></tr></table></td></tr></table><br></body></html>
+<li value="2"><p><font class="ptxt">Use SST (Toyota Electrical Tester) to measure resistance between terminals.</font><br/></p><p></p><dl class="spec"><dt class="spec">Resistance value (disconnection inspection)</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td rowspan="3">B36-30 (THO1) --B36-28 (E2)<br/></td><td>10 ° C<br/></td><td>5 to 8 kΩ<br/></td></tr><tr><td>25 ° C<br/></td><td>2.5 to 4.5 kΩ<br/></td></tr><tr><td>110 ° C<br/></td><td>0.22 to 0.28 kΩ<br/></td></tr></tbody></table></dd></dl><p></p><p></p><dl class="spec"><dt class="spec">Resistance value (short circuit inspection)</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>B36-30 (THO1) --Body Earth<br/></td><td>Always<br/></td><td>10kΩ or more<br/></td></tr><tr><td>B36-28 (E2) -Body Earth<br/></td><td>Always<br/></td><td>10kΩ or more<br/></td></tr></tbody></table></dd></dl><p></p><table border="1" cellpadding="2" cellspacing="0" width="42.6%
+
+						"><caption class="tbl-title"><span>Illustration instructions</span></caption><colgroup align="" width="10%
+
+			"><col align=""/></colgroup><colgroup align="" width="90%
+
+			"><col align=""/></colgroup><tbody><tr><td align="center">*a<br/></td><td>Connector non -connection status<br/>(Engine control computer)<br/></td></tr></tbody></table><p></p></li></ol><br clear="all"/><table border="0" cellpadding="4" cellspacing="0" width="96%"><tbody><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img height="100%" src="../../../../image/fin_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Wire harness or connector repair or replacement</td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="96%"><tbody><tr><td class="diag-fin" style="border-bottom-width: 0px;" width="20%">OK</td><td width="80%"><br/></td></tr><tr><td align="center" valign="top" width="20%"><img height="13" src="../../../../image/fin_down.png" width="100%"/></td><td width="80%"><br/></td></tr><tr><td colspan="2"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Engine control computer replacement</td></tr></tbody></table></td></tr></tbody></table><br/></body></html>

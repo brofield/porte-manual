@@ -1,66 +1,110 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="RM000002305000X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>HDDナビゲーションシステム&nbsp;&nbsp;ＥＣＵ端子配列</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM000002305000X_z0"></a><br clear="all"><a name="1"></a><br clear="all"><br clear="all"><a name="CD0403____000052P0000011step"></a>
+		<body onload="seePageAnchor()"><a name="RM000002305000X"></a><table cellspacing="0" width="100%"><tbody><tr><td width="93%"><h1>HDD navigation system ECU terminal sequence</h1></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr></tbody></table><br class="beforePng" clear="all"/><a name="RM000002305000X_z0"></a><br clear="all"/><a name="1"></a><br clear="all"/><br clear="all"/><a name="CD0403____000052P0000011step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>ナビゲーションレシーバASSY</li></ol>
-<ol class="ptxt"></ol><div class="full"><br clear="all"><img src="../../img/e125528j04.png" name="E125528J04" alt="E125528J04" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><caption class="tbl-title"><span>コネクターA&nbsp;
-				</span></caption><colgroup align="" width="4%
-			"><col align=""></colgroup><colgroup align="" width="10%
-			"><col align=""></colgroup><colgroup align="" width="6%
-			"><col align=""></colgroup><colgroup align="" width="17%
-			"><col align=""></colgroup><colgroup align="" width="6%
-			"><col align=""></colgroup><colgroup align="" width="18%
-			"><col align=""></colgroup><colgroup align="" width="18%
-			"><col align=""></colgroup><colgroup align="" width="21%
-			"><col align=""></colgroup><tr><th align="center">端子番号<br></th><th align="center">端子記号<br></th><th align="center">入出力<br></th><th align="center">テスター接続<br>(プラス&larr;&rarr;マイナス)<br></th><th align="center">項目<br></th><th align="center">測定条件<br></th><th align="center">基準<br></th><th>基準外の場合の不具合症状<br>O:断線時<br>S:ボデーと短絡時<br></th></tr><tr><td align="center">1<br></td><td align="center">FR+<br></td><td align="center">出力<br></td><td align="center">A1&larr;&rarr;A7<br></td><td align="center">波形<br></td><td>音声出力中<br></td><td align="center">音声に同期した波形が出力される<br></td><td>フロントスピーカASSY　No.1(RH)から音声出ず<br></td></tr><tr><td align="center">2<br></td><td align="center">FL+<br></td><td align="center">出力<br></td><td align="center">A2&larr;&rarr;A7<br></td><td align="center">波形<br></td><td>音声出力中<br></td><td align="center">音声に同期した波形が出力される<br></td><td>フロントスピーカASSY　No.1(LH)から音声出ず<br></td></tr><tr><td align="center">3<br></td><td align="center">ACC<br></td><td align="center">入力<br></td><td align="center">A3&larr;&rarr;A7<br></td><td align="center">電圧<br></td><td>IGスイッチACC<br></td><td align="center">10-14V<br></td><td>O:システム作動せず<br>S:ヒューズ切れ<br></td></tr><tr><td align="center">4<br></td><td align="center">+B<br></td><td align="center">入力<br></td><td align="center">A4&larr;&rarr;A7<br></td><td align="center">電圧<br></td><td>常時<br></td><td align="center">10-14V<br></td><td>O:システム作動せず<br>S:ヒューズ切れ<br></td></tr><tr><td align="center">5<br></td><td align="center">FR-<br></td><td align="center">出力<br></td><td align="center">A5&larr;&rarr;A7<br></td><td align="center">波形<br></td><td>音声出力中<br></td><td align="center">音声に同期した波形が出力される<br></td><td>フロントスピーカASSY　No.1(RH)から音声出ず<br></td></tr><tr><td align="center">6<br></td><td align="center">FL-<br></td><td align="center">出力<br></td><td align="center">A6&larr;&rarr;A7<br></td><td align="center">波形<br></td><td>音声出力中<br></td><td align="center">音声に同期した波形が出力される<br></td><td>フロントスピーカASSY　No.1(LH)から音声出ず<br></td></tr><tr><td align="center">7<br></td><td align="center">GND<br></td><td align="center">出力<br></td><td align="center">A7&larr;&rarr;ボデーアース<br></td><td align="center">導通<br></td><td>常時<br></td><td align="center">導通あり<br></td><td>O:ノイズ微増<br></td></tr><tr><td align="center">8<br></td><td align="center">ANT+<br></td><td align="center">-<br></td><td align="center">A8&larr;&rarr;A7<br></td><td align="center">電圧<br></td><td>ラジオ(AM/FM)受信中<br></td><td align="center">10-14V<br></td><td>AM/FM受信感度不良<br></td></tr><tr><td align="center">10<br></td><td align="center">ILL+<br></td><td align="center">入力<br></td><td align="center">A10&larr;&rarr;A7<br></td><td align="center">電圧<br></td><td>ヘッドランプディマスイッチTAIL<br></td><td align="center">10-14V<br></td><td>O:夜画面に切り替わらず<br>S:ヒューズ切れ<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><caption class="tbl-title"><span>コネクターB&nbsp;
-				</span></caption><colgroup align="" width="4%
-			"><col align=""></colgroup><colgroup align="" width="10%
-			"><col align=""></colgroup><colgroup align="" width="6%
-			"><col align=""></colgroup><colgroup align="" width="17%
-			"><col align=""></colgroup><colgroup align="" width="6%
-			"><col align=""></colgroup><colgroup align="" width="18%
-			"><col align=""></colgroup><colgroup align="" width="18%
-			"><col align=""></colgroup><colgroup align="" width="21%
-			"><col align=""></colgroup><tr><th align="center">端子番号<br></th><th align="center">端子記号<br></th><th align="center">入出力<br></th><th align="center">テスター接続<br>(プラス&larr;&rarr;マイナス)<br></th><th align="center">項目<br></th><th align="center">測定条件<br></th><th align="center">基準<br></th><th>基準外の場合の不具合症状<br>O:断線時<br>S:ボデーと短絡時<br></th></tr><tr><td align="center">1<br></td><td align="center">RR+<br></td><td align="center">出力<br></td><td align="center">B1&larr;&rarr;A7<br></td><td align="center">波形<br></td><td>音声出力中<br></td><td align="center">音声に同期した波形が出力される<br></td><td>スピーカASSY　RR(RH)から音声出ず<br></td></tr><tr><td align="center">2<br></td><td align="center">RL+<br></td><td align="center">出力<br></td><td align="center">B2&larr;&rarr;A7<br></td><td align="center">波形<br></td><td>音声出力中<br></td><td align="center">音声に同期した波形が出力される<br></td><td>スピーカASSY　RR(LH)から音声出ず<br></td></tr><tr><td align="center">3<br></td><td align="center">RR-<br></td><td align="center">出力<br></td><td align="center">B3&larr;&rarr;A7<br></td><td align="center">波形<br></td><td>音声出力中<br></td><td align="center">音声に同期した波形が出力される<br></td><td>スピーカASSY　RR(RH)から音声出ず<br></td></tr><tr><td align="center">6<br></td><td align="center">RL-<br></td><td align="center">出力<br></td><td align="center">B6&larr;&rarr;A7<br></td><td align="center">波形<br></td><td>音声出力中<br></td><td align="center">音声に同期した波形が出力される<br></td><td>スピーカASSY　RR(LH)から音声出ず<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><caption class="tbl-title"><span>コネクターF&nbsp;
-				</span></caption><colgroup align="" width="4%
-			"><col align=""></colgroup><colgroup align="" width="10%
-			"><col align=""></colgroup><colgroup align="" width="6%
-			"><col align=""></colgroup><colgroup align="" width="17%
-			"><col align=""></colgroup><colgroup align="" width="6%
-			"><col align=""></colgroup><colgroup align="" width="18%
-			"><col align=""></colgroup><colgroup align="" width="18%
-			"><col align=""></colgroup><colgroup align="" width="21%
-			"><col align=""></colgroup><tr><th align="center">端子番号<br></th><th align="center">端子記号<br></th><th align="center">入出力<br></th><th align="center">テスター接続<br>(プラス&larr;&rarr;マイナス)<br></th><th align="center">項目<br></th><th align="center">測定条件<br></th><th align="center">基準<br></th><th>基準外の場合の不具合症状<br>O:断線時<br>S:ボデーと短絡時<br></th></tr><tr><td align="center">1<br></td><td align="center">PKB<br></td><td align="center">入力<br></td><td align="center">F1&larr;&rarr;A7<br></td><td align="center">電圧<br></td><td>パーキングブレーキを作用させる<br></td><td align="center">1V以下<br></td><td>O:停車中もTV画面出ず<br>S:停車中パーキングブレーキを作用されなくてもTV画面出画する<br></td></tr><tr><td align="center">2<br></td><td align="center">IG<br></td><td align="center">入力<br></td><td align="center">Ｆ2&larr;&rarr;A7<br></td><td align="center">電圧<br></td><td>IGスイッチON<br></td><td align="center">10-14V<br></td><td>O:システム作動せず<br>S:ヒューズ切れ<br></td></tr><tr><td align="center">3<br></td><td align="center">SPD<br></td><td align="center">入力<br></td><td align="center">Ｆ3&larr;&rarr;A7<br></td><td align="center">電圧<br></td><td>時速5km/h以上で走行する<br></td><td align="center">9V以上&larr;&rarr;1V以下を繰り返す<br></td><td>走行中に全スイッチ操作可能<br></td></tr><tr><td align="center">5<br></td><td align="center">REV<br></td><td align="center">入力<br></td><td align="center">Ｆ5&larr;&rarr;A7<br></td><td align="center">電圧<br></td><td>シフトレバーRレンジ<br></td><td align="center">10-14V<br></td><td>O:車両後退時、ナビ自車位置前進する<br>S:ヒューズ切れ<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><caption class="tbl-title"><span>コネクターG&nbsp;
-				</span></caption><colgroup align="" width="4%
-			"><col align=""></colgroup><colgroup align="" width="10%
-			"><col align=""></colgroup><colgroup align="" width="6%
-			"><col align=""></colgroup><colgroup align="" width="17%
-			"><col align=""></colgroup><colgroup align="" width="6%
-			"><col align=""></colgroup><colgroup align="" width="18%
-			"><col align=""></colgroup><colgroup align="" width="18%
-			"><col align=""></colgroup><colgroup align="" width="21%
-			"><col align=""></colgroup><tr><th align="center">端子番号<br></th><th align="center">端子記号<br></th><th align="center">入出力<br></th><th align="center">テスター接続<br>(プラス&larr;&rarr;マイナス)<br></th><th align="center">項目<br></th><th align="center">測定条件<br></th><th align="center">基準<br></th><th>基準外の場合の不具合症状<br>O:断線時<br>S:ボデーと短絡時<br></th></tr><tr><td align="center">1<br></td><td align="center">DIV2<br></td><td align="center">出力<br></td><td align="center">G1&larr;&rarr;A7<br></td><td align="center">電圧<br></td><td>TV画面出画中<br></td><td align="center">受信状態により1V以下&larr;&rarr;3V以上を繰り返す<br></td><td>TV受信感度低下<br></td></tr><tr><td align="center">2<br></td><td align="center">DIV1<br></td><td align="center">出力<br></td><td align="center">G2&larr;&rarr;A7<br></td><td align="center">電圧<br></td><td>TV画面出画中<br></td><td align="center">受信状態により1V以下&larr;&rarr;3V以上を繰り返す<br></td><td>TV受信感度低下<br></td></tr><tr><td align="center">3<br></td><td align="center">TV+B<br></td><td align="center">出力<br></td><td align="center">G3&larr;&rarr;A7<br></td><td align="center">電圧<br></td><td>TV画面出画中<br></td><td align="center">10-14V<br></td><td>O:TV受信感度低下<br>S:ヒューズ切れ<br></td></tr><tr><td align="center">4<br></td><td align="center">DGND<br></td><td align="center">-<br></td><td align="center">G4&larr;&rarr;A7<br></td><td align="center">導通<br></td><td>常時<br></td><td align="center">導通あり<br></td><td>正常(ノイズ微増)<br></td></tr><tr><td align="center">5<br></td><td align="center">TV　ANT<br></td><td align="center">入力<br></td><td align="center">G5&larr;&rarr;ボデーアース<br></td><td align="center">導通<br></td><td>常時<br></td><td align="center">導通なし<br></td><td>TV受信感度低下<br></td></tr><tr><td align="center">6<br></td><td align="center">GND(S)<br></td><td align="center">-<br></td><td align="center">G6&larr;&rarr;ボデーアース<br></td><td align="center">導通<br></td><td>常時<br></td><td align="center">導通あり<br></td><td>正常(ノイズ微増)<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><caption class="tbl-title"><span>コネクターH&nbsp;
-				</span></caption><colgroup align="" width="4%
-			"><col align=""></colgroup><colgroup align="" width="10%
-			"><col align=""></colgroup><colgroup align="" width="6%
-			"><col align=""></colgroup><colgroup align="" width="17%
-			"><col align=""></colgroup><colgroup align="" width="6%
-			"><col align=""></colgroup><colgroup align="" width="18%
-			"><col align=""></colgroup><colgroup align="" width="18%
-			"><col align=""></colgroup><colgroup align="" width="21%
-			"><col align=""></colgroup><tr><th align="center">端子番号<br></th><th align="center">端子記号<br></th><th align="center">入出力<br></th><th align="center">テスター接続<br>(プラス&larr;&rarr;マイナス)<br></th><th align="center">項目<br></th><th align="center">測定条件<br></th><th align="center">基準<br></th><th>基準外の場合の不具合症状<br>O:断線時<br>S:ボデーと短絡時<br></th></tr><tr><td align="center">2<br></td><td align="center">CANH<br></td><td align="center">入出力<br></td><td align="center">-<br></td><td align="center">-<br></td><td>ディスプレイ検査-CAN接続検査<br></td><td align="center">-<br></td><td>バックガイドモニター画面で予想進路が表示されず、&ldquo;ガイドできません&rdquo;が表示される<br></td></tr><tr><td align="center">3<br></td><td align="center">CANL<br></td><td align="center">入出力<br></td><td align="center">-<br></td><td align="center">-<br></td><td>ディスプレイ検査-CAN接続検査<br></td><td align="center">-<br></td><td>バックガイドモニター画面で予想進路が表示されず、&ldquo;ガイドできません&rdquo;が表示される<br></td></tr><tr><td align="center">9<br></td><td align="center">SW+<br>(*1)<br></td><td align="center">入力<br></td><td align="center">H9&larr;&rarr;A7<br></td><td align="center">電圧<br></td><td>音声認識スイッチ押下せず&rarr;押下<br></td><td align="center">5V&rarr;0-0.5V<br></td><td>音声認識スイッチ作動せず<br></td></tr><tr><td align="center">10<br></td><td align="center">SW-<br>(*1)<br></td><td align="center">-<br></td><td align="center">H10&larr;&rarr;A7<br></td><td align="center">導通<br></td><td>常時<br></td><td align="center">導通あり<br></td><td><ol style="list-style-type: disc"><li>ハンズフリー送話音声出ず<br></li><li>ヘルプネット送話音声出ず<br></li><li>音声認識できず<br></li></ol></td></tr><tr><td align="center">12<br></td><td align="center">TSW-<br></td><td align="center">-<br></td><td align="center">H12&larr;&rarr;ボデーアース<br></td><td align="center">導通<br></td><td>常時<br></td><td align="center">導通あり<br></td><td><ol style="list-style-type: disc"><li>ハンズフリー送話音声出ず<br></li><li>ヘルプネット送話音声出ず<br></li><li>音声認識できず<br></li></ol></td></tr><tr><td align="center">17<br></td><td align="center">MACC<br>(*1)<br></td><td align="center">出力<br></td><td align="center">H17&larr;&rarr;A7<br></td><td align="center">電圧<br></td><td>IGスイッチACC<br></td><td align="center">5V<br></td><td><ol style="list-style-type: disc"><li>ハンズフリー送話音声出ず<br></li><li>ヘルプネット送話音声出ず<br></li><li>音声認識できず<br></li></ol></td></tr><tr><td align="center">18<br></td><td align="center">SGND<br></td><td align="center">-<br></td><td align="center">H18&larr;&rarr;ボデーアース<br></td><td align="center">導通<br></td><td>常時<br></td><td align="center">導通あり<br></td><td><ol style="list-style-type: disc"><li>ハンズフリー送話音声出ず<br></li><li>ヘルプネット送話音声出ず<br></li><li>音声認識できず<br></li></ol></td></tr><tr><td align="center">19<br></td><td align="center">MIC+<br>(*1)<br></td><td align="center">入力<br></td><td align="center">H19&larr;&rarr;A7<br></td><td align="center">波形<br></td><td>音声入力中<br></td><td align="center">音声に同期した波形が出力される<br></td><td><ol style="list-style-type: disc"><li>ハンズフリー送話音声出ず<br></li><li>ヘルプネット送話音声出ず<br></li><li>音声認識できず<br></li></ol></td></tr><tr><td align="center">20<br></td><td align="center">MIC-<br>(*1)<br></td><td align="center">-<br></td><td align="center">H20&larr;&rarr;ボデーアース<br></td><td align="center">導通<br></td><td>常時<br></td><td align="center">導通あり<br></td><td><ol style="list-style-type: disc"><li>ハンズフリー送話音声出ず<br></li><li>ヘルプネット送話音声出ず<br></li><li>音声認識できず<br></li></ol></td></tr></table><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">*1:ハンズフリーキット装着車(販売店装着オプション)</dd></dl></p><br clear="all"></body></html>
+<li>Navigation receiver ASSY</li></ol>
+<ol class="ptxt"></ol><div class="full"><br clear="all"/><img alt="E125528J04" border="1" class="full" name="E125528J04" src="../../img/e125528j04.png"/></div><br clear="all"/><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><caption class="tbl-title"><span>Connector A</span></caption><colgroup align="" width="4%
+
+			"><col align=""/></colgroup><colgroup align="" width="10%
+
+			"><col align=""/></colgroup><colgroup align="" width="6%
+
+			"><col align=""/></colgroup><colgroup align="" width="17%
+
+			"><col align=""/></colgroup><colgroup align="" width="6%
+
+			"><col align=""/></colgroup><colgroup align="" width="18%
+
+			"><col align=""/></colgroup><colgroup align="" width="18%
+
+			"><col align=""/></colgroup><colgroup align="" width="21%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">Terminal number<br/></th><th align="center">Terminal symbol<br/></th><th align="center">Input and output<br/></th><th align="center">Tester connection<br/>(Plus ← → minus)<br/></th><th align="center">item<br/></th><th align="center">Measurement conditions<br/></th><th align="center">standard<br/></th><th>Problem symptoms in non -standard<br/>O: At the time of disconnection<br/>S: Body and short circuit<br/></th></tr><tr><td align="center">1<br/></td><td align="center">FR+<br/></td><td align="center">output<br/></td><td align="center">A1 ← → A7<br/></td><td align="center">Waveform<br/></td><td>During voice output<br/></td><td align="center">A waveform synchronized with the audio is output<br/></td><td>Not voice from the front speaker ASSY No.1 (RH)<br/></td></tr><tr><td align="center">2<br/></td><td align="center">FL+<br/></td><td align="center">output<br/></td><td align="center">A2 ← → A7<br/></td><td align="center">Waveform<br/></td><td>During voice output<br/></td><td align="center">A waveform synchronized with the audio is output<br/></td><td>Not voice out from the front speaker ASSY No.1 (LH)<br/></td></tr><tr><td align="center">3<br/></td><td align="center">ACC<br/></td><td align="center">input<br/></td><td align="center">A3 ← → A7<br/></td><td align="center">Voltage<br/></td><td>IG Switch ACC<br/></td><td align="center">10-14V<br/></td><td>O: The system does not work<br/>S: runs out of fuse<br/></td></tr><tr><td align="center">4<br/></td><td align="center">+B<br/></td><td align="center">input<br/></td><td align="center">A4 ← → A7<br/></td><td align="center">Voltage<br/></td><td>Always<br/></td><td align="center">10-14V<br/></td><td>O: The system does not work<br/>S: runs out of fuse<br/></td></tr><tr><td align="center">5<br/></td><td align="center">FR-<br/></td><td align="center">output<br/></td><td align="center">A5 ← → A7<br/></td><td align="center">Waveform<br/></td><td>During voice output<br/></td><td align="center">A waveform synchronized with the audio is output<br/></td><td>Not voice from the front speaker ASSY No.1 (RH)<br/></td></tr><tr><td align="center">6<br/></td><td align="center">FL-<br/></td><td align="center">output<br/></td><td align="center">A6 ← → A7<br/></td><td align="center">Waveform<br/></td><td>During voice output<br/></td><td align="center">A waveform synchronized with the audio is output<br/></td><td>Not voice out from the front speaker ASSY No.1 (LH)<br/></td></tr><tr><td align="center">7<br/></td><td align="center">Gnd<br/></td><td align="center">output<br/></td><td align="center">A7 ← → Body Earth<br/></td><td align="center">Conduction<br/></td><td>Always<br/></td><td align="center">There is an conductor<br/></td><td>O: Noise increased<br/></td></tr><tr><td align="center">8<br/></td><td align="center">ANT+<br/></td><td align="center">-<br/></td><td align="center">A8 ← → A7<br/></td><td align="center">Voltage<br/></td><td>Radio (AM/FM) receiving<br/></td><td align="center">10-14V<br/></td><td>AM/FM Reception sensitivity poor<br/></td></tr><tr><td align="center">10<br/></td><td align="center">ILL+<br/></td><td align="center">input<br/></td><td align="center">A10 ← → A7<br/></td><td align="center">Voltage<br/></td><td>Head lamps Dimaswitch Tail<br/></td><td align="center">10-14V<br/></td><td>O: does not switch to night screen<br/>S: runs out of fuse<br/></td></tr></tbody></table><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><caption class="tbl-title"><span>Connector B</span></caption><colgroup align="" width="4%
+
+			"><col align=""/></colgroup><colgroup align="" width="10%
+
+			"><col align=""/></colgroup><colgroup align="" width="6%
+
+			"><col align=""/></colgroup><colgroup align="" width="17%
+
+			"><col align=""/></colgroup><colgroup align="" width="6%
+
+			"><col align=""/></colgroup><colgroup align="" width="18%
+
+			"><col align=""/></colgroup><colgroup align="" width="18%
+
+			"><col align=""/></colgroup><colgroup align="" width="21%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">Terminal number<br/></th><th align="center">Terminal symbol<br/></th><th align="center">Input and output<br/></th><th align="center">Tester connection<br/>(Plus ← → minus)<br/></th><th align="center">item<br/></th><th align="center">Measurement conditions<br/></th><th align="center">standard<br/></th><th>Problem symptoms in non -standard<br/>O: At the time of disconnection<br/>S: Body and short circuit<br/></th></tr><tr><td align="center">1<br/></td><td align="center">RR+<br/></td><td align="center">output<br/></td><td align="center">B1 ← → A7<br/></td><td align="center">Waveform<br/></td><td>During voice output<br/></td><td align="center">A waveform synchronized with the audio is output<br/></td><td>Speaker ASSY RR (RH) does not appear<br/></td></tr><tr><td align="center">2<br/></td><td align="center">RL+<br/></td><td align="center">output<br/></td><td align="center">B2 ← → A7<br/></td><td align="center">Waveform<br/></td><td>During voice output<br/></td><td align="center">A waveform synchronized with the audio is output<br/></td><td>Speaker ASSY RR (LH) does not appear<br/></td></tr><tr><td align="center">3<br/></td><td align="center">RR-<br/></td><td align="center">output<br/></td><td align="center">B3 ← → A7<br/></td><td align="center">Waveform<br/></td><td>During voice output<br/></td><td align="center">A waveform synchronized with the audio is output<br/></td><td>Speaker ASSY RR (RH) does not appear<br/></td></tr><tr><td align="center">6<br/></td><td align="center">RL-<br/></td><td align="center">output<br/></td><td align="center">B6 ← → A7<br/></td><td align="center">Waveform<br/></td><td>During voice output<br/></td><td align="center">A waveform synchronized with the audio is output<br/></td><td>Speaker ASSY RR (LH) does not appear<br/></td></tr></tbody></table><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><caption class="tbl-title"><span>Connector F</span></caption><colgroup align="" width="4%
+
+			"><col align=""/></colgroup><colgroup align="" width="10%
+
+			"><col align=""/></colgroup><colgroup align="" width="6%
+
+			"><col align=""/></colgroup><colgroup align="" width="17%
+
+			"><col align=""/></colgroup><colgroup align="" width="6%
+
+			"><col align=""/></colgroup><colgroup align="" width="18%
+
+			"><col align=""/></colgroup><colgroup align="" width="18%
+
+			"><col align=""/></colgroup><colgroup align="" width="21%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">Terminal number<br/></th><th align="center">Terminal symbol<br/></th><th align="center">Input and output<br/></th><th align="center">Tester connection<br/>(Plus ← → minus)<br/></th><th align="center">item<br/></th><th align="center">Measurement conditions<br/></th><th align="center">standard<br/></th><th>Problem symptoms in non -standard<br/>O: At the time of disconnection<br/>S: Body and short circuit<br/></th></tr><tr><td align="center">1<br/></td><td align="center">PKB<br/></td><td align="center">input<br/></td><td align="center">F1 ← → A7<br/></td><td align="center">Voltage<br/></td><td>Make the parking brake act<br/></td><td align="center">1V or less<br/></td><td>O: The TV screen does not appear even during the stop<br/>S: During the stop, you can draw a TV screen even if the parking brake is not acting<br/></td></tr><tr><td align="center">2<br/></td><td align="center">IG<br/></td><td align="center">input<br/></td><td align="center">F2 ← → A7<br/></td><td align="center">Voltage<br/></td><td>IG switch ON<br/></td><td align="center">10-14V<br/></td><td>O: The system does not work<br/>S: runs out of fuse<br/></td></tr><tr><td align="center">3<br/></td><td align="center">SPD<br/></td><td align="center">input<br/></td><td align="center">F3 ← → A7<br/></td><td align="center">Voltage<br/></td><td>Run at 5km/h or higher/h<br/></td><td align="center">9V or more ← → 1V Repeat or less<br/></td><td>All switches can be operated while driving<br/></td></tr><tr><td align="center">5<br/></td><td align="center">REV<br/></td><td align="center">input<br/></td><td align="center">F5 ← → A7<br/></td><td align="center">Voltage<br/></td><td>Shift lever R range<br/></td><td align="center">10-14V<br/></td><td>O: When the vehicle retreats, the navigation position progresses forward<br/>S: runs out of fuse<br/></td></tr></tbody></table><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><caption class="tbl-title"><span>Connector G</span></caption><colgroup align="" width="4%
+
+			"><col align=""/></colgroup><colgroup align="" width="10%
+
+			"><col align=""/></colgroup><colgroup align="" width="6%
+
+			"><col align=""/></colgroup><colgroup align="" width="17%
+
+			"><col align=""/></colgroup><colgroup align="" width="6%
+
+			"><col align=""/></colgroup><colgroup align="" width="18%
+
+			"><col align=""/></colgroup><colgroup align="" width="18%
+
+			"><col align=""/></colgroup><colgroup align="" width="21%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">Terminal number<br/></th><th align="center">Terminal symbol<br/></th><th align="center">Input and output<br/></th><th align="center">Tester connection<br/>(Plus ← → minus)<br/></th><th align="center">item<br/></th><th align="center">Measurement conditions<br/></th><th align="center">standard<br/></th><th>Problem symptoms in non -standard<br/>O: At the time of disconnection<br/>S: Body and short circuit<br/></th></tr><tr><td align="center">1<br/></td><td align="center">Div2<br/></td><td align="center">output<br/></td><td align="center">G1 ← → A7<br/></td><td align="center">Voltage<br/></td><td>During TV screen<br/></td><td align="center">Repeat 1V or less ← → 3V or more depending on the reception state<br/></td><td>TV reception sensitivity decreased<br/></td></tr><tr><td align="center">2<br/></td><td align="center">Div1<br/></td><td align="center">output<br/></td><td align="center">G2 ← → A7<br/></td><td align="center">Voltage<br/></td><td>During TV screen<br/></td><td align="center">Repeat 1V or less ← → 3V or more depending on the reception state<br/></td><td>TV reception sensitivity decreased<br/></td></tr><tr><td align="center">3<br/></td><td align="center">TV+B<br/></td><td align="center">output<br/></td><td align="center">G3 ← → A7<br/></td><td align="center">Voltage<br/></td><td>During TV screen<br/></td><td align="center">10-14V<br/></td><td>O: TV reception sensitivity decreased<br/>S: runs out of fuse<br/></td></tr><tr><td align="center">4<br/></td><td align="center">DGND<br/></td><td align="center">-<br/></td><td align="center">G4 ← → A7<br/></td><td align="center">Conduction<br/></td><td>Always<br/></td><td align="center">There is an conductor<br/></td><td>Normal (noise increase)<br/></td></tr><tr><td align="center">5<br/></td><td align="center">TV Ant<br/></td><td align="center">input<br/></td><td align="center">G5 ← → Body Earth<br/></td><td align="center">Conduction<br/></td><td>Always<br/></td><td align="center">Without conduction<br/></td><td>TV reception sensitivity decreased<br/></td></tr><tr><td align="center">6<br/></td><td align="center">GND (S)<br/></td><td align="center">-<br/></td><td align="center">G6 ← → Body Earth<br/></td><td align="center">Conduction<br/></td><td>Always<br/></td><td align="center">There is an conductor<br/></td><td>Normal (noise increase)<br/></td></tr></tbody></table><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><caption class="tbl-title"><span>Connector H</span></caption><colgroup align="" width="4%
+
+			"><col align=""/></colgroup><colgroup align="" width="10%
+
+			"><col align=""/></colgroup><colgroup align="" width="6%
+
+			"><col align=""/></colgroup><colgroup align="" width="17%
+
+			"><col align=""/></colgroup><colgroup align="" width="6%
+
+			"><col align=""/></colgroup><colgroup align="" width="18%
+
+			"><col align=""/></colgroup><colgroup align="" width="18%
+
+			"><col align=""/></colgroup><colgroup align="" width="21%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">Terminal number<br/></th><th align="center">Terminal symbol<br/></th><th align="center">Input and output<br/></th><th align="center">Tester connection<br/>(Plus ← → minus)<br/></th><th align="center">item<br/></th><th align="center">Measurement conditions<br/></th><th align="center">standard<br/></th><th>Problem symptoms in non -standard<br/>O: At the time of disconnection<br/>S: Body and short circuit<br/></th></tr><tr><td align="center">2<br/></td><td align="center">Canh<br/></td><td align="center">Input and output<br/></td><td align="center">-<br/></td><td align="center">-<br/></td><td>Display Inspection-CAN Connection Inspection<br/></td><td align="center">-<br/></td><td>The predicted course is not displayed on the back guide monitor screen, and "cannot guide" is displayed.<br/></td></tr><tr><td align="center">3<br/></td><td align="center">Canl<br/></td><td align="center">Input and output<br/></td><td align="center">-<br/></td><td align="center">-<br/></td><td>Display Inspection-CAN Connection Inspection<br/></td><td align="center">-<br/></td><td>The predicted course is not displayed on the back guide monitor screen, and "cannot guide" is displayed.<br/></td></tr><tr><td align="center">9<br/></td><td align="center">SW+<br/>(*1)<br/></td><td align="center">input<br/></td><td align="center">H9 ← → A7<br/></td><td align="center">Voltage<br/></td><td>Pressing the voice recognition switch without pressing → Pressing<br/></td><td align="center">5V → 0-0.5V<br/></td><td>Voice recognition switch does not work<br/></td></tr><tr><td align="center">10<br/></td><td align="center">SW-<br/>(*1)<br/></td><td align="center">-<br/></td><td align="center">H10 ← → A7<br/></td><td align="center">Conduction<br/></td><td>Always<br/></td><td align="center">There is an conductor<br/></td><td><ol style="list-style-type: disc"><li>Hands -free dialogue audio does not appear<br/></li><li>Helpnet transmitting voice does not appear<br/></li><li>I can't recognize voice<br/></li></ol></td></tr><tr><td align="center">12<br/></td><td align="center">TSW-<br/></td><td align="center">-<br/></td><td align="center">H12 ← → Body Earth<br/></td><td align="center">Conduction<br/></td><td>Always<br/></td><td align="center">There is an conductor<br/></td><td><ol style="list-style-type: disc"><li>Hands -free dialogue audio does not appear<br/></li><li>Helpnet transmitting voice does not appear<br/></li><li>I can't recognize voice<br/></li></ol></td></tr><tr><td align="center">17<br/></td><td align="center">Macc<br/>(*1)<br/></td><td align="center">output<br/></td><td align="center">H17 ← → A7<br/></td><td align="center">Voltage<br/></td><td>IG Switch ACC<br/></td><td align="center">5V<br/></td><td><ol style="list-style-type: disc"><li>Hands -free dialogue audio does not appear<br/></li><li>Helpnet transmitting voice does not appear<br/></li><li>I can't recognize voice<br/></li></ol></td></tr><tr><td align="center">18<br/></td><td align="center">Sgnd<br/></td><td align="center">-<br/></td><td align="center">H18 ← → Body Earth<br/></td><td align="center">Conduction<br/></td><td>Always<br/></td><td align="center">There is an conductor<br/></td><td><ol style="list-style-type: disc"><li>Hands -free dialogue audio does not appear<br/></li><li>Helpnet transmitting voice does not appear<br/></li><li>I can't recognize voice<br/></li></ol></td></tr><tr><td align="center">19<br/></td><td align="center">Mic+<br/>(*1)<br/></td><td align="center">input<br/></td><td align="center">H19 ← → A7<br/></td><td align="center">Waveform<br/></td><td>During voice input<br/></td><td align="center">A waveform synchronized with the audio is output<br/></td><td><ol style="list-style-type: disc"><li>Hands -free dialogue audio does not appear<br/></li><li>Helpnet transmitting voice does not appear<br/></li><li>I can't recognize voice<br/></li></ol></td></tr><tr><td align="center">20<br/></td><td align="center">Mic-<br/>(*1)<br/></td><td align="center">-<br/></td><td align="center">H20 ← → Body Earth<br/></td><td align="center">Conduction<br/></td><td>Always<br/></td><td align="center">There is an conductor<br/></td><td><ol style="list-style-type: disc"><li>Hands -free dialogue audio does not appear<br/></li><li>Helpnet transmitting voice does not appear<br/></li><li>I can't recognize voice<br/></li></ol></td></tr></tbody></table><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">*1: Car equipped with hands free kit (Optional with dealers)</dd></dl><p></p><br clear="all"/></body></html>

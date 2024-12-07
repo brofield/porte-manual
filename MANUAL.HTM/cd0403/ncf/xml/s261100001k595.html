@@ -1,940 +1,940 @@
-<html>
-<head>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>スマートドアロックシステム</title>
-<link type="text/css" href="../css/main2.css" rel="stylesheet">
-<link type="text/css" href="../css/style.css" rel="stylesheet">
-<script src="../js/hidden.js" language="JavaScript"></script>
+<html><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Smart door lock system</title>
+<link href="../css/main2.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" src="../js/hidden.js"></script>
 </head>
 <body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
-<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td align="left"><input onClick="printCheck()" value="印刷" name="submit" type="submit"></td><td align="center">　</td><td align="right"><input onClick="closeWindow()" value="閉じる" name="submit2" type="submit"></td>
+<table cellpadding="2" cellspacing="0" id="print" style="display:none" width="100%">
+<tbody><tr>
+<td align="left"><input name="submit" onclick="printCheck()" type="submit" value="印刷"/></td><td align="center">　</td><td align="right"><input name="submit2" onclick="closeWindow()" type="submit" value="閉じる"/></td>
 </tr>
-</table>
+</tbody></table>
 <div align="left">
 
 
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0">
-<tr>
-<td class="blue" width="5%">　</td><td align="center" class="blue" width="80%">スマートドアロックシステム</td><td width="15%" class="blue" align="right"></td>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td class="blue" width="5%">　</td><td align="center" class="blue" width="80%">Smart door lock system</td><td align="right" class="blue" width="15%"></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">スマートドアロック用トランスミッターを身に付けているだけで，全ドアロック/アンロック操作をキーを手にとることなく&ldquo;スマート&rdquo;に行うことができる「スマートドアロック」を採用し，150Rおよび130iのCパッケージに標準設定しました。</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">A "smart door lock" that allows you to perform all door locks/unlock operations "smart" without having a key in your hand, can be performed "smart" just by wearing a transmitter for smart door locks.C package is set as standard.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">スマートドアロックシステムは，トランスミッターと車両の無線通信による電子式IDコードの照合結果を基に，ドアロック制御を行うシステムです。</div>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">The Smart Door Lock System is a system that controls a door lock based on the interruption result of the electronic ID code by transmitter and the vehicle wireless communication.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">スマートドアロック用トランスミッターは，ID照合時の通信中およびボタン操作時に点灯する作動インジケーターランプ（LED）を内蔵し，作動状態やバッテリー切れを確認できるものとしました。またワイヤレスドアロック機能も備えており，トランスミッターと同様に使用することができます。なお，バッテリーにはCR2032を使用します。</div>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">The transmitter for smart door locks has a built -in operating indicator lamp (LED) that lights up during the communication and button operation during the ID collation, and can be confirmed to be operated and out of battery.It also has a wireless arock function and can be used like a transmitter.In addition, CR2032 is used for the battery.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">スマートレシーバーを，運転席側インストルメントパネル内に配置しました。また，トランスミッター&rarr;スマートレシーバー間の識別コード送信方法に微弱電波を採用しています。</div>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">The smart receiver is located in the driver's instrument panel.In addition, weak radio waves are adopted as an identification code transmission method between transmitter and smart receiver.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">識別コード登録機能を採用し，スマートドアロック用トランスミッターの複数使用を可能としました。</div>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">The identification code registration function has been adopted, enabling multiple transmitter for smart door locks.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT100001K595K675');chgImg('imT100001K595K675');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT100001K595K675" align="absmiddle"><a name="t100001k595k675">スマートドアロックシステム概要</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT100001K595K675');chgImg('imT100001K595K675');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT100001K595K675" src="../images/detail_b0.gif"/><a name="t100001k595k675">Smart Door Lock System Overview</a></span>
+<br/>
 <div id="tmT100001K595K675" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">車室外のスマートドアロック用トランスミッターと車両との無線通信によるIDコード照合結果を基に，スマートECUがボデーECUへ信号を送信することでドアロック制御をしています。</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Based on the ID code collation result by wireless communication between the transmitter for a smart door lock outside the car, the smart ECU is controlled by the smart ECU by sending a signal to the body ECU.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">車両とスマートドアロック用トランスミッターの照合を行うために，スマートECUはエレクトリカルキーオシレーターを介してリクエスト信号を車室外へ発信します。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">To match the vehicle and the transmitter for a smart door lock, the smart ECU sends out the request signal via an electrical key oscillator outside the car room.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">リクエスト信号を受信したトランスミッターは，IDコードを発信します。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">The transmitter receiving the request signal sends the ID code.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">スマートレシーバーで受信したIDコードを，スマートECUが判別・照合し自車コードと認識すると，機能に応じてロック/アンロック要求信号をボデーコンピューターへ送信することでドアロック制御します。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">When the smart receiver receives the ID code received by the smart receiver as an identification/collation, the door lock is controlled by sending a lock/unlock requirement signal to the body computer according to the function.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 
 
-<table cellpadding="2" cellspacing="0" border="0" width="100%">
-<tr>
-<td align="center"><img src="../xml/grph_ent/a3840111b.png"></td>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center"><img src="../xml/grph_ent/a3840111b.png"/></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
+<br/><table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
 <td colspan="2">
-<br>
-<table cellpadding="0" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="blue2">スマートドアロック用トランスミッター検知エリア</td>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr>
+<td class="blue2">Smart door lock transmitter detection area</td>
 </tr>
-</table>
-</td>
-</tr>
-<br>
-
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">スマートECUから送信されるリクエスト信号は，エレクトリカルキーオシレーターから発信され運転席ドアアウトサイドハンドルをアンテナとして，半径約0.7mのスマートドアロック用トランスミッター検知エリアを形成します。</div>
+</tbody></table>
 </td>
 </tr>
 
+
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">検知エリアを形成するリクエスト信号は，0.3秒ごとに定期発信されることで常時トランスミッター携帯者の接近を感知しています。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">The request signal sent from the Smart ECU is sent from the electrical key oscillator and forms a transmitter detection area for a smart door lock with a radius of about 0.7 m using the driver's door -out side handle as an antenna.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">検知エリアは，下記の条件がすべて成立した場合に形成されます。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">The request signal that forms a detection area is always transmitted every 0.3 seconds to detect the approach of transmitter cell phone.</div>
 </td>
 </tr>
-</table>
 
-<br>
-<table cellpadding="0" cellspacing="0" border="0" width="95%">
 <tr>
-<td class="blue2">検知エリア形成（リクエスト信号発信）条件</td>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">The detection area is formed when all the following conditions are established.</div>
+</td>
 </tr>
-</table>
-<br>
+</tbody></table>
 
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr>
+<td class="blue2">Detection area formation (request signal transmission) Conditions</td>
+</tr>
+</tbody></table>
+<br/>
+
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
 <td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">エンジン停止</div>
+<div class="text">Engine stop</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">イグニッションキーシリンダーにキー未挿入</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Ignition key cylinder not inserted</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">運転席ドアロック</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Driving seat door lock</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">全ドア&ldquo;閉&rdquo;</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">All doors "closed"</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
-<table cellpadding="2" cellspacing="0" border="0" width="100%">
-<tr>
-<td align="center"><img src="../xml/grph_ent/a3840112b.png"></td>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center"><img src="../xml/grph_ent/a3840112b.png"/></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT100001K595A387');chgImg('imT100001K595A387');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT100001K595A387" align="absmiddle"><a name="t100001k595a387">スマートドアアンロック機能</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT100001K595A387');chgImg('imT100001K595A387');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT100001K595A387" src="../images/detail_b0.gif"/><a name="t100001k595a387">Smart door an lock function</a></span>
+<br/>
 <div id="tmT100001K595A387" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">検知エリア内でスマートドアロック用トランスミッターを携帯し，運転席アウトサイドハンドルASSYを握ると全ドアがアンロックします。</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">All doors will unlock when you carry a transmitter for a smart door lock in the detection area and hold the driver's outside handle ASSY.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">アンロック後，アンサーバックとしてハザードウォーニングランプが2回点滅します。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">After the unlock, the Hazard Warnin Gramp will be changed twice as an answer back.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 
 
-<table cellpadding="2" cellspacing="0" border="0" width="100%">
-<tr>
-<td align="center"><img src="../xml/grph_ent/a3840071b.png"></td>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center"><img src="../xml/grph_ent/a3840071b.png"/></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT100001K595A388');chgImg('imT100001K595A388');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT100001K595A388" align="absmiddle"><a name="t100001k595a388">スマートドアロック機能</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT100001K595A388');chgImg('imT100001K595A388');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT100001K595A388" src="../images/detail_b0.gif"/><a name="t100001k595a388">Smart door lock function</a></span>
+<br/>
 <div id="tmT100001K595A388" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">全ドア&ldquo;閉&rdquo;のとき，検知エリア内でスマートドアロック用トランスミッターを携帯し，トリガースイッチを押すと全ドアがロックします。</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">At the time of "closed", all doors are locked by carrying a transmitter for a smart door lock in the detection area and pressing the trigger switch.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">ロック後，アンサーバックとしてハザードウォーニングランプが1回点滅します。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">After the lock, the Hazard Warnin Grand Lamp will be changed once as an answer back.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 
 
-<table cellpadding="2" cellspacing="0" border="0" width="100%">
-<tr>
-<td align="center"><img src="../xml/grph_ent/a3840072b.png"></td>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center"><img src="../xml/grph_ent/a3840072b.png"/></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT100001K595K678');chgImg('imT100001K595K678');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT100001K595K678" align="absmiddle"><a name="t100001k595k678">ワイヤレスリモートコントロール機能</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT100001K595K678');chgImg('imT100001K595K678');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT100001K595K678" src="../images/detail_b0.gif"/><a name="t100001k595k678">Wireless remote control function</a></span>
+<br/>
 <div id="tmT100001K595K678" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">スマートドアロック用トランスミッターにはロックボタン・アンロック・パワースライドドアボタンが取り付けられており，ドアロック　＆　アンロック機能をはじめとするすべてのワイヤレスリモートコントロールシステム機能が可能です。</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">The transmitter for the smart door lock has a lock button, unlock power slide door button, and all wireless remote control systems, including the door lock and unlock function, are possible.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT100001K595K158');chgImg('imT100001K595K158');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT100001K595K158" align="absmiddle"><a name="t100001k595k158">識別コード登録機能</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT100001K595K158');chgImg('imT100001K595K158');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT100001K595K158" src="../images/detail_b0.gif"/><a name="t100001k595k158">Identification code registration function</a></span>
+<br/>
 <div id="tmT100001K595K158" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">スマートECU側のトランスミッター識別コードを，スマートドアロック用トランスミッター，トランスミッターキー合計で最大7種類まで追加登録することができます（スマートドアロック用トランスミッター，トランスミッターキーのどちらも最大5種類まで登録可能）。その他，識別コードの書き換えおよび登録コード数の確認や，万一スマートドアロック用トランスミッターを紛失した場合に，スマートECUに登録されている識別コードを消去し，スマートドアロックシステムを禁止状態にすることができます。（識別コードの追加・書き換え・確認・禁止方法については，修理書を参照してください。）</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">The transmitter identification code on the smart ECU side can be added to up to 7 types of transmitter for smart door locks, transmitter keys in total (up to five types of transmitter for smart door locks and transmitter keys can be registered up to 5 types).In addition, check the identification code rewriting and the number of registration code, or if the transmitter for a smart door lock is lost, the identification code registered in the smart ECU is to be erased and the smart door lock system is prohibited.You can do it.(Please refer to the repair letter for addition, rewriting, confirmation, and prohibition of identification code.)</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT100001K595K683');chgImg('imT100001K595K683');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT100001K595K683" align="absmiddle"><a name="t100001k595k683">スマートドアロック節電機能</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT100001K595K683');chgImg('imT100001K595K683');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT100001K595K683" src="../images/detail_b0.gif"/><a name="t100001k595k683">Smart door lock power saving function</a></span>
+<br/>
 <div id="tmT100001K595K683" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
+<br/><table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
 <td colspan="2">
-<br>
-<table cellpadding="0" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="blue2">車載バッテリーの節電機能</td>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr>
+<td class="blue2">In -vehicle battery power saving function</td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
-<br>
+
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">スマートドアロックシステムは，0.3秒ごとのリクエスト信号を定期発信することで検知エリアを形成するため，車両を長時間放置すると，車載バッテリーが上がる可能性があります。そこでバッテリー上がりを防止するため下記の制御を設定しています。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">The smart door lock system forms a detection area by periodically transmitting a request signal every 0.3 seconds, so if the vehicle is left for a long time, the in -vehicle battery may increase.Therefore, the following control is set to prevent the battery rising.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 
-<br>
-<table cellpadding="0" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="blue2">車載バッテリー節電制御</td>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr>
+<td class="blue2">In -vehicle battery power saving control</td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
 <td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">8日以上スマートドアロック用トランスミッターからの応答がない場合，リクエスト信号の定期発信を0.6秒間隔に延長。</div>
+<div class="text">If there is no response from the transmitter for smart door locks for 8 days or more, the regular transmission of the request signal is extended to 0.6 seconds.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">15日以上スマートドアロック用トランスミッターからの応答がない場合，リクエスト信号の定期発信（検知エリアの形成）を停止。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">If there is no response from the transmitter for smart door locks for 15 days or more, the regular transmission of the request signal is suspended (the formation of the detection area).</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
+<br/><table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
 <td colspan="2">
-<br>
-<table cellpadding="0" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="blue2">スマートドアロック用トランスミッターの節電機能</td>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr>
+<td class="blue2">Power saving function of transmitter for smart door lock</td>
 </tr>
-</table>
-</td>
-</tr>
-<br>
-
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">スマートドアロック用トランスミッターのロックまたはアンロックボタンを押し続けても，約20秒後に自動的に送信作動を停止します。</div>
+</tbody></table>
 </td>
 </tr>
 
+
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">検知エリア内にスマートドアロック用トランスミッターを長時間放置した状態にすると，スマートドアロック用トランスミッターはIDコードをスマートレシーバーへ送信し続けるため，トランスミッターのバッテリーが上がる可能性があります。そこでバッテリー上がりを防止するため下記の制御を設定しています。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Even if you continue to press the lock or unlock button of the transmitter for the smart door lock, the transmission operation will be automatically stopped after about 20 seconds.</div>
 </td>
 </tr>
-</table>
 
-<br>
-<table cellpadding="0" cellspacing="0" border="0" width="95%">
 <tr>
-<td class="blue2">車載バッテリー節電制御</td>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">If a transmitter for a smart door lock is left for a long time in the detection area, the transmitter for the smart door lock may continue to send the ID code to the smart receiver, so the transmitter's battery may rise.Therefore, the following control is set to prevent the battery rising.</div>
+</td>
 </tr>
-</table>
-<br>
+</tbody></table>
 
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr>
+<td class="blue2">In -vehicle battery power saving control</td>
+</tr>
+</tbody></table>
+<br/>
+
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
 <td class="color1">
-<div class="text">10分以上検知エリアにスマートドアロック用トランスミッターがある場合，リクエスト信号の定期発信（検知エリアの形成）を停止。</div>
+<div class="text">If there is a transmitter for a smart door lock in the detected area for 10 minutes or more, stop the request signal regular transmission (the formation of the detection area).</div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
+<br/><table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
 <td colspan="2">
-<br>
-<table cellpadding="0" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="blue2">復帰条件</td>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr>
+<td class="blue2">Return conditions</td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
-<br>
+
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">下記条件のいづれかが成立すると，節電制御から通常のスマートドアロック制御へ復帰します。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">When one of the following conditions is established, it returns from power saving control to normal smart door lock control.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 
-<br>
-<table cellpadding="0" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="blue2">復帰条件</td>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr>
+<td class="blue2">Return conditions</td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
 <td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">ワイヤレスドアロックにより，ドアをロック/アンロック。</div>
-</td>
-</tr>
-
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">エンジン始動。</div>
+<div class="text">Lock/unlock the door by wireless arock.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">運転席ドアアウトサイドハンドルASSYのトリガースイッチを押す。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Engine start.</div>
 </td>
 </tr>
-</table>
+
+<tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Press the trigger switch of the driver door out side handle ASSY.</div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT100001K595K674');chgImg('imT100001K595K674');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT100001K595K674" align="absmiddle"><a name="t100001k595k674">スマートドアロックシステム主要構成部品</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT100001K595K674');chgImg('imT100001K595K674');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT100001K595K674" src="../images/detail_b0.gif"/><a name="t100001k595k674">Smart Door Lock System major components</a></span>
+<br/>
 <div id="tmT100001K595K674" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 
-<table cellpadding="2" cellspacing="0" border="0" width="100%">
-<tr>
-<td align="center"><img src="../xml/grph_ent/a3840018b.png"></td>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center"><img src="../xml/grph_ent/a3840018b.png"/></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
-<br>
-<table cellpadding="0" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="blue2">スマートドアロックシステム主要構成部品機能一覧</td>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr>
+<td class="blue2">List of smart door lock systems major composition parts function</td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
 <td class="gray3_dark">
-<div class="text">構成部品〔略称〕</div>
+<div class="text">Configuration parts [abbreviation]</div>
 </td><td class="gray3_dark">
-<div class="text">主要機能</div>
+<div class="text">Major function</div>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<div class="text">スマートECU</div>
+<div class="text">Smart ECU</div>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">スマートレシーバーからのIDコードを判別・照合し，システム全体を制御。</div>
+<div class="text">The ID code from the smart receiver is identified and corresponds, and the entire system is controlled.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">各種スイッチ状態を検知し，エレクトリカルキーオシレーターへリクエスト信号を送信。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Various switch status is detected and requested signals are sent to electrical key oscillator.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">ドアロック/アンロック要求信号をボデーECUへ送信。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Send the door lock/unlock request signal to the body ECU.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<div class="text">スマートドアロック用トランスミッター</div>
+<div class="text">Transmitter for smart door lock</div>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">運転席ドアアウトサイドハンドルASSY内蔵のアンテナからのリクエスト信号を受信し，スマートレシーバーへ微弱電波（識別コード）を送信。</div>
+<div class="text">Driving seat door -out side handle handle receiving request signal from the built -in antenna with a built -in antenna and sent weak radio waves (identification code) to smart receivers.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">送信中に作動インジケーターランプを点灯。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Lights the operation indicator lamp during transmission.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">ワイヤレスドアロック用ロック・アンロックの2つの送信ボタンを装備。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Equipped with two transmission buttons, a lock and unlock for wireless arock.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<div class="text">エレクトリカルキーオシレーター</div>
+<div class="text">Electric key oscillator</div>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">スマートECUからのリクエスト信号を，運転席ドアアウトサイドハンドルASSY内蔵のアンテナへ送信。</div>
+<div class="text">The request signal from the smart ECU is sent to the driver's door -out side handle ASSY antenna.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">運転席ドアアウトサイドハンドルASSYからのタッチセンサー状態を検知し，スマートECUへ出力。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">The touch sensor condition from the driver's door out side handle ASSY is detected and output to the smart ECU.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<div class="text">スマートレシーバー</div>
+<div class="text">Smart receiver</div>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">トランスミッターからの微弱電波（識別コード・機能コード）を受信し，コードデータとしてスマートECUへ出力。</div>
+<div class="text">Received weak radio waves (identification code / function code) from transmitter and output to smart ECU as code data.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<div class="text">運転席ドアアウトサイドハンドルASSY</div>
+<div class="text">Driving seat door -out side handle ASSY</div>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">内蔵のアンテナにより，エレクトリカルキーオシレーターからのリクエスト信号を発信し検知エリアを形成。</div>
+<div class="text">The built -in antenna sends out a request signal from an electrical key oscillator to form a detection area.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">トリガースイッチ状態（ON/OFF）をスマートECUへ出力。〔スマートドアロック機能〕</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Out trigger switch status (ON/OFF) to Smart ECU.[Smart door lock function]</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">タッチセンサーを内蔵。〔スマートドアアンロック機能〕</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Built -in touch sensor.[Smart door an lock function]</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<div class="text">ボデーECU</div>
+<div class="text">Body ECU</div>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">スマートECUからのロック/アンロック要求信号により，ドアロックコントロールモーターを駆動。</div>
+<div class="text">Drive the door lock control motor by the lock/unlock request signal from the smart ECU.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">全ドアロック/アンロック作動完了を確認し，アンサーバック出力（フラッシャーリレー駆動）を実施。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Confirm that all door locks/unlock operation completed, and perform an answerback output (flasher relay drive).</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<div class="text">ドアロックASSY（運転席，助手席）</div>
+<div class="text">Door lock ASSY (driver's seat, passenger seat)</div>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">ドアロックコントロールモーターを正転/逆転することにより，ドアをロックまたはアンロック。</div>
+<div class="text">Lock or unlock the door by turning or reverse the door lock control motor.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">内蔵のドアロックポジションスイッチにより，ドアのロック/アンロック状態（ロック：OFF/アンロック：ON）を検出し，スマートECUなどへ出力。（運転席ドアロックASSY）</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">With the built -in door lock position switch, the door lock/unlock state (lock: OFF/unlock: ON) is detected and output to smart ECUs.(Driving seat door lock ASSY)</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<div class="text">フラッシャーリレー</div>
+<div class="text">Flasher relay</div>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">ボデーECU制御により，アンサーバック時にハザードウォーニングランプを点滅。〔アンサーバック機能〕</div>
+<div class="text">The Hazard Warnin Grand Pamp flashes during the answer back due to the body ECU control.[Answer back function]</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<div class="text">ドアカーテシランプスイッチ</div>
+<div class="text">Door curtechi lamp switch</div>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
 
-<div class="text">ドアの開閉（ドア開：ON，ドア閉：OFF）を検出し，スマートECUなどへ出力。</div>
+<div class="text">Opening and closing the door (door open: ON, door closed: OFF) is detected and output to smart ECUs.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT100001K595K680');chgImg('imT100001K595K680');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT100001K595K680" align="absmiddle"><a name="t100001k595k680">スマートドアロックシステム回路</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT100001K595K680');chgImg('imT100001K595K680');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT100001K595K680" src="../images/detail_b0.gif"/><a name="t100001k595k680">Smart door lock system circuit</a></span>
+<br/>
 <div id="tmT100001K595K680" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 
-<table cellpadding="2" cellspacing="0" border="0" width="100%">
-<tr>
-<td align="center"><img src="../xml/grph_ent/a3840075b.png"></td>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center"><img src="../xml/grph_ent/a3840075b.png"/></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT100001K595K681');chgImg('imT100001K595K681');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT100001K595K681" align="absmiddle"><a name="t100001k595k681">スマートドアアンロック作動</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT100001K595K681');chgImg('imT100001K595K681');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT100001K595K681" src="../images/detail0.gif"/><a name="t100001k595k681">Smart door an lock operation</a></span>
+<br/>
 <div id="tmT100001K595K681" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">イグニッションスイッチ　OFF，運転席ドアロックポジションスイッチ　OFF（ロック時），全ドアカーテシランプスイッチ　OFFかつスマートドアロック用トランスミッターが検知エリア内に入ると，スマートECUはスマートレシーバーが受信したトランスミッターのIDコードを判別/照合します。</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">When the Ignition Switch OFF, the driver's seat door lock position switch OFF (at the time of lock), the transmitter for all door curtail slump switch OFF and smart door lock enters the detection area, the smart ECU determines the ID code of the transmitter received by the smart receiver/Cause.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">照合がOKとなると，スマートECUはエレクトリカルキーオシレーターを介して運転席ドアアウトサイドハンドルASSY内蔵のタッチセンサーを起動し，アンロックスタンバイ状態とします。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">When the correction is OK, the smart ECU will launch a touch sensor with a built -in driver's door -out side handle ASSY via an electrical key oscillator, and in an unlock standby state.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">運転席ドアアウトサイドハンドルASSYが触られたことをタッチセンサーで検出すると，この信号がエレクトリカルキーオシレーターを介してスマートECUへ入力されます。これにより，スマートECUはドアアンロック要求信号をボデーECUへ送信します。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">When the driver's door -out side handle ASSY is detected with a touch sensor, this signal is entered into the smart ECU via an electrical key oscillator.As a result, the smart ECU sends the dooran lock demanding signal to the body ECU.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">ボデーECUは電気式ドアロック作動と同様，ドアロックコントロールモーターを駆動し全ドアをアンロックします。その後，運転席ドアロックポジションスイッチ　ONを検知しドアアンロック状態を確認すると，アンサーバック出力を2回行います。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">The body ECU drives the door lock control motor and unlocks all doors, as in the operation of the electric door lock.After that, the driver's door lock position switch ON is detected and the door -an lock status is confirmed, and the answerback output is performed twice.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">スマートECUは運転席ドアロックポジションスイッチ　ONを検知しドアアンロック状態を確認すると，リクエスト信号の発信を停止します。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Smart ECU detects the driver's door lock position switch ON and checks the dooran lock status to stop the request signal.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT100001K595K682');chgImg('imT100001K595K682');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT100001K595K682" align="absmiddle"><a name="t100001k595k682">スマートドアロック作動</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT100001K595K682');chgImg('imT100001K595K682');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT100001K595K682" src="../images/detail0.gif"/><a name="t100001k595k682">Smart door lock operation</a></span>
+<br/>
 <div id="tmT100001K595K682" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">イグニッションスイッチ　OFF，全ドアカーテシランプスイッチ　OFF状態で，スマートECUがトリガースイッチ　ONを検知すると，エレクトリカルキーオシレーターへリクエスト信号を送信し運転席ドアアウトサイドハンドルASSY内蔵のアンテナにより検知エリアが形成されます。</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">When a smart ECU detects the trigger switch ON in the ignition switch OFF, all door curtechi lamps, ON, a request signal is sent to the electric key oscillator, and a detection area is formed by the driver's door -out side handle ASSY built -in antenna.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">このとき検知エリア内のスマートドアロック用トランスミッターはIDコードを発信し，これをスマートレシーバーを介してスマートECUが受信します。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">At this time, the transmitter for the smart door lock in the detection area sends the ID code, which is received by the Smart ECU via a smart receiver.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">スマートECUはトランスミッターのIDコードを判別・照合し，OKとなるとドアロック要求信号をボデーECUへ送信します。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Smart ECU determines and matches the ID code of the transmitter, and when OK, the door lock requirement signal is sent to the body ECU.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">ボデーECUは電気式ドアロック作動と同様，ドアロックコントロールモーターを駆動し全ドアをロックします。その後，運転席ドアロックポジションスイッチ　OFFを検知しドアロック状態を確認すると，アンサーバック出力を1回行います。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">The body ECU drives the door lock control motor and locks all doors, as in the operation of the electric door lock.After that, the driver's door lock position switch OFF is detected and the door lock status is confirmed, and the answerback output is performed once.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT100001K595K684');chgImg('imT100001K595K684');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT100001K595K684" align="absmiddle"><a name="t100001k595k684">その他のスマート制御</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT100001K595K684');chgImg('imT100001K595K684');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT100001K595K684" src="../images/detail_b0.gif"/><a name="t100001k595k684">Other smart control</a></span>
+<br/>
 <div id="tmT100001K595K684" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
+<br/><table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
 <td colspan="2">
-<br>
-<table cellpadding="0" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="blue2">他車スマートドアロック用トランスミッターとの衝突回避制御</td>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr>
+<td class="blue2">Collision avoidance control with transmitter for other vehicles smart door lock</td>
 </tr>
-</table>
-</td>
-</tr>
-<br>
-
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">スマートドアロックシステム装着車が2台並び，スマートドアロック用トランスミッターが他車の検知エリアに反応し続けて自車の検知エリアに反応できなくなった場合には，衝突回避制御が実行されることがあります。</div>
+</tbody></table>
 </td>
 </tr>
 
+
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">他車のスマートECUが検知エリア内のスマートドアロック用トランスミッターに対して3回連続NG判定をした時点でリクエスト信号の送信を3回停止します。これにより，スマートドアロック用トランスミッターは約1秒後に自車の検知エリアに反応し，通常のスマートドアロック制御を行います。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">If two cars equipped with a smart door lock system are lined up, and if the transmitter for smart door lock continues to respond to the detection area of ​​other vehicles and can not respond to the detection area of ​​your vehicle, collision avoidance control may be executed.there is.</div>
 </td>
 </tr>
-</table>
+
+<tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">The sending request signal is stopped three times when the Smart ECU of another car has made three consecutive NG judgments to the transmitter for the smart door lock in the detection area.As a result, the transmitter for the smart door lock reacts to the detection area of ​​the vehicle after about one second, and performs a normal smart door lock control.</div>
+</td>
+</tr>
+</tbody></table>
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT100001K595K684I01');chgImg('imT100001K595K684I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT100001K595K684I01" align="absmiddle"><a name="t100001k595k684i01">衝突回避制御</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT100001K595K684I01');chgImg('imT100001K595K684I01');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT100001K595K684I01" src="../images/detail0.gif"/><a name="t100001k595k684i01">Collision avoidance control</a></span>
+<br/>
 <div id="tmT100001K595K684I01" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 
-<table cellpadding="2" cellspacing="0" border="0" width="100%">
-<tr>
-<td align="center"><img src="../xml/grph_ent/a3840073b.png"></td>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center"><img src="../xml/grph_ent/a3840073b.png"/></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
+<br/><table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
 <td colspan="2">
-<br>
-<table cellpadding="0" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="blue2">他車スマートドアロック用トランスミッターによる節電制御</td>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr>
+<td class="blue2">Power saving control by transmitter for other vehicles smart door lock</td>
 </tr>
-</table>
-</td>
-</tr>
-<br>
-
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">他車のスマートドアロック用トランスミッターが自車の検知エリア内にある場合は，自車のスマートECUが上記の衝突回避制御を繰り返し実施し，10回連続した場合に節電制御へ移行します。</div>
+</tbody></table>
 </td>
 </tr>
 
+
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">節電制御が実行されると，スマートECUはリクエスト信号の定期発信を3秒ごとに変更します。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">If the transmitter for the smart door lock of another car is in the detection area of ​​the vehicle, the smart ECU of the car will repeat the above collision avoidance control, and will be shifted to power saving control if it is 10 consecutive times.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">自車のスマートドアロック用トランスミッターを検知・ワイヤレスリモートコントロール操作・異なるスマートドアロック用トランスミッターを検知のいづれかを実施することで，節電制御から復帰します。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">When power saving control is executed, the smart ECU changes the regular transmission of the request signal every 3 seconds.</div>
 </td>
 </tr>
-</table>
+
+<tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Returns from power saving control by detecting your car's smart door lock transmitter, wireless remote control operation, and a transmitter for different smart door locks.</div>
+</td>
+</tr>
+</tbody></table>
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT100001K595K684I02');chgImg('imT100001K595K684I02');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT100001K595K684I02" align="absmiddle"><a name="t100001k595k684i02">節電制御</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT100001K595K684I02');chgImg('imT100001K595K684I02');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT100001K595K684I02" src="../images/detail0.gif"/><a name="t100001k595k684i02">Power saving control</a></span>
+<br/>
 <div id="tmT100001K595K684I02" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 
-<table cellpadding="2" cellspacing="0" border="0" width="100%">
-<tr>
-<td align="center"><img src="../xml/grph_ent/a3840074b.png"></td>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center"><img src="../xml/grph_ent/a3840074b.png"/></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 </div>
-</body>
-</html>
+
+
+</body></html>

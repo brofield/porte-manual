@@ -1,13 +1,17 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="RM000000CD0067X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>EFIシステム&nbsp;&nbsp;フェイルセーフ一覧</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM000000CD0067X_z0"></a><br clear="all"><a name="1"></a><font class="ptxt">以下のようなコードがECUに記録されている場合、フェイルセーフモードに入る。</font><br><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><colgroup align="" width="20%
-			"><col align=""></colgroup><colgroup align="" width="42%
-			"><col align=""></colgroup><colgroup align="" width="38%
-			"><col align=""></colgroup><tr><th align="center">DTC No.<br>SAE/TCCS<br></th><th align="center">フェイルセーフ操作<br></th><th align="center">フェイルセーフモード解除条件<br></th></tr><tr><td align="center">P0031/21<br>P0032/21<br></td><td>空燃比フィードバック制御停止<br></td><td>通常状態へ復帰後、再びIG ON<br></td></tr><tr><td align="center">P0100/31<br>P0102/31<br>P0103/31<br></td><td>点火時期をBTDC10&deg;に固定<br></td><td>通常状態へ復帰<br></td></tr><tr><td align="center">P0110/24<br>P0112/24<br>P0113/24<br></td><td align="left">吸入空気温度判定値を20&deg;Cに固定<br></td><td align="left">通常状態へ復帰<br></td></tr><tr><td align="center">P0120/41<br>P0121/41<br>P0122/41<br>P0123/41<br></td><td>VTAを0&deg;Cに固定<br></td><td>スロットルポジションスイッチを閉じたまま、以下の条件を最低2秒以上連続して繰り返さなければならない:<br>VTA電圧が0.1V以上0.95V以下<br></td></tr><tr><td align="center">P0115/22<br>P0117/22<br>P0118/22<br></td><td align="left">水温判定値を80&deg;Cに固定<br></td><td align="left">通常状態へ復帰<br></td></tr><tr><td align="center">P0300/93<br>P0301/93<br>P0302/93<br>P0303/93<br>P0304/93<br></td><td>出力制限<br></td><td>IG OFF<br></td></tr><tr><td align="center">P0327/52<br>P0328/52<br></td><td align="left">ノック進角補正を最小進角<br></td><td align="left">IG OFF<br></td></tr><tr><td align="center">P0351/14<br>P0352/15<br>P0353/14<br>P0354/15<br></td><td align="left">エンジン回転数3000 rpm以上(所定エンジン負荷以上)で燃料カット<br>(エンジン負荷値が15から30%で異常気筒、25から75%で全気筒のフューエルカットを行う)<br></td><td align="left">点火系の通常状態へ復帰<br></td></tr><tr><td align="center">P0500/42<br></td><td>ISCコントロール禁止<br></td><td>IG OFF<br></td></tr></table><br clear="all"></body></html>
+		<body onload="seePageAnchor()"><a name="RM000000CD0067X"></a><table cellspacing="0" width="100%"><tbody><tr><td width="93%"><h1>EFI System Fail Safe List</h1></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr></tbody></table><br class="beforePng" clear="all"/><a name="RM000000CD0067X_z0"></a><br clear="all"/><a name="1"></a><font class="ptxt">If the following code is recorded in the ECU, enter the Fail Safe Mode.</font><br/><br clear="all"/><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><colgroup align="" width="20%
+
+			"><col align=""/></colgroup><colgroup align="" width="42%
+
+			"><col align=""/></colgroup><colgroup align="" width="38%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">DTC No.<br/>SAE/TCCS<br/></th><th align="center">Fail safe operation<br/></th><th align="center">Fail Safe mode cancellation condition<br/></th></tr><tr><td align="center">P0031/21<br/>P0032/21<br/></td><td>Air -fuel ratio feedback control stop<br/></td><td>After returning to the normal state, IG ON again<br/></td></tr><tr><td align="center">P0100/31<br/>P0102/31<br/>P0103/31<br/></td><td>Fix the ignition time to BTDC10 °<br/></td><td>Return to normal state<br/></td></tr><tr><td align="center">P0110/24<br/>P0112/24<br/>P0113/24<br/></td><td align="left">Fix the inhaled air temperature judgment value to 20 ° C<br/></td><td align="left">Return to normal state<br/></td></tr><tr><td align="center">P0120/41<br/>P0121/41<br/>P0122/41<br/>P0123/41<br/></td><td>Fix the VTA to 0 ° C<br/></td><td>While the throttle position switch is closed, the following conditions must be repeated for at least 2 seconds or more:<br/>VTA voltage 0.1V or 0.95V or less<br/></td></tr><tr><td align="center">P0115/22<br/>P0117/22<br/>P0118/22<br/></td><td align="left">Fix the water temperature judgment value to 80 ° C<br/></td><td align="left">Return to normal state<br/></td></tr><tr><td align="center">P0300/93<br/>P0301/93<br/>P0302/93<br/>P0303/93<br/>P0304/93<br/></td><td>Restrictions on output<br/></td><td>IG OFF<br/></td></tr><tr><td align="center">P0327/52<br/>P0328/52<br/></td><td align="left">Knock advancement angle correction minimum<br/></td><td align="left">IG OFF<br/></td></tr><tr><td align="center">P0351/14<br/>P0352/15<br/>P0353/14<br/>P0354/15<br/></td><td align="left">Fuel cut with an engine speed 3000 rpm or more (more than a predetermined engine load)<br/>(The engine load value is an abnormal cylinder from 15 to 30%, and a fuel cut of a full cylinder is performed at 25 to 75%)<br/></td><td align="left">Return to the normal state of the ignition system<br/></td></tr><tr><td align="center">P0500/42<br/></td><td>ISC control prohibition<br/></td><td>IG OFF<br/></td></tr></tbody></table><br clear="all"/></body></html>

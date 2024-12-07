@@ -1,30 +1,21 @@
-<!DOCTYPE HTML PUBLIC "-//W3C/DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="ja">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>メモ画面</title>
+html public "-// w3c/dtd html 4.01 transitional // en" http://www.w3.org/tr/html4/loose.dtd "<html lang="ja"><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Memo screen</title>
 <script language="javascript" src="../js/memo.js"></script>
-<style type="text/css">
-<!--
-td.gray{
-	font-weight:bold;	text-align:center;
-	color:#FFFFFF;	background-color:gray;
-}
--->
-</style>
+<style type="text/css"><! --TD.Gray {font-weight: bold; text-align: center; color: #Ffffff; background-color: gray;}-></style>
 </head>
 <body onload="setTimeout('ReadFile()',300)" style="text-align:center;">
 <form name="frmFile">
-<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td class="gray" id="memoTitle"></td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td class="gray" id="memoTitle"></td></tr></tbody></table>
 <p style="text-align:right;width:90%">
-<input type="hidden" name="filename">
-<textarea style="width:100%" rows="10" name="memo">
-</textarea><br>
-<input type="button" value="保存" onClick="WriteFile()" style="width:90px">
-<input type="button" value="キャンセル" onClick="window.close()" style="width:90px">
+<input name="filename" type="hidden"/>
+<textarea name="memo" rows="10" style="width:100%"></textarea><br/>
+<input onclick="WriteFile()" style="width:90px" type="button" value="保存"/>
+<input onclick="window.close()" style="width:90px" type="button" value="キャンセル"/>
 <!--
 <input type="button" value="alert" onClick="alert(document.getElementById('memoTitle').innerText)" style="width:90px">
 -->
-</form>
-</body>
-</html>
+</p></form>
+
+
+</body></html>

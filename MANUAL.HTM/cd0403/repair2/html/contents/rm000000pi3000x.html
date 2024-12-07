@@ -1,34 +1,50 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="RM000000PI3000X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>制御系CAN通信システム&nbsp;&nbsp;ダイアグノーシスシステム</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM000000PI3000X_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="CD0403____00004WY0000011step"></a>
+		<body onload="seePageAnchor()"><a name="RM000000PI3000X"></a><table cellspacing="0" width="100%"><tbody><tr><td width="93%"><h1>Control system CAN communication system diagram systems system</h1></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr></tbody></table><br class="beforePng" clear="all"/><a name="RM000000PI3000X_z0"></a><br clear="all"/><a name="1"></a><br clear="all"/><a name="CD0403____00004WY0000011step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>ダイアグコード組み合わせ表</li></ol>
-<ol class="ptxt"></ol><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><colgroup align="center" width="22%
-			"><col align=""></colgroup><colgroup align="center" width="19%
-			"><col align=""></colgroup><colgroup align="center" width="20%
-			"><col align=""></colgroup><colgroup align="center" width="19%
-			"><col align=""></colgroup><colgroup align="center" width="19%
-			"><col align=""></colgroup><tr><td><br></td><td>U0121/94(ABS)<br></td><td>U0123/62(VSC)<br></td><td>U0124/95(ABS)<br></td><td>U0126/63(ABS)<br></td></tr><tr><td>VSC ECU通信途絶モード<br></td><td>○<br></td><td>○<br></td><td>○<br></td><td>○<br></td></tr><tr><td>舵角センサ通信途絶モード<br></td><td>-<br></td><td>-<br></td><td>-<br></td><td>○<br></td></tr><tr><td>ヨー&middot;Gセンサ通信途絶モード<br></td><td>-<br></td><td>○<br></td><td>○<br></td><td>-<br></td></tr></table><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">U0121/94(ABS)，U0123/62(VSC)，U0124/95(ABS)，U0126/63(VSC)はCAN通信系のダイアグコードである。<br></li><li class="atten3">上記の「ダイアグコード組み合わせ表」はU0121/94(ABS)，U0123/62(VSC)，U0124/95(ABS)，U0126/63(VSC)の組み合わせを示す。<br></li><li class="atten3">U0121/94(ABS)，U0123/62(VSC)，U0124/95(ABS)，U0126/63(VSC)以外のダイアグコード(C****)は上記ダイアグコードと同時出力する場合があるがCAN通信系のトラブルシュートを行う。<br></li><li class="atten3">○&middot;&middot;&middot;出力しているダイアグコード<br></li></ol></p><br clear="all"><br clear="all"><br clear="all"><a name="CD0403____00004WY0000012step"></a>
+<li>Diagcode combination table</li></ol>
+<ol class="ptxt"></ol><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><colgroup align="center" width="22%
+
+			"><col align=""/></colgroup><colgroup align="center" width="19%
+
+			"><col align=""/></colgroup><colgroup align="center" width="20%
+
+			"><col align=""/></colgroup><colgroup align="center" width="19%
+
+			"><col align=""/></colgroup><colgroup align="center" width="19%
+
+			"><col align=""/></colgroup><tbody><tr><td><br/></td><td>U0121/94 (ABS)<br/></td><td>U0123/62 (VSC)<br/></td><td>U0124/95 (ABS)<br/></td><td>U0126/63 (ABS)<br/></td></tr><tr><td>VSC ECU communication mode<br/></td><td>○<br/></td><td>○<br/></td><td>○<br/></td><td>○<br/></td></tr><tr><td>Red angle sensor communication mode<br/></td><td>-<br/></td><td>-<br/></td><td>-<br/></td><td>○<br/></td></tr><tr><td>Yo G -sensor communication mode<br/></td><td>-<br/></td><td>○<br/></td><td>○<br/></td><td>-<br/></td></tr></tbody></table><p></p><dl class="caution"><dt class="caution">■ Attention ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">U0121/94 (ABS), U0123/62 (VSC), U0124/95 (ABS), and U0126/63 (VSC) are CAN communication diagram code.<br/></li><li class="atten3">The above "Diagcode Combination Table" shows the combination of U0121/94 (ABS), U0123/62 (VSC), U0124/95 (ABS), and U0126/63 (VSC).<br/></li><li class="atten3">U0121/94 (ABS), U0123/62 (VSC), U0124/95 (ABS), U0126/63 (VSC), diag codes (C ****) may output simultaneously as the above diag code.Do a can communication system.<br/></li><li class="atten3">○ ·········<br/></li></ol><p></p><br clear="all"/><br clear="all"/><br clear="all"/><a name="CD0403____00004WY0000012step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>ダイアグコード組み合わせ確認</li></ol>
-<ol class="ptxt"></ol><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><colgroup align="" width="25%
-			"><col align=""></colgroup><colgroup align="" width="25%
-			"><col align=""></colgroup><colgroup align="" width="25%
-			"><col align=""></colgroup><colgroup align="" width="25%
-			"><col align=""></colgroup><tr><td>診断項目<br></td><td>症状<br></td><td>疑わしい故障箇所<br></td><td>参照先および交換部品<br></td></tr><tr><td align="center">VSC　ECU通信途絶モード<br></td><td>U0121/94(ABS)、U0123/62(VSC)、U0124/95(ABS)、U0126/63(VSC)同時出力時<br></td><td><ol style="list-style-type: disc"><li>VSC　ECU内部異常<br></li></ol></td><td>ブレーキアクチュエータASSY交換<br></td></tr><tr><td align="center">舵角センサ通信途絶モード<br></td><td>U0126/63(VSC)出力時<br></td><td><ol style="list-style-type: disc"><li>舵角センサ電源／内部異常<br></li></ol></td><td>(<a href="#" onclick="openSeePage('seepage','X32500000P1005J');return false;"><img border="0" src="../../../../image/extxref.png"></a>)<br></td></tr><tr><td align="center">ヨー&middot;Ｇセンサ通信途絶モード<br></td><td>U0123/62(VSC)、U0124/95(ABS)同時出力時<br></td><td><ol style="list-style-type: disc"><li>(３)，(３')断線 <br></li><li>ヨー&middot;Ｇセンサ電源／内部異常<br></li><li>ワイヤリングハーネスコネクタ(Ｊ／Ｃ)<br></li></ol></td><td>(<a href="#" onclick="openSeePage('seepage','X32500000P2005J');return false;"><img border="0" src="../../../../image/extxref.png"></a>)<br></td></tr></table><div class="full"><br clear="all"><img src="../../img/g027638j01.png" name="G027638J01" alt="G027638J01" border="1" class="full"></div><br clear="all"><br clear="all"><br clear="all"><a name="CD0403____00004WY0000013step"></a>
+<li>Diag code combination check</li></ol>
+<ol class="ptxt"></ol><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><td>Diagnostic item<br/></td><td>Symptoms<br/></td><td>Suspicious failure part<br/></td><td>Reference and exchange parts<br/></td></tr><tr><td align="center">VSC ECU communication mode<br/></td><td>U0121/94 (ABS), U0123/62 (VSC), U0124/95 (ABS), U0126/63 (VSC) Simultaneous output<br/></td><td><ol style="list-style-type: disc"><li>VSC ECU internal abnormality<br/></li></ol></td><td>Brake actuator ASSY replacement<br/></td></tr><tr><td align="center">Red angle sensor communication mode<br/></td><td>U0126/63 (VSC) When output<br/></td><td><ol style="list-style-type: disc"><li>Red angle sensor power supply / internal abnormality<br/></li></ol></td><td>(<a href="#" onclick="openSeePage('seepage','X32500000P1005J');return false;"><img border="0" src="../../../../image/extxref.png"/></a>)<br/></td></tr><tr><td align="center">Yo G sensor communication mode<br/></td><td>U0123/62 (VSC), U0124/95 (ABS) Simultaneous output<br/></td><td><ol style="list-style-type: disc"><li>(3), (3 ') disconnection<br/></li><li>Yo G sensor power supply / internal abnormality<br/></li><li>Wiring harness connector (J / C)<br/></li></ol></td><td>(<a href="#" onclick="openSeePage('seepage','X32500000P2005J');return false;"><img border="0" src="../../../../image/extxref.png"/></a>)<br/></td></tr></tbody></table><div class="full"><br clear="all"/><img alt="G027638J01" border="1" class="full" name="G027638J01" src="../../img/g027638j01.png"/></div><br clear="all"/><br clear="all"/><br clear="all"/><a name="CD0403____00004WY0000013step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>ダイアグコード一覧表</li></ol>
-<ol class="ptxt"></ol><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">トラブルシュートを行う場合はダイアグコード組み合わせ表を使用する。</dd></dl></p><br clear="all"><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">CAN通信系のダイアグコード(U0121/94(ABS)，U0123/62(VSC)，U0124/95(ABS)，U0126/63(VSC))はブレーキアクチュエータASSY(VSC　ECU)が出力する。</dd></dl><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%
-						"><colgroup align="" width="33%
-			"><col align=""></colgroup><colgroup align="" width="33%
-			"><col align=""></colgroup><colgroup align="" width="33%
-			"><col align=""></colgroup><tr><td class="atten4" align="center">DTCNo<br></td><td class="atten4" align="center">内容<br></td><td class="atten4" align="center">検出条件<br></td></tr><tr><td class="atten4" align="center">U0121/94 (ABS)<br></td><td class="atten4" align="center">CAN通信異常<br></td><td class="atten4"><ol style="list-style-type: disc"><li class="atten4">VSC　ECUのデータ出力不能状態が5ｓ以上続いた時<br></li><li class="atten4">VSC　ECUのデータ出力不能状態が100ms以内に1回以上発生した状態が10回連続して発生した時<br></li></ol></td></tr><tr><td class="atten4" align="center">U0123/62 (VSC)<br></td><td class="atten4" align="center">ヨーレートセンサ通信異常<br></td><td class="atten4"><ol style="list-style-type: disc"><li class="atten4">IG1端子電圧が9.5V以上で、ヨーレートセンサからのデータ受信不能状態が1ｓ以上続いた時 <br></li><li class="atten4">IG1端子電圧が9.5V以上で、ヨーレートセンサからのデータ受信不能状態が5ｓ以内に1回以上発生した状態が10回連続して発生した時<br></li></ol></td></tr><tr><td class="atten4" align="center">U0124/95　（ABS）<br></td><td class="atten4" align="center">Gセンサ通信異常<br></td><td class="atten4"><ol style="list-style-type: disc"><li class="atten4">IG1端子電圧が9.5V以上で、Ｇセンサからのデータ受信不能状態が1ｓ以上続いた時<br></li><li class="atten4">IG1端子電圧が9.5V以上で、Ｇセンサからのデータ受信不能状態が5ｓ以内に1回以上発生した状態が10回連続して発生した時<br></li></ol></td></tr><tr><td class="atten4" align="center">U0126/63 (VSC)<br></td><td class="atten4" align="center">舵角センサ通信異常<br></td><td class="atten4"><ol style="list-style-type: disc"><li class="atten4">IG1端子電圧が9.5V以上で、舵角センサからのデータ受信不能状態が1ｓ以上続いた時<br></li><li class="atten4">IG1端子電圧が9.5V以上で、舵角センサからのデータ受信不能状態が5ｓ以内に1回以上発生した状態が10回以上連続して発生した時<br></li></ol></td></tr></table></p><br clear="all"></body></html>
+<li>Diag code list</li></ol>
+<ol class="ptxt"></ol><p></p><dl class="caution"><dt class="caution">■ Attention ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">When doing troubles, use the diagcode combination table.</dd></dl><p></p><br clear="all"/><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">The CAN communication diagram code (U0121/94 (ABS), U0123/62 (VSC), U0124/95 (ABS), U0126/63 (VSC)) outputs brake actuator ASSY (VSC ECU).</dd></dl><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="93%
+
+						"><colgroup align="" width="33%
+
+			"><col align=""/></colgroup><colgroup align="" width="33%
+
+			"><col align=""/></colgroup><colgroup align="" width="33%
+
+			"><col align=""/></colgroup><tbody><tr><td align="center" class="atten4">DTCNO<br/></td><td align="center" class="atten4">Content<br/></td><td align="center" class="atten4">Detection conditions<br/></td></tr><tr><td align="center" class="atten4">U0121/94 (ABS)<br/></td><td align="center" class="atten4">Can communication abnormality<br/></td><td class="atten4"><ol style="list-style-type: disc"><li class="atten4">When the data output of VSC ECU is incapacitated 5S or more<br/></li><li class="atten4">When VSC ECU's data output is unable to output, once or more occurs within 100 ms, occurs 10 consecutive times.<br/></li></ol></td></tr><tr><td align="center" class="atten4">U0123/62 (VSC)<br/></td><td align="center" class="atten4">York rate sensor communication abnormality<br/></td><td class="atten4"><ol style="list-style-type: disc"><li class="atten4">When the IG1 terminal voltage is 9.5V or more, and the data reception from a yolley sensor continues 1S or more.<br/></li><li class="atten4">When the IG1 terminal voltage is 9.5V or more, and the data unacceptable state from the yorrate sensor occurs once or more once or more is generated 10 consecutive times.<br/></li></ol></td></tr><tr><td align="center" class="atten4">U0124/95 (ABS)<br/></td><td align="center" class="atten4">G sensor communication abnormality<br/></td><td class="atten4"><ol style="list-style-type: disc"><li class="atten4">When the IG1 terminal voltage is 9.5V or more, and the data reception from the G sensor continues 1S or more.<br/></li><li class="atten4">When the IG1 terminal voltage is 9.5V or more, and the data unacceptable from the G sensor occurs 10 or more times or more in a row 10 consecutive times.<br/></li></ol></td></tr><tr><td align="center" class="atten4">U0126/63 (VSC)<br/></td><td align="center" class="atten4">Red angle sensor communication abnormality<br/></td><td class="atten4"><ol style="list-style-type: disc"><li class="atten4">When the IG1 terminal voltage is 9.5V or more, the data reception from the steering angle sensor continues 1S or more.<br/></li><li class="atten4">When the IG1 terminal voltage is 9.5V or more, and the data unacceptable from the rudder sensor occurs once or more in a row or more times or more times in a row.<br/></li></ol></td></tr></tbody></table><p></p><br clear="all"/></body></html>

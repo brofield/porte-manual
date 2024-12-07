@@ -1,110 +1,137 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="X387000015Q02HC"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>DTC
-								 &nbsp;&nbsp; P0037/27 &nbsp;&nbsp; O2センサヒータ性能低下B1S2</h3></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr><tr><td width="93%"><h3>DTC
-								 &nbsp;&nbsp; P0038/27 &nbsp;&nbsp; O2センサヒータ過電流B1S2</h3></td></tr></table><h2>準備品一覧<a href="#" onclick="openSeePage('ppr','X387000015Q02HC');return false;"><img border="0" src="../../../../image/extxref.png"></a></h2><br clear="all"><a name="X387000015Q02HC_15"></a><h2>回路説明</h2><br clear="all"><a name="1"></a><font class="ptxt">排気ガス中のＣO、HＣ、NOxを効率良く浄化できるよう三元触媒が使用されている。この三元触媒は理論空燃比付近で最も効率的に機能する。このため理論空燃比付近でエンジンを正確に制御しなければＣO、HＣ、NOxを効率良く浄化することができない。オキシジェンセンサはこの制御を目的として取り付けられている。理論空燃比付近で正常な燃焼が行なわれたときに排出される排気ガス内の酸素濃度を検出すると、その出力電圧が突然変化するという特徴を利用し、空燃比制御を正確に行えるようエンジンコントロールコンピユータに信号を送っている。空燃比が薄くなると、排気ガス中の酸素濃度が増えて、オキシジェンセンサはエンジンコントロールコンピユータに空燃比が薄い状態であるという情報を送る。(小電力起動：&lt;0.45V)空燃比が濃くなると、排気ガス中の酸素濃度が少なくなり、オキシジェンセンサはエンジンコントロールコンピユータに空燃比が濃い状態であるという情報を送る。(大電力起動：&gt;0.45V)エンジンコントロールコンピユータは、オキシジェンセンサの起電力信号により空燃比が濃いか薄いかを判断し、それにより噴射量を制御する。センサー素子にはジルコニウムエレメントが使用されている。ジルコニウムエレメントはプラチナめっきのジルコニウムでできており、統合過熱成分を含んでいる。ジルコニウムエレメントの内側は外気に、外側は排気ガスに触れており、その排気と外気の酸素濃度に大幅な違いがある場合にかすかな電圧を発生する。加熱されるとセンサは非常に能率的になる。排気の温度が低いと、センサは補足加熱なしでは有用な電圧信号を発生しない。その為、オキシジェンセンサはジルコニウムエレメントを暖めるヒータを持っており、エンジンコントロールコンピュータはデューティサイクルアプローチを使用して補足加熱を規制し、ジルコニウムエレメントの平均電流を調節する。</font><br><br clear="all"><div class="full"><br clear="all"><img src="../../img/a245434j01.png" name="A245434J01" alt="A245434J01" border="1" class="full"></div><br clear="all"><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><colgroup align="" width="14%
-			"><col align=""></colgroup><colgroup align="" width="45%
-			"><col align=""></colgroup><colgroup align="" width="41%
-			"><col align=""></colgroup><tr><th align="center">DTC No.<br>SAE/TCCS<br></th><th align="center">DTC検出条件<br><ol style="list-style-type: decimal"><li>診断条件<br></li><li>異常状態<br></li><li>異常期間<br></li><li>その他<br></li></ol></th><th align="center">点検部位<br></th></tr><tr><td align="center">P0037/27<br></td><td align="left"><ol style="list-style-type: decimal"><li>オキシジェンセンサヒータ作動中<br></li><li>オキシジェンセンサ 0.3A以下<br></li><li>0.5秒<br></li><li>1トリップ<br></li></ol></td><td align="left"><ol style="list-style-type: disc"><li>ワイヤハーネスおよびコネクター<br></li><li>オキシジェンセンサ<br></li><li>エンジンコントロールコンピュータ<br></li></ol></td></tr><tr><td align="center">P0038/27<br></td><td align="left"><ol style="list-style-type: decimal"><li>オキシジェンセンサヒータ作動中<br></li><li>オキシジェンセンサ 2A以上<br></li><li>0.2秒<br></li><li>1トリップ<br></li></ol></td><td align="left"><ol style="list-style-type: disc"><li>ワイヤハーネスおよびコネクター<br></li><li>オキシジェンセンサ<br></li><li>エンジンコントロールコンピュータ<br></li></ol></td></tr></table><br clear="all"><br clear="all"><a name="X387000015Q02HC_16"></a><h2>回路図</h2><br clear="all"><a name="1"></a><font class="ptxt">回路図は<a href="#" onclick="openSeePage('seepage','RM00000160F02EX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照。</font><br><br clear="all"><br clear="all"><a name="X387000015Q02HC_17"></a><h2>点検手順</h2><br clear="all"><a name="1"></a><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">トラブルシュートを実施する前に、この回路のヒューズを点検すること。</dd></dl></p><br clear="all"><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">SST(TaSCAN)を使用して、フリーズフレームデータを読み取る。フリーズフレームデータには、不具合発生時のエンジン稼動状態の一部が記録されており、それらの情報がトラブルシュートを行う際に役立つ。</dd></dl></p><br clear="all"><a name="X387000015Q02HC_18_0027"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順1</td><td width="90%" class="s1">オキシジェン センサ単体点検</td></tr></table><font class="ptxt">(要領は<a href="#" onclick="openSeePage('seepage','RM0000013J600MX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照(駆動方式:FF車))</font><br><font class="ptxt">(要領は<a href="#" onclick="openSeePage('seepage','RM0000013J600LX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照(駆動方式:4WD車))</font><br><table border="1" cellspacing="0" cellpadding="2" width="
-							45%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="50%
-			"><col align=""></colgroup><tr><th>結果<br></th><th>飛び先<br></th></tr><tr><td>正常<br></td><td>A<br></td></tr><tr><td>異常(FF)<br></td><td>B<br></td></tr><tr><td>異常(4WD)<br></td><td>C<br></td></tr></table><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">オキシジェン センサ交換<a href="#" onclick="openSeePage('seepage','RM000000B2D002X');return false;">
-			（要領は
-		<img border="0" src="../../../../image/extxref.png">
-			参照）
-		</a>
-</td></tr></table></td></tr><tr><td height="4px"></td></tr><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">C</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">オキシジェン センサ交換<a href="#" onclick="openSeePage('seepage','RM0000013J800JX');return false;">
-			（要領は
-		<img border="0" src="../../../../image/extxref.png">
-			参照）
-		</a>
-</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="X387000015Q02HC_18_0028"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順2</td><td width="90%" class="s1">ワイヤハーネスおよびコネクター点検（オキシジェンセンサ ヒータ電源回路）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">点検要領および注意事項は<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照。</dd></dl></p>
-<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a213386j07.png" name="A213386J07" alt="A213386J07" border="1" class="half"><br></td></tr></table>
-<li value="1"><p><font class="ptxt">オキシジェンセンサのコネクターD78を切り離す。(駆動方式FF)</font><br></p></li></ol>
+		<body onload="seePageAnchor()"><a name="X387000015Q02HC"></a><table cellpadding="0" width="100%"><tbody><tr><td width="93%"><h3>DTC P0037/27 O2 Sensor heater performance decreased B1S2</h3></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr><tr><td width="93%"><h3>DTC P0038/27 O2 Sensor heater over current B1S2</h3></td></tr></tbody></table><h2>List of preparation<a href="#" onclick="openSeePage('ppr','X387000015Q02HC');return false;"><img border="0" src="../../../../image/extxref.png"/></a></h2><br clear="all"/><a name="X387000015Q02HC_15"></a><h2>Circuit description</h2><br clear="all"/><a name="1"></a><font class="ptxt">A triple catalyst is used to efficiently purify CO, HC, and NOX in exhaust gas.The three -primary catalyst works most efficiently near theoretical air -fuel ratio.Therefore, if the engine is not accurately controlled near the theory air -fuel ratio, CO, HC, and NOX cannot be efficiently purified.Oxygen sensor is installed for this control.The engine control so that the output voltage changes suddenly when the oxygen concentration in the exhaust gas is discharged when a normal combustion is performed near the theoretical air -fuel ratio, and the air -fuel ratio control can be performed accurately.Sending a signal to the competition.When the air -fuel ratio becomes thinner, the oxygen concentration in the exhaust gas increases, and the oxygen sensor sends information that the air -fuel ratio is thin in the engine control compilation.(Small power activation: &lt;0.45V) The information that the air -fuel ratio becomes thicker, the oxygen concentration in the exhaust gas is reduced, and the oxygen sensor sends information that the air -fuel ratio is intense in the engine control composer.(Large power activation:&gt; 0.45V) The engine control compilation determines whether the air -fuel ratio is strong or thin due to the oxygen sensor of the oxygen sensor, and to control the injection.The sensor element uses a zirconium element.The zirconium element is made of platinum plating zirconium and contains integrated overheating components.The inside of the dirkonium element is in the outside air, and the outside is touched by exhaust gas, which generates a faint voltage when there is a significant difference between the exhaust and the oxygen concentration of the outside air.When heated, the sensor becomes very efficient.If the temperature of the exhaust is low, the sensor does not generate a useful voltage signal without heating.Therefore, the oxygen sensor has a heater that warms the zirconium element, and the engine control computer uses a duty cycle approach to regulate supplementary heating to regulate the average current of the zirconium element.</font><br/><br clear="all"/><div class="full"><br clear="all"/><img alt="A245434J01" border="1" class="full" name="A245434J01" src="../../img/a245434j01.png"/></div><br clear="all"/><br clear="all"/><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><colgroup align="" width="14%
+
+			"><col align=""/></colgroup><colgroup align="" width="45%
+
+			"><col align=""/></colgroup><colgroup align="" width="41%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">DTC No.<br/>SAE/TCCS<br/></th><th align="center">DTC detection conditions<br/><ol style="list-style-type: decimal"><li>Diagnostic condition<br/></li><li>Abnormal state<br/></li><li>Abnormal period<br/></li><li>others<br/></li></ol></th><th align="center">Inspection site<br/></th></tr><tr><td align="center">P0037/27<br/></td><td align="left"><ol style="list-style-type: decimal"><li>Oxygen sensor heater is running<br/></li><li>Oxygen sensor 0.3A or less<br/></li><li>0.5 seconds<br/></li><li>1 trip<br/></li></ol></td><td align="left"><ol style="list-style-type: disc"><li>Wire harness and connector<br/></li><li>Oxygen sensor<br/></li><li>Engine control computer<br/></li></ol></td></tr><tr><td align="center">P0038/27<br/></td><td align="left"><ol style="list-style-type: decimal"><li>Oxygen sensor heater is running<br/></li><li>Oxygen sensor 2A or higher<br/></li><li>0.2 seconds<br/></li><li>1 trip<br/></li></ol></td><td align="left"><ol style="list-style-type: disc"><li>Wire harness and connector<br/></li><li>Oxygen sensor<br/></li><li>Engine control computer<br/></li></ol></td></tr></tbody></table><br clear="all"/><br clear="all"/><a name="X387000015Q02HC_16"></a><h2>Circuit diagram</h2><br clear="all"/><a name="1"></a><font class="ptxt">The circuit diagram is<a href="#" onclick="openSeePage('seepage','RM00000160F02EX');return false;"><img border="0" src="../../../../image/extxref.png"/></a>reference.</font><br/><br clear="all"/><br clear="all"/><a name="X387000015Q02HC_17"></a><h2>Inspection procedure</h2><br clear="all"/><a name="1"></a><p></p><dl class="caution"><dt class="caution">■ Attention ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">Check the fuse of this circuit before performing trouble shooting.</dd></dl><p></p><br clear="all"/><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">Use SST (Tascan) to read freeze frame data.The freeze -frame data records a part of the engine operation state in the event of a problem, which is useful for trouble shooting.</dd></dl><p></p><br clear="all"/><a name="X387000015Q02HC_18_0027"></a><table border="1" height="35" width="100%"><tbody><tr><td class="s1" width="10%">Step 1</td><td class="s1" width="90%">Oxygen sensor single inspection</td></tr></tbody></table><font class="ptxt">(The point is<a href="#" onclick="openSeePage('seepage','RM0000013J600MX');return false;"><img border="0" src="../../../../image/extxref.png"/></a>Reference (drive system: FF car))</font><br/><font class="ptxt">(The point is<a href="#" onclick="openSeePage('seepage','RM0000013J600LX');return false;"><img border="0" src="../../../../image/extxref.png"/></a>Reference (drive system: 4WD car))</font><br/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							45%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><tbody><tr><th>result<br/></th><th>Destination<br/></th></tr><tr><td>normal<br/></td><td>A<br/></td></tr><tr><td>Abnormal (FF)<br/></td><td>B<br/></td></tr><tr><td>Abnormal (4WD)<br/></td><td>C<br/></td></tr></tbody></table><br clear="all"/><table border="0" cellpadding="4" cellspacing="0" width="96%"><tbody><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img height="100%" src="../../../../image/fin_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Oxygen sensor replacement<a href="#" onclick="openSeePage('seepage','RM000000B2D002X');return false;">(The point is<img border="0" src="../../../../image/extxref.png"/>reference)</a>
+</td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-fin" style="border-right-width: 0px;">C</td><td align="left" width="13"><img height="100%" src="../../../../image/fin_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Oxygen sensor replacement<a href="#" onclick="openSeePage('seepage','RM0000013J800JX');return false;">(The point is<img border="0" src="../../../../image/extxref.png"/>reference)</a>
+</td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="96%"><tbody><tr><td class="diag-next" style="border-bottom-width: 0px;" width="20%">A</td><td width="80%"><br/></td></tr><tr><td align="center" valign="top" width="20%"><img height="13" src="../../../../image/next_down.png" width="100%"/></td><td width="80%"><br/></td></tr></tbody></table><br/><a name="X387000015Q02HC_18_0028"></a><table border="1" height="35" width="100%"><tbody><tr><td class="s1" width="10%">Step 2</td><td class="s1" width="90%">Wire harness and connector inspection (oxygen sensor heater power supply circuit)</td></tr></tbody></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030<br/>09083-00170<br/></dd></dl><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">Inspection guidelines and precautions<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"/></a>reference.</dd></dl><p></p>
+<ol class="s2"><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="A213386J07" border="1" class="half" name="A213386J07" src="../../img/a213386j07.png"/><br/></td></tr></tbody></table>
+<li value="1"><p><font class="ptxt">Cut the oxygen sensor connector D78.(Driving method FF)</font><br/></p></li></ol>
 <ol class="s2">
-<li value="2"><p><font class="ptxt">オキシジェンセンサのコネクターL27を切り離す。(駆動方式4WD)</font><br></p></li></ol>
+<li value="2"><p><font class="ptxt">Cut the oxygen sensor connector L27.(Driving method 4WD)</font><br/></p></li></ol>
 <ol class="s2">
-<li value="3"><p><font class="ptxt">IG ONにする。</font><br></p></li></ol>
+<li value="3"><p><font class="ptxt">Ig ON.</font><br/></p></li></ol>
 <ol class="s2">
-<li value="4"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の電圧を測定する。</font><br><br clear="all"><p><dl class="spec"><dt class="spec">電圧値</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><caption class="tbl-title"><span>駆動方式FF&nbsp;
-				</span></caption><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>D78-2 (+B) - ボデーアース<br></td><td>IG ON<br></td><td>11 to 14 V<br></td></tr></table></dd><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><caption class="tbl-title"><span>駆動方式4WD&nbsp;
-				</span></caption><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>L27-2 (+B) - ボデーアース<br></td><td>IG ON<br></td><td>11 to 14 V<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="42.6%
-						"><caption class="tbl-title"><span>イラスト内指示文字&nbsp;
-				</span></caption><colgroup align="" width="10%
-			"><col align=""></colgroup><colgroup align="" width="90%
-			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>車両ワイヤハーネスコネクター前側<br>(オキシジェンセンサ接続コネクター)<br></td></tr><tr><td align="center">*b<br></td><td>駆動方式FF<br></td></tr><tr><td align="center">*c<br></td><td>駆動方式4WD<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#X387000015Q02HC_18_0034">手順 4 へ
-												</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="X387000015Q02HC_18_0029"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順3</td><td width="90%" class="s1">ワイヤハーネスおよびコネクター点検（エンジンコントロールコンピュータ - オキシジェンセンサ）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">点検要領および注意事項は<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照。</dd></dl></p>
+<li value="4"><p><font class="ptxt">The voltage between the terminals is measured using SST (Toyota Electrical Tester).</font><br/><br clear="all"/></p><p></p><dl class="spec"><dt class="spec">Voltage value</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><caption class="tbl-title"><span>Driving method FF</span></caption><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>D78-2 (+B) --Body Earth<br/></td><td>IG ON<br/></td><td>11 to 14 v<br/></td></tr></tbody></table></dd><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><caption class="tbl-title"><span>Driving method 4WD</span></caption><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>L27-2 (+B) --Body Earth<br/></td><td>IG ON<br/></td><td>11 to 14 v<br/></td></tr></tbody></table></dd></dl><p></p><table border="1" cellpadding="2" cellspacing="0" width="42.6%
+
+						"><caption class="tbl-title"><span>Illustration instructions</span></caption><colgroup align="" width="10%
+
+			"><col align=""/></colgroup><colgroup align="" width="90%
+
+			"><col align=""/></colgroup><tbody><tr><td align="center">*a<br/></td><td>Vehicle wire harness connector front side<br/>(Oxygen sensor connection connector)<br/></td></tr><tr><td align="center">*b<br/></td><td>Driving method FF<br/></td></tr><tr><td align="center">*c<br/></td><td>Driving method 4WD<br/></td></tr></tbody></table><p></p></li></ol><br clear="all"/><table border="0" cellpadding="4" cellspacing="0" width="96%"><tbody><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img height="100%" src="../../../../image/next_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1"><a href="#X387000015Q02HC_18_0034">To step 4</a></td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="96%"><tbody><tr><td class="diag-next" style="border-bottom-width: 0px;" width="20%">OK</td><td width="80%"><br/></td></tr><tr><td align="center" valign="top" width="20%"><img height="13" src="../../../../image/next_down.png" width="100%"/></td><td width="80%"><br/></td></tr></tbody></table><br/><a name="X387000015Q02HC_18_0029"></a><table border="1" height="35" width="100%"><tbody><tr><td class="s1" width="10%">Step 3</td><td class="s1" width="90%">Wire harness and connector inspection (engine control computer -oxygen sensor)</td></tr></tbody></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030<br/>09083-00170<br/></dd></dl><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">Inspection guidelines and precautions<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"/></a>reference.</dd></dl><p></p>
 <ol class="s2">
-<li value="1"><p><font class="ptxt">オキシジェンセンサのコネクターD78を切り離す。(駆動方式FF)</font><br></p></li></ol>
+<li value="1"><p><font class="ptxt">Cut the oxygen sensor connector D78.(Driving method FF)</font><br/></p></li></ol>
 <ol class="s2">
-<li value="2"><p><font class="ptxt">オキシジェンセンサのコネクターL27を切り離す。(駆動方式4WD)</font><br></p></li></ol>
+<li value="2"><p><font class="ptxt">Cut the oxygen sensor connector L27.(Driving system 4WD)</font><br/></p></li></ol>
 <ol class="s2">
-<li value="3"><p><font class="ptxt">エンジンコントロールコンピュータのコネクターB37を切り離す。</font><br></p></li></ol>
+<li value="3"><p><font class="ptxt">Cut the connector B37 of the engine control computer.</font><br/></p></li></ol>
 <ol class="s2">
-<li value="4"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。(端子配列は<a href="#" onclick="openSeePage('seepage','X39400000QV058D');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)</font><br><br clear="all"><p><dl class="spec"><dt class="spec">抵抗値(断線点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><caption class="tbl-title"><span>駆動方式FF&nbsp;
-				</span></caption><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>B37-3 (HT1B) - D78-1 (HT1B)<br></td><td>常時<br></td><td>1 Ω未満<br></td></tr></table></dd><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><caption class="tbl-title"><span>駆動方式4WD&nbsp;
-				</span></caption><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>B37-3 (HT1B) - L27-1 (HT1B)<br></td><td>常時<br></td><td>1 Ω未満<br></td></tr></table></dd></dl></p><br clear="all"><p><dl class="spec"><dt class="spec">抵抗値(短絡点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><caption class="tbl-title"><span>駆動方式FF&nbsp;
-				</span></caption><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>B37-3 (HT1B)およびD78-1 (HT1B) - 他の端子間およびボデーアース間<br></td><td>常時<br></td><td>10 kΩ以上<br></td></tr></table></dd><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><caption class="tbl-title"><span>駆動方式4WD&nbsp;
-				</span></caption><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>B37-3 (HT1B)およびL27-1 (HT1B)- 他の端子間およびボデーアース間<br></td><td>常時<br></td><td>10 kΩ以上<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ワイヤハーネスまたはコネクター修理または交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">エンジンコントロール コンピュータ交換&nbsp;
-										</td></tr></table></td></tr></table><br><a name="X387000015Q02HC_18_0034"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順4</td><td width="90%" class="s1">ワイヤハーネスおよびコネクター点検（オキシジェンセンサ - EFI MAINリレー）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">点検要領および注意事項は<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照。</dd></dl></p>
+<li value="4"><p><font class="ptxt">Use SST (Toyota Electrical Tester) to measure resistance between terminals.(The terminal array is<a href="#" onclick="openSeePage('seepage','X39400000QV058D');return false;"><img border="0" src="../../../../image/extxref.png"/></a>reference)</font><br/><br clear="all"/></p><p></p><dl class="spec"><dt class="spec">Resistance value (disconnection inspection)</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><caption class="tbl-title"><span>Driving method FF</span></caption><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>B37-3 (HT1B) --D78-1 (HT1B)<br/></td><td>Always<br/></td><td>Less than 1 Ω<br/></td></tr></tbody></table></dd><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><caption class="tbl-title"><span>Driving method 4WD</span></caption><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>B37-3 (HT1B) --l27-1 (HT1B)<br/></td><td>Always<br/></td><td>Less than 1 Ω<br/></td></tr></tbody></table></dd></dl><p></p><br clear="all"/><p></p><dl class="spec"><dt class="spec">Resistance value (short circuit inspection)</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><caption class="tbl-title"><span>Driving method FF</span></caption><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>B37-3 (HT1B) and D78-1 (HT1B) -This between other terminals and body earth<br/></td><td>Always<br/></td><td>10 kΩ or higher<br/></td></tr></tbody></table></dd><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><caption class="tbl-title"><span>Driving method 4WD</span></caption><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>B37-3 (HT1B) and L27-1 (HT1B) -This between other terminals and body earth<br/></td><td>Always<br/></td><td>10 kΩ or higher<br/></td></tr></tbody></table></dd></dl><p></p><p></p></li></ol><br clear="all"/><table border="0" cellpadding="4" cellspacing="0" width="96%"><tbody><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img height="100%" src="../../../../image/fin_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Wire harness or connector repair or replacement</td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="96%"><tbody><tr><td class="diag-fin" style="border-bottom-width: 0px;" width="20%">OK</td><td width="80%"><br/></td></tr><tr><td align="center" valign="top" width="20%"><img height="13" src="../../../../image/fin_down.png" width="100%"/></td><td width="80%"><br/></td></tr><tr><td colspan="2"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Engine control computer replacement</td></tr></tbody></table></td></tr></tbody></table><br/><a name="X387000015Q02HC_18_0034"></a><table border="1" height="35" width="100%"><tbody><tr><td class="s1" width="10%">Step 4</td><td class="s1" width="90%">Wire harness and connector inspection (oxygen sensor -EFI main relay)</td></tr></tbody></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030<br/>09083-00170<br/></dd></dl><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">Inspection guidelines and precautions<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"/></a>reference.</dd></dl><p></p>
 <ol class="s2">
-<li value="1"><p><font class="ptxt">オキシジェンセンサのコネクターD78を切り離す。(駆動方式FF)</font><br></p></li></ol>
+<li value="1"><p><font class="ptxt">Cut the oxygen sensor connector D78.(Driving method FF)</font><br/></p></li></ol>
 <ol class="s2">
-<li value="2"><p><font class="ptxt">オキシジェンセンサのコネクターL27を切り離す。(駆動方式4WD)</font><br></p></li></ol>
+<li value="2"><p><font class="ptxt">Cut the oxygen sensor connector L27.(駆動方式4WD)</font><br/></p></li></ol>
 <ol class="s2">
-<li value="3"><p><font class="ptxt">エンジンルームリレーブロックからEFI MAINリレーを取りはずす。</font><br></p></li></ol>
+<li value="3"><p><font class="ptxt">エンジンルームリレーブロックからEFI MAINリレーを取りはずす。</font><br/></p></li></ol>
 <ol class="s2">
-<li value="4"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。</font><br><br clear="all"><p><dl class="spec"><dt class="spec">抵抗値(断線点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><caption class="tbl-title"><span>駆動方式FF&nbsp;
-				</span></caption><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>D78-2 (+B) - EFI MAINリレーホルダの3端子<br></td><td>常時<br></td><td>1 Ω未満<br></td></tr></table></dd><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><caption class="tbl-title"><span>駆動方式4WD&nbsp;
-				</span></caption><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>L27-2 (+B) - EFI MAINリレーホルダの3端子<br></td><td>常時<br></td><td>1 Ω未満<br></td></tr></table></dd></dl></p><br clear="all"><p><dl class="spec"><dt class="spec">抵抗値(短絡点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><caption class="tbl-title"><span>駆動方式FF&nbsp;
-				</span></caption><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>D78-2 (+B)およびEFIリレーホルダの3端子 - 他の端子間およびボデーアース間<br></td><td>常時<br></td><td>10 kΩ以上<br></td></tr></table></dd><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><caption class="tbl-title"><span>駆動方式4WD&nbsp;
-				</span></caption><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>L27-2 (+B)およびEFIリレーホルダの3端子 - 他の端子間およびボデーアース間<br></td><td>常時<br></td><td>10 kΩ以上<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ワイヤハーネスまたはコネクター修理または交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">電源回路点検&nbsp;
-										</td></tr></table></td></tr></table><br></body></html>
+<li value="4"><p><font class="ptxt">Use SST (Toyota Electrical Tester) to measure resistance between terminals.</font><br/><br clear="all"/></p><p></p><dl class="spec"><dt class="spec">Resistance value (disconnection inspection)</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><caption class="tbl-title"><span>Driving method FF</span></caption><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>D78-2 (+B) - EFI MAINリレーホルダの3端子<br/></td><td>Always<br/></td><td>Less than 1 Ω<br/></td></tr></tbody></table></dd><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><caption class="tbl-title"><span>Driving method 4WD</span></caption><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>L27-2 (+B) - EFI MAINリレーホルダの3端子<br/></td><td>Always<br/></td><td>Less than 1 Ω<br/></td></tr></tbody></table></dd></dl><p></p><br clear="all"/><p></p><dl class="spec"><dt class="spec">Resistance value (short circuit inspection)</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><caption class="tbl-title"><span>Driving method FF</span></caption><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>D78-2 (+b) and EFI relay holder 3 terminals -other terminals and between body grounds<br/></td><td>Always<br/></td><td>10 kΩ or higher<br/></td></tr></tbody></table></dd><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><caption class="tbl-title"><span>Driving method 4WD</span></caption><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>L27-2 (+B)およびEFIリレーホルダの3端子 - 他の端子間およびボデーアース間<br/></td><td>Always<br/></td><td>10 kΩ or higher<br/></td></tr></tbody></table></dd></dl><p></p><p></p></li></ol><br clear="all"/><table border="0" cellpadding="4" cellspacing="0" width="96%"><tbody><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img height="100%" src="../../../../image/fin_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Wire harness or connector repair or replacement</td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="96%"><tbody><tr><td class="diag-fin" style="border-bottom-width: 0px;" width="20%">OK</td><td width="80%"><br/></td></tr><tr><td align="center" valign="top" width="20%"><img height="13" src="../../../../image/fin_down.png" width="100%"/></td><td width="80%"><br/></td></tr><tr><td colspan="2"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Power supply circuit inspection</td></tr></tbody></table></td></tr></tbody></table><br/></body></html>

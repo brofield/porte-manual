@@ -1,20 +1,19 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="RM0000015NO001X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>EBD付きABS&amp;BAシステム（4WD）&nbsp;&nbsp;問診表</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000015NO001X_z0"></a><br clear="all"><a name="1"></a><div class="full"><br clear="all"><img src="../../img/c100591.png" name="C100591" alt="C100591" border="1" class="full"></div><br clear="all"><br clear="all"><br clear="all"><a name="CD0403____00005X60000011step"></a>
+		<body onload="seePageAnchor()"><a name="RM0000015NO001X"></a><table cellspacing="0" width="100%"><tbody><tr><td width="93%"><h1>ABS &amp; BA system (4WD) inquiry table with EBD</h1></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr></tbody></table><br class="beforePng" clear="all"/><a name="RM0000015NO001X_z0"></a><br clear="all"/><a name="1"></a><div class="full"><br clear="all"/><img alt="C100591" border="1" class="full" name="C100591" src="../../img/c100591.png"/></div><br clear="all"/><br clear="all"/><br clear="all"/><a name="CD0403____00005X60000011step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>フリーズフレームデータによる不具合発生状況の確認について</li></ol>
+<li>Confirmation of defective status with freeze frame data</li></ol>
 <ol class="ptxt"></ol>
 <ol class="step2">
-<li><p><font class="ptxt">異常ダイアグコード発生時のフリーズフレームデータ</font><br></p></li><br>
+<li><p><font class="ptxt">Freeze -frame data when abnormal diagram code occurs</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">異常ダイアグノーシスコード発生時のフリーズフレームデータを記憶している場合は、TaSCAN表示画面の該当ダイアグコードに&ldquo;F&rdquo;が表示される。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">異常コード発生時のフリーズフレームデータを記憶すると、システム作動時のフリーズフレームデータは消去される。<br></li><li class="atten4">異常コード発生時のフリーズフレームデータを記憶した場合、記憶データ消去(ダイアグノーシスコード消去)されるまでデータの更新は行われない。<br></li></ol></p></p></li></ol>
-<li><p><font class="ptxt">システム作動時のフリーズフレームデータ</font><br></p></li><br>
+<li><p><font class="ptxt">If the freeze frame data in the event of an abnormal diagnostic cord occurs, "F" is displayed in the corresponding dial code on the Tascan display screen.</font><br/></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">When a freeze -frame data when an abnormal code occurs, the freeze -frame data at the time of system operation is erased.<br/></li><li class="atten4">If the freeze -frame data when an abnormal code occurs, the data will not be updated until the memory data is erased (the diagnothesis code is erased).<br/></li></ol><p></p><p></p></li></ol>
+<li><p><font class="ptxt">Freeze frame data when system operation</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">システム作動時のフリーズフレームデータは、システム作動ごとに新しいデータに更新される。</font><br></p></li>
-<li><p><font class="ptxt">最後にシステムが作動した時からのIG OFF&rarr;ONした回数を31回まで記憶および表示する。</font><br></p></li>
-<li><p><font class="ptxt">フリーズフレームデータが、お客様からご指摘された不具合発生時のデータなのかを下記の算出式を目安として確認することができる。 (1日あたりのIG ON回数)&times;(不具合発生時からの日数)=(データフリーズからのIG ON回数)</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">車両停車状態(車速が7km/h以下)でのIG OFF&rarr;ONはカウントされない。<br></li><li class="atten4">データフリーズからのIG ONの回数が31回をこえた場合は、&ldquo;31&rdquo;を表示する。<br></li></ol></p></p></li></ol></ol><br clear="all"></body></html>
+<li><p><font class="ptxt">The freeze -frame data at the time of system operation is updated to new data for each system operation.</font><br/></p></li>
+<li><p><font class="ptxt">Finally, the Ig OFF → ON number of times from the time the system is activated is memorized and displayed.</font><br/></p></li>
+<li><p><font class="ptxt">The following calculation formula can be confirmed as a guide to whether the freeze -frame data is the data at the time of the problem pointed out by the customer.(Number of IG ON times per day) x (number of days from the occurrence of defects) = (Ig ON times from data freeze)</font><br/></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">The IG OFF → ON at the vehicle stop (the vehicle speed is 7 km/h or less) is not counted.<br/></li><li class="atten4">If the number of Ig ON from data freezes exceeds 31 times, "31" is displayed.<br/></li></ol><p></p><p></p></li></ol></ol><br clear="all"/></body></html>

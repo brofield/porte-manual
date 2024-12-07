@@ -1,16 +1,20 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="RM0000008YU000X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>EFIシステム&nbsp;&nbsp;フェイルセーフ一覧</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000008YU000X_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="CD0403____00000630000011step"></a>
+		<body onload="seePageAnchor()"><a name="RM0000008YU000X"></a><table cellspacing="0" width="100%"><tbody><tr><td width="93%"><h1>EFI System Fail Safe List</h1></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr></tbody></table><br class="beforePng" clear="all"/><a name="RM0000008YU000X_z0"></a><br clear="all"/><a name="1"></a><br clear="all"/><a name="CD0403____00000630000011step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>以下のコードがエンジンコントロールコンピユータに記録されている場合は、フェールセーフモードに入る。</li></ol>
-<ol class="ptxt"></ol><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><colgroup align="" width="33%
-			"><col align="center"></colgroup><colgroup align="" width="33%
-			"><col align=""></colgroup><colgroup align="" width="33%
-			"><col align=""></colgroup><tr><td>ダイアグコード<br></td><td align="center">フェールセーフ操作<br></td><td align="center">フェールセーフモード解除条件<br></td></tr><tr><td>P0110/24<br></td><td>吸入エア温度は20&deg;Cに固定<br></td><td>通常状態へ復帰<br></td></tr><tr><td>P0115/22<br></td><td>水温は80&deg;Cに固定<br></td><td>通常状態へ復帰<br></td></tr><tr><td>P0120/41<br></td><td>VTAは0&deg;Cで固定<br></td><td>スロットルポジションスイッチを閉じたまま、以下の条件を最低2秒以上連続して繰り返さなければならない:<br>0.1以上VTA以上0.95V<br></td></tr><tr><td>P0325/52<br></td><td>最大遅角<br></td><td>グニッションスイッチ　OFF<br></td></tr><tr><td>P0500/42<br></td><td>ISCコントロール禁止<br></td><td>通常状態へ復帰<br></td></tr><tr><td>P1300/14<br>P1305/15<br>P1310/14<br>P1315/15<br></td><td>燃料カット<br></td><td>通常状態へ復帰<br></td></tr></table><br clear="all"></body></html>
+<li>If the following code is recorded in the engine controlled compilation, enter the fail -safe mode.</li></ol>
+<ol class="ptxt"></ol><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><colgroup align="" width="33%
+
+			"><col align="center"/></colgroup><colgroup align="" width="33%
+
+			"><col align=""/></colgroup><colgroup align="" width="33%
+
+			"><col align=""/></colgroup><tbody><tr><td>Diag code<br/></td><td align="center">Fail safe operation<br/></td><td align="center">Fail safe mode cancellation condition<br/></td></tr><tr><td>P0110/24<br/></td><td>Inhaled air temperature is fixed to 20 ° C<br/></td><td>Return to normal state<br/></td></tr><tr><td>P0115/22<br/></td><td>Water temperature is fixed to 80 ° C<br/></td><td>Return to normal state<br/></td></tr><tr><td>P0120/41<br/></td><td>VTA is fixed at 0 ° C<br/></td><td>While the throttle position switch is closed, the following conditions must be repeated for at least 2 seconds or more:<br/>0.1 or more VTA or higher 0.95V<br/></td></tr><tr><td>P0325/52<br/></td><td>Maximum angle<br/></td><td>Gnition switch OFF<br/></td></tr><tr><td>P0500/42<br/></td><td>ISC control prohibition<br/></td><td>Return to normal state<br/></td></tr><tr><td>P1300/14<br/>P1305/15<br/>P1310/14<br/>P1315/15<br/></td><td>Fuel cut<br/></td><td>Return to normal state<br/></td></tr></tbody></table><br clear="all"/></body></html>

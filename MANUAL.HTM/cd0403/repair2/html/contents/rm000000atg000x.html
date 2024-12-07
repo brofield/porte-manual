@@ -1,75 +1,114 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="RM000000ATG000X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>ワイヤレスドアロツクコントロールシステム&nbsp;&nbsp;ＥＣＵ端子配列</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM000000ATG000X_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="CD0403____00000CH0000011step"></a>
+		<body onload="seePageAnchor()"><a name="RM000000ATG000X"></a><table cellspacing="0" width="100%"><tbody><tr><td width="93%"><h1>Wireless Door Tsuku Control System ECU terminal sequence</h1></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr></tbody></table><br class="beforePng" clear="all"/><a name="RM000000ATG000X_z0"></a><br clear="all"/><a name="1"></a><br clear="all"/><a name="CD0403____00000CH0000011step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>インストルメントパネルジヤンクシヨンブロツクASSY(ボデーECU)点検 </li></ol>
-<ol class="ptxt"></ol><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00150&nbsp;&nbsp;<br></dd></dl>
+<li>Instrument Panelge Yank Sijon Brootsk ASSY (Body ECU) inspection</li></ol>
+<ol class="ptxt"></ol><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030<br/>09083-00150<br/></dd></dl>
 <ol class="step2">
-<li><p><font class="ptxt">インストルメントパネルジヤンクシヨンブロツクASSYのコネクタB、EおよびGを切り離す。</font><br></p></li>
-<li><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、車両側コネクタ各端子間およびボデーアース間の電圧、抵抗および導通を点検する。</font><br><br clear="all"><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%
-						"><colgroup align="center" width="34%
-			"><col align=""></colgroup><colgroup align="center" width="9%
-			"><col align=""></colgroup><colgroup align="center" width="38%
-			"><col align=""></colgroup><colgroup align="center" width="19%
-			"><col align=""></colgroup><tr><th>端子番号<br></th><th>項目<br></th><th>測定条件<br></th><th>基準<br></th></tr><tr><td>G1(+B)&larr;&rarr;ボデーアース<br></td><td>電圧<br></td><td>常時<br></td><td>10-14V<br></td></tr><tr><td>B30(+ECUB)&larr;&rarr;ボデーアース<br></td><td>電圧<br></td><td>常時<br></td><td>10-14V<br></td></tr><tr><td>E26(KSW)&larr;&rarr;ボデーアース<br></td><td>導通<br></td><td>イグニツシヨンスイツチロツクシリンダにキーなし&rarr;あり<br></td><td>導通なし&rarr;あり<br></td></tr><tr><td>F4(IG)&larr;&rarr;ボデーアース<br></td><td>電圧<br></td><td>イグニツシヨンスイツチON<br></td><td>10-14V<br></td></tr></table></dd></dl></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">基準外の場合は、車両側の不具合</dd></dl></p></p></li>
-<li><p><font class="ptxt">コネクタを接続し、コネクタの各端子の電圧を点検する。</font><br><br clear="all"><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec"><br></dd><dd class="spec"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%
-						"><colgroup align="center" width="19%
-			"><col align=""></colgroup><colgroup align="center" width="8%
-			"><col align=""></colgroup><colgroup align="center" width="47%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>端子番号<br></th><th>項目<br></th><th>測定条件<br></th><th>基準<br></th></tr><tr><td>E26(KSW)&larr;&rarr;ボデーアース<br></td><td>電圧<br></td><td>イグニツシヨンスイツチロツクシリンダにキーなし&rarr;あり<br></td><td>10-14V&rarr;0V<br></td></tr><tr><td>A21(DCTY)&larr;&rarr;ボデーアース<br></td><td>電圧<br></td><td>運転席ドア全閉&rarr;開<br></td><td>10-14V&rarr;0V<br></td></tr><tr><td>C14(PCTY)&larr;&rarr;ボデーアース<br></td><td>電圧<br></td><td>スライドドア全閉&rarr;開<br></td><td>10-14V&rarr;0V<br></td></tr><tr><td>T7(RDA)&larr;&rarr;ボデーアース<br></td><td>電圧<br></td><td>イグニツシヨンスイツチOFF、キーなし<br>全ドア閉でトランスミツタのスイツチOFF&rarr;ON<br></td><td>1V以下&rarr;6V&rarr;1V以下<br></td></tr><tr><td>S17(HAZ)&larr;&rarr;ボデーアース<br></td><td>電圧<br></td><td>イグニツシヨンスイツチOFF、キーなし<br>全ドア閉でトランスミツタのスイツチOFF&rarr;ON<br>(アンサーバック時)<br></td><td>10-14V&rarr;0V&rarr;10-14V<br></td></tr></table></dd></dl></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">基準外の場合は、インストルメントパネルジャンクションブロックASSY(ボデーECU)の不具合</dd></dl></p></p></li></ol><br clear="all"><div class="full"><br clear="all"><img src="../../img/b103397.png" name="B103397" alt="B103397" border="1" class="full"></div><br clear="all"><br clear="all"><br clear="all"><a name="CD0403____00000CH0000012step"></a>
+<li><p><font class="ptxt">Instrument Panelge Yank Syon Brootsk ASSY connector B, E and G are separated.</font><br/></p></li>
+<li><p><font class="ptxt">Use SST (Toyota Electrical Tester) to check the voltage, resistance, and conduction between the vehicle side connector and body ground.</font><br/><br clear="all"/></p><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec"><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="89.5%
+
+						"><colgroup align="center" width="34%
+
+			"><col align=""/></colgroup><colgroup align="center" width="9%
+
+			"><col align=""/></colgroup><colgroup align="center" width="38%
+
+			"><col align=""/></colgroup><colgroup align="center" width="19%
+
+			"><col align=""/></colgroup><tbody><tr><th>Terminal number<br/></th><th>item<br/></th><th>Measurement conditions<br/></th><th>standard<br/></th></tr><tr><td>G1 (+B) ← → Body Earth<br/></td><td>Voltage<br/></td><td>Always<br/></td><td>10-14V<br/></td></tr><tr><td>B30 (+ECUB) ← → Body Earth<br/></td><td>Voltage<br/></td><td>Always<br/></td><td>10-14V<br/></td></tr><tr><td>E26 (KSW) ← → Body Earth<br/></td><td>Conduction<br/></td><td>Ignitsushi -sijongsuitsu Tiro Tsukushinda No key → Yes<br/></td><td>No conduction → Yes<br/></td></tr><tr><td>F4 (IG) ← → Body Earth<br/></td><td>Voltage<br/></td><td>Ignitsushi -si Onto ON<br/></td><td>10-14V<br/></td></tr></tbody></table></dd></dl><p></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">If it is not the standard, the bug on the vehicle side</dd></dl><p></p><p></p></li>
+<li><p><font class="ptxt">Connect the connector and check the voltage of each terminal of the connector.</font><br/><br clear="all"/></p><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec"><br/></dd><dd class="spec"><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="89.5%
+
+						"><colgroup align="center" width="19%
+
+			"><col align=""/></colgroup><colgroup align="center" width="8%
+
+			"><col align=""/></colgroup><colgroup align="center" width="47%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Terminal number<br/></th><th>item<br/></th><th>Measurement conditions<br/></th><th>standard<br/></th></tr><tr><td>E26 (KSW) ← → Body Earth<br/></td><td>Voltage<br/></td><td>Ignitsushi -sijongsuitsu Tiro Tsukushinda No key → Yes<br/></td><td>10-14V → 0V<br/></td></tr><tr><td>A21 (DCTY) ← → Body Earth<br/></td><td>Voltage<br/></td><td>The driver's seat door is fully closed → Open<br/></td><td>10-14V → 0V<br/></td></tr><tr><td>C14 (PCty) ← → Body Earth<br/></td><td>Voltage<br/></td><td>Sliding door fully closed → Open<br/></td><td>10-14V → 0V<br/></td></tr><tr><td>T7 (RDA) ← → Body Earth<br/></td><td>Voltage<br/></td><td>Ignitsushi -si Onti OFF, no key<br/>OFF of transmitstra with all doors closed → ON<br/></td><td>1V or less → 6V → 1V or less<br/></td></tr><tr><td>S17 (Haz) ← → Body Earth<br/></td><td>Voltage<br/></td><td>Ignitsushi -si Onti OFF, no key<br/>OFF of transmitstra with all doors closed → ON<br/>(When the answer back)<br/></td><td>10-14V → 0V → 10-14V<br/></td></tr></tbody></table></dd></dl><p></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">If it is not the standard, the Instrument Panel Junction Block ASSY (Body ECU) defect</dd></dl><p></p><p></p></li></ol><br clear="all"/><div class="full"><br clear="all"/><img alt="B103397" border="1" class="full" name="B103397" src="../../img/b103397.png"/></div><br clear="all"/><br clear="all"/><br clear="all"/><a name="CD0403____00000CH0000012step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>ドアコントロールレシーバ点検(スマートドアロック付き車以外)</li></ol>
-<ol class="ptxt"></ol><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00150&nbsp;&nbsp;<br></dd></dl>
-<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/b051174.png" name="B051174" alt="B051174" border="1" class="half"><br></td></tr></table>
-<li><p><font class="ptxt">コネクタを切り離し、SST(トヨタエレクトリカルテスター)を使用して、車両側ワイヤハーネスのコネクタ各端子間の電圧および導通を点検する。</font><br><br clear="all"><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%
-						"><colgroup align="center" width="26%
-			"><col align=""></colgroup><colgroup align="center" width="21%
-			"><col align=""></colgroup><colgroup align="center" width="28%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>端子番号(端子名)<br></th><th>項目<br></th><th>測定条件<br></th><th>基準<br></th></tr><tr><td>1(E)&larr;&rarr;ボデーアース<br></td><td>導通<br></td><td>常時<br></td><td>導通あり<br></td></tr><tr><td>5(+B)&larr;&rarr;1(E)<br></td><td>電圧<br></td><td>常時<br></td><td>10-14V<br></td></tr></table></dd></dl></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">基準外の場合は、車両側の不具合。</dd></dl></p></p></li>
-<li><p><font class="ptxt">コネクタを接続した状態で各端子間の電圧を点検する。</font><br><br clear="all"><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec"><br></dd><dd class="spec"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%
-						"><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="10%
-			"><col align=""></colgroup><colgroup align="center" width="41%
-			"><col align=""></colgroup><colgroup align="center" width="24%
-			"><col align=""></colgroup><tr><th>端子番号(端子名)<br></th><th>項目<br></th><th>測定条件<br></th><th>基準<br></th></tr><tr><td>2(RDA)&larr;&rarr;1(E)<br></td><td>電圧<br></td><td>イグニツシヨンスイツチ　OFF、キーなし、全ドア閉、トランスミツタのスイツチOFF&rarr;ON<br></td><td>10-14V&rarr;10V以下&rarr;10-14V<br></td></tr></table></dd></dl></p><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">電圧出力の確認は、バーグラフ表示にて点検する。</dd></dl></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">基準外の場合は、ドアコントロールレシーバの不具合。</dd></dl></p></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00000CH0000013step"></a>
+<li>Door control receiver inspection (other than car with smart door lock)</li></ol>
+<ol class="ptxt"></ol><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030<br/>09083-00150<br/></dd></dl>
+<ol class="step2"><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="B051174" border="1" class="half" name="B051174" src="../../img/b051174.png"/><br/></td></tr></tbody></table>
+<li><p><font class="ptxt">Separate the connector and use a SST (Toyota Electrical Tester) to inspect the voltage and conduction between the connector of the vehicle side wire harness.</font><br/><br clear="all"/></p><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec"><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="89.5%
+
+						"><colgroup align="center" width="26%
+
+			"><col align=""/></colgroup><colgroup align="center" width="21%
+
+			"><col align=""/></colgroup><colgroup align="center" width="28%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Terminal number (terminal name)<br/></th><th>item<br/></th><th>Measurement conditions<br/></th><th>standard<br/></th></tr><tr><td>1 (E) ← → Body Earth<br/></td><td>Conduction<br/></td><td>Always<br/></td><td>There is an conductor<br/></td></tr><tr><td>5 (+B) ← → 1 (E)<br/></td><td>Voltage<br/></td><td>Always<br/></td><td>10-14V<br/></td></tr></tbody></table></dd></dl><p></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">In the case of non -standard, the bug on the vehicle side.</dd></dl><p></p><p></p></li>
+<li><p><font class="ptxt">Check the voltage between each terminal with the connector connected.</font><br/><br clear="all"/></p><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec"><br/></dd><dd class="spec"><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="89.5%
+
+						"><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="10%
+
+			"><col align=""/></colgroup><colgroup align="center" width="41%
+
+			"><col align=""/></colgroup><colgroup align="center" width="24%
+
+			"><col align=""/></colgroup><tbody><tr><th>Terminal number (terminal name)<br/></th><th>item<br/></th><th>Measurement conditions<br/></th><th>standard<br/></th></tr><tr><td>2 (RDA) ← → 1 (E)<br/></td><td>Voltage<br/></td><td>Ignitsushi -si -tsuzuchi OFF, no key, all doors closed, transmitsuuts OFF → ON<br/></td><td>10-14V → 10V or less → 10-14V<br/></td></tr></tbody></table></dd></dl><p></p><p></p><dl class="caution"><dt class="caution">■ Attention ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">Check the voltage output in the bar graph display.</dd></dl><p></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">In the case of non -standard, the problem of the door control receiver.</dd></dl><p></p><p></p></li></ol><br clear="all"/><br clear="all"/><a name="CD0403____00000CH0000013step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>スマートキーコンピユータASSY(スマートドアロック付き車)点検</li></ol>
-<ol class="ptxt"></ol><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00150&nbsp;&nbsp;<br></dd></dl>
+<li>Smart Key Compieta ASSY (car with smart door lock) inspection</li></ol>
+<ol class="ptxt"></ol><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030<br/>09083-00150<br/></dd></dl>
 <ol class="step2">
-<li><p><font class="ptxt">スマートキーコンピユータASSYのコネクタを切り離す。</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
-<li><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、車両側コネクタ各端子の電圧および導通を点検する。</font><br><div class="full"><br clear="all"><img src="../../img/b068593.png" name="B068593" alt="B068593" border="1" class="full"></div><br clear="all"><br clear="all"><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%
-						"><colgroup align="center" width="30%
-			"><col align=""></colgroup><colgroup align="center" width="9%
-			"><col align=""></colgroup><colgroup align="center" width="42%
-			"><col align=""></colgroup><colgroup align="center" width="18%
-			"><col align=""></colgroup><tr><th>端子番号(端子名)<br></th><th>項目<br></th><th>測定条件<br></th><th>基準<br></th></tr><tr><td>1(+B)&larr;&rarr;20(GND)<br></td><td>電圧<br></td><td>常時<br></td><td>10-14V<br></td></tr><tr><td>5(KSW)&larr;&rarr;20(GND)<br></td><td>導通<br></td><td>イグニツシヨンスイツチロックシリンダにキーなし&rarr;あり<br></td><td>導通なし&rarr;あり<br></td></tr><tr><td>10(LSWD)&larr;&rarr;20(GND)<br></td><td>導通<br></td><td>運転席ドアロックノブ　LOCK&rarr;UNLOCK<br></td><td>導通なし&rarr;あり<br></td></tr><tr><td>21(IG)&larr;&rarr;20(GND)<br></td><td>電圧<br></td><td>イグニツシヨンスイツチ　OFF&rarr;ON<br></td><td>0V&rarr;10-14V<br></td></tr><tr><td>31(ACTY)&larr;&rarr;20(GND)<br></td><td>導通<br></td><td>全ドア閉&rarr;いずれかのドア開<br></td><td>導通なし&rarr;あり<br></td></tr><tr><td>20(GND)&larr;&rarr;ボデーアース<br></td><td>導通<br></td><td>常時<br></td><td>導通あり<br></td></tr></table></dd></dl></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">基準外の場合は、車両側の不具合。</dd></dl></p></p></li>
-<li><p><font class="ptxt">コネクタを接続、各コネクタ端子間の電圧を点検する。</font><br><br clear="all"><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%
-						"><colgroup align="center" width="27%
-			"><col align=""></colgroup><colgroup align="center" width="8%
-			"><col align=""></colgroup><colgroup align="center" width="47%
-			"><col align=""></colgroup><colgroup align="center" width="18%
-			"><col align=""></colgroup><tr><th>端子番号(端子名)<br></th><th>項目<br></th><th>測定条件<br></th><th>基準<br></th></tr><tr><td>14(RSSI)&larr;&rarr;20(GND)<br></td><td>電圧<br></td><td>イグニツシヨンスイツチ　OFF、キーなし、全ドア閉、エレクトリカルキートランスミツタ(スマート携帯機)のスイツチOFF&rarr;ON<br></td><td>10-14V&rarr;0V<br></td></tr><tr><td>16(RCO)&larr;&rarr;20(GND)<br></td><td>電圧<br></td><td>イグニツシヨンスイツチ　OFF、キーなし、全ドア閉、エレクトリカルキートランスミツタ(スマート携帯機)のスイツチOFF&rarr;ON<br></td><td>5-0V&rarr;5V<br></td></tr><tr><td>17(CLG1)&larr;&rarr;20(GND)<br></td><td>H<sub>Z</sub>
-<br></td><td>車外からエレクトリカルキートランスミツタ(スマート携帯機)により全ドア閉(LOCK状態)、キーなし&rarr;あり<br></td><td>H<sub>Z</sub>出力あり&rarr;なし<br></td></tr><tr><td>26(SEL1)&larr;&rarr;20(GND)<br></td><td>電圧<br></td><td>エレクトリカルキートランスミツタ(スマート携帯機)を運転席ドアから5ｍ以上離す&rarr;フロントドアアウトサイドハンドルASSY　RH付近に近付ける<br></td><td>10-14V&rarr;0V<br></td></tr><tr><td>32(RDA3)&larr;&rarr;20(GND)<br></td><td>電圧<br></td><td>イグニツシヨンスイツチ　OFF、キーなし、全ドア閉、エレクトリカルキートランスミツタ(スマート携帯機)のスイツチOFF&rarr;ON<br></td><td>1V以下&rarr;約6V&rarr;1V以下<br></td></tr></table></dd></dl></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">点検部位によっては間欠回路となっているため電圧が断続的に出力される。<br></li><li class="atten4">基準外の場合はスマートキーコンピユータASSY、ドアコントロールコンピユータウィズレシーバ、ドアエレクトリカルオキシレータキーまたは通信線の不良。<br></li></ol></p></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00000CH0000014step"></a>
+<li><p><font class="ptxt">Cut the connector of the smart key compiya ASSY.</font><br/></p></li><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/>
+<li><p><font class="ptxt">Use SST (Toyota Electrical Tester) to inspect the voltage and conduction of each terminal connector.</font><br/></p><div class="full"><br clear="all"/><img alt="B068593" border="1" class="full" name="B068593" src="../../img/b068593.png"/></div><br clear="all"/><br clear="all"/><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec"><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="89.5%
+
+						"><colgroup align="center" width="30%
+
+			"><col align=""/></colgroup><colgroup align="center" width="9%
+
+			"><col align=""/></colgroup><colgroup align="center" width="42%
+
+			"><col align=""/></colgroup><colgroup align="center" width="18%
+
+			"><col align=""/></colgroup><tbody><tr><th>Terminal number (terminal name)<br/></th><th>item<br/></th><th>Measurement conditions<br/></th><th>standard<br/></th></tr><tr><td>1 (+B) ← → 20 (GND)<br/></td><td>Voltage<br/></td><td>Always<br/></td><td>10-14V<br/></td></tr><tr><td>5 (KSW) ← → 20 (GND)<br/></td><td>Conduction<br/></td><td>Ignitsushi -sijong -tilock cylinder has no key → Yes<br/></td><td>No conduction → Yes<br/></td></tr><tr><td>10 (LSWD) ← → 20 (GND)<br/></td><td>Conduction<br/></td><td>Driving seat door lock knob lock → Unlock<br/></td><td>No conduction → Yes<br/></td></tr><tr><td>21 (IG) ← → 20 (GND)<br/></td><td>Voltage<br/></td><td>Ignitsushi -si Onti OFF → ON<br/></td><td>0V → 10-14V<br/></td></tr><tr><td>31 (Acty) ← → 20 (GND)<br/></td><td>Conduction<br/></td><td>All door closed → Open any of the door<br/></td><td>No conduction → Yes<br/></td></tr><tr><td>20 (GND) ← → Body Earth<br/></td><td>Conduction<br/></td><td>Always<br/></td><td>There is an conductor<br/></td></tr></tbody></table></dd></dl><p></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">In the case of non -standard, the bug on the vehicle side.</dd></dl><p></p><p></p></li>
+<li><p><font class="ptxt">Connect the connector and check the voltage between each connector terminal.</font><br/><br clear="all"/></p><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec"><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="89.5%
+
+						"><colgroup align="center" width="27%
+
+			"><col align=""/></colgroup><colgroup align="center" width="8%
+
+			"><col align=""/></colgroup><colgroup align="center" width="47%
+
+			"><col align=""/></colgroup><colgroup align="center" width="18%
+
+			"><col align=""/></colgroup><tbody><tr><th>Terminal number (terminal name)<br/></th><th>item<br/></th><th>Measurement conditions<br/></th><th>standard<br/></th></tr><tr><td>14 (RSSI) ← → 20 (GND)<br/></td><td>Voltage<br/></td><td>Ignitsushi -si Onti OFF, no keys, all doors closed, Elect Recall Key Transmitsuta (Smart Mobile Corporation) Sweets OFF → ON<br/></td><td>10-14V → 0V<br/></td></tr><tr><td>16 (RCO) ← → 20 (GND)<br/></td><td>Voltage<br/></td><td>Ignitsushi -si Onti OFF, no keys, all doors closed, Elect Recall Key Transmitsuta (Smart Mobile Corporation) Sweets OFF → ON<br/></td><td>5-0V → 5V<br/></td></tr><tr><td>17 (clg1) ← → 20 (GND)<br/></td><td>H<sub>Z</sub>
+<br/></td><td>All door closed (Lock state), no key from outside the car (smart portable machine), no key → Yes.<br/></td><td>H<sub>Z</sub>There is output → None<br/></td></tr><tr><td>26 (SEL1) ← → 20 (GND)<br/></td><td>Voltage<br/></td><td>Leave the electrical key transformer (smart portable machine) 5m or more from the driver's seat door → close to the front door out side handle ASSY RH<br/></td><td>10-14V → 0V<br/></td></tr><tr><td>32 (RDA3) ← → 20 (GND)<br/></td><td>Voltage<br/></td><td>Ignitsushi -si Onti OFF, no keys, all doors closed, Elect Recall Key Transmitsuta (Smart Mobile Corporation) Sweets OFF → ON<br/></td><td>1V or less → about 6V → 1V or less<br/></td></tr></tbody></table></dd></dl><p></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">Depending on the inspection site, the voltage is intermittently output because it is an intermittent circuit.<br/></li><li class="atten4">If it is not the standard, the smart key compiya ASSY, the door control compilation with a recever, the door -electrical oxylator key or the communication line is defective.<br/></li></ol><p></p><p></p></li></ol><br clear="all"/><br clear="all"/><a name="CD0403____00000CH0000014step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>ドアコントロールコンピユータウィズレシーバ(スマートドアロック付き車)点検</li></ol>
-<ol class="ptxt"></ol><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00150&nbsp;&nbsp;<br></dd></dl>
+<li>Door Control Companing Computer Wiza Recever (Car with Smart Door Lock) Inspection</li></ol>
+<ol class="ptxt"></ol><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030<br/>09083-00150<br/></dd></dl>
 <ol class="step2">
-<li><p><font class="ptxt">コネクタを切り離し、SST(トヨタエレクトリカルテスター)を使用して、車両側ワイヤハーネスのコネクタ各端子間の導通を点検する。</font><br><br clear="all"><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%
-						"><colgroup align="center" width="29%
-			"><col align=""></colgroup><colgroup align="center" width="22%
-			"><col align=""></colgroup><colgroup align="center" width="24%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>端子番号(端子名)<br></th><th>項目<br></th><th>測定条件<br></th><th>基準<br></th></tr><tr><td>2(GND)&larr;&rarr;ボデーアース<br></td><td>導通<br></td><td>常時<br></td><td>導通あり<br></td></tr></table></dd></dl></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">基準外の場合は、車両側の不具合。</dd></dl></p></p></li>
-<li><p><font class="ptxt">コネクタを接続した状態で各端子間の電圧を点検する。</font><br><br clear="all"><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%
-						"><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="9%
-			"><col align=""></colgroup><colgroup align="center" width="47%
-			"><col align=""></colgroup><colgroup align="center" width="19%
-			"><col align=""></colgroup><tr><th>端子番号(端子名)<br></th><th>項目<br></th><th>測定条件<br></th><th>基準<br></th></tr><tr><td>3(RSSI)&larr;&rarr;2(GND)<br></td><td>電圧<br></td><td>イグニツシヨンスイツチ　OFF、キーなし、全ドア閉、エレクトリカルキートランスミツタ(スマート携帯機)のスイツチOFF&rarr;ON<br></td><td>10-14V&rarr;0V<br></td></tr><tr><td>5(RCO)&larr;&rarr;2(GND)<br></td><td>電圧<br></td><td>イグニツシヨンスイツチ　OFF、キーなし、全ドア閉、エレクトリカルキートランスミツタ(スマート携帯機)のスイツチOFF&rarr;ON<br></td><td>5-0V&rarr;5V<br></td></tr><tr><td>4(DATA)&larr;&rarr;2(GND)<br></td><td>電圧<br></td><td>イグニツシヨンスイツチ　OFF、キーなし、全ドア閉、エレクトリカルキートランスミツタ(スマート携帯機)のスイツチON、エレクトリカルキートランスミツタ(スマート携帯機)を持って運転席ドアから5ｍ離れる&rarr;フロントドアアウトサイドハンドルASSY　RH付近に近付ける<br></td><td>0V&rarr;10-14V&rarr;0V<br></td></tr></table></dd></dl></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">点検部位によっては間欠回路となっているため電圧が断続的に出力される。<br></li><li class="atten4">基準外の場合はスマートキーコンピユータASSYまたはワイヤハーネスおよびドアコントロールコンピユータウィズレシーバの不良。<br></li></ol></p></p></li></ol><br clear="all"></body></html>
+<li><p><font class="ptxt">Separate the connector and use the SST (Toyota Electrical Tester) to check the conversation between each terminal of the vehicle side wire harness.</font><br/><br clear="all"/></p><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec"><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="89.5%
+
+						"><colgroup align="center" width="29%
+
+			"><col align=""/></colgroup><colgroup align="center" width="22%
+
+			"><col align=""/></colgroup><colgroup align="center" width="24%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Terminal number (terminal name)<br/></th><th>item<br/></th><th>Measurement conditions<br/></th><th>standard<br/></th></tr><tr><td>2 (GND) ← → Body Earth<br/></td><td>Conduction<br/></td><td>Always<br/></td><td>There is an conductor<br/></td></tr></tbody></table></dd></dl><p></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">In the case of non -standard, the bug on the vehicle side.</dd></dl><p></p><p></p></li>
+<li><p><font class="ptxt">Check the voltage between each terminal with the connector connected.</font><br/><br clear="all"/></p><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec"><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="89.5%
+
+						"><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="9%
+
+			"><col align=""/></colgroup><colgroup align="center" width="47%
+
+			"><col align=""/></colgroup><colgroup align="center" width="19%
+
+			"><col align=""/></colgroup><tbody><tr><th>Terminal number (terminal name)<br/></th><th>item<br/></th><th>Measurement conditions<br/></th><th>standard<br/></th></tr><tr><td>3 (RSSI) ← → 2 (GND)<br/></td><td>Voltage<br/></td><td>Ignitsushi -si Onti OFF, no keys, all doors closed, Elect Recall Key Transmitsuta (Smart Mobile Corporation) Sweets OFF → ON<br/></td><td>10-14V → 0V<br/></td></tr><tr><td>5 (RCO) ← → 2 (GND)<br/></td><td>Voltage<br/></td><td>Ignitsushi -si Onti OFF, no keys, all doors closed, Elect Recall Key Transmitsuta (Smart Mobile Corporation) Sweets OFF → ON<br/></td><td>5-0V → 5V<br/></td></tr><tr><td>4 (data) ← → 2 (GND)<br/></td><td>Voltage<br/></td><td>Ignitsushi Jon -off OFF, no key, all doors closed, electary key transmitzuta (smart mobile phone) Suitchi ON, Electric Calcular Transmit Mutta (Smart Mobile Corporation) 5m away from the driver's seat → Front door outdoor handleClose to ASSY RH<br/></td><td>0V → 10-14V → 0V<br/></td></tr></tbody></table></dd></dl><p></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">Depending on the inspection site, the voltage is intermittently output because it is an intermittent circuit.<br/></li><li class="atten4">If it is not the standard, the bad key compuber ASSY or the wire harness and the door control compilation with recever.<br/></li></ol><p></p><p></p></li></ol><br clear="all"/></body></html>

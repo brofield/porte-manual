@@ -1,93 +1,126 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="RM0000005D5065X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>ECU制御システムのトラブルシューティングの方法&nbsp;&nbsp;新ダイアグシステム</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000005D5065X_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="CD0403____00007C30000011step"></a>
+		<body onload="seePageAnchor()"><a name="RM0000005D5065X"></a><table cellspacing="0" width="100%"><tbody><tr><td width="93%"><h1>How to troubleshoot the ECU control system new diary system</h1></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr></tbody></table><br class="beforePng" clear="all"/><a name="RM0000005D5065X_z0"></a><br clear="all"/><a name="1"></a><br clear="all"/><a name="CD0403____00007C30000011step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>修理書におけるトラブルシュート手順について</li></ol>
-<ol class="ptxt"></ol><ol style="list-style-type: disc"><li>本書に記載しているトラブルシュート手順はダイアグコード出力時の診断手順と不具合症状発生時の診断手順の2つの構成より成り立っている。それぞれの手順の考え方は以下の通りである。<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%
-						"><colgroup align="" width="33%
-			"><col align=""></colgroup><colgroup align="" width="33%
-			"><col align=""></colgroup><colgroup align="" width="33%
-			"><col align=""></colgroup><tr><th><br></th><th align="center">診断内容<br></th><th align="center">診断手順の考え方<br></th></tr><tr><td align="center">ダイアグコードの診断<br></td><td>現時点で当該ダイアグコードが出力している場合の診断手順を記載<br></td><td>当該ダイアグコードの出力条件を単体点検や診断機器を使用して、消去法により不具合部位を特定<br></td></tr><tr><td align="center">不具合症状別の診断<br></td><td>何もダイアグコードは出力されていないが、現時点で当該不具合症状が発生している場合の診断手順を記載<br></td><td>ダイアグコードが出力する条件を除いた、当該不具合症状の発生原因を単体点検や診断機器を使用して、消去法により不具合部位を特定<br></td></tr></table></li><li>車両搭載システムの高度化&middot;複雑化により単体点検が困難なコンピューターが多数あるため、診断手順の中では単体点検ができる部分を点検し、最後まで単体点検で何も不具合が見つからなかった場合にはその症状を起因とするコンピューターを要因と特定するいわば[消去法]を診断手順の考え方に取り入れている。<br></li><li>お客様の申し出(問診表)を良く聴き、その不具合を再現&middot;確認した上で診断を開始することが最も重要である。診断時も不具合症状が継続して確認できない状況で、本書で記載している診断手順に従って点検を行っても、何も不具合が発見されずコンピューター交換に行き着いてしまい、場合によっては不具合が解消されない場合がある。<br></li><li>また、本書では診断手順を無限に広げないため、重複故障(2箇所以上の不具合)が一つの不具合症状の中に発生していないことを前提に組み立ててある。<br></li><li>本書では、ユニットやコンピューター、ワイヤハーネス等の不具合部品の切り分けを記載している。よって診断の結果ワイヤハーネスに不具合がある場合には、ユニットとコンピューター等の接続部だけではなく、ワイヤハーネスの途中で接続されている中間コネクターの点検も実施する必要がある。<br></li></ol><br clear="all"><br clear="all"><a name="CD0403____00007C30000012step"></a>
+<li>About trouble shooting procedures in the repair book</li></ol>
+<ol class="ptxt"></ol><ol style="list-style-type: disc"><li>The trouble shooting procedure described in this book is based on the two configurations: a diagnosis procedure in the case of a diagcode output and a diagnosis procedure in the event of a defective symptom.The concept of each procedure is as follows.<br/><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="89.5%
+
+						"><colgroup align="" width="33%
+
+			"><col align=""/></colgroup><colgroup align="" width="33%
+
+			"><col align=""/></colgroup><colgroup align="" width="33%
+
+			"><col align=""/></colgroup><tbody><tr><th><br/></th><th align="center">Diagnostic content<br/></th><th align="center">Diagnosis procedure concept<br/></th></tr><tr><td align="center">Diag code diagnosis<br/></td><td>Describe the diagnosis procedure when the diameter code is output at this time<br/></td><td>The output condition of the diag code is specified by the elimination method using a single inspection or diagnostic device.<br/></td></tr><tr><td align="center">Diagnosis by defective symptoms<br/></td><td>The diagnosis procedure is described if the diameter code is not output but the defect symptoms have occurred at this time.<br/></td><td>The cause of the defective symptoms, except for the conditions in which the diag code outputs, is specified by the elimination method using a single inspection and diagnostic device.<br/></td></tr></tbody></table></li><li>There are many computers that are difficult to check alone due to the advanced and complicated vehicle -mounted system, so if the diagnostic procedure has been checked for a single check, and if there is no problem with the single inspection until the end, there is no problem.The so -called [elimination method], which identifies a computer caused by the symptoms, is incorporated into the concept of the diagnosis procedure.<br/></li><li>It is most important to listen to your offer (interview table), reproduce and confirm the bug, and then start diagnosis.In the case of the diagnosis, the defect symptoms cannot be confirmed continuously, and even if the diagnosis procedure described in this book is performed, there will be no problems and the computer will arrive, and in some cases the problem will not be resolved.There is a case.<br/></li><li>In addition, in this book, the diagnosis procedure is not expanded indefinitely, so it is assembled on the premise that duplicate failure (two or more problems) did not occur in one defect.<br/></li><li>In this book, it describes the separation of defective parts such as units, computers, and wire harness.Therefore, if there is a problem with the wire harness as a result of the diagnosis, it is necessary to perform not only the connection portion such as the unit and the computer, but also the intermediate connector connected in the middle of the wire harness.<br/></li></ol><br clear="all"/><br clear="all"/><a name="CD0403____00007C30000012step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>概要</li></ol>
+<li>overview</li></ol>
 <ol class="ptxt"></ol>
-<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/d101407j01.png" name="D101407J01" alt="D101407J01" border="1" class="half"><br></td></tr></table>
-<li><p><font class="ptxt">新ダイアグシステムとは、高度化&middot;複雑化する車載エレクトロニクスシステムに対応した新しい故障診断システムである。この故障診断システムの機能は、診断ツールTaSCANにより活用できる。</font><br></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00007C30000013step"></a>
+<ol class="step2"><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="D101407J01" border="1" class="half" name="D101407J01" src="../../img/d101407j01.png"/><br/></td></tr></tbody></table>
+<li><p><font class="ptxt">The new diagnostic system is a new failure diagnosis system that supports the sophistication and complicated vehicle electronics system.The function of this failure diagnostic system can be used by the diagnostic tool TASCAN.</font><br/></p></li></ol><br clear="all"/><br clear="all"/><a name="CD0403____00007C30000013step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>診断ツールTaSCANの機能</li></ol>
-<ol class="ptxt"></ol>
-<ol class="step2">
-<li><p><font class="ptxt">この新ダイアグに対応した診断ツールTaSCANには、下表に示す機能がある。</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%
-						"><colgroup align="" width="25%
-			"><col align=""></colgroup><colgroup align="" width="16%
-			"><col align=""></colgroup><colgroup align="" width="59%
-			"><col align=""></colgroup><tr><th align="center">機 能<br></th><th colspan="2" width="75%
-			" align="center">概 要<br></th></tr><tr><td rowspan="13" align="center">診断<br></td><td rowspan="2" align="center">車両診断<br></td><td>ALLダイアグ<br></td></tr><tr><td>CANバス診断<br></td></tr><tr><td rowspan="11" align="center">システム診断<br></td><td>ダイアグコード フリーズデータ<br></td></tr><tr><td>ECUデータモニター<br></td></tr><tr><td>アクティブテスト<br></td></tr><tr><td>モード移行<br></td></tr><tr><td>ダイアグ判定結果の確認<br></td></tr><tr><td>作動時のフリーズデータ<br></td></tr><tr><td>テストモード点検<br></td></tr><tr><td>基本点検<br></td></tr><tr><td>特殊操作/制御履歴<br></td></tr><tr><td>マルチデータモニタ<br></td></tr><tr><td>電子キーまたはワイヤレスダイアグモード<br></td></tr><tr><td align="center">キー登録&middot;消去<br></td><td colspan="2" width="75%
-			">ワイヤレスキー等の登録&middot;消去<br></td></tr><tr><td align="center">作業サポート<br></td><td colspan="2" width="75%
-			">ECUやアクチュエータ交換時に必要な作業サポート機能<br></td></tr><tr><td align="center">保存データ<br></td><td colspan="2" width="75%
-			">保存データの再生&middot;削除機能<br></td></tr><tr><td align="center">カスタマイズ<br></td><td colspan="2" width="75%
-			">ユーザーの要望にあわせたカスタマイズ項目の設定値確認&middot;変更機能<br></td></tr><tr><td align="center">計測<br></td><td colspan="2" width="75%
-			">電圧計測およびオシロスコープ機能を搭載<br></td></tr></table></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00007C30000014step"></a>
-<ol class="step1" style="list-style-type:disc">
-<li>ダイアグ通信対応コンピューター&middot;センサー</li></ol>
-<ol class="ptxt"></ol><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><colgroup align="" width="14%
-			"><col align="center"></colgroup><colgroup align="" width="14%
-			"><col align=""></colgroup><colgroup align="" width="14%
-			"><col align=""></colgroup><colgroup align="" width="14%
-			"><col align=""></colgroup><colgroup align="" width="14%
-			"><col align=""></colgroup><colgroup align="" width="14%
-			"><col align=""></colgroup><colgroup align="" width="14%
-			"><col align=""></colgroup><tr><th>コンピュータ&middot;センサ名<br></th><th align="center">ダイアグコード読み取り<br>(ノーマルモード)<br></th><th align="center">ダイアグコード読み取り<br>(チェックモード、テストモード)<br></th><th align="center">フリーズフレームデータ読み取り<br>(故障発生時のコンピュータデータ)<br></th><th align="center">データモニター読み取りおよび保存/表示<br></th><th align="center">アクティブテスト<br></th><th align="center">TaSCANとの通信線<br></th></tr><tr><td>エンジンECU<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br>(*)<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">SIL<br></td></tr><tr><td>スキッドコントロールECU<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br>(注)<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">SIL<br></td></tr><tr><td>エアバッグECU<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">SIL<br></td></tr></table><p><dl class="spec"><dt class="spec">(*)</dt><dd class="spec">時系列フリーズデータも読み取り可能<br></dd></dl></p><p><dl class="spec"><dt class="spec">(注)</dt><dd class="spec">システム作動時のフリーズデータも読み取り可能<br></dd></dl></p><br clear="all"><br clear="all"><a name="CD0403____00007C30000015step"></a>
-<ol class="step1" style="list-style-type:disc">
-<li>診断ツールTaSCANの使用方法</li></ol>
+<li>Diagnosis tool TASCAN function</li></ol>
 <ol class="ptxt"></ol>
 <ol class="step2">
-<li><p><font class="ptxt">車両との接続</font><br></p></li><br>
-<ol class="s3">
-<li><p><font class="ptxt">運転席足元付近に設置のDLC3(データリンクコネクターNo.3)にTaSCANを接続する。</font><br></p></li></ol>
-<li><p><font class="ptxt">診断ツールTaSCANの使用方法</font><br></p></li><br>
-<ol class="s3">
-<li><p><font class="ptxt">診断ツールTaSCANの電源スイッチをONにすると、メニュー画面が表示される。</font><br></p></li>
-<li><p><font class="ptxt">実施したい項目を任意に選択し、それ以降は、画面の指示に従って作業を進める。</font><br></p></li></ol></ol><br clear="all"><br clear="all"><br clear="all"><a name="CD0403____00007C30000016step"></a>
+<li><p><font class="ptxt">The diagnostic tool TASCAN corresponding to this new diagnosis has the functions shown in the table below.</font><br/><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="93%
+
+						"><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><colgroup align="" width="16%
+
+			"><col align=""/></colgroup><colgroup align="" width="59%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">function<br/></th><th align="center" colspan="2" width="75%
+
+			">overview<br/></th></tr><tr><td align="center" rowspan="13">diagnosis<br/></td><td align="center" rowspan="2">Vehicle diagnosis<br/></td><td>All diag<br/></td></tr><tr><td>Can bus diagnosis<br/></td></tr><tr><td align="center" rowspan="11">System diagnosis<br/></td><td>Diag code freeze data<br/></td></tr><tr><td>ECU data monitor<br/></td></tr><tr><td>Active test<br/></td></tr><tr><td>Mode migration<br/></td></tr><tr><td>Confirmation of the diag judgment result<br/></td></tr><tr><td>Freeze data at the time of operation<br/></td></tr><tr><td>Test mode inspection<br/></td></tr><tr><td>Basic inspection<br/></td></tr><tr><td>Special operation/control history<br/></td></tr><tr><td>Multi -data monitor<br/></td></tr><tr><td>Electronic key or wireless diagram mode<br/></td></tr><tr><td align="center">Key registration / erasure<br/></td><td colspan="2" width="75%
+
+			">Registration / erasure of wireless key, etc.<br/></td></tr><tr><td align="center">Work support<br/></td><td colspan="2" width="75%
+
+			">Work support function required for ECU and actuator replacement<br/></td></tr><tr><td align="center">Save data<br/></td><td colspan="2" width="75%
+
+			">Play / delete function of saving data<br/></td></tr><tr><td align="center">Customization<br/></td><td colspan="2" width="75%
+
+			">Confirmation / change function of customization item according to the user's request<br/></td></tr><tr><td align="center">measurement<br/></td><td colspan="2" width="75%
+
+			">Equipped with voltage measurement and oscilloscope function<br/></td></tr></tbody></table></p></li></ol><br clear="all"/><br clear="all"/><a name="CD0403____00007C30000014step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>時系列フリーズデータ(TaSCAN使用時)</li></ol>
-<ol class="ptxt"></ol><table class="float"><tr><td><img src="../../img/a103809j01.png" name="A103809J01" alt="A103809J01" border="1" class="half"><br></td></tr></table><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">時系列フリーズデータでは、ダイアグコード検出ポイントおよびその前後のデータをフリーズする。フリーズされたデータによって、車両の走行状態(加速、減速、定常走行時、変速状態)やドライバーの操作状況を正確に確認でき、トラブルシュートする際に役立つ。また、再現テスト実施時のデータとして活用することができる。<br></li><li class="atten4">入力信号の変化を確認することにより、瞬断などの異常も検出できる。<br></li><li class="atten4">DTC検出ポイントは、図のポイント3、4間で条件により変動する。<br></li></ol></p>
-<ol class="step2">
-<li><p><font class="ptxt">TaSCANをDLC3に接続する。</font><br></p></li>
-<li><p><font class="ptxt">IG ONにする。</font><br></p></li>
-<li><p><font class="ptxt">[診断]&rarr;[フリーズデータ]画面を表示し、データの項目を選択する。</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
-<li><p><font class="ptxt">項目選択後、各ポイントのデータを確認する。</font><br><div class="full"><br clear="all"><img src="../../img/d102221.png" name="D102221" alt="D102221" border="1" class="full"></div><br clear="all"></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00007C30000017step"></a>
+<li>Diag communication computer sensor</li></ol>
+<ol class="ptxt"></ol><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><colgroup align="" width="14%
+
+			"><col align="center"/></colgroup><colgroup align="" width="14%
+
+			"><col align=""/></colgroup><colgroup align="" width="14%
+
+			"><col align=""/></colgroup><colgroup align="" width="14%
+
+			"><col align=""/></colgroup><colgroup align="" width="14%
+
+			"><col align=""/></colgroup><colgroup align="" width="14%
+
+			"><col align=""/></colgroup><colgroup align="" width="14%
+
+			"><col align=""/></colgroup><tbody><tr><th>Computer sensor name<br/></th><th align="center">Diag code reading<br/>(Normal mode)<br/></th><th align="center">Diag code reading<br/>(Check mode, test mode)<br/></th><th align="center">Freeze frame data reading<br/>(Computer data in the event of a failure)<br/></th><th align="center">Data monitor reading and saving/display<br/></th><th align="center">Active test<br/></th><th align="center">Communication line with Tascan<br/></th></tr><tr><td>Engine ECU<br/></td><td align="center">○<br/></td><td align="center">○<br/></td><td align="center">○<br/>(*)<br/></td><td align="center">○<br/></td><td align="center">○<br/></td><td align="center">SIL<br/></td></tr><tr><td>Skid control ECU<br/></td><td align="center">○<br/></td><td align="center">○<br/></td><td align="center">○<br/>(Note)<br/></td><td align="center">○<br/></td><td align="center">○<br/></td><td align="center">SIL<br/></td></tr><tr><td>Airbag ECU<br/></td><td align="center">○<br/></td><td align="center">○<br/></td><td align="center">-<br/></td><td align="center">-<br/></td><td align="center">-<br/></td><td align="center">SIL<br/></td></tr></tbody></table><p></p><dl class="spec"><dt class="spec">(*)</dt><dd class="spec">Time series freeze data can also be read<br/></dd></dl><p></p><p></p><dl class="spec"><dt class="spec">(Note)</dt><dd class="spec">Freeze data when system operation can also be read<br/></dd></dl><p></p><br clear="all"/><br clear="all"/><a name="CD0403____00007C30000015step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>ダイアグノーシスコネクターについて</li></ol>
+<li>How to use the diagnostic tool TASCAN</li></ol>
 <ol class="ptxt"></ol>
-<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/h100769j21.png" name="H100769J21" alt="H100769J21" border="1" class="half"><br></td></tr></table>
-<li><p><font class="ptxt">新ダイアグシステム採用に伴い、DLC3(運転席インパネ下部に設置)に機能を集約した。</font><br></p></li>
-<li><p><font class="ptxt">DLC3の端子名称と機能</font><br><table border="1" cellspacing="0" cellpadding="2" width="41.8%
-						"><colgroup align="center" width="40%
-			"><col align=""></colgroup><colgroup align="center" width="60%
-			"><col align=""></colgroup><tr><th>端子名称<br></th><th>機能<br></th></tr><tr><td>BAT<br></td><td>バッテリ電源<br></td></tr><tr><td>CANL<br></td><td>各コンピューターとのダイアグCAN通信<br></td></tr><tr><td>TC<br></td><td>ダイアグコード(ランプ)出力指示<br></td></tr><tr><td>TS<br></td><td>テストモード出力指示<br></td></tr><tr><td>TAC<br></td><td>エンジン回転数出力<br></td></tr><tr><td>LVL<br></td><td>ヘッドライトレベリング整備対応<br></td></tr><tr><td>SIL<br></td><td>各コンピューターとのダイアグ通信<br></td></tr><tr><td>CANH<br></td><td>各コンピューターとのダイアグCAN通信<br></td></tr><tr><td>WFSE<br></td><td>ECUプログラム書き換え<br></td></tr><tr><td>CG<br></td><td>ボデーアース<br></td></tr></table></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00007C30000018step"></a>
+<ol class="step2">
+<li><p><font class="ptxt">Connection with vehicles</font><br/></p></li><br/>
+<ol class="s3">
+<li><p><font class="ptxt">Connect Tascan to the DLC3 (data link connector No.3) installed near the driver's seat foot.</font><br/></p></li></ol>
+<li><p><font class="ptxt">How to use the diagnostic tool TASCAN</font><br/></p></li><br/>
+<ol class="s3">
+<li><p><font class="ptxt">When the power switch of the diagnostic tool TASCAN is turned on, the menu screen is displayed.</font><br/></p></li>
+<li><p><font class="ptxt">Select the items you want to implement arbitrarily, and then proceed to work according to the instructions on the screen.</font><br/></p></li></ol></ol><br clear="all"/><br clear="all"/><br clear="all"/><a name="CD0403____00007C30000016step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>エラー発生時の処置について</li></ol>
-<ol class="ptxt"></ol><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">TaSCANの電源インジケーターが点灯しない場合、またはメニュー表示時にダイアグ通信対応およびダイアグCAN通信対応のすべてのシステム名を表示しない場合は、以下の点検を行い、故障箇所を修正する必要がある。</dd></dl></p>
-<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/h100769j72.png" name="H100769J72" alt="H100769J72" border="1" class="half"><br></td></tr></table>
-<li><p><font class="ptxt">TaSCANの電源インジケーター不灯</font><br></p></li><br>
+<li>Time series freeze data (when using TASCAN)</li></ol>
+<ol class="ptxt"></ol><table class="float"><tbody><tr><td><img alt="A103809J01" border="1" class="half" name="A103809J01" src="../../img/a103809j01.png"/><br/></td></tr></tbody></table><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">In the time -series freeze data, the diagcode detection point and the data before and after.The freezed data can accurately check the driving status of the vehicle (acceleration, deceleration, steady driving, shifting state) and the operating status of the driver, and is useful for troubleshooting.It can also be used as data at the time of reproduction test implementation.<br/></li><li class="atten4">By confirming the change in the input signal, abnormalities such as instant interruption can be detected.<br/></li><li class="atten4">The DTC detection point fluctuates according to conditions between points 3 and 4 in the figure.<br/></li></ol><p></p>
+<ol class="step2">
+<li><p><font class="ptxt">Connect Tascan to DLC3.</font><br/></p></li>
+<li><p><font class="ptxt">Ig ON.</font><br/></p></li>
+<li><p><font class="ptxt">Display the [Diagnosis] → [Freeze Data] screen and select the data item.</font><br/></p></li><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/>
+<li><p><font class="ptxt">After selecting the item, check the data of each point.</font><br/></p><div class="full"><br clear="all"/><img alt="D102221" border="1" class="full" name="D102221" src="../../img/d102221.png"/></div><br clear="all"/><p></p></li></ol><br clear="all"/><br clear="all"/><a name="CD0403____00007C30000017step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>About the diagnostic conector</li></ol>
+<ol class="ptxt"></ol>
+<ol class="step2"><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="H100769J21" border="1" class="half" name="H100769J21" src="../../img/h100769j21.png"/><br/></td></tr></tbody></table>
+<li><p><font class="ptxt">With the adoption of the new diamond system, functions were integrated in DLC3 (installed at the bottom of the driver's instrument panel).</font><br/></p></li>
+<li><p><font class="ptxt">DLC3 terminal name and function</font><br/><table border="1" cellpadding="2" cellspacing="0" width="41.8%
+
+						"><colgroup align="center" width="40%
+
+			"><col align=""/></colgroup><colgroup align="center" width="60%
+
+			"><col align=""/></colgroup><tbody><tr><th>Terminal name<br/></th><th>function<br/></th></tr><tr><td>BAT<br/></td><td>Battery power supply<br/></td></tr><tr><td>Canl<br/></td><td>Diag CAN communication with each computer<br/></td></tr><tr><td>TC<br/></td><td>Diag code (lamp) output instruction<br/></td></tr><tr><td>TS<br/></td><td>Test mode output instruction<br/></td></tr><tr><td>TAC<br/></td><td>Engine speed output<br/></td></tr><tr><td>LVL<br/></td><td>Headlight leveling maintenance support<br/></td></tr><tr><td>SIL<br/></td><td>Diag communication with each computer<br/></td></tr><tr><td>Canh<br/></td><td>Diag CAN communication with each computer<br/></td></tr><tr><td>WFSE<br/></td><td>ECU program rewriting<br/></td></tr><tr><td>CG<br/></td><td>Bodies ground<br/></td></tr></tbody></table></p></li></ol><br clear="all"/><br clear="all"/><a name="CD0403____00007C30000018step"></a>
+<ol class="step1" style="list-style-type:disc">
+<li>About treatment in the event of an error</li></ol>
+<ol class="ptxt"></ol><p></p><dl class="caution"><dt class="caution">■ Attention ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">If the power indicator of the tascan does not light up, or if all the system names for diagram communication and diag CAN communication are not displayed when the menu is displayed, the following inspection must be performed and the failed part must be corrected.</dd></dl><p></p>
+<ol class="step2"><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="H100769J72" border="1" class="half" name="H100769J72" src="../../img/h100769j72.png"/><br/></td></tr></tbody></table>
+<li><p><font class="ptxt">TASCAN's power indicator non -lit</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">他の車両にTaSCANを接続し、TaSCANを起動する。</font><br><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><colgroup align="" width="35%
-			"><col align=""></colgroup><colgroup align="" width="25%
-			"><col align=""></colgroup><colgroup align="" width="40%
-			"><col align=""></colgroup><tr><th align="center">作動状態<br></th><th align="center">不具合箇所<br></th><th align="center">点検箇所<br></th></tr><tr><td align="center">TaSCANの電源インジケーターが赤または緑に点灯する場合<br></td><td align="center">車両側<br></td><td><ol style="list-style-type: decimal"><li>DLC3 BAT端子の電圧点検<br></li><li>DLC3 CG端子&larr;&rarr;ボデーアース間の抵抗点検<br></li></ol></td></tr><tr><td align="center">TaSCANの電源インジケーターが点灯しない場合<br></td><td align="center">TaSCAN本体<br></td><td align="center">-<br></td></tr></table></p></li></ol><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/d032336.png" name="D032336" alt="D032336" border="1" class="half"><br></td></tr></table>
-<li><p><font class="ptxt">診断メニューでシステム診断を押した時にダイアグ通信、ダイアグCAN通信対応の全てのシステム名を表示しない。</font><br></p></li><br>
+<li><p><font class="ptxt">Connect Tascan to other vehicles and start Tascan.</font><br/><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><colgroup align="" width="35%
+
+			"><col align=""/></colgroup><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><colgroup align="" width="40%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">Operating state<br/></th><th align="center">Bug<br/></th><th align="center">Checkpoint<br/></th></tr><tr><td align="center">When Tascan's power indicator lights red or green<br/></td><td align="center">Vehicle side<br/></td><td><ol style="list-style-type: decimal"><li>DLC3 BAT terminal voltage inspection<br/></li><li>DLC3 CG terminal ← → resistance inspection between body earth<br/></li></ol></td></tr><tr><td align="center">When the TASCAN power indicator does not turn on<br/></td><td align="center">TASCAN body<br/></td><td align="center">-<br/></td></tr></tbody></table></p></li></ol><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="D032336" border="1" class="half" name="D032336" src="../../img/d032336.png"/><br/></td></tr></tbody></table>
+<li><p><font class="ptxt">When a system diagnosis is pressed in the diagnostic menu, all system names are not displayed, which is compatible with diagram communication and diagram CAN communication.</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">IG スイッチおよびTaSCANの電源スイッチを一度OFFし、再度TaSCANを起動し[戻る]キーを押して診断メニュー表示させた時の状態を確認。</font><br><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><colgroup align="" width="39%
-			"><col align=""></colgroup><colgroup align="" width="21%
-			"><col align=""></colgroup><colgroup align="" width="40%
-			"><col align=""></colgroup><tr><th align="center">作動状態<br></th><th align="center">不具合箇所<br></th><th align="center">点検箇所<br></th></tr><tr><td align="center">全てのシステム名を表示しない<br></td><td align="center">TaSCAN本体<br></td><td align="center">-<br></td></tr><tr><td align="center">ダイアグ通信対応のシステム名を表示しない<br></td><td align="center">車両側<br></td><td><ol style="list-style-type: decimal"><li>DLC3の通信ラインSIL端子とジャンクション間の抵抗点検<br></li><li>DLC3の通信ラインSIL端子とジャンクション間の+B、アースとの短絡<br></li></ol></td></tr><tr><td align="center">ダイアグCAN通信対応のシステム名を表示しない<br></td><td align="center">車両側<br></td><td>制御系CAN通信トラブルシューティングの進め方手順5[DLC3点検(CANH-CANL)]以降の手順でCAN通信の修正を実施<br></td></tr><tr><td align="center">ダイアグ通信対応の一つのシステム名を表示しない<br></td><td align="center">車両側<br></td><td><ol style="list-style-type: decimal"><li>非表示ECUのDLC3の通信ラインSIL端子とジャンクション間の抵抗点検<br></li><li>非表示ECUのDLC3の通信ラインSIL端子とジャンクション間の+B、アースとの短絡<br></li><li>非表示ECU+B、アース点検<br></li><li>非表示ECU交換<br></li></ol></td></tr><tr><td align="center">ダイアグCAN通信対応の一つのシステム名を表示しない<br></td><td align="center">車両側<br></td><td>制御系CAN通信トラブルシューティングの進め方手順3[ダイアグコード確認]以降の手順でCAN通信の修正を実施<br></td></tr></table></p></li></ol></ol><br clear="all"></body></html>
+<li><p><font class="ptxt">Once the IG switch and Tascan power switch are turned off, start Tascan again, press the [Return] key and check the condition when the diagnostic menu is displayed.</font><br/><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><colgroup align="" width="39%
+
+			"><col align=""/></colgroup><colgroup align="" width="21%
+
+			"><col align=""/></colgroup><colgroup align="" width="40%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">Operating state<br/></th><th align="center">Bug<br/></th><th align="center">Checkpoint<br/></th></tr><tr><td align="center">Do not display all system names<br/></td><td align="center">TASCAN body<br/></td><td align="center">-<br/></td></tr><tr><td align="center">Do not display system names for diages<br/></td><td align="center">Vehicle side<br/></td><td><ol style="list-style-type: decimal"><li>Resistance inspection between DLC3 communication line SIL terminals and junctions<br/></li><li>+B between DLC3 communication line SIL terminal and junction, short circuit with earth<br/></li></ol></td></tr><tr><td align="center">Do not display system names for diagen CAN communication<br/></td><td align="center">Vehicle side<br/></td><td>Control system CAN communication troubleshooting procedure 5 [DLC3 Inspection (CANH-CANL)] Conducted CAN communication by steps afterwards<br/></td></tr><tr><td align="center">Do not display one system name for diagram communication<br/></td><td align="center">Vehicle side<br/></td><td><ol style="list-style-type: decimal"><li>Hidden ECU's DLC3 communication line SIL terminal and junction inspection inspection<br/></li><li>Hidden ECU's DLC3 communication line SIL terminal and junction+B, short circuit with earth<br/></li><li>Hidden ECU+B, Earth inspection<br/></li><li>Hidden ECU replacement<br/></li></ol></td></tr><tr><td align="center">Do not display one system name for Diag CAN communication<br/></td><td align="center">Vehicle side<br/></td><td>Control system CAN communication troubleshooting procedure 3 Conducted CAN communication in the procedure after [Diagcode Confirm]<br/></td></tr></tbody></table></p></li></ol></ol><br clear="all"/></body></html>

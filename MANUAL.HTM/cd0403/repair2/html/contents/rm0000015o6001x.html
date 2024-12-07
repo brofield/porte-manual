@@ -1,29 +1,32 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="RM0000015O6001X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>EBD付きABS&amp;BAシステム（4WD）&nbsp;&nbsp;フリーズフレームデータ</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000015O6001X_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="CD0403____00005X80000011step"></a>
+		<body onload="seePageAnchor()"><a name="RM0000015O6001X"></a><table cellspacing="0" width="100%"><tbody><tr><td width="93%"><h1>ABS &amp; BA system with EBD (4WD) Freeze frame data</h1></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr></tbody></table><br class="beforePng" clear="all"/><a name="RM0000015O6001X_z0"></a><br clear="all"/><a name="1"></a><br clear="all"/><a name="CD0403____00005X80000011step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>フリーズフレームデータ出力について</li></ol>
+<li>Freeze frame data output</li></ol>
 <ol class="ptxt"></ol>
 <ol class="step2">
-<li><p><font class="ptxt">SST(TaSCAN)を使用して、システム作動時または異常ダイアグノーシスコード発生時の車両(センサ)状況を記憶し、表示させることができる。</font><br></p></li>
-<li><p><font class="ptxt">システム作動時のフリーズフレームデータ</font><br></p></li><br>
+<li><p><font class="ptxt">You can use SST (Tascan) to memorize and display the vehicle (sensor) status when the system is operated or when an abnormal diagnostic code occurs.</font><br/></p></li>
+<li><p><font class="ptxt">Freeze frame data when system operation</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">システム作動時にデータを記憶し、システム作動ごとに新しいデータが更新される。</font><br></p></li>
-<li><p><font class="ptxt">最後にシステムが作動した時からのIG OFF&rarr;ONした回数を31回まで記憶し、表示する。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">車両停車状態または車速が7 km/h未満での走行時において、IG OFF&rarr;ON回数はカウントアップされない。<br></li><li class="atten4">IGスイッチONの回数が31回をこえた場合は&lsquo;31&rsquo;を表示する。 <br></li></ol></p></p></li>
-<li><p><font class="ptxt">異常ダイアグノーシスコード発生時のフリーズフレームデータを記憶すると、システム作動時のフリーズフレームデータは消去される。</font><br></p></li></ol>
-<li><p><font class="ptxt">異常ダイアグノーシスコード発生時のフリーズフレームデータ</font><br></p></li><br>
+<li><p><font class="ptxt">The data is memorized when the system is operated, and new data is updated for each system operation.</font><br/></p></li>
+<li><p><font class="ptxt">Finally, IG OFF to 31 times from when the system is activated is memorized and displayed.</font><br/></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">When the vehicle is stopped or the vehicle speed is less than 7 km/h, the number of Ig off → ON is not counted up.<br/></li><li class="atten4">If the number of IG switch ON exceeds 31 times, display '31'.<br/></li></ol><p></p><p></p></li>
+<li><p><font class="ptxt">When the freeze -frame data when the abnormal diagnostic code occurs, the freeze -frame data at the time of system operation is deleted.</font><br/></p></li></ol>
+<li><p><font class="ptxt">Freeze frame data when abnormal diagnostic cord occurs</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">異常ダイアグノーシスコードが出力した場合、異常コード発生時のフリーズフレームデータを記憶する。</font><br></p></li>
-<li><p><font class="ptxt">異常ダイアグノーシスコード発生時のフリーズフレームデータを記憶すると、記憶データが消去(ダイアグノーシスコード消去)されるまで、データは更新されない。</font><br></p></li>
-<li><p><font class="ptxt">異常ダイアグノーシスコード発生時のフリーズフレームデータでは、フリーズフレームデータ記憶後のIGスイッチON数は記憶されない。</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%
-						"><caption class="tbl-title"><span>フリーズフレームデータ一覧表&nbsp;
-				</span></caption><colgroup align="" width="25%
-			"><col align=""></colgroup><colgroup align="" width="25%
-			"><col align=""></colgroup><colgroup align="" width="25%
-			"><col align=""></colgroup><colgroup align="" width="25%
-			"><col align=""></colgroup><tr><th align="center">項目名<br></th><th align="center">出力項目<br></th><th align="center">状況<br></th><th align="center">参考値<br></th></tr><tr><td align="center">作動システム<br></td><td align="center">作動システム<br></td><td align="center">-<br></td><td align="center">ABS/無し<br></td></tr><tr><td align="center">ストップスイッチ<br></td><td align="center">ストップスイッチ<br></td><td align="center">ペダルを操作<br></td><td align="center">ON&larr;&rarr;OFF<br></td></tr><tr><td align="center">車両スピード<br></td><td align="center">車体速度(km/h)<br></td><td align="center">-<br></td><td align="center">メータの速度表示<br></td></tr><tr><td align="center">前後G<br></td><td align="center">前後G(G)<br></td><td align="center">-<br></td><td align="center">-2.56-2.54<br></td></tr><tr><td align="center">フリーズ後からのIG ON数<br></td><td align="center">IGスイッチON回数<br></td><td align="center">-<br></td><td align="center">1-31<br></td></tr></table></p></li></ol></ol><br clear="all"></body></html>
+<li><p><font class="ptxt">When an abnormal diagnostic cord is output, the freeze -frame data is memorized when an abnormal code occurs.</font><br/></p></li>
+<li><p><font class="ptxt">If you remember the freeze frame data in the event of an abnormal diagnostic cord, the data will not be updated until the memory data is erased (deleted of the diagnostic code).</font><br/></p></li>
+<li><p><font class="ptxt">In the freeze -frame data at the time of abnormal diagnostic cord, the number of IG switch ON after the freeze frame data memory is not remembered.</font><br/><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="89.5%
+
+						"><caption class="tbl-title"><span>Freeze frame data list</span></caption><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">Item name<br/></th><th align="center">Output item<br/></th><th align="center">situation<br/></th><th align="center">Reference value<br/></th></tr><tr><td align="center">Operating system<br/></td><td align="center">Operating system<br/></td><td align="center">-<br/></td><td align="center">ABS/None<br/></td></tr><tr><td align="center">Stop switch<br/></td><td align="center">Stop switch<br/></td><td align="center">Operate the pedal<br/></td><td align="center">ON ← → OFF<br/></td></tr><tr><td align="center">Vehicle speed<br/></td><td align="center">Body speed (km/h)<br/></td><td align="center">-<br/></td><td align="center">Meter speed display<br/></td></tr><tr><td align="center">Front and rear G<br/></td><td align="center">Before and after G (G)<br/></td><td align="center">-<br/></td><td align="center">-2.56-2.54<br/></td></tr><tr><td align="center">Ig ON number after freeze<br/></td><td align="center">IG switch ON number<br/></td><td align="center">-<br/></td><td align="center">1-31<br/></td></tr></tbody></table></p></li></ol></ol><br clear="all"/></body></html>

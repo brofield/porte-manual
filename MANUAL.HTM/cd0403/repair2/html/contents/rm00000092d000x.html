@@ -1,67 +1,95 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="RM00000092D000X"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>DTC
-								 &nbsp;&nbsp; P0753/62 &nbsp;&nbsp; S1ソレノイド系統</h3></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr><tr><td width="93%"><h3>DTC
-								 &nbsp;&nbsp; P0758/63 &nbsp;&nbsp; S2ソレノイド系統</h3></td></tr></table><h2>準備品一覧<a href="#" onclick="openSeePage('ppr','RM00000092D000X');return false;"><img border="0" src="../../../../image/extxref.png"></a></h2><br clear="all"><a name="RM00000092D000X_01"></a><h2>機能説明</h2><br clear="all"><a name="1"></a><font class="ptxt">エンジンコントロールコンピユータからの信号により、S1およびS2のON-OFFの組み合せで1速から4速までの変速を行う。フェイルセーフ機能として、ソレノイドがオープンまたはショートした場合、エンジンコントロールコンピユータは故障したソレノイドへの通電を停止し、他のソレノイドをON-OFFさせる。</font><br><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><caption class="tbl-title"><span>フェイルセーフ時のソレノイドの状態&nbsp;
-				</span></caption><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="50%
-			"><col align=""></colgroup><tr><td>記号<br></td><td>作動状態<br></td></tr><tr><td>○<br></td><td>通電状態<br></td></tr><tr><td>&times;<br></td><td>非通電状態<br></td></tr><tr><td>-<br></td><td>故障状態<br></td></tr><tr><td>&rarr;<br></td><td>フェイルセーフでの変更状態<br></td></tr></table><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><caption class="tbl-title"><span>正常時&nbsp;
-				</span></caption><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><td>シフト位置<br></td><td>S1<br></td><td>S2<br></td><td>ギヤ位置<br></td></tr><tr><td>Dレンジ<br></td><td>○<br></td><td>○<br></td><td>1速<br></td></tr><tr><td>&uarr;<br></td><td>○<br></td><td>&times;<br></td><td>2速<br></td></tr><tr><td>&uarr;<br></td><td>&times;<br></td><td>&times;<br></td><td>3速<br></td></tr><tr><td>&uarr;<br></td><td>&times;<br></td><td>○<br></td><td>4速<br></td></tr><tr><td>2レンジ<br></td><td>○<br></td><td>○<br></td><td>1速<br></td></tr><tr><td>&uarr;<br></td><td>○<br></td><td>&times;<br></td><td>2速<br></td></tr><tr><td>Lレンジ<br></td><td>○<br></td><td>○<br></td><td>1速<br></td></tr></table><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><caption class="tbl-title"><span>ソレノイドS1異常時&nbsp;
-				</span></caption><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><td>シフト位置<br></td><td>S1<br></td><td>S2<br></td><td>ギヤ位置<br></td></tr><tr><td>Dレンジ<br></td><td>-<br></td><td>○&rarr;&times;<br></td><td>3速<br></td></tr><tr><td>&uarr;<br></td><td>-<br></td><td>&times;<br></td><td>3速<br></td></tr><tr><td>&uarr;<br></td><td>-<br></td><td>&times;<br></td><td>3速<br></td></tr><tr><td>&uarr;<br></td><td>-<br></td><td>○<br></td><td>4速<br></td></tr><tr><td>2レンジ<br></td><td>-<br></td><td>○&rarr;&times;<br></td><td>3速<br></td></tr><tr><td>&uarr;<br></td><td>-<br></td><td>&times;<br></td><td>3速<br></td></tr><tr><td>Lレンジ<br></td><td>-<br></td><td>○&rarr;&times;<br></td><td>3速<br></td></tr></table><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><caption class="tbl-title"><span>ソレノイドS2異常時&nbsp;
-				</span></caption><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><td>シフト位置<br></td><td>S1<br></td><td>S2<br></td><td>ギヤ位置<br></td></tr><tr><td>Dレンジ<br></td><td>○<br></td><td>-<br></td><td>2速<br></td></tr><tr><td>&uarr;<br></td><td>○<br></td><td>-<br></td><td>2速<br></td></tr><tr><td>&uarr;<br></td><td>&times;<br></td><td>-<br></td><td>3速<br></td></tr><tr><td>&uarr;<br></td><td>&times;<br></td><td>-<br></td><td>3速<br></td></tr><tr><td>2レンジ<br></td><td>○<br></td><td>-<br></td><td>2速<br></td></tr><tr><td>&uarr;<br></td><td>○<br></td><td>-<br></td><td>2速<br></td></tr><tr><td>Lレンジ<br></td><td>○<br></td><td>-<br></td><td>2速<br></td></tr></table><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><caption class="tbl-title"><span>ソレノイドS1&middot;S2異常時&nbsp;
-				</span></caption><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><td>シフト位置<br></td><td>S1<br></td><td>S2<br></td><td>ギヤ位置<br></td></tr><tr><td>Dレンジ<br></td><td>-<br></td><td>-<br></td><td>3速<br></td></tr><tr><td>&uarr;<br></td><td>-<br></td><td>-<br></td><td>3速<br></td></tr><tr><td>&uarr;<br></td><td>-<br></td><td>-<br></td><td>3速<br></td></tr><tr><td>&uarr;<br></td><td>-<br></td><td>-<br></td><td>3速<br></td></tr><tr><td>2レンジ<br></td><td>-<br></td><td>-<br></td><td>3速<br></td></tr><tr><td>&uarr;<br></td><td>-<br></td><td>-<br></td><td>3速<br></td></tr><tr><td>Lレンジ<br></td><td>-<br></td><td>-<br></td><td>3速<br></td></tr></table><br clear="all"><br clear="all"><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">P0753(62)はソレノイドS1系統およびP0758(63)はソレノイドS2系統を表す。</dd></dl><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><colgroup align="" width="21%
-			"><col align="center"></colgroup><colgroup align="" width="41%
-			"><col align=""></colgroup><colgroup align="" width="38%
-			"><col align=""></colgroup><tr><td class="atten4">DTC　No.<br></td><td class="atten4" align="center">DTC検出条件<br><ol style="list-style-type: decimal"><li class="atten4">診断条件<br></li><li class="atten4">異常状態<br></li><li class="atten4">異常期間<br></li></ol></td><td class="atten4" align="center">点検部位<br></td></tr><tr><td class="atten4">P0753/62<br></td><td class="atten4"><ol style="list-style-type: decimal"><li class="atten4">変速を伴う走行中<br></li><li class="atten4">ソレノイドS1回路のショートまたはオープン<br></li><li class="atten4">2を1トリップで2回以上検出した時<br></li></ol></td><td class="atten4"><ol style="list-style-type: disc"><li class="atten4">ワイヤハーネスおよびコネクタ (ソレノイドS1信号系統)<br></li><li class="atten4">ソレノイドS1<br></li><li class="atten4">エンジンコントロールコンピユータ<br></li></ol></td></tr><tr><td class="atten4">P0758/63<br></td><td class="atten4"><ol style="list-style-type: decimal"><li class="atten4">変速を伴う走行中<br></li><li class="atten4">ソレノイドS2回路のショートまたはオープン<br></li><li class="atten4">2を1トリップで2回以上検出した時<br></li></ol></td><td class="atten4"><ol style="list-style-type: disc"><li class="atten4">ワイヤハーネスおよびコネクタ (ソレノイドS2信号系統)<br></li><li class="atten4">ソレノイドS2<br></li><li class="atten4">エンジンコントロールコンピユータ<br></li></ol></td></tr></table></p><br clear="all"><br clear="all"><a name="RM00000092D000X_02"></a><h2>回路図</h2><br clear="all"><a name="1"></a><div class="full"><br clear="all"><img src="../../img/c080664.png" name="C080664" alt="C080664" border="1" class="full"></div><br clear="all"><br clear="all"><br clear="all"><a name="RM00000092D000X_03"></a><h2>点検手順</h2><a name="RM00000092D000X_04_0001"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順1</td><td width="90%" class="s1">トランスミッション ワイヤ単体点検（S1/S2）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00150&nbsp;&nbsp;<br></dd></dl>
+		<body onload="seePageAnchor()"><a name="RM00000092D000X"></a><table cellpadding="0" width="100%"><tbody><tr><td width="93%"><h3>DTC P0753/62 S1 Solenoid system</h3></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr><tr><td width="93%"><h3>DTC P0758/63 S2 Solenoid system</h3></td></tr></tbody></table><h2>List of preparation<a href="#" onclick="openSeePage('ppr','RM00000092D000X');return false;"><img border="0" src="../../../../image/extxref.png"/></a></h2><br clear="all"/><a name="RM00000092D000X_01"></a><h2>Function explanation</h2><br clear="all"/><a name="1"></a><font class="ptxt">By combining S1 and S2 ON-OFF by the signal from the engine control computa, the gears from 1st to 4th gears are performed.If the solenoid is opened or short as a fail-safe function, the engine control compilation stops power to a failed solenoid and turns ON-OFF of other solenoids.</font><br/><br clear="all"/><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><caption class="tbl-title"><span>State of solenoid during failed</span></caption><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><tbody><tr><td>symbol<br/></td><td>Operating state<br/></td></tr><tr><td>○<br/></td><td>Power of power<br/></td></tr><tr><td>×<br/></td><td>Non -powered state<br/></td></tr><tr><td>-<br/></td><td>Failure<br/></td></tr><tr><td>→<br/></td><td>Change in Fail Safe<br/></td></tr></tbody></table><br clear="all"/><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><caption class="tbl-title"><span>Normal time</span></caption><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><td>Shift position<br/></td><td>S1<br/></td><td>S2<br/></td><td>Gear position<br/></td></tr><tr><td>D -range<br/></td><td>○<br/></td><td>○<br/></td><td>First -speed<br/></td></tr><tr><td>↑<br/></td><td>○<br/></td><td>×<br/></td><td>2nd gear<br/></td></tr><tr><td>↑<br/></td><td>×<br/></td><td>×<br/></td><td>3rd gear<br/></td></tr><tr><td>↑<br/></td><td>×<br/></td><td>○<br/></td><td>4th gear<br/></td></tr><tr><td>2 range<br/></td><td>○<br/></td><td>○<br/></td><td>First -speed<br/></td></tr><tr><td>↑<br/></td><td>○<br/></td><td>×<br/></td><td>2nd gear<br/></td></tr><tr><td>L range<br/></td><td>○<br/></td><td>○<br/></td><td>First -speed<br/></td></tr></tbody></table><br clear="all"/><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><caption class="tbl-title"><span>Solenoid S1 abnormality</span></caption><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><td>Shift position<br/></td><td>S1<br/></td><td>S2<br/></td><td>Gear position<br/></td></tr><tr><td>D -range<br/></td><td>-<br/></td><td>○ → ×<br/></td><td>3rd gear<br/></td></tr><tr><td>↑<br/></td><td>-<br/></td><td>×<br/></td><td>3rd gear<br/></td></tr><tr><td>↑<br/></td><td>-<br/></td><td>×<br/></td><td>3rd gear<br/></td></tr><tr><td>↑<br/></td><td>-<br/></td><td>○<br/></td><td>4th gear<br/></td></tr><tr><td>2 range<br/></td><td>-<br/></td><td>○ → ×<br/></td><td>3rd gear<br/></td></tr><tr><td>↑<br/></td><td>-<br/></td><td>×<br/></td><td>3rd gear<br/></td></tr><tr><td>L range<br/></td><td>-<br/></td><td>○ → ×<br/></td><td>3rd gear<br/></td></tr></tbody></table><br clear="all"/><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><caption class="tbl-title"><span>Solenoid S2 abnormality</span></caption><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><td>Shift position<br/></td><td>S1<br/></td><td>S2<br/></td><td>Gear position<br/></td></tr><tr><td>D -range<br/></td><td>○<br/></td><td>-<br/></td><td>2nd gear<br/></td></tr><tr><td>↑<br/></td><td>○<br/></td><td>-<br/></td><td>2nd gear<br/></td></tr><tr><td>↑<br/></td><td>×<br/></td><td>-<br/></td><td>3rd gear<br/></td></tr><tr><td>↑<br/></td><td>×<br/></td><td>-<br/></td><td>3rd gear<br/></td></tr><tr><td>2 range<br/></td><td>○<br/></td><td>-<br/></td><td>2nd gear<br/></td></tr><tr><td>↑<br/></td><td>○<br/></td><td>-<br/></td><td>2nd gear<br/></td></tr><tr><td>L range<br/></td><td>○<br/></td><td>-<br/></td><td>2nd gear<br/></td></tr></tbody></table><br clear="all"/><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><caption class="tbl-title"><span>Solenoid S1 · S2 abnormality</span></caption><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><td>Shift position<br/></td><td>S1<br/></td><td>S2<br/></td><td>Gear position<br/></td></tr><tr><td>D -range<br/></td><td>-<br/></td><td>-<br/></td><td>3rd gear<br/></td></tr><tr><td>↑<br/></td><td>-<br/></td><td>-<br/></td><td>3rd gear<br/></td></tr><tr><td>↑<br/></td><td>-<br/></td><td>-<br/></td><td>3rd gear<br/></td></tr><tr><td>↑<br/></td><td>-<br/></td><td>-<br/></td><td>3rd gear<br/></td></tr><tr><td>2 range<br/></td><td>-<br/></td><td>-<br/></td><td>3rd gear<br/></td></tr><tr><td>↑<br/></td><td>-<br/></td><td>-<br/></td><td>3rd gear<br/></td></tr><tr><td>L range<br/></td><td>-<br/></td><td>-<br/></td><td>3rd gear<br/></td></tr></tbody></table><br clear="all"/><br clear="all"/><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">P0753 (62) represents the solenoid S1 system and P0758 (63).</dd></dl><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><colgroup align="" width="21%
+
+			"><col align="center"/></colgroup><colgroup align="" width="41%
+
+			"><col align=""/></colgroup><colgroup align="" width="38%
+
+			"><col align=""/></colgroup><tbody><tr><td class="atten4">DTC No.<br/></td><td align="center" class="atten4">DTC detection conditions<br/><ol style="list-style-type: decimal"><li class="atten4">Diagnostic condition<br/></li><li class="atten4">Abnormal state<br/></li><li class="atten4">Abnormal period<br/></li></ol></td><td align="center" class="atten4">Inspection site<br/></td></tr><tr><td class="atten4">P0753/62<br/></td><td class="atten4"><ol style="list-style-type: decimal"><li class="atten4">Driving with shifting<br/></li><li class="atten4">Solenoid S1 circuit short or open<br/></li><li class="atten4">When 2 is detected twice or more in one trip<br/></li></ol></td><td class="atten4"><ol style="list-style-type: disc"><li class="atten4">Wire harness and connector (Solenoid S1 signal system)<br/></li><li class="atten4">Solenoid S1<br/></li><li class="atten4">Engine control compilation<br/></li></ol></td></tr><tr><td class="atten4">P0758/63<br/></td><td class="atten4"><ol style="list-style-type: decimal"><li class="atten4">Driving with shifting<br/></li><li class="atten4">Solenoid S2 times short or open<br/></li><li class="atten4">When 2 is detected twice or more in one trip<br/></li></ol></td><td class="atten4"><ol style="list-style-type: disc"><li class="atten4">Wire harness and connector (Solenoid S2 signal system)<br/></li><li class="atten4">Solenoid S2<br/></li><li class="atten4">Engine control compilation<br/></li></ol></td></tr></tbody></table><p></p><br clear="all"/><br clear="all"/><a name="RM00000092D000X_02"></a><h2>Circuit diagram</h2><br clear="all"/><a name="1"></a><div class="full"><br clear="all"/><img alt="C080664" border="1" class="full" name="C080664" src="../../img/c080664.png"/></div><br clear="all"/><br clear="all"/><br clear="all"/><a name="RM00000092D000X_03"></a><h2>Inspection procedure</h2><a name="RM00000092D000X_04_0001"></a><table border="1" height="35" width="100%"><tbody><tr><td class="s1" width="10%">Step 1</td><td class="s1" width="90%">Transmission wire single inspection (S1/S2)</td></tr></tbody></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030<br/>09083-00150<br/></dd></dl>
 <ol class="s2">
-<li value="1"><p><font class="ptxt">トランスミツシヨンワイヤのコネクタを切り離す。</font><br></p></li></ol>
-<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c100300j01.png" name="C100300J01" alt="C100300J01" border="1" class="half"><br></td></tr></table>
-<li value="2"><p><font class="ptxt">トヨタエレクトリカルテスターを使用して、各端子間の抵抗を測定する。</font><br><p><dl class="spec"><dt class="spec">基準値</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="50%
-			"><col align=""></colgroup><tr><td>端子番号(端子記号)<br></td><td>抵抗値[Ω]<br></td></tr><tr><td>5(S1)&larr;&rarr;ボデーアース<br></td><td>11-15(20&deg;C)<br></td></tr><tr><td>10(S2)&larr;&rarr;ボデーアース<br></td><td>11-15(20&deg;C)<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM00000092D000X_04_0003">手順 3 へ
-												</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM00000092D000X_04_0002"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順2</td><td width="90%" class="s1">ワイヤハーネスおよびコネクター点検（トランスミッションワイヤ-エンジンコントロールコンピュータ）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00150&nbsp;&nbsp;<br></dd></dl>
+<li value="1"><p><font class="ptxt">Cut the transmit sho -young wire connector.</font><br/></p></li></ol>
+<ol class="s2"><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="C100300J01" border="1" class="half" name="C100300J01" src="../../img/c100300j01.png"/><br/></td></tr></tbody></table>
+<li value="2"><p><font class="ptxt">Use a Toyota Electrical Tester to measure resistance between each terminal.</font><br/></p><p></p><dl class="spec"><dt class="spec">Reference value</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><tbody><tr><td>Terminal number (terminal symbol)<br/></td><td>Resistance value [ω]<br/></td></tr><tr><td>5 (S1) ← → Body Earth<br/></td><td>11-15 (20 ° C)<br/></td></tr><tr><td>10 (S2) ← → Body Earth<br/></td><td>11-15 (20 ° C)<br/></td></tr></tbody></table></dd></dl><p></p><p></p></li></ol><br clear="all"/><table border="0" cellpadding="4" cellspacing="0" width="96%"><tbody><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img height="100%" src="../../../../image/next_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1"><a href="#RM00000092D000X_04_0003">To step 3</a></td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="96%"><tbody><tr><td class="diag-next" style="border-bottom-width: 0px;" width="20%">OK</td><td width="80%"><br/></td></tr><tr><td align="center" valign="top" width="20%"><img height="13" src="../../../../image/next_down.png" width="100%"/></td><td width="80%"><br/></td></tr></tbody></table><br/><a name="RM00000092D000X_04_0002"></a><table border="1" height="35" width="100%"><tbody><tr><td class="s1" width="10%">Step 2</td><td class="s1" width="90%">Wire harness and connector inspection (transmission wire-engine control computer)</td></tr></tbody></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030<br/>09083-00150<br/></dd></dl>
 <ol class="s2">
-<li value="1"><p><font class="ptxt">トランスミツシヨンワイヤのコネクタを取り付け、エンジンコントロールコンピユータのコネクターBを切り離す。</font><br></p></li></ol>
-<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c096914.png" name="C096914" alt="C096914" border="1" class="half"><br></td></tr></table>
-<li value="2"><p><font class="ptxt">トヨタエレクトリカルテスターを使用して、各端子間の抵抗を測定する。</font><br><font class="ptxt">(端子配列は<a href="#" onclick="openSeePage('seepage','RM00000092A000X');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)</font><br><p><dl class="spec"><dt class="spec">基準値</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="50%
-			"><col align=""></colgroup><tr><td>端子番号(端子記号)<br></td><td>抵抗値[Ω]<br></td></tr><tr><td>B15(S1)&larr;&rarr;B7(E1)<br></td><td>11-15(20&deg;C)<br></td></tr><tr><td>B14(S2)&larr;&rarr;B7(E1)<br></td><td>11-15(20&deg;C)<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ワイヤハーネスまたはコネクター修理または交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">エンジンコントロール コンピュータ点検および交換&nbsp;
-										</td></tr></table></td></tr></table><br><a name="RM00000092D000X_04_0003"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順3</td><td width="90%" class="s1">トランスミッション ソレノイドASSY単体点検（S1/S2）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00150&nbsp;&nbsp;<br></dd></dl>
+<li value="1"><p><font class="ptxt">Attach the transmit sho -wire wire connector and separate the connector B of the engine controlled compilation.</font><br/></p></li></ol>
+<ol class="s2"><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="C096914" border="1" class="half" name="C096914" src="../../img/c096914.png"/><br/></td></tr></tbody></table>
+<li value="2"><p><font class="ptxt">Use a Toyota Electrical Tester to measure resistance between each terminal.</font><br/><font class="ptxt">(The terminal array is<a href="#" onclick="openSeePage('seepage','RM00000092A000X');return false;"><img border="0" src="../../../../image/extxref.png"/></a>reference)</font><br/></p><p></p><dl class="spec"><dt class="spec">Reference value</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><tbody><tr><td>Terminal number (terminal symbol)<br/></td><td>Resistance value [ω]<br/></td></tr><tr><td>B15 (S1) ← → B7 (E1)<br/></td><td>11-15 (20 ° C)<br/></td></tr><tr><td>B14 (S2) ← → B7 (E1)<br/></td><td>11-15 (20 ° C)<br/></td></tr></tbody></table></dd></dl><p></p><p></p></li></ol><br clear="all"/><table border="0" cellpadding="4" cellspacing="0" width="96%"><tbody><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img height="100%" src="../../../../image/fin_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Wire harness or connector repair or replacement</td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="96%"><tbody><tr><td class="diag-fin" style="border-bottom-width: 0px;" width="20%">OK</td><td width="80%"><br/></td></tr><tr><td align="center" valign="top" width="20%"><img height="13" src="../../../../image/fin_down.png" width="100%"/></td><td width="80%"><br/></td></tr><tr><td colspan="2"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Engine control computer inspection and replacement</td></tr></tbody></table></td></tr></tbody></table><br/><a name="RM00000092D000X_04_0003"></a><table border="1" height="35" width="100%"><tbody><tr><td class="s1" width="10%">Step 3</td><td class="s1" width="90%">Transmission Solenoid ASSY Single Inspection (S1/S2)</td></tr></tbody></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030<br/>09083-00150<br/></dd></dl>
 <ol class="s2">
-<li value="1"><p><font class="ptxt">トヨタエレクトリカルテスターを使用して、ソレノイド端子とボデー間の抵抗を測定する。</font><br><p><dl class="spec"><dt class="spec">基準値</dt><dd class="spec">11-15Ω(20&deg;C)<br></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">トランスミッション ソレノイドASSY交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">トランスミッション ワイヤ修理または交換&nbsp;
-										</td></tr></table></td></tr></table><br></body></html>
+<li value="1"><p><font class="ptxt">Use a Toyota Electrical Tester to measure the resistance between the solenoid terminal and the body.</font><br/></p><p></p><dl class="spec"><dt class="spec">Reference value</dt><dd class="spec">11-15Ω (20 ° C)<br/></dd></dl><p></p><p></p></li></ol><br clear="all"/><table border="0" cellpadding="4" cellspacing="0" width="96%"><tbody><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img height="100%" src="../../../../image/fin_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Transmission Solenoid ASSY replacement</td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="96%"><tbody><tr><td class="diag-fin" style="border-bottom-width: 0px;" width="20%">OK</td><td width="80%"><br/></td></tr><tr><td align="center" valign="top" width="20%"><img height="13" src="../../../../image/fin_down.png" width="100%"/></td><td width="80%"><br/></td></tr><tr><td colspan="2"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Transmission wire repair or replacement</td></tr></tbody></table></td></tr></tbody></table><br/></body></html>

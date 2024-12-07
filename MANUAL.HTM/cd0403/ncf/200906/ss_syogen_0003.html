@@ -1,64 +1,40 @@
-<html>
-<head>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script src="../js/hidden.js" languaeg="JavaScript"></script><script languaeg="JavaScript">
-<!--
-function openPDF(ID){
-pdfPlace = document.form('_'+ID);
-if(pdfPlace != null){
-	pdfFile = pdfPlace.value;
-		if(pdfFile == ''){
-			alert('先に「型式」「類別区分」を選択してください。');
-		}else{
-			window.open('../pdf/' + pdfFile,'','width=800,height=600,toolbar=0,menubar=0,scrollbars=1');
-		}
-	}else{
-		alert('先に「型式」「類別区分」を選択してください。');
-	}
-}
-function showList(){
-	Div = document.all.tags('div');
-	for(i = 0; i < Div.length; i++){
-		if(Div[i].style.display == 'block'){
-			Div[i].style.display = 'none';
-//		alert(Div[i].style.display);
-		}
-	}
-}
-//--></script>
-<title>主要諸元</title>
-<link type="text/css" href="../css/main2.css" rel="stylesheet">
-<link type="text/css" href="../css/style.css" rel="stylesheet">
+<html><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<script languaeg="JavaScript" src="../js/hidden.js"></script><script languaeg="JavaScript"><!- ​​Function OpenPdf (ID) {pdfplace = document.form ('_'+ID); if (pdffoyCE! = null) {pdffile = pdffile.value; if (pdffile == ') {Alert ('ahead)Select "Model" and "Classified Category";Menubar = 0, ScrollBars = 1 ');}} else {Alert (Select "model" and "classification" first.');}} Function showlist () {div = document.all.tags ()'Div'); for (i = 0; i <div.length; i ++) {if [i] .style.display == 'block') {div [i] .style.display = 'none';// Alert (Div [i] .style.display);}}} //-></script>
+<title>Main</title>
+<link href="../css/main2.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
 </head>
-<body onLoad="boVis(5)">
+<body onload="boVis(5)">
 
-<table width="100%" cellpadding="2" cellspacing="0" border="0">
-<tr>
-<td align="center" class="gray">主要諸元</td>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center" class="gray">Main</td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <form name="form">
-<table width="95%" border="1" cellspacing="0" cellpadding="5" bordercolor="#FFFFFF">
-<tr style="background-color:#C7D0D6;padding-top:2px;padding-left:2px;color:#666666;text-align:center" class="gray3_dark_left" align="center" valign="top">
-<td>型式(指定番号)</td><td>類別区分</td><td></td>
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr align="center" class="gray3_dark_left" style="background-color:#C7D0D6;padding-top:2px;padding-left:2px;color:#666666;text-align:center" valign="top">
+<td>Model (specified number)</td><td>Classification</td><td></td>
 </tr>
-<tr class="color1" align="center" valign="top">
-<td><select style="width:150px" size="20" name="katasiki" onChange="showList();document.all(this[this.selectedIndex].value).style.display='block'"><option value="CBA-NNP15">CBA-NNP15</option></select></td><td>
-<div style="display:block" id="empty">
-<select style="width:150px" size="20" name="_empty"><option></option></select>
+<tr align="center" class="color1" valign="top">
+<td><select name="katasiki" onchange="showList();document.all(this[this.selectedIndex].value).style.display='block'" size="20" style="width:150px"><option value="CBA-NNP15">CBA-NNP15</option></select></td><td>
+<div id="empty" style="display:block">
+<select name="_empty" size="20" style="width:150px"><option></option></select>
 </div>
-<div style="display:none" id="CBA-NNP15">
-<select style="width:150px" size="20" name="_CBA-NNP15"><option value="k3840010k.pdf">001～002</option></select>
+<div id="CBA-NNP15" style="display:none">
+<select name="_CBA-NNP15" size="20" style="width:150px"><option value="k3840010k.pdf">001-002</option></select>
 </div>
-<br>
-</td><td><input type="button" onClick="openPDF(document.form.katasiki.value)" value="PDFを開く"></td>
+<br/>
+</td><td><input onclick="openPDF(document.form.katasiki.value)" type="button" value="PDFを開く"/></td>
 </tr>
-</table>
+</tbody></table>
 </form>
 
 
-</body>
-</html>
+
+
+</body></html>

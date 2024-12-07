@@ -1,95 +1,95 @@
-<html>
-<head>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>ダイアグノーシス制御</title>
-<link type="text/css" href="../css/main2.css" rel="stylesheet">
-<link type="text/css" href="../css/style.css" rel="stylesheet">
-<script src="../js/hidden.js" language="JavaScript"></script>
+<html><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Diagnostic control</title>
+<link href="../css/main2.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" src="../js/hidden.js"></script>
 </head>
 <body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
-<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td align="left"><input onClick="printCheck()" value="印刷" name="submit" type="submit"></td><td align="center">　</td><td align="right"><input onClick="closeWindow()" value="閉じる" name="submit2" type="submit"></td>
+<table cellpadding="2" cellspacing="0" id="print" style="display:none" width="100%">
+<tbody><tr>
+<td align="left"><input name="submit" onclick="printCheck()" type="submit" value="印刷"/></td><td align="center">　</td><td align="right"><input name="submit2" onclick="closeWindow()" type="submit" value="閉じる"/></td>
 </tr>
-</table>
+</tbody></table>
 <div align="left">
 
 
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0">
-<tr>
-<td class="blue" width="5%">　</td><td align="center" class="blue" width="80%">ダイアグノーシス制御</td><td width="15%" class="blue" align="right"></td>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td class="blue" width="5%">　</td><td align="center" class="blue" width="80%">Diagnostic control</td><td align="right" class="blue" width="15%"></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">ダイアグノーシス制御は，表示部・各センサー・アクチュエーターなどの異常が発生した場合に異常を記憶し，フロントエアコンコントロールパネルの出力によって，点検作業者にダイアグコードを知らせます。（詳細は修理書を参照してください）</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">Diagnostic control remembers abnormalities when abnormalities such as display portions, each sensor, and actuator occur, and inform the inspection worker the dial cord by output of the front aircontrol panel.(See the repair letter for details)</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT080005K190I01');chgImg('imT080005K190I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT080005K190I01" align="absmiddle"><a name="t080005k190i01">パネルダイアグノーシス機能</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT080005K190I01');chgImg('imT080005K190I01');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT080005K190I01" src="../images/detail0.gif"/><a name="t080005k190i01">Panel diagnostic function</a></span>
+<br/>
 <div id="tmT080005K190I01" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
 <td class="gray3_dark">
-<div class="text">チェック項目</div>
+<div class="text">Check item</div>
 </td><td class="gray3_dark">
-<div class="text">内　　容</div>
+<div class="text">Content</div>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<div class="text">インジケーターチェック</div>
+<div class="text">Indicator check</div>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<div class="text">Flashing LED and LCD of the front aircontrol panel.</div><table border="0" cellpadding="2" cellspacing="0" width="95%">
 
-<div class="text">フロントエアコンコントロールパネルのLEDおよびLCDの点滅。</div>
-</table>
-</td>
-</tr>
-<tr>
-<td class="color1">
-<div class="text">センサーチェック</div>
-</td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
 
-<div class="text">センサー故障状況（過去・現在）のチェック。</div>
-
-<div class="text">過去故障データーのクリア。</div>
 </table>
 </td>
 </tr>
 <tr>
 <td class="color1">
-<div class="text">アクチュエーターチェック</div>
+<div class="text">Sensor check</div>
 </td><td class="color1">
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
+<div class="text">Check for sensor failure (past / present).</div><div class="text">Clear the past breakdown data.</div><table border="0" cellpadding="2" cellspacing="0" width="95%">
 
-<div class="text">アクチュエーターチェックパターンの出力。</div>
+
+
+
 </table>
 </td>
 </tr>
+<tr>
+<td class="color1">
+<div class="text">Actuator check</div>
+</td><td class="color1">
+<div class="text">Actuator check pattern output.</div><table border="0" cellpadding="2" cellspacing="0" width="95%">
+
+
 </table>
-<br>
+</td>
+</tr>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 </div>
-</body>
-</html>
+
+
+</body></html>

@@ -1,51 +1,50 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="RM000000B17000X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>SRSエアバッグシステム&nbsp;&nbsp;ダイアグコード点検／消去</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM000000B17000X_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="CD0403____00001190000011step"></a>
+		<body onload="seePageAnchor()"><a name="RM000000B17000X"></a><table cellspacing="0" width="100%"><tbody><tr><td width="93%"><h1>SRS Airbag System Diag Code Inspection / Erase</h1></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr></tbody></table><br class="beforePng" clear="all"/><a name="RM000000B17000X_z0"></a><br clear="all"/><a name="1"></a><br clear="all"/><a name="CD0403____00001190000011step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>TaSCANによるダイアグコード読み取り(通常モード)</li></ol>
+<li>Diag code reading by Tascan (normal mode)</li></ol>
 <ol class="ptxt"></ol>
 <ol class="step2">
-<li><p><font class="ptxt">IGスイッチをOFF(LOCK)にする。</font><br></p></li>
-<li><p><font class="ptxt">SSTをDLC3に接続する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
-<li><p><font class="ptxt">IGスイッチをON後、SSTの画面表示に従って操作を行い[ダイアグコード確認]画面を表示させ通常モードを選択しダイアグコードを読み取る。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00001190000012step"></a>
+<li><p><font class="ptxt">Set the IG switch to OFF (Lock).</font><br/></p></li>
+<li><p><font class="ptxt">Connect SST to DLC3.</font><br/></p><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200<br/></dd></dl><p></p></li>
+<li><p><font class="ptxt">After the IG switch is turned on, perform the operation according to the SST screen display, display the [Diagcode Confirm] screen, select a normal mode, and read the diag code.</font><br/></p><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200<br/></dd></dl><p></p></li></ol><br clear="all"/><br clear="all"/><a name="CD0403____00001190000012step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>TaSCANによるダイアグコード読み取り(チェックモード) </li></ol>
+<li>Diag code reading by Tascan (check mode)</li></ol>
 <ol class="ptxt"></ol>
 <ol class="step2">
-<li><p><font class="ptxt">IGスイッチをOFF(LOCK)にする。</font><br></p></li>
-<li><p><font class="ptxt">SSTをDLC3に接続する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
-<li><p><font class="ptxt">IGスイッチをON後、SSTの画面表示に従って操作を行い[ダイアグコード確認]画面を表示させチェックモードを選択しダイアグコードを読み取る。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">SSTの[ダイアグコード確認]画面を表示させチェックモードを選択すると、それまでに出力されているダイアグコード(現在および過去)が消去される。</dd></dl></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">チェックモードは通常モードに比べ故障(異常)検出感度を向上させることができる。 <br></li><li class="atten4">チェックモードによる点検は、各センサの信号系故障(異常)が考えられるにもかかわらず、通常モードでダイアグコードを読みだした際、正常コードを出力する場合に行う。<br></li><li class="atten4">トラブルシューティングを実施する際、ダイアグコードがチェックモードに対応していることをダイアグコード一覧で確認する。<br></li></ol></p></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00001190000013step"></a>
+<li><p><font class="ptxt">Set the IG switch to OFF (Lock).</font><br/></p></li>
+<li><p><font class="ptxt">Connect SST to DLC3.</font><br/></p><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200<br/></dd></dl><p></p></li>
+<li><p><font class="ptxt">After turning on the IG switch, perform the operation according to the SST screen display, display the Diagcode Confirm screen, select the check mode, and read the diag code.</font><br/></p><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200<br/></dd></dl><p></p><dl class="caution"><dt class="caution">■ Attention ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">If you display the SST Diagcode Confirm screen and select a check mode, the diag code (present and past) output so far will be deleted.</dd></dl><p></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">The check mode can improve the detection sensitivity compared to the normal mode.<br/></li><li class="atten4">Inspection by check mode is performed when the normal code is output when the dial code is read in normal mode, despite the concept of a signal failure (abnormality) of each sensor.<br/></li><li class="atten4">When performing troubleshooting, check in the diag code list that the diag code is compatible with the check mode.<br/></li></ol><p></p><p></p></li></ol><br clear="all"/><br clear="all"/><a name="CD0403____00001190000013step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>TaSCANによるダイアグコード消去 </li></ol>
+<li>Diag cord eraser by Tascan</li></ol>
 <ol class="ptxt"></ol>
 <ol class="step2">
-<li><p><font class="ptxt">IGスイッチをOFF(LOCK)にする。</font><br></p></li>
-<li><p><font class="ptxt">SSTをDLC3に接続する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
-<li><p><font class="ptxt">IGスイッチをON後、SSTの画面表示に従ってダイアグコードを消去する。</font><br></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00001190000014step"></a>
+<li><p><font class="ptxt">Set the IG switch to OFF (Lock).</font><br/></p></li>
+<li><p><font class="ptxt">Connect SST to DLC3.</font><br/></p><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200<br/></dd></dl><p></p></li>
+<li><p><font class="ptxt">After the IG switch is turned on, the diag code is erased according to the SST screen display.</font><br/></p></li></ol><br clear="all"/><br clear="all"/><a name="CD0403____00001190000014step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>ウォーニングランプによるダイアグコード読み取り </li></ol>
+<li>Diagcode reading by Warnin Grand Lamp</li></ol>
 <ol class="ptxt"></ol>
 <ol class="step2">
-<li><p><font class="ptxt">現在故障</font><br></p></li><br>
+<li><p><font class="ptxt">Currently failure</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">IGスイッチをONにして、60秒間待機する。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">エアバッグセンサASSY　CTRがシステムすべての自己診断を完了するのに約60秒間かかる。</dd></dl></p></p></li>
-<li><p><font class="ptxt">SSTを使用して、DLC3の13(TC)&larr;&rarr;4(CG)端子間を短絡しウォーニングランプの点滅回数を読み取る。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">ダイアグコードが複数ある場合、数字の小さい順に出力し、全コード出力後2回目の表示を行う。</dd></dl></p></p></li></ol><br clear="all" class="beforePng"><br clear="all" class="beforePng">
-<li><p><font class="ptxt">過去故障</font><br></p></li><br>
+<li><p><font class="ptxt">Turn on the IG switch and wait for 60 seconds.</font><br/></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">It takes about 60 seconds for the airbag sensor ASSY CTR to complete the self -diagnosis of all systems.</dd></dl><p></p><p></p></li>
+<li><p><font class="ptxt">Use SST to short -circuited between DLC3 13 (TC) ← → 4 (CG) terminals and read the number of flashing of the warnin group.</font><br/></p><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040<br/></dd></dl><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">If there are multiple diary codes, output them in order of the numbers, and the second display is displayed after all code output.</dd></dl><p></p><p></p></li></ol><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/>
+<li><p><font class="ptxt">Past failure</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">SSTを使用して、DLC3の13(TC)&larr;&rarr;4(CG)端子間を短絡する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br></dd></dl></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c054376.png" name="C054376" alt="C054376" border="1" class="half"><br></td></tr></table>
-<li><p><font class="ptxt">IGスイッチをONにして、ウォーニングランプ消灯後の点滅回数を読み取る。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">ダイアグコードが複数ある場合、数字の小さい順に出力し、全コード出力後2回目の表示を行う。<br></li><li class="atten4">現在故障がある場合、現在および過去故障が同時に出力される。 <br></li></ol></p></p></li></ol></ol><br clear="all"><div class="full"><br clear="all"><img src="../../img/c092973.png" name="C092973" alt="C092973" border="1" class="full"></div><br clear="all"><br clear="all"><br clear="all"><a name="CD0403____00001190000015step"></a>
+<li><p><font class="ptxt">Use SST to short circuit between 13 (TC) ← → 4 (CG) of DLC3.</font><br/></p><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040<br/></dd></dl><p></p></li><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="C054376" border="1" class="half" name="C054376" src="../../img/c054376.png"/><br/></td></tr></tbody></table>
+<li><p><font class="ptxt">Turn on the IG switch and read the number of blinks after the warnin Grand lamp is turned off.</font><br/></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">If there are multiple diary codes, output them in order of the numbers, and the second display is displayed after all code output.<br/></li><li class="atten4">If there is currently a failure, the current and past failures will be output at the same time.<br/></li></ol><p></p><p></p></li></ol></ol><br clear="all"/><div class="full"><br clear="all"/><img alt="C092973" border="1" class="full" name="C092973" src="../../img/c092973.png"/></div><br clear="all"/><br clear="all"/><br clear="all"/><a name="CD0403____00001190000015step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>ウォーニングランプによるダイアグコード消去</li></ol>
+<li>Diag cord erasing by warnin grand lamp</li></ol>
 <ol class="ptxt"></ol>
-<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c054376.png" name="C054376" alt="C054376" border="1" class="half"><br></td></tr></table>
-<li><p><font class="ptxt">SSTを使用して、DLC3の13(TC)端子&larr;&rarr;4(CG)端子間を短絡し、IGスイッチをONにする。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br></dd></dl></p></li>
-<li><p><font class="ptxt">ダイアグコードが出力され始めてから3秒後から10秒以内にDLC3の13(TC)端子をオープンし、3秒後にウォーニングランプが点灯するか確認する。</font><br></p></li>
-<li><p><font class="ptxt">ウォーニングランプが点灯し始めてから2.0秒後-4.0秒以内にDLC3の13(TC)&larr;&rarr;4(CG)端子間を短絡する。</font><br></p></li>
-<li><p><font class="ptxt">DLC3の13(TC)&larr;&rarr;(CG)端子間を短絡してから2.0秒後-4.0秒後にウォーニングランプが消灯し、消灯後2.0後&#65293;4.0秒以内にDLC3の13(TC)端子をオープンする。</font><br></p></li>
-<li><p><font class="ptxt">DLC3の13(TC)端子をオープンしてから2.0秒後-4.0秒後再びウォーニングランプが点灯し、点灯後2.0秒後-4.0秒以内にDLC3の13(TC)&larr;&rarr;4(CG)端子間を短絡する。</font><br></p></li>
-<li><p><font class="ptxt">DLC3の13(TC)端子&larr;&rarr;4(CG)端子間を短絡してから2.0-4.0秒後にウォーニングランプが消灯し、消灯後1.0秒以内に正常コードが出力されるか確認する。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">正常コードが出力されない場合は、ダイアグコードが消去されていないので再度行う。</dd></dl></p></p></li></ol><br clear="all"><div class="full"><br clear="all"><img src="../../img/c063050.png" name="C063050" alt="C063050" border="1" class="full"></div><br clear="all"><br clear="all"></body></html>
+<ol class="step2"><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="C054376" border="1" class="half" name="C054376" src="../../img/c054376.png"/><br/></td></tr></tbody></table>
+<li><p><font class="ptxt">Use SST to short -circuited between the 13 (TC) terminals ← → 4 (CG) of the DLC3 and turn on the IG switch.</font><br/></p><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040<br/></dd></dl><p></p></li>
+<li><p><font class="ptxt">Open the 13 (TC) terminal of DLC3 within 3 seconds to 10 seconds after the diag code begins to be output, and check if the warnin gland will light up 3 seconds.</font><br/></p></li>
+<li><p><font class="ptxt">Within 2.0 seconds-4.0 seconds after the warnin glander starts to light up, the DLC3 13 (TC) ← → 4 (CG) terminal is short-circuited.</font><br/></p></li>
+<li><p><font class="ptxt">The Warnin Grand Lamp turns off 2.0 seconds after short circuit between the DLC3 (TC) ← → (CG) terminals, and the 13 (TC) terminal of DLC3 is opened within 2.0-after -40 seconds after the lights are turned off.。</font><br/></p></li>
+<li><p><font class="ptxt">2.0 seconds-4.0 seconds after opening the 13 (TC) terminal of DLC3, the warnin glamp turns on again, and within 2.0 seconds-4.0 seconds after lighting, DLC3 13 (TC) ← → 4 (CG) between terminals.Is short -circuited.</font><br/></p></li>
+<li><p><font class="ptxt">After short circulation between the 13 (TC) terminal ← → 4 (CG) of the DLC3, the warnin glander turns off 2.0-4.0 seconds after the terminals are turned off, and the normal code is output within 1.0 seconds after the lights are turned.</font><br/></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">If the normal code is not output, do it again because the diag code has not been erased.</dd></dl><p></p><p></p></li></ol><br clear="all"/><div class="full"><br clear="all"/><img alt="C063050" border="1" class="full" name="C063050" src="../../img/c063050.png"/></div><br clear="all"/><br clear="all"/></body></html>

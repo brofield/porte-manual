@@ -1,340 +1,340 @@
-<html>
-<head>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>燃料噴射制御（EFI）</title>
-<link type="text/css" href="../css/main2.css" rel="stylesheet">
-<link type="text/css" href="../css/style.css" rel="stylesheet">
-<script src="../js/hidden.js" language="JavaScript"></script>
+<html><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Fuel injection control (EFI)</title>
+<link href="../css/main2.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" src="../js/hidden.js"></script>
 </head>
 <body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
-<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td align="left"><input onClick="printCheck()" value="印刷" name="submit" type="submit"></td><td align="center">　</td><td align="right"><input onClick="closeWindow()" value="閉じる" name="submit2" type="submit"></td>
+<table cellpadding="2" cellspacing="0" id="print" style="display:none" width="100%">
+<tbody><tr>
+<td align="left"><input name="submit" onclick="printCheck()" type="submit" value="印刷"/></td><td align="center">　</td><td align="right"><input name="submit2" onclick="closeWindow()" type="submit" value="閉じる"/></td>
 </tr>
-</table>
+</tbody></table>
 <div align="left">
 
 
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0">
-<tr>
-<td class="blue" width="5%">　</td><td align="center" class="blue" width="80%">燃料噴射制御（EFI）</td><td width="15%" class="blue" align="right"></td>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td class="blue" width="5%">　</td><td align="center" class="blue" width="80%">Fuel injection control (EFI)</td><td align="right" class="blue" width="15%"></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">エアフローメーターにより吸入空気量を検出して燃料噴射量を制御するEFI-L方式を採用しました。</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">An EFI-L method that detects inhaled air by the airflow meter and controls fuel injection.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">噴射方式は,独立噴射方式（クランクシャフト2回転で各気筒1回ずつ噴射）を採用しました。始動時は,グループ噴射（＃1＋＃4,＃2＋＃3）を行いクランクシャフト1回転で1回噴射します。エンジン回転数が規定値以上に達すると独立噴射に切り替えます。なお,エンジンを一旦止めた後の再始動時など水温が高い場合には始動時より独立噴射を行います。</div>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">The injection method was adopted an independent injection method (injection of each cylinder with a crankshaft 2 rotation).When starting, a group injection ( # 1 + # 4, # 2 + # 3) is performed and sprayed once in a crankshaft one rotation.When the engine speed reaches higher than the specified value, switch to an independent injection.In addition, if the water temperature is high, such as when restarting after the engine is stopped, an independent injection will be performed from the start.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">燃料噴射には基本噴射時間に各センサーからの信号による補正を加え常に同じ位置で噴射する同期噴射と，クランク角度に関係なく各センサーからの信号により噴射要求を検出した時点で噴射する非同期噴射があります。また，エンジン保護および燃費向上のため，運転状態に応じて燃料噴射を一時的に停止するフューエルカットを行います。</div>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">In the fuel injection, a synchronous injection that is always informed by a signal from each sensor at the basic injection time and is always injected at the same position, and a non -synchronous injection that is injected at the time of detecting a signal by a signal from each sensor regardless of the crank angle.there is.In addition, a fuel cut is performed to temporarily stop fuel injection according to the operation status to protect the engine and improve fuel efficiency.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT010011A070A202');chgImg('imT010011A070A202');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT010011A070A202" align="absmiddle"><a name="t010011a070a202">非同期噴射</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT010011A070A202');chgImg('imT010011A070A202');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT010011A070A202" src="../images/detail_b0.gif"/><a name="t010011a070a202">Asynchronous injection</a></span>
+<br/>
 <div id="tmT010011A070A202" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">始動性および加速時の応答性確保のため，通常の燃料噴射（同期噴射）とは別に各センサーからの信号が入った直後だけ全気筒同時に一定量の噴射を行います。また，同期噴射中は噴射時間を非同期分だけ延長します。</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">In order to ensure the startability and acceleration at the time of acceleration, a certain amount of injection is performed simultaneously immediately after the signal from each sensor enters separately from the normal fuel injection (synchronous injection).In addition, the injection time is extended by asynchronous injection during synchronous injection.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 
-<br>
-<table cellpadding="0" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="blue2">非同期噴射</td>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr>
+<td class="blue2">Asynchronous injection</td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
 <td class="gray3_dark">
-<div class="text">始動時非同期噴射</div>
+<div class="text">Asynchronous injection when starting</div>
 </td><td class="color1">
-<div class="text">スターター信号が入力された直後に，一回非同期噴射を行い始動性を向上させます。</div>
+<div class="text">Immediately after the starter signal is entered, an asynchronous injection is performed once to improve the startability.</div>
 </td>
 </tr>
 <tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">加速時非同期噴射</div>
+<div class="text">Asynchronous injection at acceleration</div>
 </td><td class="color1">
-<div class="text">スロットル開度の増加量が設定値以上のとき非同期噴射を行い，加速時の応答性を向上させます。</div>
+<div class="text">Asynchronous injection is performed when the increase in the throttle opening is higher than the setting value, and the response at the time of acceleration is improved.</div>
 </td>
 </tr>
 <tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">エンジン回転低下時非同期噴射</div>
+<div class="text">Asynchronous injection when the engine rotates</div>
 </td><td class="color1">
-<div class="text">フューエルカット中およびフューエルカットから復帰時に，エンジン回転が急激に低下した場合，非同期噴射を行い運転を確保します。</div>
+<div class="text">If the engine rotation drops sharply during the fuel cut and the fuel cut, a asynchronous injection is performed to secure operation.</div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT010011A070A201');chgImg('imT010011A070A201');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010011A070A201" align="absmiddle"><a name="t010011a070a201">同期噴射</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT010011A070A201');chgImg('imT010011A070A201');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT010011A070A201" src="../images/detail0.gif"/><a name="t010011a070a201">Synchronous injection</a></span>
+<br/>
 <div id="tmT010011A070A201" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">同期噴射時間は以下の式で表すことができます。</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Synchronous injection time can be expressed in the following formula.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">なお，エンジン始動時はエンジン回転数，バッテリー電圧および冷却水温により噴射時間を決定します。また，始動時の過噴射を防止するため，クランキング時間により噴射量の増減を行います。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">When starting the engine, the injection time is determined by the engine speed, battery voltage and cooling water temperature.In addition, the amount of injection is increased or decreased depending on the cranking time to prevent over -injection at the start.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 
-<br>
-<table cellpadding="0" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="blue2">同期噴射　＝　A.基本噴射時間　＋　B.補正噴射時間　＋　C.無効噴射時間</td>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr>
+<td class="blue2">Synchronous injection = A. Basic injection time + B. Correction injection time + C. Invalid injection time</td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">A.基本噴射時間</div>
+<div class="text">A. Basic injection time</div>
 </td><td class="color1">
-<div class="text">吸入空気量およびエンジン回転数により決まる基本となる噴射時間です。</div>
+<div class="text">This is the basic injection time determined by the amount of inhaled air and the engine speed.</div>
 </td>
 </tr>
 <tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">B.補正噴射時間</div>
+<div class="text">B. Correction injection time</div>
 </td><td class="color1">
-<div class="text">各センサーの信号により,そのときのエンジン状態に応じて適切な空燃比の混合気にするための係数です。</div>
+<div class="text">The signal of each sensor is a coefficient to make the air -fuel ratio mixed according to the engine status at that time.</div>
 </td>
 </tr>
 <tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">B-1吸気温補正</div>
+<div class="text">B-1 intake absurdening correction</div>
 </td><td class="color1">
-<div class="text">吸入空気温度が低いときは,空気密度が高くなるため,増量します。</div>
+<div class="text">When the inhalation air temperature is low, the air density increases, so increase.</div>
 </td>
 </tr>
 <tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">B-2暖機増量補正</div>
+<div class="text">B-2 warm-up increased weight correction</div>
 </td><td class="color1">
-<div class="text">冷却水温が低いときは増量し,冷間時の運転性を確保します。</div>
+<div class="text">When the cooling water temperature is low, increase the amount and ensure drivingability during the cold.</div>
 </td>
 </tr>
 <tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">B-3始動後増量補正</div>
+<div class="text">B-3 increase after starting</div>
 </td><td class="color1">
-<div class="text">エンジン始動後に冷却水温,エンジン回転数に応じて増量し,始動後のエンジン回転を安定させます。増量比は始動直後が最大で,その後徐々に減少します。</div>
+<div class="text">After starting the engine, increase the amount of cooling water temperature and engine speed, stabilizing the engine rotation after starting.The increase ratio is the maximum immediately after starting, and then gradually decreases.</div>
 </td>
 </tr>
 <tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">B-4過渡時空燃比補正</div>
+<div class="text">B-4 Translement Vacuum-fuel ratio correction</div>
 </td><td class="color1">
-<div class="text">吸入空気量の変化から加減速を判定し,状態に応じた増量または減量を行います。</div>
+<div class="text">The acceleration deceleration is determined from the change in the amount of inhaled air, and the weight or weight loss is performed according to the condition.</div>
 </td>
 </tr>
 <tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">B-5壁面付着補正</div>
+<div class="text">B-5 wall adhesion correction</div>
 </td><td class="color1">
-<div class="text">燃料の壁面付着を,冷却水温・エンジン回転数・スロットル開度から算出し補正します。</div>
+<div class="text">Calculate the fuel wall attached from the cooling water temperature, engine speed, and the throttle opening.</div>
 </td>
 </tr>
 <tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">B-6高負荷増量補正</div>
+<div class="text">B-6 High load increase correction</div>
 </td><td class="color1">
-<div class="text">各センサーからの信号により高負荷運転を判定し,増量することにより排気温度上昇を防止します。</div>
+<div class="text">High -load operation is determined by the signal from each sensor, and increasing the amount is prevented from rising exhaust temperature.</div>
 </td>
 </tr>
 <tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">B-7空燃比フィードバック制御</div>
+<div class="text">B-7 air-fuel ratio feedback control</div>
 </td><td class="color1">
-<div class="text">O<SUB>2</SUB>センサーからの信号により補正を行い,空燃比を三元触媒の浄化性能の高い理論空燃比近辺の狭い範囲に制御します。</div>
+<div class="text">O<sub>2</sub>Correction is performed by the signal from the sensor, and the air -fuel ratio is controlled in a narrow range near the a theory of the highly purified performance of the triple catalyst.</div>
 </td>
 </tr>
 <tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">C.無効噴射時間</div>
+<div class="text">C. Disabled injection time</div>
 </td><td class="color1">
-<div class="text">インジェクターの作動遅れを補正します。</div>
+<div class="text">Correct the lag delay of the injector.</div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT010011A070A187');chgImg('imT010011A070A187');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT010011A070A187" align="absmiddle"><a name="t010011a070a187">フューエルカット</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT010011A070A187');chgImg('imT010011A070A187');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT010011A070A187" src="../images/detail_b0.gif"/><a name="t010011a070a187">Fuel cut</a></span>
+<br/>
 <div id="tmT010011A070A187" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">エンジン保護および燃費向上のため,燃料噴射を一時的に停止します。</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">The fuel injection is temporarily stopped for engine protection and fuel efficiency.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT010011A070A187I01');chgImg('imT010011A070A187I01');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010011A070A187I01" align="absmiddle"><a name="t010011a070a187i01">フューエルカット</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT010011A070A187I01');chgImg('imT010011A070A187I01');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT010011A070A187I01" src="../images/detail0.gif"/><a name="t010011a070a187i01">Fuel cut</a></span>
+<br/>
 <div id="tmT010011A070A187I01" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">減速時フューエルカット</div>
+<div class="text">Delivery fuel cut</div>
 </td><td class="color1">
-<div class="text">減速時（エンジンコントロールコンピューターがスロットルOFFと判断時）でエンジン回転数が規定値以上の場合,燃料噴射を停止して失火による触媒過熱防止,および燃費の向上をはかります。冷却水温が低い場合は,フューエルカット回転数および復帰回転数は高くなります。</div>
+<div class="text">When the engine control computer is decelerated (when the engine control computer is judged to be throttle OFF), the engine speed is higher than the specified value, and the fuel injection is stopped to prevent the catalytic overheating and the fuel efficiency improvement.If the cooling water temperature is low, the fuel cut rotation speed and the number of return rotations will be higher.</div>
 </td>
 </tr>
 <tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">エンジン回転数によるフューエルカット</div>
+<div class="text">Fuel cut by engine speed</div>
 </td><td class="color1">
-<div class="text">エンジン回転数が規定値以上の場合,燃料噴射を停止して過回転を防止します。</div>
+<div class="text">If the engine speed is higher than the specified value, the fuel injection is stopped to prevent excessive rotation.</div>
 </td>
 </tr>
 <tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">"N"&rarr;"D"レンジシフト時フューエルカット</div>
+<div class="text">"N" → "D" Fuel cut when shifting in range</div>
 </td><td class="color1">
-<div class="text">エンジン回転数が規定値以上の場合,シフトレバー操作時に燃料噴射を停止して変速ショックの低減,およびA/Tの保護をはかります。</div>
+<div class="text">If the engine speed is or higher, the fuel injection is stopped during the shift lever operation to reduce the shift shock and the A/T protection.</div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT010011A070A187X02');chgImg('imT010011A070A187X02');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010011A070A187X02" align="absmiddle"><a name="t010011a070a187x02">減速時フューエルカット回転数（2NZ-FE・1NZ-FE	共通）</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT010011A070A187X02');chgImg('imT010011A070A187X02');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT010011A070A187X02" src="../images/detail0.gif"/><a name="t010011a070a187x02">During deceleration fuel cut rotation (common to 2NZ-FE / 1NZ-FE)</a></span>
+<br/>
 <div id="tmT010011A070A187X02" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
 <td class="gray3_dark" rowspan="2" valign="MIDDLE">
-<div class="text">フューエルカット回転数　[r/min]　</div>
+<div class="text">Fuel cut rotation speed [r/min]</div>
 </td><td class="gray3_dark">
-<div class="text">ロックアップ制御作動時</div>
-</td><td class="color1" align="CENTER">
+<div class="text">When lock -up control operation</div>
+</td><td align="CENTER" class="color1">
 <div class="text">900</div>
 </td>
 </tr>
 <tr>
 <td class="gray3_dark">
-<div class="text">ロックアップ制御非作動時</div>
-</td><td class="color1" align="CENTER">
+<div class="text">When lockup control does not operate</div>
+</td><td align="CENTER" class="color1">
 <div class="text">1200</div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT010011A070A187X03');chgImg('imT010011A070A187X03');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT010011A070A187X03" align="absmiddle"><a name="t010011a070a187x03">高回転時フューエルカット回転数（2NZ-FE・1NZ-FE	共通）</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT010011A070A187X03');chgImg('imT010011A070A187X03');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT010011A070A187X03" src="../images/detail0.gif"/><a name="t010011a070a187x03">Fuel cut rotation speed (common to 2NZ-FE / 1NZ-FE) at high rotation</a></span>
+<br/>
 <div id="tmT010011A070A187X03" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
 <td class="gray3_dark">
-<div class="text">フューエルカット回転数　[r/min]　</div>
-</td><td class="color1" align="CENTER">
+<div class="text">Fuel cut rotation speed [r/min]</div>
+</td><td align="CENTER" class="color1">
 <div class="text">6600</div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 </div>
-</body>
-</html>
+
+
+</body></html>

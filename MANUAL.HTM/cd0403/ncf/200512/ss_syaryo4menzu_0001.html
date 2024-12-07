@@ -1,191 +1,129 @@
-<html>
-<head>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>車両四面図</title>
-<link rel="stylesheet" href="../css/main2.css" type="text/css">
-<link rel="stylesheet" href="../css/style.css" type="text/css">
+<html><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Vehicle 4 -sided view</title>
+<link href="../css/main2.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script language="JavaScript" src="../js/hidden.js"></script>
 </head>
-<body style="text-align:center" onLoad="boVis(5);printAndClose();">
-<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td align="left"><input onclick="printCheck()" value="印刷" name="submit" type="submit"></td><td align="center">　</td><td align="right"><input onclick="closeWindow()" value="閉じる" name="submit2" type="submit"></td>
+<body onload="boVis(5);printAndClose();" style="text-align:center">
+<table cellpadding="2" cellspacing="0" id="print" style="display:none" width="100%">
+<tbody><tr>
+<td align="left"><input name="submit" onclick="printCheck()" type="submit" value="印刷"/></td><td align="center">　</td><td align="right"><input name="submit2" onclick="closeWindow()" type="submit" value="閉じる"/></td>
 </tr>
-</table>
+</tbody></table>
 
-<table cellpadding="0" cellspacing="0" border="0" width="100%">
-<tr>
-<td align="center" class="gray">車両四面図</td>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center" class="gray">Vehicle 4 -sided view</td>
 </tr>
-</table>
+</tbody></table>
 
-<br>
-<table cellpadding="0" cellspacing="0" border="0" width="750">
-<tr>
-<td class="blue2">ポルテ</td>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="750">
+<tbody><tr>
+<td class="blue2">Porte</td>
 </tr>
-</table>
-<br>
-<a href="javascript:openPDF('K3840011K');"><img border="0" src="../xml/grph_ent/K3840011K.png"></a>
-<br>
-<br>
+</tbody></table>
+<br/>
+<a href="javascript:openPDF('K3840011K');"><img border="0" src="../xml/grph_ent/K3840011K.png"/></a>
+<br/>
+<br/>
 
-<table cellpadding="0" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="blue2">外観図寸法一覧表</td>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr>
+<td class="blue2">Exterior diagram dimension list</td>
 </tr>
-</table>
+</tbody></table>
 
-<br>
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
-<td class="gray3_dark" rowspan="2" colspan="2">項　目</td><td class="gray3_dark" colspan="2">ポルテ［単位：mm］</td>
+<br/>
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
+<td class="gray3_dark" colspan="2" rowspan="2">Item</td><td class="gray3_dark" colspan="2">Porte [unit: mm]</td>
 </tr>
 <tr>
 <td class="gray3_dark">2WD</td><td class="gray3_dark">4WD</td>
 </tr>
 <tr>
-<td class="color1" colspan="2">全　長</td><td class="color1">
-3990</td><td class="color1">
-3990</td>
+<td class="color1" colspan="2">full length</td><td class="color1">3990</td><td class="color1">3990</td>
 </tr>
 <tr>
-<td class="color1" colspan="2">全　幅</td><td class="color1">
-1690</td><td class="color1">
-1690</td>
+<td class="color1" colspan="2">Full width</td><td class="color1">1690</td><td class="color1">1690</td>
 </tr>
 <tr>
-<td class="color1" colspan="2">全　高</td><td class="color1">
-1720</td><td class="color1">
-1720</td>
+<td class="color1" colspan="2">Total height</td><td class="color1">1720</td><td class="color1">1720</td>
 </tr>
 <tr>
-<td class="color1" colspan="2">軸　距</td><td class="color1">
-2600</td><td class="color1">
-2600</td>
+<td class="color1" colspan="2">Axis distance</td><td class="color1">2600</td><td class="color1">2600</td>
 </tr>
 <tr>
-<td class="color1" rowspan="2">輪　距</td><td class="color1">前　輪</td><td class="color1">1470</td><td class="color1">1465</td>
+<td class="color1" rowspan="2">Wheel distance</td><td class="color1">Front wheel</td><td class="color1">1470</td><td class="color1">1465</td>
 </tr>
 <tr>
-<td class="color1">後　輪</td><td class="color1">1445</td><td class="color1">1430</td>
+<td class="color1">Rear wheel</td><td class="color1">1445</td><td class="color1">1430</td>
 </tr>
 <tr>
-<td class="color1" colspan="2">リヤ・オーバーハング（車体）</td><td class="color1">
-590</td><td class="color1">
-590</td>
+<td class="color1" colspan="2">Rear overhang (body)</td><td class="color1">590</td><td class="color1">590</td>
 </tr>
 <tr>
-<td class="color1" colspan="2">最低地上高</td><td class="color1">150</td><td class="color1">135</td>
+<td class="color1" colspan="2">Minimum ground clearance</td><td class="color1">150</td><td class="color1">135</td>
 </tr>
 <tr>
-<td class="color1" rowspan="2">乗車位置</td><td class="color1">前　席</td><td class="color1">
-1040｛運転者席}
-1010｛助手席｝</td><td class="color1">
-1040｛運転者席}
-1010｛助手席｝</td>
+<td class="color1" rowspan="2">Ride position</td><td class="color1">Front seat</td><td class="color1">1040 {driver seat} 1010 {passenger seat}</td><td class="color1">1040 {driver seat} 1010 {passenger seat}</td>
 </tr>
 <tr>
-<td class="color1">後席第1列</td><td class="color1">
-2085</td><td class="color1">
-2085</td>
+<td class="color1">Rear seats 1st row</td><td class="color1">2085</td><td class="color1">2085</td>
 </tr>
 <tr>
-<td class="color1" rowspan="2">座席幅</td><td class="color1">前　席</td><td class="color1">
-520｛運転者席｝
-510｛助手席｝</td><td class="color1">
-520｛運転者席｝
-510｛助手席｝</td>
+<td class="color1" rowspan="2">Seat width</td><td class="color1">Front seat</td><td class="color1">520 {driver seat} 510 {passenger seat}</td><td class="color1">520 {driver seat} 510 {passenger seat}</td>
 </tr>
 <tr>
-<td class="color1">後席第1列</td><td class="color1">
-1245</td><td class="color1">
-1245</td>
+<td class="color1">Rear seats 1st row</td><td class="color1">1245</td><td class="color1">1245</td>
 </tr>
 <tr>
-<td class="color1" rowspan="2">座席奥行</td><td class="color1">前　席</td><td class="color1">
-480｛運転者席｝
-485｛助手席｝</td><td class="color1">
-480｛運転者席｝
-485｛助手席｝</td>
+<td class="color1" rowspan="2">Seat depth</td><td class="color1">Front seat</td><td class="color1">480 {driver seat} 485 {passenger seat}</td><td class="color1">480 {driver seat} 485 {passenger seat}</td>
 </tr>
 <tr>
-<td class="color1">後席第1列</td><td class="color1">
-470｛右席｝
-460｛中央席｝
-470｛左席｝</td><td class="color1">
-470｛右席｝
-460｛中央席｝
-470｛左席｝</td>
+<td class="color1">Rear seats 1st row</td><td class="color1">470 {right seat} 460 {Central seat} 470 {Left seat}</td><td class="color1">470 {right seat} 460 {Central seat} 470 {Left seat}</td>
 </tr>
 <tr>
-<td class="color1" rowspan="2">ヘッド・クリアランス</td><td class="color1">前　席</td><td class="color1">
-1090｛運転者席｝
-1110｛助手席｝</td><td class="color1">
-1090｛運転者席｝
-1110｛助手席｝</td>
+<td class="color1" rowspan="2">Head clearance</td><td class="color1">Front seat</td><td class="color1">1090 {driver seat} 1110 {passenger seat}</td><td class="color1">1090 {driver seat} 1110 {passenger seat}</td>
 </tr>
 <tr>
-<td class="color1">後席第1列</td><td class="color1">
-1045｛右席｝
-1050｛中央席｝
-1035｛左席｝</td><td class="color1">
-1045｛右席｝
-1050｛中央席｝
-1035｛左席｝</td>
+<td class="color1">Rear seats 1st row</td><td class="color1">1045 {right seat} 1050 {Central seat} 1035 {Left seat}</td><td class="color1">1045 {right seat} 1050 {Central seat} 1035 {Left seat}</td>
 </tr>
 <tr>
-<td class="color1" colspan="2">座席間隙</td><td class="color1">
-500｛右席｝
-465｛中央席｝
-460｛左席｝</td><td class="color1">
-500｛右席｝
-465｛中央席｝
-460｛左席｝</td>
+<td class="color1" colspan="2">Seats</td><td class="color1">500 {right seat} 465 {Central seat} 460 {Left seat}</td><td class="color1">500 {right seat} 465 {Central seat} 460 {Left seat}</td>
 </tr>
 <tr>
-<td class="color1" rowspan="3">客室内側の寸法</td><td class="color1">長　さ</td><td class="color1">
-2145</td><td class="color1">
-2145</td>
+<td class="color1" rowspan="3">Indoor dimensions</td><td class="color1">length</td><td class="color1">2145</td><td class="color1">2145</td>
 </tr>
 <tr>
-<td class="color1">幅</td><td class="color1">
-1370</td><td class="color1">
-1370</td>
+<td class="color1">width</td><td class="color1">1370</td><td class="color1">1370</td>
 </tr>
 <tr>
-<td class="color1">高　さ</td><td class="color1">
-1390</td><td class="color1">
-1335</td>
+<td class="color1">height</td><td class="color1">1390</td><td class="color1">1335</td>
 </tr>
 <tr>
-<td class="color1" rowspan="2">後写鏡の中心間隔</td><td class="color1">右</td><td class="color1">
-885</td><td class="color1">
-885</td>
+<td class="color1" rowspan="2">Central interval of back photo mirror</td><td class="color1">right</td><td class="color1">885</td><td class="color1">885</td>
 </tr>
 <tr>
-<td class="color1">左</td><td class="color1">
-880</td><td class="color1">
-880</td>
+<td class="color1">left</td><td class="color1">880</td><td class="color1">880</td>
 </tr>
 <tr>
-<td class="color1" rowspan="2">後写鏡の取付高さ</td><td class="color1">右</td><td class="color1">1130</td><td class="color1">1135</td>
+<td class="color1" rowspan="2">Attachment height of the rear photo</td><td class="color1">right</td><td class="color1">1130</td><td class="color1">1135</td>
 </tr>
 <tr>
-<td class="color1">左</td><td class="color1">1125</td><td class="color1">1130</td>
+<td class="color1">left</td><td class="color1">1125</td><td class="color1">1130</td>
 </tr>
 <tr>
-<td class="color1" rowspan="2">前車軸から後写鏡までの距離</td><td class="color1">右</td><td class="color1">
-605</td><td class="color1">
-605</td>
+<td class="color1" rowspan="2">Distance from front of the axis to rear photographic mirror</td><td class="color1">right</td><td class="color1">605</td><td class="color1">605</td>
 </tr>
 <tr>
-<td class="color1">左</td><td class="color1">
-380</td><td class="color1">
-380</td>
+<td class="color1">left</td><td class="color1">380</td><td class="color1">380</td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
-</body>
-</html>
+
+
+</body></html>

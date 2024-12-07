@@ -1,78 +1,84 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="X32500000OT005D"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>制御系CAN通信システム&nbsp;&nbsp;機能説明</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="X32500000OT005D_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="CD0403____00004QG0000111step"></a>
+		<body onload="seePageAnchor()"><a name="X32500000OT005D"></a><table cellspacing="0" width="100%"><tbody><tr><td width="93%"><h1>Control system CAN communication system function description</h1></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr></tbody></table><br class="beforePng" clear="all"/><a name="X32500000OT005D_z0"></a><br clear="all"/><a name="1"></a><br clear="all"/><a name="CD0403____00004QG0000111step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>概要</li></ol>
+<li>overview</li></ol>
 <ol class="ptxt"></ol>
 <ol class="step2">
-<li><p><font class="ptxt">CAN(Controller Area Network)とは、リアルタイム&middot;アプリケーション向けのシリアル通信で、優れたデータ通信速度(500kbps)とエラー検出能力を持つ車載向けの多重通信である。</font><br></p></li>
-<li><p><font class="ptxt">CANはCAN-H、CAN-Lの2本の線を1対とし、差動電圧にて通信を実施している。</font><br></p></li>
-<li><p><font class="ptxt">自動車には多くのECU(センサ)が装備されているが、それらは単独で作動しているわけではなく、他のECU(センサ)と情報を共有して連携しながら作動している。</font><br></p></li>
-<li><p><font class="ptxt">CANでは本線に通信伝達に必要な抵抗(120Ω)が2個入っている。</font><br></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00004QG0000112step"></a>
+<li><p><font class="ptxt">CAN (Controller Area Network) is a multiple communication for inexcities that have excellent data communication speed (500 kbps) and error detection capacity for serial communication for real -time applications.</font><br/></p></li>
+<li><p><font class="ptxt">CAN has one pair of two lines, Can-H and Can-L, and communicates at differential voltage.</font><br/></p></li>
+<li><p><font class="ptxt">The car is equipped with many ECUs (sensors), but they are not operating alone, and they are working while shared information with other ECUs (sensors).</font><br/></p></li>
+<li><p><font class="ptxt">In CAN, the main line contains two resistance (120Ω) necessary for communication transmission.</font><br/></p></li></ol><br clear="all"/><br clear="all"/><a name="CD0403____00004QG0000112step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>用語の定義</li></ol>
+<li>Definition of terms</li></ol>
 <ol class="ptxt"></ol>
 <ol class="step2">
-<li><p><font class="ptxt">本線</font><br></p></li><br>
+<li><p><font class="ptxt">Main line</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">バス(通信線)上に2つ配置された終端回路間のハーネスを本線と定義する。制御系CANの基幹バスとなる。</font><br></p></li></ol>
-<li><p><font class="ptxt">支線</font><br></p></li><br>
+<li><p><font class="ptxt">The harness between the terminal circuit located on the bus (communication line) is defined as the main line.It becomes a core bus of the control system CAN.</font><br/></p></li></ol>
+<li><p><font class="ptxt">Branch line</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">CANバスの基幹バスである本線からECU、またはセンサへ分岐された線を支線と定義する。</font><br></p></li></ol>
-<li><p><font class="ptxt">終端回路</font><br></p></li><br>
+<li><p><font class="ptxt">A line that branches into the ECU or sensor is defined as a branch line as a branch line.</font><br/></p></li></ol>
+<li><p><font class="ptxt">Terminal circuit</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">制御系CANの通信電流をバス電圧に変換するために置かれる抵抗とコンデンサからなる回路を終端回路という。終端回路はバス上に2個用意する必要がある。</font><br></p></li></ol></ol><br clear="all"><br clear="all"><a name="CD0403____00004QG0000113step"></a>
+<li><p><font class="ptxt">A consisting of a resistor and a capacitor placed to convert the communication current of the control system CAN to a bus voltage is called an terminal circuit.Two terminal circuits need to be prepared on the bus.</font><br/></p></li></ol></ol><br clear="all"/><br clear="all"/><a name="CD0403____00004QG0000113step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>CAN通信採用ECU、センサ</li></ol>
+<li>CAN Communications ECU, sensor</li></ol>
 <ol class="ptxt"></ol>
 <ol class="step2">
-<li><p><font class="ptxt">ブレーキアクチュエータASSY(VSC　ECU)</font><br></p></li>
-<li><p><font class="ptxt">ステアリングセンサ(舵角センサ)</font><br></p></li>
-<li><p><font class="ptxt">ヨーレートセンサ(ヨー&middot;Gセンサ)</font><br></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00004QG0000114step"></a>
+<li><p><font class="ptxt">Brake actuator ASSY (VSC ECU)</font><br/></p></li>
+<li><p><font class="ptxt">Steering sensor (steering angle sensor)</font><br/></p></li>
+<li><p><font class="ptxt">York -rate sensor (yaw / G sensor)</font><br/></p></li></ol><br clear="all"/><br clear="all"/><a name="CD0403____00004QG0000114step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>CAN通信系ダイアグコード</li></ol>
+<li>CAN communication diagram code</li></ol>
 <ol class="ptxt"></ol>
 <ol class="step2">
-<li><p><font class="ptxt">U0121/94(ABS)、U0123/62(VSC)、U0124/95(ABS)、U0126/63(VSC)はCAN通信系のダイアグコードである。</font><br></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00004QG0000115step"></a>
+<li><p><font class="ptxt">U0121/94 (ABS), U0123/62 (VSC), U0124/95 (ABS), and U0126/63 (VSC) are CAN communication diagram code.</font><br/></p></li></ol><br clear="all"/><br clear="all"/><a name="CD0403____00004QG0000115step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>トラブルシュートに関する留意点</li></ol>
+<li>Points to keep in mind about troubles</li></ol>
 <ol class="ptxt"></ol>
 <ol class="step2">
-<li><p><font class="ptxt">CAN通信系のダイアグコードはTaSCANにて確認することができる。</font><br></p></li>
-<li><p><font class="ptxt">DLC3もCAN通信に接続しているが、DLC3支線の異常はダイアグコードの読み出しはできない。</font><br></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00004QG0000116step"></a>
+<li><p><font class="ptxt">CAN Communications diagram codes can be checked on Tascan.</font><br/></p></li>
+<li><p><font class="ptxt">DLC3 is also connected to CAN communication, but the abnormalities of the DLC3 branch wire cannot be read.</font><br/></p></li></ol><br clear="all"/><br clear="all"/><a name="CD0403____00004QG0000116step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>CAN通信ダイアグコードの読み取り方</li></ol>
+<li>How to read CAN Communication Diag Code</li></ol>
 <ol class="ptxt"></ol>
 <ol class="step2">
-<li><p><font class="ptxt">CAN通信系のトラブルシュートは出力したCAN通信系ダイアグコードの組み合わせにより不具合箇所を特定する(ダイアグコード組み合わせ表は<a href="#" onclick="openSeePage('seepage','RM000000PI3000X');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)</font><br></p></li>
-<li><p><font class="ptxt">U0121/94(ABS)、U0123/62(VSC)、U0124/95(ABS)、U0126/63(VSC)以外のダイアグコードは組み合わせと同時出力する場合がある。</font><br></p></li>
-<li><p><font class="ptxt">U0121/94(ABS)、U0123/62(VSC)、U0124/95(ABS)、U0126/63(VSC)が出力されていない場合はCAN通信の不具合ではない(各システムのトラブルシュートへ)</font><br></p></li>
-<li><p><font class="ptxt">U0121/94(ABS)、U0123/62(VSC)、U0124/95(ABS)、U0126/63(VSC)が1つでも出力されていたらCAN通信系の異常の可能性がある。</font><br></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00004QG0000117step"></a>
+<li><p><font class="ptxt">CAN communication troubles identify the problem by combining the output CAN communication diag code (the diagram code combination table is<a href="#" onclick="openSeePage('seepage','RM000000PI3000X');return false;"><img border="0" src="../../../../image/extxref.png"/></a>reference)</font><br/></p></li>
+<li><p><font class="ptxt">Diagcodes other than U0121/94 (ABS), U0123/62 (VSC), U0124/95 (ABS), and U0126/63 (VSC) may output simultaneously.</font><br/></p></li>
+<li><p><font class="ptxt">If U0121/94 (ABS), U0123/62 (VSC), U0124/95 (ABS), U0126/63 (VSC) are not output, it is not a problem with CAN communication (to the troubles of each system).</font><br/></p></li>
+<li><p><font class="ptxt">If U0121/94 (ABS), U0123/62 (VSC), U0124/95 (ABS), and U0126/63 (VSC) are output, there is a possibility of a CAN communication system.</font><br/></p></li></ol><br clear="all"/><br clear="all"/><a name="CD0403____00004QG0000117step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>CAN通信ダイアグコード出力ECU</li></ol>
+<li>Can Communication Diag Cord Output ECU</li></ol>
 <ol class="ptxt"></ol>
 <ol class="step2">
-<li><p><font class="ptxt">ブレーキアクチュエータASSY(VSC　ECU)がU0121/94(ABS)、U0123/62(VSC)、U0124/95(ABS)、U0126/63(VSC)を出力する。</font><br></p></li></ol><br clear="all"><br clear="all"><br clear="all"><a name="CD0403____00004QG0000118step"></a>
+<li><p><font class="ptxt">Brake actuator Ass (VSC ECU) output U0121/94 (ABS), U0123/62 (VSC), U0124/95 (ABS), U0126/63 (VSC).</font><br/></p></li></ol><br clear="all"/><br clear="all"/><br clear="all"/><a name="CD0403____00004QG0000118step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>CAN通信回路図</li></ol>
-<ol class="ptxt"></ol><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">ステアリングセンサ(舵角センサ)およびヨーレートセンサ(ヨー&middot;Gセンサ)のダイアグ検出、ダイアグ記憶およびダイアグ通信は、ブレーキアクチュエータASSY(VSC　ECU)にて行っている。</dd></dl></p><div class="full"><br clear="all"><img src="../../img/g024060.png" name="G024060" alt="G024060" border="1" class="full"></div><br clear="all"><br clear="all"><br clear="all"><a name="CD0403____00004QG0000119step"></a>
+<li>CAN communication circuit map</li></ol>
+<ol class="ptxt"></ol><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">Diags and diag memories and diagram communications for the steering sensor (steering angle sensor) and yaw rate (yaw / G sensor) are performed at the brake actuator ASSY (VSC ECU).</dd></dl><p></p><div class="full"><br clear="all"/><img alt="G024060" border="1" class="full" name="G024060" src="../../img/g024060.png"/></div><br clear="all"/><br clear="all"/><br clear="all"/><a name="CD0403____00004QG0000119step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>フェールセーフ機能</li></ol>
+<li>Fail safe function</li></ol>
 <ol class="ptxt"></ol>
 <ol class="step2">
-<li><p><font class="ptxt">VSC制御のフェールセーフ</font><br></p></li><br>
+<li><p><font class="ptxt">VSC controlled fail -safe</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">いずれかのバス(通信線)がショートなどでフェールした場合、フェールセーフ処理へ移行しシステムの誤作動を防ぐよう設計している。</font><br></p></li>
-<li><p><font class="ptxt">ブレーキアクチュエータASSY(VSC　ECU)にステアリングセンサ(舵角センサ)、ヨーレートセンサ(ヨー&middot;Gセンサ)の情報が通信不能の時、ブレーキアクチュエータASSY(VSC　ECU)はフェールセーフに入りVSC機能を停止する。</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%
-						"><colgroup align="" width="25%
-			"><col align=""></colgroup><colgroup align="" width="13%
-			"><col align=""></colgroup><colgroup align="" width="13%
-			"><col align=""></colgroup><colgroup align="" width="13%
-			"><col align=""></colgroup><colgroup align="" width="15%
-			"><col align=""></colgroup><colgroup align="" width="23%
-			"><col align=""></colgroup><tr><th align="center">機能<br></th><th align="center">VSC　ECU<br></th><th align="center">舵角センサ<br></th><th align="center">ヨー&middot;Gセンサ<br></th><th align="center">通信不能時の挙動<br></th><th align="center">ダイアグ検出<br>(ドライバの認識)<br></th></tr><tr><td align="center">VSC制御<br>(VSC作動時に駆動力の制御)<br></td><td align="center">Rx<br></td><td align="center">Tx<br></td><td align="center">Tx<br></td><td align="center">VSC/ABS機能停止<br></td><td align="center">可(VSCインジケータ常灯)<br></td></tr></table><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">Rx&middot;&middot;&middot;&middot;受信<br></li><li class="atten4">Tx&middot;&middot;&middot;&middot;送信<br></li><li class="atten4">通信不能時のVSCシステムへの影響はEBD付きABS&amp;TRC&amp;VSC&amp;BAシステム(<a href="#" onclick="openSeePage('seepage','RM000000P1L000X');return false;"><img border="0" src="../../../../image/extxref.png"></a>)を参照する。<br></li></ol></p></p></li></ol></ol><br clear="all"></body></html>
+<li><p><font class="ptxt">If any of any of the buses (communication lines) is ferted in a short or the like, it is designed to shift to a fail -safe process and prevent the system malfunction.</font><br/></p></li>
+<li><p><font class="ptxt">Brake actuator ASSY (VSC ECU), steering sensor (steering angle sensor) and yorrate sensor (yaw / G sensor), brake actuator ASSY (VSC ECU) enters the Fail Safe and stops the VSC function.</font><br/><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="89.5%
+
+						"><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><colgroup align="" width="13%
+
+			"><col align=""/></colgroup><colgroup align="" width="13%
+
+			"><col align=""/></colgroup><colgroup align="" width="13%
+
+			"><col align=""/></colgroup><colgroup align="" width="15%
+
+			"><col align=""/></colgroup><colgroup align="" width="23%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">function<br/></th><th align="center">VSC ECU<br/></th><th align="center">Steering angle sensor<br/></th><th align="center">Yo G sensor<br/></th><th align="center">Behavior when communication<br/></th><th align="center">Diag inspection<br/>(Driver recognition)<br/></th></tr><tr><td align="center">VSC control<br/>(Control for driving force when VSC operation)<br/></td><td align="center">RX<br/></td><td align="center">TX<br/></td><td align="center">TX<br/></td><td align="center">VSC/ABS function stop<br/></td><td align="center">N possible (VSC indicator constant light)<br/></td></tr></tbody></table></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">RX ...<br/></li><li class="atten4">TX ····<br/></li><li class="atten4">The impact on the VSC system in the case of communication is the ABS &amp; TRC &amp; VSC &amp; BA system with EBD (<a href="#" onclick="openSeePage('seepage','RM000000P1L000X');return false;"><img border="0" src="../../../../image/extxref.png"/></a>) See.<br/></li></ol><p></p><p></p></li></ol></ol><br clear="all"/></body></html>

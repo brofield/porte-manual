@@ -1,101 +1,101 @@
-<html>
-<head>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 <title>R-ISCV</title>
-<link type="text/css" href="../css/main2.css" rel="stylesheet">
-<link type="text/css" href="../css/style.css" rel="stylesheet">
-<script src="../js/hidden.js" language="JavaScript"></script>
+<link href="../css/main2.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" src="../js/hidden.js"></script>
 </head>
 <body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
-<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td align="left"><input onClick="printCheck()" value="印刷" name="submit" type="submit"></td><td align="center">　</td><td align="right"><input onClick="closeWindow()" value="閉じる" name="submit2" type="submit"></td>
+<table cellpadding="2" cellspacing="0" id="print" style="display:none" width="100%">
+<tbody><tr>
+<td align="left"><input name="submit" onclick="printCheck()" type="submit" value="印刷"/></td><td align="center">　</td><td align="right"><input name="submit2" onclick="closeWindow()" type="submit" value="閉じる"/></td>
 </tr>
-</table>
+</tbody></table>
 <div align="left">
 
 
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0">
-<tr>
-<td class="gray" width="5%">　</td><td align="center" class="gray" width="80%">R-ISCV</td><td width="15%" class="gray" align="right"></td>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td class="gray" width="5%">　</td><td align="center" class="gray" width="80%">R-ISCV</td><td align="right" class="gray" width="15%"></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">スロットルボデーに取り付けられており，エンジンコントロールコンピューターからのデューティー信号によりロータリーバルブの角度を変化させ，スロットルバルブをバイパスする空気量を制御します。空気量はエンジンコントロールコンピューターからの信号のON・OFFの時間の比（デューティー比）によって決めています。また，駆動回路をIC化し，R-ISCV内に内蔵しました。</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">Attached to the throttle body, it changes the angle of the rotary valve by the duty signal from the engine control computer, and controls the amount of air to bypass the throttle valve.The amount of air is determined by the time of ON / OFF of the signal from the engine control computer (duty ratio).In addition, the drive circuit was converted into an IC and was built into R-ISCV.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 
 
-<table cellpadding="2" cellspacing="0" border="0" width="100%">
-<tr>
-<td align="center"><img src="../xml/grph_ent/a3840081p.png"></td>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center"><img src="../xml/grph_ent/a3840081p.png"/></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT010011A108A231');chgImg('imT010011A108A231');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail_b0.gif" border="0" id="imT010011A108A231" align="absmiddle"><a name="t010011a108a231">R-ISCV作動</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT010011A108A231');chgImg('imT010011A108A231');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT010011A108A231" src="../images/detail_b0.gif"/><a name="t010011a108a231">R-ISCV operation</a></span>
+<br/>
 <div id="tmT010011A108A231" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
 
-<table bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" border="1" width="95%">
-<tr>
+<table border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">始動時補助</div>
+<div class="text">Subsidy at startup</div>
 </td><td class="color1">
-<div class="text">エンジン始動時および始動後数秒間，デューティー比を上げてR-ISCV通過空気量を多くし，エンジンの始動性を確保しています。始動後は冷却水温に応じてデューティー比を変えて，エンジン回転数を制御します。</div>
+<div class="text">The duty ratio is increased to increase the duty ratio at the start of the engine and several seconds after starting, ensuring the startability of the engine.After starting, change the duty ratio according to the cooling water temperature to control the engine speed.</div>
 </td>
 </tr>
 <tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">予測制御</div>
+<div class="text">Predictive control</div>
 </td><td class="color1">
-<div class="text">電気負荷が変化したとき，エアコンスイッチを切り換えたときエンジンにかかる負荷が変わりエンジン回転数が変化します。これらの信号を検出したとき，R-ISCVにそれぞれの条件に応じた信号を送り，R-ISCV通過空気量を変化させてエンジン回転数の変動を抑えます。</div>
+<div class="text">When the electric load changes, when the air conditioner switch is switched, the load on the engine changes and the engine speed changes.When these signals are detected, the signal is sent to R-ISCV according to each condition, which changes the R-ISCV passing air to reduce the fluctuation of the engine speed.</div>
 </td>
 </tr>
 <tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">フィードバック制御および    電気負荷アイドルアップ</div>
+<div class="text">Feedback control and electric load idle up</div>
 </td><td class="color1">
-<div class="text">一定時間エンジン回転数を計測してアイドル回転数と目標回転数とに差がある場合に，R-ISCVに信号を送りR-ISCV通過空気量を変化させ目標回転数に近づけます。また，電気負荷に応じてアイドル回転数を上昇させ，エンジンアイドル時の安定化をはかっています。</div>
+<div class="text">When the engine speed is measured for a certain period of time and there is a difference between the idle rotation speed and the target rotation number, the signal is sent to the R-ISCV to change the R-ISCV passing air and approach the target rotation number.In addition, the idle rotation speed is increased according to the electric load, and the engine idle is stabilized.</div>
 </td>
 </tr>
 <tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">エアコン作動時 アイドルアップ回転数可変制御</div>
+<div class="text">Idol -up rotation speed frequency during air conditioner operation variable control</div>
 </td><td class="color1">
-<div class="text">エアコン作動時のアイドルアップ回転数をエアコンの負荷によって2段階に制御し，必要最小限のアイドルアップ回転数にすることにより，燃費および運転性の確保をはかりました。</div>
+<div class="text">The air conditioner is controlled in two stages by the load of the air conditioner when the air conditioner is operating, and the minimum necessary idle -up rotation is ensured to ensure fuel efficiency and drivingability.</div>
 </td>
 </tr>
 <tr>
 <td class="gray3_dark" valign="MIDDLE">
-<div class="text">パワーステアリング作動時    アイドルアップ回転数制御</div>
+<div class="text">Power steering when activating idle up speed control control</div>
 </td><td class="color1">
-<div class="text">パワーステアリング作動時のアイドルアップ回転数を,パワーステアリング油圧センサーの信号を受けたエンジンコントロールコンピューターによって制御し，運転性の確保をはかりました。</div>
+<div class="text">The number of idle -up revolutions during the power steering is controlled by the engine control computer under the signal of the power steering hydraulic sensor, ensuring drivingability.</div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 </div>
-</body>
-</html>
+
+
+</body></html>

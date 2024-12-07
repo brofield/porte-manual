@@ -1,162 +1,210 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="RM0000008Y1038X"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>DTC
-								 &nbsp;&nbsp; P0500/42 &nbsp;&nbsp; 車速センサ系統</h3></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><h2>準備品一覧<a href="#" onclick="openSeePage('ppr','RM0000008Y1038X');return false;"><img border="0" src="../../../../image/extxref.png"></a></h2><br clear="all"><a name="RM0000008Y1038X_01"></a><h2>回路説明</h2><br clear="all"><a name="1"></a><font class="ptxt">駆動方式FF:<br><font class="ptxt">各車輪に取り付けられたABS用のスピードセンサから出力される車速パルス信号をブレーキアクチュエータASSY(スキッドコントロールコンピュータ)により車速パルス信号(トランスアクスル回転軸1回転/4パルスに相当)に変換し、車速信号としてコンビネーションメータASSYに出力し、エンジンコントロールコンピュータに入力される。</font><br></font><br clear="all"><div class="full"><br clear="all"><img src="../../img/a213522j01.png" name="A213522J01" alt="A213522J01" border="1" class="full"></div><br clear="all"><br clear="all"><font class="ptxt">駆動方式4WD:<br><font class="ptxt">車速センサはローターシャフト（ドリブンギヤを介してトランスミッション動力シャフトにより回転する）が１回転する毎に４パルスシグナルを出力する。その信号はコンビネーションメータASSY内の回路で形成される波形により、更に正確なパルス波形へと変えられ、エンジンコントロールコンピュータに伝えられる。それはこのようなパルスシグナルの周波数に基づいて車速を決定します。</font><br></font><br clear="all"><div class="full"><br clear="all"><img src="../../img/a236725j01.png" name="A236725J01" alt="A236725J01" border="1" class="full"></div><br clear="all"><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="
-							98%
-						"><colgroup align="center" width="18%
-			"><col align=""></colgroup><colgroup align="center" width="41%
-			"><col align=""></colgroup><colgroup align="center" width="41%
-			"><col align=""></colgroup><tr><th>DTC No.<br>SAE/TCCS<br></th><th>DTC検出条件<br><ol style="list-style-type: decimal"><li>診断条件<br></li><li>異常状態<br></li><li>異常期間<br></li><li>その他<br></li></ol></th><th>点検部位<br></th></tr><tr><td>P0500/42<br></td><td align="left"><ol style="list-style-type: decimal"><li>走行中<br></li><li>車速信号が入力されない状態<br></li><li>2秒以上<br></li><li>1トリップ<br></li></ol></td><td align="left"><ol style="list-style-type: disc"><li>ワイヤハーネスおよびコネクター<br></li><li>コンビネーションメータASSY<br></li><li>ブレーキアクチュエータASSY*1<br></li><li>スピードメータセンサ*2<br></li><li>エンジンコントロールコンピユータ<br></li></ol></td></tr></table><br clear="all"><ol style="list-style-type: none"><li>*1: 駆動方式FF<br></li><li>*2: 駆動方式4WD<br></li></ol><br clear="all"><br clear="all"><a name="RM0000008Y1038X_02"></a><h2>回路図</h2><br clear="all"><a name="1"></a><div class="full"><br clear="all"><img src="../../img/a242289j03.png" name="A242289J03" alt="A242289J03" border="1" class="full"></div><br clear="all"><br clear="all"><div class="full"><br clear="all"><img src="../../img/a242523j02.png" name="A242523J02" alt="A242523J02" border="1" class="full"></div><br clear="all"><br clear="all"><br clear="all"><a name="RM0000008Y1038X_04"></a><h2>点検手順</h2><br clear="all"><a name="1"></a><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">トラブルシュートを実施する前に、この回路のヒューズを点検すること。</dd></dl></p><br clear="all"><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">オプションコネクターなどから他のECUにSPD線が分岐している場合、まずそれら回路を切り離して点検してみる。<br></li><li class="atten4">SST(TaSCAN)を使用してフリーズフレームデータを読み取る。フリーズフレームデータには不具合発生時のエンジン稼動状態の一部が記録されており、それらの情報がトラブルシュートを行う際に役立つ。 <br></li></ol></p><br clear="all"><a name="RM0000008Y1038X_03_0001"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順1</td><td width="90%" class="s1">TaSCANデータ読み取り（車速）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70201&nbsp;&nbsp;<br></dd></dl>
+		<body onload="seePageAnchor()"><a name="RM0000008Y1038X"></a><table cellpadding="0" width="100%"><tbody><tr><td width="93%"><h3>DTC P0500/42 speed sensor system</h3></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr></tbody></table><h2>List of preparation<a href="#" onclick="openSeePage('ppr','RM0000008Y1038X');return false;"><img border="0" src="../../../../image/extxref.png"/></a></h2><br clear="all"/><a name="RM0000008Y1038X_01"></a><h2>Circuit description</h2><br clear="all"/><a name="1"></a><font class="ptxt">Driving method FF:<br/><font class="ptxt">Transfer pulse signal output from ABS speed sensor attached to each wheel is converted to car speed pulse signal (equivalent to a trance axle rotation axis 1 rotation/4 pulse) by brake actuator ASSY (skid control computer).It is output to the combination meter assembly and input to the engine control computer.</font><br/></font><br clear="all"/><div class="full"><br clear="all"/><img alt="A213522J01" border="1" class="full" name="A213522J01" src="../../img/a213522j01.png"/></div><br clear="all"/><br clear="all"/><font class="ptxt">Driving method 4WD:<br/><font class="ptxt">The vehicle speed sensor outputs 4 pulse signals every time the rotor shaft (rotating by the transmission power shaft via a driven gear).The signal is turned into an accurate pulse waveform by the waveform formed in the circuit in the combination meter assassy, ​​and is transmitted to the engine control computer.It determines the vehicle speed based on the frequency of such a pulse signal.</font><br/></font><br clear="all"/><div class="full"><br clear="all"/><img alt="A236725J01" border="1" class="full" name="A236725J01" src="../../img/a236725j01.png"/></div><br clear="all"/><br clear="all"/><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="
+
+							98%
+
+						"><colgroup align="center" width="18%
+
+			"><col align=""/></colgroup><colgroup align="center" width="41%
+
+			"><col align=""/></colgroup><colgroup align="center" width="41%
+
+			"><col align=""/></colgroup><tbody><tr><th>DTC No.<br/>SAE/TCCS<br/></th><th>DTC detection conditions<br/><ol style="list-style-type: decimal"><li>Diagnostic condition<br/></li><li>Abnormal state<br/></li><li>Abnormal period<br/></li><li>others<br/></li></ol></th><th>Inspection site<br/></th></tr><tr><td>P0500/42<br/></td><td align="left"><ol style="list-style-type: decimal"><li>While driving<br/></li><li>A state where the vehicle speed signal is not entered<br/></li><li>2 seconds or more<br/></li><li>1 trip<br/></li></ol></td><td align="left"><ol style="list-style-type: disc"><li>Wire harness and connector<br/></li><li>Combination meter asser<br/></li><li>Brake actuator Assembly*1<br/></li><li>Speedometer sensor*2<br/></li><li>Engine control compilation<br/></li></ol></td></tr></tbody></table><br clear="all"/><ol style="list-style-type: none"><li>*1: Driving method FF<br/></li><li>*2: Driving system 4WD<br/></li></ol><br clear="all"/><br clear="all"/><a name="RM0000008Y1038X_02"></a><h2>Circuit diagram</h2><br clear="all"/><a name="1"></a><div class="full"><br clear="all"/><img alt="A242289J03" border="1" class="full" name="A242289J03" src="../../img/a242289j03.png"/></div><br clear="all"/><br clear="all"/><div class="full"><br clear="all"/><img alt="A242523J02" border="1" class="full" name="A242523J02" src="../../img/a242523j02.png"/></div><br clear="all"/><br clear="all"/><br clear="all"/><a name="RM0000008Y1038X_04"></a><h2>Inspection procedure</h2><br clear="all"/><a name="1"></a><p></p><dl class="caution"><dt class="caution">■ Attention ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">Check the fuse of this circuit before performing trouble shooting.</dd></dl><p></p><br clear="all"/><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">If the SPD line branches to other ECUs from an option connector, etc., first cut those circuits and check.<br/></li><li class="atten4">Read freeze frame data using SST (Tascan).The freeze -frame data records a part of the engine operation state in the event of a problem, which helps you take a trouble shot.<br/></li></ol><p></p><br clear="all"/><a name="RM0000008Y1038X_03_0001"></a><table border="1" height="35" width="100%"><tbody><tr><td class="s1" width="10%">Step 1</td><td class="s1" width="90%">Tascan Data Read (vehicle speed)</td></tr></tbody></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70201<br/></dd></dl>
 <ol class="s2">
-<li value="1"><p><font class="ptxt">スピードメータが正常に作動することを確認する。</font><br></p></li></ol>
+<li value="1"><p><font class="ptxt">Confirm that the speed meter works properly.</font><br/></p></li></ol>
 <ol class="s2">
-<li value="2"><p><font class="ptxt">SST(TaSCAN)をDLC3に接続する。</font><br></p></li></ol>
+<li value="2"><p><font class="ptxt">Connect SST (Tascan) to DLC3.</font><br/></p></li></ol>
 <ol class="s2">
-<li value="3"><p><font class="ptxt">走行テストを行う。</font><br></p></li></ol>
+<li value="3"><p><font class="ptxt">Perform a driving test.</font><br/></p></li></ol>
 <ol class="s2">
-<li value="4"><p><font class="ptxt">SST(TaSCAN)画面表示に従って、ECUデータモニターの車速を読み取る。</font><br><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec">SST(TaSCAN)データモニター表示とスピードメータ表示が同じ<br></dd></dl></p><p><dl class="spec"><dt class="spec">結果</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="50%
-			"><col align=""></colgroup><tr><th>結果<br></th><th>飛び先<br></th></tr><tr><td>異常<br></td><td>A<br></td></tr><tr><td>正常<br></td><td>B<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">常時発生しない問題の点検<a href="#" onclick="openSeePage('seepage','RM0000008YV000X');return false;">
-			（要領は
-		<img border="0" src="../../../../image/extxref.png">
-			参照）
-		</a>
-</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000008Y1038X_03_0003"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順2</td><td width="90%" class="s1">ワイヤハーネスおよびコネクター点検（エンジンコントロールコンピュータ - コンビネーションメータASSY）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">点検要領および注意事項は<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照。</dd></dl></p>
+<li value="4"><p><font class="ptxt">According to the SST (Tascan) screen display, the vehicle speed of the ECU data monitor is read.</font><br/></p><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec">SST (TASCAN) Data monitor display and speedometer display are the same<br/></dd></dl><p></p><p></p><dl class="spec"><dt class="spec">result</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><tbody><tr><th>result<br/></th><th>Destination<br/></th></tr><tr><td>Abnormality<br/></td><td>A<br/></td></tr><tr><td>normal<br/></td><td>B<br/></td></tr></tbody></table></dd></dl><p></p><p></p></li></ol><br clear="all"/><table border="0" cellpadding="4" cellspacing="0" width="96%"><tbody><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img height="100%" src="../../../../image/fin_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Inspection of problems that do not always occur<a href="#" onclick="openSeePage('seepage','RM0000008YV000X');return false;">(The point is<img border="0" src="../../../../image/extxref.png"/>reference)</a>
+</td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="96%"><tbody><tr><td class="diag-next" style="border-bottom-width: 0px;" width="20%">A</td><td width="80%"><br/></td></tr><tr><td align="center" valign="top" width="20%"><img height="13" src="../../../../image/next_down.png" width="100%"/></td><td width="80%"><br/></td></tr></tbody></table><br/><a name="RM0000008Y1038X_03_0003"></a><table border="1" height="35" width="100%"><tbody><tr><td class="s1" width="10%">Step 2</td><td class="s1" width="90%">Wire harness and connector inspection (engine control computer -combination meter ASSY)</td></tr></tbody></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030<br/>09083-00170<br/></dd></dl><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">Inspection guidelines and precautions<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"/></a>reference.</dd></dl><p></p>
 <ol class="s2">
-<li value="1"><p><font class="ptxt">エンジンコントロールコンピュータのコネクターD54を切り離す。</font><br></p></li></ol>
+<li value="1"><p><font class="ptxt">Cut the connector D54 of the engine control computer.</font><br/></p></li></ol>
 <ol class="s2">
-<li value="2"><p><font class="ptxt">コンビネーションメータASSYのコネクターD71を切り離す。</font><br></p></li></ol>
+<li value="2"><p><font class="ptxt">Cut the connector D71 of the combination meter asser Assembly.</font><br/></p></li></ol>
 <ol class="s2">
-<li value="3"><p><font class="ptxt">ドアコントロールリレーのコネクターJ13を切り離す。</font><br></p></li></ol>
+<li value="3"><p><font class="ptxt">Cut the door control relay connector J13.</font><br/></p></li></ol>
 <ol class="s2">
-<li value="4"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。(端子配列は<a href="#" onclick="openSeePage('seepage','X39400000QV058D');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)</font><br><p><dl class="spec"><dt class="spec">抵抗値(断線点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>D54-17 (SPD) - D71-25 (SPS+)<br></td><td>常時<br></td><td>1 Ω未満<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">抵抗値(短絡点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>D54-17 (SPD)およびD71-25 (SPS+) - 他の端子間およびボデーアース間<br></td><td>常時<br></td><td>10 ｋΩ以上<br></td></tr></table></dd></dl></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">短絡が認められている場合は、車速信号に関連する他のシステムの車速信号回路点検もあわせて実施する。</dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ワイヤハーネスまたはコネクター修理または交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000008Y1038X_03_0008"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順3</td><td width="90%" class="s1">ワイヤハーネスおよびコネクター点検（SPS+電圧）</td></tr></table><table class="float"><tr><td><img src="../../img/a242269j03.png" name="A242269J03" alt="A242269J03" border="1" class="half"><br></td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">点検要領および注意事項は<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照。</dd></dl></p>
+<li value="4"><p><font class="ptxt">Use SST (Toyota Electrical Tester) to measure resistance between terminals.(The terminal array is<a href="#" onclick="openSeePage('seepage','X39400000QV058D');return false;"><img border="0" src="../../../../image/extxref.png"/></a>reference)</font><br/></p><p></p><dl class="spec"><dt class="spec">Resistance value (disconnection inspection)</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>D54-17 (SPD) --D71-25 (SPS+)<br/></td><td>Always<br/></td><td>Less than 1 Ω<br/></td></tr></tbody></table></dd></dl><p></p><p></p><dl class="spec"><dt class="spec">Resistance value (short circuit inspection)</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>D54-17 (SPD) and D71-25 (SPS+) -The between other terminals and body earth<br/></td><td>Always<br/></td><td>10 kΩ or higher<br/></td></tr></tbody></table></dd></dl><p></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">If a short circuit is recognized, the vehicle speed signal circuit inspection of other systems related to the vehicle speed signal is also performed.</dd></dl><p></p><p></p></li></ol><br clear="all"/><table border="0" cellpadding="4" cellspacing="0" width="96%"><tbody><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img height="100%" src="../../../../image/fin_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Wire harness or connector repair or replacement</td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="96%"><tbody><tr><td class="diag-next" style="border-bottom-width: 0px;" width="20%">OK</td><td width="80%"><br/></td></tr><tr><td align="center" valign="top" width="20%"><img height="13" src="../../../../image/next_down.png" width="100%"/></td><td width="80%"><br/></td></tr></tbody></table><br/><a name="RM0000008Y1038X_03_0008"></a><table border="1" height="35" width="100%"><tbody><tr><td class="s1" width="10%">Step 3</td><td class="s1" width="90%">Wire harness and connector inspection (SPS+voltage)</td></tr></tbody></table><table class="float"><tbody><tr><td><img alt="A242269J03" border="1" class="half" name="A242269J03" src="../../img/a242269j03.png"/><br/></td></tr></tbody></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030<br/>09083-00170<br/></dd></dl><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">Inspection guidelines and precautions<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"/></a>reference.</dd></dl><p></p>
 <ol class="s2">
-<li value="1"><p><font class="ptxt">コンビネーションメータASSYのコネクターD71を切り離す。</font><br></p></li></ol>
+<li value="1"><p><font class="ptxt">Cut the connector D71 of the combination meter asser Assembly.</font><br/></p></li></ol>
 <ol class="s2">
-<li value="2"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の電圧を測定する。</font><br><p><dl class="spec"><dt class="spec">電圧値</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>D71-25 (SPS+) - ボデーアース<br></td><td>IG ON<br></td><td>4.5 to 5.5 V<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="42.6%
-						"><caption class="tbl-title"><span>イラスト内指示文字&nbsp;
-				</span></caption><colgroup align="" width="10%
-			"><col align=""></colgroup><colgroup align="" width="90%
-			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>車両ワイヤハーネスコネクター前側<br>(コンビネーションメータASSY接続コネクター)<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">エンジンコントロール コンピュータ交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000008Y1038X_03_0002"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順4</td><td width="90%" class="s1">コンビネーションメータASSY点検（車速パルス信号出力波形）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70201&nbsp;&nbsp;<br></dd></dl>
-<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a236727j07.png" name="A236727J07" alt="A236727J07" border="1" class="half"><br></td></tr></table>
-<li value="1"><p><font class="ptxt">SST(TaSCAN)を使用して、端子間の波形を測定する。</font><br></p></li></ol><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">コネクターを接続した状態で、コネクター裏側から点検する。</dd></dl></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">SST(TaSCAN)の各レンジを表のように設定する。</dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="
-							45%
-						"><colgroup align="center" width="30%
-			"><col align=""></colgroup><colgroup align="center" width="70%
-			"><col align=""></colgroup><tr><th>項目<br></th><th>内容<br></th></tr><tr><td>測定端子<br></td><td align="left">D71-25 (SPS+) - ボデーアース<br></td></tr><tr><td>計器セット<br></td><td align="left">2V/DIV、20ms/DIV<br></td></tr><tr><td>条件<br></td><td align="left">約20km/hで走行時<br></td></tr></table><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec">図のような波形が出力される <br></dd></dl></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">車速が高くなるにつれ、波形周期は短くなる。</dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="
-							45%
-						"><caption class="tbl-title"><span>イラスト内指示文字&nbsp;
-				</span></caption><colgroup align="" width="10%
-			"><col align=""></colgroup><colgroup align="" width="90%
-			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>コネクター接続状態<br>(コンビネーションメータASSY)<br></td></tr></table><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM0000008Y1038X_03_0009">手順 5 へ
-												</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">エンジンコントロール コンピュータ交換&nbsp;
-										</td></tr></table></td></tr></table><br><a name="RM0000008Y1038X_03_0009"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順5</td><td width="90%" class="s1">コンビネーションメータASSY点検（車速パルス信号入力波形）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70201&nbsp;&nbsp;<br></dd></dl>
-<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a236727j08.png" name="A236727J08" alt="A236727J08" border="1" class="half"><br></td></tr></table>
-<li value="1"><p><font class="ptxt">SST(TaSCAN)を使用して、端子間の波形を測定する。</font><br></p></li></ol><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">コネクターを接続した状態で、コネクター裏側から点検する。</dd></dl></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">SST(TaSCAN)の各レンジを表のように設定する。</dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="
-							45%
-						"><colgroup align="center" width="30%
-			"><col align=""></colgroup><colgroup align="center" width="70%
-			"><col align=""></colgroup><tr><th>項目<br></th><th>内容<br></th></tr><tr><td>測定端子<br></td><td align="left">D71-24 (SI) - ボデーアース<br></td></tr><tr><td>計器セット<br></td><td align="left">2V/DIV、20ms/DIV<br></td></tr><tr><td>条件<br></td><td align="left">約20km/hで走行時<br></td></tr></table><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec">図のような波形が出力される <br></dd></dl></p><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">車速が高くなるにつれ、波形周期は短くなる。</dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="
-							45%
-						"><caption class="tbl-title"><span>イラスト内指示文字&nbsp;
-				</span></caption><colgroup align="" width="10%
-			"><col align=""></colgroup><colgroup align="" width="90%
-			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>コネクター接続状態<br>(コンビネーションメータASSY)<br></td></tr></table><p><dl class="spec"><dt class="spec">結果</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="42.6%
-						"><colgroup align="center" width="70%
-			"><col align=""></colgroup><colgroup align="center" width="30%
-			"><col align=""></colgroup><tr><th>結果<br></th><th>飛び先<br></th></tr><tr><td>正常<br></td><td>A<br></td></tr><tr><td>異常(駆動方式FF)<br></td><td>B<br></td></tr><tr><td>異常(駆動方式4WD)<br></td><td>C<br></td></tr></table></dd></dl></p><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM0000008Y1038X_03_0010">手順 6 へ
-												</a></td></tr></table></td></tr><tr><td height="4px"></td></tr><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">C</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM0000008Y1038X_03_0011">手順 7 へ
-												</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">コンビネーションメータASSY交換<a href="#" onclick="openSeePage('seepage','RM000000B7C000X');return false;">
-			（要領は
-		<img border="0" src="../../../../image/extxref.png">
-			参照）
-		</a>
-&nbsp;
-										</td></tr></table></td></tr></table><br><a name="RM0000008Y1038X_03_0010"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順6</td><td width="90%" class="s1">ワイヤハーネスおよびコネクター点検（コンビネーションメータASSY - ブレーキアクチュエータASSY）</td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">点検要領および注意事項は<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照。</dd></dl></p>
+<li value="2"><p><font class="ptxt">The voltage between the terminals is measured using SST (Toyota Electrical Tester).</font><br/></p><p></p><dl class="spec"><dt class="spec">Voltage value</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>D71-25 (SPS+) --Body Earth<br/></td><td>IG ON<br/></td><td>4.5 to 5.5 v<br/></td></tr></tbody></table></dd></dl><p></p><table border="1" cellpadding="2" cellspacing="0" width="42.6%
+
+						"><caption class="tbl-title"><span>Illustration instructions</span></caption><colgroup align="" width="10%
+
+			"><col align=""/></colgroup><colgroup align="" width="90%
+
+			"><col align=""/></colgroup><tbody><tr><td align="center">*a<br/></td><td>Vehicle wire harness connector front side<br/>(Combination meter Association connection connector)<br/></td></tr></tbody></table><p></p></li></ol><br clear="all"/><table border="0" cellpadding="4" cellspacing="0" width="96%"><tbody><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img height="100%" src="../../../../image/fin_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Engine control computer replacement</td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="96%"><tbody><tr><td class="diag-next" style="border-bottom-width: 0px;" width="20%">OK</td><td width="80%"><br/></td></tr><tr><td align="center" valign="top" width="20%"><img height="13" src="../../../../image/next_down.png" width="100%"/></td><td width="80%"><br/></td></tr></tbody></table><br/><a name="RM0000008Y1038X_03_0002"></a><table border="1" height="35" width="100%"><tbody><tr><td class="s1" width="10%">Step 4</td><td class="s1" width="90%">Combination meter Assy inspection (vehicle speed pulse signal output waveform)</td></tr></tbody></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70201<br/></dd></dl>
+<ol class="s2"><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="A236727J07" border="1" class="half" name="A236727J07" src="../../img/a236727j07.png"/><br/></td></tr></tbody></table>
+<li value="1"><p><font class="ptxt">Use SST (Tascan) to measure the waveform between the terminals.</font><br/></p></li></ol><p></p><dl class="caution"><dt class="caution">■ Attention ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">Inspect from the back of the connector with the connector connected.</dd></dl><p></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">Set each range of SST (Tascan) as shown in the table.</dd></dl><p></p><table border="1" cellpadding="2" cellspacing="0" width="
+
+							45%
+
+						"><colgroup align="center" width="30%
+
+			"><col align=""/></colgroup><colgroup align="center" width="70%
+
+			"><col align=""/></colgroup><tbody><tr><th>item<br/></th><th>Content<br/></th></tr><tr><td>Measuring terminal<br/></td><td align="left">D71-25 (SPS+) --Body Earth<br/></td></tr><tr><td>Instrument set<br/></td><td align="left">2V/Div, 20ms/Div<br/></td></tr><tr><td>conditions<br/></td><td align="left">When driving at about 20km/h<br/></td></tr></tbody></table><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec">The waveform as shown in the figure is output<br/></dd></dl><p></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">As the vehicle speed increases, the waveform cycle becomes shorter.</dd></dl><p></p><table border="1" cellpadding="2" cellspacing="0" width="
+
+							45%
+
+						"><caption class="tbl-title"><span>Illustration instructions</span></caption><colgroup align="" width="10%
+
+			"><col align=""/></colgroup><colgroup align="" width="90%
+
+			"><col align=""/></colgroup><tbody><tr><td align="center">*a<br/></td><td>Connector connection status<br/>(Combination meter asser)<br/></td></tr></tbody></table><br clear="all"/><table border="0" cellpadding="4" cellspacing="0" width="96%"><tbody><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img height="100%" src="../../../../image/next_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1"><a href="#RM0000008Y1038X_03_0009">To step 5</a></td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="96%"><tbody><tr><td class="diag-fin" style="border-bottom-width: 0px;" width="20%">OK</td><td width="80%"><br/></td></tr><tr><td align="center" valign="top" width="20%"><img height="13" src="../../../../image/fin_down.png" width="100%"/></td><td width="80%"><br/></td></tr><tr><td colspan="2"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Engine control computer replacement</td></tr></tbody></table></td></tr></tbody></table><br/><a name="RM0000008Y1038X_03_0009"></a><table border="1" height="35" width="100%"><tbody><tr><td class="s1" width="10%">Step 5</td><td class="s1" width="90%">Combination meter Assy inspection (vehicle speed pulse signal input waveform)</td></tr></tbody></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70201<br/></dd></dl>
+<ol class="s2"><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="A236727J08" border="1" class="half" name="A236727J08" src="../../img/a236727j08.png"/><br/></td></tr></tbody></table>
+<li value="1"><p><font class="ptxt">Use SST (Tascan) to measure the waveform between the terminals.</font><br/></p></li></ol><p></p><dl class="caution"><dt class="caution">■ Attention ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">Inspect from the back of the connector with the connector connected.</dd></dl><p></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">Set each range of SST (Tascan) as shown in the table.</dd></dl><p></p><table border="1" cellpadding="2" cellspacing="0" width="
+
+							45%
+
+						"><colgroup align="center" width="30%
+
+			"><col align=""/></colgroup><colgroup align="center" width="70%
+
+			"><col align=""/></colgroup><tbody><tr><th>item<br/></th><th>Content<br/></th></tr><tr><td>Measuring terminal<br/></td><td align="left">D71-24 (SI) --Body Earth<br/></td></tr><tr><td>Instrument set<br/></td><td align="left">2V/Div, 20ms/Div<br/></td></tr><tr><td>conditions<br/></td><td align="left">When driving at about 20km/h<br/></td></tr></tbody></table><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec">The waveform as shown in the figure is output<br/></dd></dl><p></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">As the vehicle speed increases, the waveform cycle becomes shorter.</dd></dl><p></p><table border="1" cellpadding="2" cellspacing="0" width="
+
+							45%
+
+						"><caption class="tbl-title"><span>Illustration instructions</span></caption><colgroup align="" width="10%
+
+			"><col align=""/></colgroup><colgroup align="" width="90%
+
+			"><col align=""/></colgroup><tbody><tr><td align="center">*a<br/></td><td>Connector connection status<br/>(Combination meter asser)<br/></td></tr></tbody></table><p></p><dl class="spec"><dt class="spec">result</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="42.6%
+
+						"><colgroup align="center" width="70%
+
+			"><col align=""/></colgroup><colgroup align="center" width="30%
+
+			"><col align=""/></colgroup><tbody><tr><th>result<br/></th><th>Destination<br/></th></tr><tr><td>normal<br/></td><td>A<br/></td></tr><tr><td>Abnormal (drive system FF)<br/></td><td>B<br/></td></tr><tr><td>Abnormal (drive system 4WD)<br/></td><td>C<br/></td></tr></tbody></table></dd></dl><p></p><br clear="all"/><table border="0" cellpadding="4" cellspacing="0" width="96%"><tbody><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-next" style="border-right-width: 0px;">B</td><td align="left" width="13"><img height="100%" src="../../../../image/next_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1"><a href="#RM0000008Y1038X_03_0010">To step 6</a></td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-next" style="border-right-width: 0px;">C</td><td align="left" width="13"><img height="100%" src="../../../../image/next_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1"><a href="#RM0000008Y1038X_03_0011">To step 7</a></td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="96%"><tbody><tr><td class="diag-fin" style="border-bottom-width: 0px;" width="20%">A</td><td width="80%"><br/></td></tr><tr><td align="center" valign="top" width="20%"><img height="13" src="../../../../image/fin_down.png" width="100%"/></td><td width="80%"><br/></td></tr><tr><td colspan="2"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Combination meter Assembly replacement<a href="#" onclick="openSeePage('seepage','RM000000B7C000X');return false;">(The point is<img border="0" src="../../../../image/extxref.png"/>reference)</a>
+ 
+										</td></tr></tbody></table></td></tr></tbody></table><br/><a name="RM0000008Y1038X_03_0010"></a><table border="1" height="35" width="100%"><tbody><tr><td class="s1" width="10%">Step 6</td><td class="s1" width="90%">Wire harness and connector inspection (combination meter asser -brake actuator ASSY)</td></tr></tbody></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030<br/>09083-00170<br/></dd></dl><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">Inspection guidelines and precautions<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"/></a>reference.</dd></dl><p></p>
 <ol class="s2">
-<li value="1"><p><font class="ptxt">VSCなし</font><br><ol class="s3">
-<li><p><font class="ptxt">コンビネーションメータASSYのコネクターD71を切り離す。</font><br></p></li>
-<li><p><font class="ptxt">ブレーキアクチュエータASSYのコネクターA33を切り離す。</font><br></p></li>
-<li><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。</font><br><p><dl class="spec"><dt class="spec">抵抗値(断線点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="37.8%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>D71-24 (SI) - A33-26 (SP1)<br></td><td>常時<br></td><td>1 Ω未満<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">抵抗値(短絡点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="37.8%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>D71-24 (SI)およびA33-26 (SP1) - 他の端子間およびボデーアース間<br></td><td>常時<br></td><td>10 kΩ以上<br></td></tr></table></dd></dl></p></p></li></ol></p></li></ol>
+<li value="1"><p><font class="ptxt">No VSC</font><br/></p><ol class="s3">
+<li><p><font class="ptxt">Cut the connector D71 of the combination meter asser Assembly.</font><br/></p></li>
+<li><p><font class="ptxt">Brake actuator Cut the connector A33 of the ASSY ASSY.</font><br/></p></li>
+<li><p><font class="ptxt">Use SST (Toyota Electrical Tester) to measure resistance between terminals.</font><br/></p><p></p><dl class="spec"><dt class="spec">Resistance value (disconnection inspection)</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="37.8%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>D71-24 (SI) --A33-26 (SP1)<br/></td><td>Always<br/></td><td>Less than 1 Ω<br/></td></tr></tbody></table></dd></dl><p></p><p></p><dl class="spec"><dt class="spec">Resistance value (short circuit inspection)</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="37.8%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>D71-24 (SI) and A33-26 (SP1) -This between other terminals and body earth<br/></td><td>Always<br/></td><td>10 kΩ or higher<br/></td></tr></tbody></table></dd></dl><p></p><p></p></li></ol><p></p></li></ol>
 <ol class="s2">
-<li value="2"><p><font class="ptxt">VSCあり</font><br><ol class="s3">
-<li><p><font class="ptxt">コンビネーションメータASSYのコネクターD71を切り離す。</font><br></p></li>
-<li><p><font class="ptxt">ブレーキアクチュエータASSYのコネクターA34を切り離す。</font><br></p></li>
-<li><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。</font><br><p><dl class="spec"><dt class="spec">抵抗値(断線点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="37.8%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>D71-24 (SI) - A34-12 (SP1)<br></td><td>常時<br></td><td>1 Ω未満<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">抵抗値(短絡点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="37.8%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>D71-24 (SI)およびA34-12 (SP1) - 他の端子間およびボデーアース間<br></td><td>常時<br></td><td>10 kΩ以上<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">結果</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="37.8%
-						"><colgroup align="center" width="70%
-			"><col align=""></colgroup><colgroup align="center" width="30%
-			"><col align=""></colgroup><tr><th>結果<br></th><th>飛び先<br></th></tr><tr><td>異常<br></td><td>A<br></td></tr><tr><td>正常(VSCなし)<br></td><td>B<br></td></tr><tr><td>正常(VSCあり)<br></td><td>C<br></td></tr></table></dd></dl></p></p></li></ol></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ブレーキ アクチュエータASSY交換<a href="#" onclick="openSeePage('seepage','RM00000095J001X');return false;">
-			（要領は
-		<img border="0" src="../../../../image/extxref.png">
-			参照）
-		</a>
-</td></tr></table></td></tr><tr><td height="4px"></td></tr><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">C</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ブレーキ アクチュエータASSY交換<a href="#" onclick="openSeePage('seepage','RM000000P2T000X');return false;">
-			（要領は
-		<img border="0" src="../../../../image/extxref.png">
-			参照）
-		</a>
-</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ワイヤハーネスまたはコネクター修理または交換&nbsp;
-										</td></tr></table></td></tr></table><br><a name="RM0000008Y1038X_03_0011"></a><table border="1" height="35" width="100%"><tr><td width="10%" class="s1">手順7</td><td width="90%" class="s1">ワイヤハーネスおよびコネクター点検（スピードメータセンサ - コンビネーションメータASSY、ボデーアース）</td></tr></table><table class="float"><tr><td><img src="../../img/a243606j01.png" name="A243606J01" alt="A243606J01" border="1" class="half"><br></td></tr></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;<br>09083-00170&nbsp;&nbsp;<br></dd></dl><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">点検要領および注意事項は<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照。</dd></dl></p>
+<li value="2"><p><font class="ptxt">VSC available</font><br/></p><ol class="s3">
+<li><p><font class="ptxt">Cut the connector D71 of the combination meter asser Assembly.</font><br/></p></li>
+<li><p><font class="ptxt">Brake actuator Cut the connector A34 of the ASSY ASSY.</font><br/></p></li>
+<li><p><font class="ptxt">Use SST (Toyota Electrical Tester) to measure resistance between terminals.</font><br/></p><p></p><dl class="spec"><dt class="spec">Resistance value (disconnection inspection)</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="37.8%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>D71-24 (SI) --A34-12 (SP1)<br/></td><td>Always<br/></td><td>Less than 1 Ω<br/></td></tr></tbody></table></dd></dl><p></p><p></p><dl class="spec"><dt class="spec">Resistance value (short circuit inspection)</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="37.8%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>D71-24 (SI) and A34-12 (SP1) -This between other terminals and body earth<br/></td><td>Always<br/></td><td>10 kΩ or higher<br/></td></tr></tbody></table></dd></dl><p></p><p></p><dl class="spec"><dt class="spec">result</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="37.8%
+
+						"><colgroup align="center" width="70%
+
+			"><col align=""/></colgroup><colgroup align="center" width="30%
+
+			"><col align=""/></colgroup><tbody><tr><th>result<br/></th><th>Destination<br/></th></tr><tr><td>Abnormality<br/></td><td>A<br/></td></tr><tr><td>Normal (no VSC)<br/></td><td>B<br/></td></tr><tr><td>Normal (with VSC)<br/></td><td>C<br/></td></tr></tbody></table></dd></dl><p></p><p></p></li></ol><p></p></li></ol><br clear="all"/><table border="0" cellpadding="4" cellspacing="0" width="96%"><tbody><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img height="100%" src="../../../../image/fin_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Brake actuator ASSY replacement<a href="#" onclick="openSeePage('seepage','RM00000095J001X');return false;">(The point is<img border="0" src="../../../../image/extxref.png"/>reference)</a>
+</td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-fin" style="border-right-width: 0px;">C</td><td align="left" width="13"><img height="100%" src="../../../../image/fin_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Brake actuator ASSY replacement<a href="#" onclick="openSeePage('seepage','RM000000P2T000X');return false;">(The point is<img border="0" src="../../../../image/extxref.png"/>reference)</a>
+</td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="96%"><tbody><tr><td class="diag-fin" style="border-bottom-width: 0px;" width="20%">A</td><td width="80%"><br/></td></tr><tr><td align="center" valign="top" width="20%"><img height="13" src="../../../../image/fin_down.png" width="100%"/></td><td width="80%"><br/></td></tr><tr><td colspan="2"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Wire harness or connector repair or replacement</td></tr></tbody></table></td></tr></tbody></table><br/><a name="RM0000008Y1038X_03_0011"></a><table border="1" height="35" width="100%"><tbody><tr><td class="s1" width="10%">Step 7</td><td class="s1" width="90%">Wire harness and connector inspection (Speedometer Sensor -Combination Meter ASSY, Body Earth)</td></tr></tbody></table><table class="float"><tbody><tr><td><img alt="A243606J01" border="1" class="half" name="A243606J01" src="../../img/a243606j01.png"/><br/></td></tr></tbody></table><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030<br/>09083-00170<br/></dd></dl><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">Inspection guidelines and precautions<a href="#" onclick="openSeePage('seepage','RM0000005D705VX');return false;"><img border="0" src="../../../../image/extxref.png"/></a>reference.</dd></dl><p></p>
 <ol class="s2">
-<li value="1"><p><font class="ptxt">スピードメータセンサのコネクターB32を切り離す。</font><br></p></li></ol>
+<li value="1"><p><font class="ptxt">Cut the speed meter sensor connector B32.</font><br/></p></li></ol>
 <ol class="s2">
-<li value="2"><p><font class="ptxt">IG ONにする。</font><br></p></li></ol>
+<li value="2"><p><font class="ptxt">Ig ON.</font><br/></p></li></ol>
 <ol class="s2">
-<li value="3"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の電圧を測定する。</font><br><p><dl class="spec"><dt class="spec">電圧値</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>B32-1 (IG+) - ボデーアース<br></td><td>IG ON<br></td><td>11 to 14 V<br></td></tr></table></dd></dl></p></p></li></ol>
+<li value="3"><p><font class="ptxt">The voltage between the terminals is measured using SST (Toyota Electrical Tester).</font><br/></p><p></p><dl class="spec"><dt class="spec">Voltage value</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>B32-1 (IG+) --Body Earth<br/></td><td>IG ON<br/></td><td>11 to 14 v<br/></td></tr></tbody></table></dd></dl><p></p><p></p></li></ol>
 <ol class="s2">
-<li value="4"><p><font class="ptxt">IG OFFにする。</font><br></p></li></ol>
+<li value="4"><p><font class="ptxt">Make IG OFF.</font><br/></p></li></ol>
 <ol class="s2">
-<li value="5"><p><font class="ptxt">コンビネーションメータASSYのコネクターD71を切り離す。</font><br></p></li></ol>
+<li value="5"><p><font class="ptxt">Cut the connector D71 of the combination meter asser Assembly.</font><br/></p></li></ol>
 <ol class="s2">
-<li value="6"><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、端子間の抵抗を測定する。</font><br><p><dl class="spec"><dt class="spec">抵抗値(断線点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>B32-3 (SI) - D71-24 (SI)<br></td><td>常時<br></td><td>1 Ω未満<br></td></tr><tr><td>B32-2 (SE) - ボデーアース<br></td><td>常時<br></td><td>1 Ω未満<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">抵抗値(短絡点検)</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.2%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><colgroup align="center" width="25%
-			"><col align=""></colgroup><tr><th>点検端子<br></th><th>点検条件<br></th><th>基準値<br></th></tr><tr><td>B32-3 (SI)およびD71-24 (SI) - 他の端子間およびボデーアース間<br></td><td>常時<br></td><td>10 ｋΩ以上<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="42.6%
-						"><caption class="tbl-title"><span>イラスト内指示文字&nbsp;
-				</span></caption><colgroup align="" width="10%
-			"><col align=""></colgroup><colgroup align="" width="90%
-			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>車両ワイヤハーネスコネクター前側<br>(スピードメータセンサ接続コネクター)<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ワイヤハーネスまたはコネクター修理または交換</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">スピードメータ センサ交換&nbsp;
-										</td></tr></table></td></tr></table><br></body></html>
+<li value="6"><p><font class="ptxt">Use SST (Toyota Electrical Tester) to measure resistance between terminals.</font><br/></p><p></p><dl class="spec"><dt class="spec">Resistance value (disconnection inspection)</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>B32-3 (SI) --D71-24 (SI)<br/></td><td>Always<br/></td><td>Less than 1 Ω<br/></td></tr><tr><td>B32-2 (SE) --Body Earth<br/></td><td>Always<br/></td><td>Less than 1 Ω<br/></td></tr></tbody></table></dd></dl><p></p><p></p><dl class="spec"><dt class="spec">Resistance value (short circuit inspection)</dt><dd class="spec"><table border="1" cellpadding="2" cellspacing="0" width="40.2%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><colgroup align="center" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th>Inspection terminal<br/></th><th>Inspection condition<br/></th><th>Reference value<br/></th></tr><tr><td>B32-3 (SI) and D71-24 (SI) -The between other terminals and body earth<br/></td><td>Always<br/></td><td>10 kΩ or higher<br/></td></tr></tbody></table></dd></dl><p></p><table border="1" cellpadding="2" cellspacing="0" width="42.6%
+
+						"><caption class="tbl-title"><span>Illustration instructions</span></caption><colgroup align="" width="10%
+
+			"><col align=""/></colgroup><colgroup align="" width="90%
+
+			"><col align=""/></colgroup><tbody><tr><td align="center">*a<br/></td><td>Vehicle wire harness connector front side<br/>(Speedometer sensor connection connector)<br/></td></tr></tbody></table><p></p></li></ol><br clear="all"/><table border="0" cellpadding="4" cellspacing="0" width="96%"><tbody><tr><td width="50%"><table border="0" cellpadding="0" cellspacing="0" height="25" width="100%"><tbody><tr><td width="60%"><br/></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img height="100%" src="../../../../image/fin_right.png" width="13"/></td></tr></tbody></table></td><td width="50%"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Wire harness or connector repair or replacement</td></tr></tbody></table></td></tr><tr><td height="4px"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="96%"><tbody><tr><td class="diag-fin" style="border-bottom-width: 0px;" width="20%">OK</td><td width="80%"><br/></td></tr><tr><td align="center" valign="top" width="20%"><img height="13" src="../../../../image/fin_down.png" width="100%"/></td><td width="80%"><br/></td></tr><tr><td colspan="2"><table border="1" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td class="s1">Speedometer sensor replacement</td></tr></tbody></table></td></tr></tbody></table><br/></body></html>

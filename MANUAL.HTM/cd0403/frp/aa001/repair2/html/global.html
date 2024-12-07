@@ -1,44 +1,21 @@
-<!-- $Id: global.html,v 1.4 2004/03/09 11:51:19 t-kato Exp $ -->
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html" charset="Shift-JIS">
-<title>[電子技術マニュアル] - 機能別修理書グローバルナビ</title>
-<meta http-equiv="Content-Style-Type" content="text/css">
-<link href="../css/global.css" rel="stylesheet" type="text/css">
-<script language="javascript">
-<!---
-// ボタン画像の設定
-var g_name ="closeNavi";
-function init() {
-	dispNavi.innerHTML = "<a class='other-rpr-button' href='#dummy' style='width: 120px; visibility: visible; display: inline' onclick='moveNavi(\""+g_name+"\")' name='"+g_name+"'>"+"ナビゲーション無"+"</a>";
-}
-//フレームの開閉
-function moveNavi(navi) {
-	var img;
-	if(navi=="openNavi") {
-	        link = "ナビゲーション無";
-		parent.frame1.cols="25%,*";
-		g_name = "closeNavi";
-	}	else {
-	 	link = "ナビゲーション有";
-		parent.frame1.cols="0%,*";
-		g_name ="openNavi";
-	}
-	dispNavi.innerHTML = "<a class='other-rpr-button' href='#dummy' style='width: 120px; visibility: visible; display: inline' onclick='moveNavi(\"" +g_name+ "\")' name='" +g_name+"'>" + link + "</a>";
-}
-//--->
-</script>
+<!-- $Id: global.html,v 1.4 2004/03/09 11:51:19 t-kato Exp $ --><html><head>
+<meta charset="utf-8" content="text/html" http-equiv="Content-Type"/>
+<title>[Electronic Technology Manual] -Functional Repair Global Navi</title>
+<meta content="text/css" http-equiv="Content-Style-Type"/>
+<link href="../css/global.css" rel="stylesheet" type="text/css"/>
+<script language="javascript"><! --- // Set of button images VAR G_name = "Closenavi"; Function Init () e = 'width:120px; Visible: Visible "+" </a> ";} //Function Movenavi (Navi) {Var Img; IF (Navi == "Opennavi") {Link = "Navigation"; Parent.frame1.cols = "25%,*" Losenavi ";}Else {LINK = "Navigation with"; parent.frame1.cols = "0%,*"; g_name = "openNavi";} Dispnavi.innerhtml = "<a class = 'otHER-RPR-BUTTON 'href ='#dummy'Style =' Width: 120px; Visible "'>" + link + "</a>";} // ---></script>
 </head>
-<body onload="init()" marginwidth="0" marginheight="0" leftmargin=0 topmargin=0>
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
-  	<tr><td class="top" colspan="4"></td></tr>
+<body leftmargin="0" marginheight="0" marginwidth="0" onload="init()" topmargin="0">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  	<tbody><tr><td class="top" colspan="4"></td></tr>
   	<tr><td colspan="4"></td></tr>
 	<tr>
 		<td align="left"><div class="other-rpr" id="dispNavi"></div></td>
-		<td align="right"><div class="other-rpr"><a class="other-rpr-button" href="#dummy" onClick="parent.history.back();return false;">戻る</a></div></td>
-		<td align="center"><div class="other-rpr"><a class="other-rpr-button" href="../../../../index2.html" target="_top">修理書メニュー</a></div></td>
-		<td align="left"><div class="other-rpr"><a class="other-rpr-button" href="#dummy" onClick="window.open('../../../../index2.html');return false;">別画面表示</a></div></td>
+		<td align="right"><div class="other-rpr"><a class="other-rpr-button" href="#dummy" onclick="parent.history.back();return false;">return</a></div></td>
+		<td align="center"><div class="other-rpr"><a class="other-rpr-button" href="../../../../index2.html" target="_top">Repair book menu</a></div></td>
+		<td align="left"><div class="other-rpr"><a class="other-rpr-button" href="#dummy" onclick="window.open('../../../../index2.html');return false;">Separate screen display</a></div></td>
 	</tr>
-</table>
-</body>
-</html>
+</tbody></table>
+
+
+</body></html>

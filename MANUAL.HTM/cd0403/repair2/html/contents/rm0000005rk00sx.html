@@ -1,74 +1,106 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="RM0000005RK00SX"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>CAN通信システム（ＶＳＣなし）&nbsp;&nbsp;ＥＣＵ端子配列</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000005RK00SX_z0"></a><br clear="all"><a name="1"></a><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">CANH、CANL&larr;&rarr;BAT間の短絡点検を行う場合は、バッテリマイナスターミナルを切り離してから行う。<br></li><li class="atten3">バッテリマイナスターミナルを切り離した場合、作業後にバッテリクリア時の作業を行う。(要領は<a href="#" onclick="openSeePage('seepage','RM00000000K00PX');return false;"><img border="0" src="../../../../image/extxref.png"></a>参照)<br></li></ol></p><br clear="all"><br clear="all"><a name="CD0403____00005N90000011step"></a>
+		<body onload="seePageAnchor()"><a name="RM0000005RK00SX"></a><table cellspacing="0" width="100%"><tbody><tr><td width="93%"><h1>CAN communication system (without VSC) ECU terminal array</h1></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr></tbody></table><br class="beforePng" clear="all"/><a name="RM0000005RK00SX_z0"></a><br clear="all"/><a name="1"></a><p></p><dl class="caution"><dt class="caution">■ Attention ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">When performing a short -circuit inspection between Canh, Canl ← → BAT, cut the battery minus terminal before performing it.<br/></li><li class="atten3">If the battery minor Star Minal is separated, the work is performed during the battery clear after work.(The point is<a href="#" onclick="openSeePage('seepage','RM00000000K00PX');return false;"><img border="0" src="../../../../image/extxref.png"/></a>reference)<br/></li></ol><p></p><br clear="all"/><br clear="all"/><a name="CD0403____00005N90000011step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>ワイヤリングハーネスコネクタ(CAN　J/C)</li></ol>
+<li>Wiring harness connector (can J/C)</li></ol>
 <ol class="ptxt"></ol>
-<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/g028641j05.png" name="G028641J05" alt="G028641J05" border="1" class="half"><br></td></tr></table>
-<li><p><font class="ptxt">端子配列</font><br><table border="1" cellspacing="0" cellpadding="2" width="41.8%
-						"><colgroup align="" width="50%
-			"><col align=""></colgroup><colgroup align="" width="50%
-			"><col align=""></colgroup><tr><th align="center">CAN　J/C　(アース端子あり面)<br></th><th align="center">結線位置<br></th></tr><tr><td>ナビゲーションレシーバASSY(ナビゲーションECU)<br></td><td align="center">1<br></td></tr><tr><td>ステアリングセンサ(舵角センサ)<br></td><td align="center">3<br></td></tr></table><table border="1" cellspacing="0" cellpadding="2" width="41.8%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="50%
-			"><col align=""></colgroup><tr><th>CAN　J/C　(アース端子なし面)<br></th><th>結線位置<br></th></tr><tr><td align="left">DLC3<br></td><td>5<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/g025692.png" name="G025692" alt="G025692" border="1" class="half"><br></td></tr></table>
-<li><p><font class="ptxt">CAN　J/Cに接続するコネクターの端子配列</font><br><table border="1" cellspacing="0" cellpadding="2" width="41.8%
-						"><colgroup align="" width="50%
-			"><col align=""></colgroup><colgroup align="" width="50%
-			"><col align=""></colgroup><tr><th align="center">端子番号<br></th><th align="center">端子記号<br></th></tr><tr><td align="center">1<br></td><td align="center">CANH<br></td></tr><tr><td align="center">2<br></td><td align="center">CANL<br></td></tr></table></p></li></ol><br clear="all"><br clear="all"><a name="CD0403____00005N90000012step"></a>
+<ol class="step2"><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="G028641J05" border="1" class="half" name="G028641J05" src="../../img/g028641j05.png"/><br/></td></tr></tbody></table>
+<li><p><font class="ptxt">Terminal array</font><br/><table border="1" cellpadding="2" cellspacing="0" width="41.8%
+
+						"><colgroup align="" width="50%
+
+			"><col align=""/></colgroup><colgroup align="" width="50%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">Can J/C (surface with ground terminal)<br/></th><th align="center">Connection position<br/></th></tr><tr><td>Navigation receiver ASSY (navigation ECU)<br/></td><td align="center">1<br/></td></tr><tr><td>Steering sensor (steering angle sensor)<br/></td><td align="center">3<br/></td></tr></tbody></table><table border="1" cellpadding="2" cellspacing="0" width="41.8%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><tbody><tr><th>Can J/C (surface without ground terminal)<br/></th><th>Connection position<br/></th></tr><tr><td align="left">DLC3<br/></td><td>5<br/></td></tr></tbody></table></p></li><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="G025692" border="1" class="half" name="G025692" src="../../img/g025692.png"/><br/></td></tr></tbody></table>
+<li><p><font class="ptxt">Connector terminal sequence connected to CAN J/C</font><br/><table border="1" cellpadding="2" cellspacing="0" width="41.8%
+
+						"><colgroup align="" width="50%
+
+			"><col align=""/></colgroup><colgroup align="" width="50%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">Terminal number<br/></th><th align="center">Terminal symbol<br/></th></tr><tr><td align="center">1<br/></td><td align="center">Canh<br/></td></tr><tr><td align="center">2<br/></td><td align="center">Canl<br/></td></tr></tbody></table></p></li></ol><br clear="all"/><br clear="all"/><a name="CD0403____00005N90000012step"></a>
 <ol class="step1" style="list-style-type:disc">
 <li>DLC3</li></ol>
 <ol class="ptxt"></ol>
-<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/g100891j04.png" name="G100891J04" alt="G100891J04" border="1" class="half"><br></td></tr></table>
-<li><p><font class="ptxt">端子配列</font><br><table border="1" cellspacing="0" cellpadding="2" width="41.8%
-						"><colgroup align="" width="50%
-			"><col align=""></colgroup><colgroup align="" width="50%
-			"><col align=""></colgroup><tr><th align="center">端子番号<br></th><th align="center">端子記号<br></th></tr><tr><td align="center">4<br></td><td align="center">CG<br></td></tr><tr><td align="center">6<br></td><td align="center">CANH<br></td></tr><tr><td align="center">14<br></td><td align="center">CANL<br></td></tr><tr><td align="center">16<br></td><td align="center">BAT<br></td></tr></table></p></li>
-<li><p><font class="ptxt">DLC3点検</font><br></p></li><br>
+<ol class="step2"><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="G100891J04" border="1" class="half" name="G100891J04" src="../../img/g100891j04.png"/><br/></td></tr></tbody></table>
+<li><p><font class="ptxt">Terminal array</font><br/><table border="1" cellpadding="2" cellspacing="0" width="41.8%
+
+						"><colgroup align="" width="50%
+
+			"><col align=""/></colgroup><colgroup align="" width="50%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">Terminal number<br/></th><th align="center">Terminal symbol<br/></th></tr><tr><td align="center">4<br/></td><td align="center">CG<br/></td></tr><tr><td align="center">6<br/></td><td align="center">Canh<br/></td></tr><tr><td align="center">14<br/></td><td align="center">Canl<br/></td></tr><tr><td align="center">16<br/></td><td align="center">BAT<br/></td></tr></tbody></table></p></li>
+<li><p><font class="ptxt">DLC3 inspection</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">IG　OFFにする。</font><br></p></li>
-<li><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、各端子の抵抗を点検する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;09083-00170&nbsp;&nbsp;<br></dd></dl><br clear="all"><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec"><br></dd><dd class="spec"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="86%
-						"><colgroup align="" width="25%
-			"><col align=""></colgroup><colgroup align="" width="25%
-			"><col align=""></colgroup><colgroup align="" width="25%
-			"><col align=""></colgroup><colgroup align="" width="25%
-			"><col align=""></colgroup><tr><th align="center">端子番号<br></th><th align="center">項目<br></th><th align="center">測定条件<br></th><th align="center">基準<br></th></tr><tr><td align="center">6(CANH)&larr;&rarr;14(CANL)<br></td><td align="center">抵抗<br></td><td align="center">IG　OFF<br></td><td align="center">54-69Ω<br></td></tr><tr><td align="center">6(CANH)&larr;&rarr;16(BAT)<br></td><td align="center">抵抗<br></td><td align="center">IG　OFF<br></td><td align="center">6kΩ以上<br></td></tr><tr><td align="center">14(CANL)&larr;&rarr;16(BAT)<br></td><td align="center">抵抗<br></td><td align="center">IG　OFF<br></td><td align="center">6kΩ以上<br></td></tr><tr><td align="center">6(CANH)&larr;&rarr;4(CG)<br></td><td align="center">抵抗<br></td><td align="center">IG　OFF<br></td><td align="center">200Ω以上<br></td></tr><tr><td align="center">14(CANL)&larr;&rarr;4(CG)<br></td><td align="center">抵抗<br></td><td align="center">IG　OFF<br></td><td align="center">200Ω以上<br></td></tr></table></dd></dl></p></p></li></ol></ol><br clear="all"><br clear="all"><a name="CD0403____00005N90000013step"></a>
+<li><p><font class="ptxt">Make IG OFF.</font><br/></p></li>
+<li><p><font class="ptxt">Use SST (Toyota Electrical Tester) to check the resistance of each terminal.</font><br/></p><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030 09083-00170<br/></dd></dl><br clear="all"/><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec"><br/></dd><dd class="spec"><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="86%
+
+						"><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">Terminal number<br/></th><th align="center">item<br/></th><th align="center">Measurement conditions<br/></th><th align="center">standard<br/></th></tr><tr><td align="center">6 (Canh) ← → 14 (Canl)<br/></td><td align="center">resistance<br/></td><td align="center">IG OFF<br/></td><td align="center">54-69Ω<br/></td></tr><tr><td align="center">6 (Canh) ← → 16 (BAT)<br/></td><td align="center">resistance<br/></td><td align="center">IG OFF<br/></td><td align="center">6KΩ or higher<br/></td></tr><tr><td align="center">14 (CANL) ← → 16 (BAT)<br/></td><td align="center">resistance<br/></td><td align="center">IG OFF<br/></td><td align="center">6KΩ or higher<br/></td></tr><tr><td align="center">6 (Canh) ← → 4 (CG)<br/></td><td align="center">resistance<br/></td><td align="center">IG OFF<br/></td><td align="center">200Ω or higher<br/></td></tr><tr><td align="center">14 (CANL) ← → 4 (CG)<br/></td><td align="center">resistance<br/></td><td align="center">IG OFF<br/></td><td align="center">200Ω or higher<br/></td></tr></tbody></table></dd></dl><p></p><p></p></li></ol></ol><br clear="all"/><br clear="all"/><a name="CD0403____00005N90000013step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>ステアリングセンサ(舵角センサ)</li></ol>
+<li>Steering sensor (steering angle sensor)</li></ol>
 <ol class="ptxt"></ol>
-<ol class="step2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/g100229.png" name="G100229" alt="G100229" border="1" class="half"><br></td></tr></table>
-<li><p><font class="ptxt">端子配列</font><br><table border="1" cellspacing="0" cellpadding="2" width="41.8%
-						"><colgroup align="" width="50%
-			"><col align=""></colgroup><colgroup align="" width="50%
-			"><col align=""></colgroup><tr><th align="center">端子番号<br></th><th align="center">端子記号<br></th></tr><tr><td align="center">1<br></td><td align="center">CANH<br></td></tr><tr><td align="center">6<br></td><td align="center">CANL<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c135117j01.png" name="C135117J01" alt="C135117J01" border="1" class="half"><br></td></tr></table>
-<li><p><font class="ptxt">ステアリングセンサ(舵角センサ)車両ハーネスコネクター側点検</font><br></p></li><br>
+<ol class="step2"><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="G100229" border="1" class="half" name="G100229" src="../../img/g100229.png"/><br/></td></tr></tbody></table>
+<li><p><font class="ptxt">Terminal array</font><br/><table border="1" cellpadding="2" cellspacing="0" width="41.8%
+
+						"><colgroup align="" width="50%
+
+			"><col align=""/></colgroup><colgroup align="" width="50%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">Terminal number<br/></th><th align="center">Terminal symbol<br/></th></tr><tr><td align="center">1<br/></td><td align="center">Canh<br/></td></tr><tr><td align="center">6<br/></td><td align="center">Canl<br/></td></tr></tbody></table></p></li><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="C135117J01" border="1" class="half" name="C135117J01" src="../../img/c135117j01.png"/><br/></td></tr></tbody></table>
+<li><p><font class="ptxt">Steering sensor (steering angle sensor) Vehicle harness connector side inspection</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">IG　OFFにして、ステアリングセンサ(舵角センサ)のコネクターを切り離す。</font><br></p></li>
-<li><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、車両ハーネスコネクターの各端子の抵抗を点検する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;09083-00170&nbsp;&nbsp;<br></dd></dl><br clear="all"><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec"><br></dd><dd class="spec"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="86%
-						"><colgroup align="" width="25%
-			"><col align=""></colgroup><colgroup align="" width="25%
-			"><col align=""></colgroup><colgroup align="" width="25%
-			"><col align=""></colgroup><colgroup align="" width="25%
-			"><col align=""></colgroup><tr><th align="center">端子番号<br></th><th align="center">項目<br></th><th align="center">測定条件<br></th><th align="center">基準<br></th></tr><tr><td align="center">1(CANH)&larr;&rarr;6(CANL)<br></td><td align="center">抵抗<br></td><td align="center">IG　OFF<br></td><td align="center">108-132Ω<br></td></tr><tr><td align="center">1(CANH)&larr;&rarr;GND<br></td><td align="center">抵抗<br></td><td align="center">IG　OFF<br></td><td align="center">200Ω以上<br></td></tr><tr><td align="center">6(CANL)&larr;&rarr;GND<br></td><td align="center">抵抗<br></td><td align="center">IG　OFF<br></td><td align="center">200Ω以上<br></td></tr><tr><td align="center">1(CANH)&larr;&rarr;+B<br></td><td align="center">抵抗<br></td><td align="center">IG　OFF<br></td><td align="center">6kΩ以上<br></td></tr><tr><td align="center">6(CANL)&larr;&rarr;+B<br></td><td align="center">抵抗<br></td><td align="center">IG　OFF<br></td><td align="center">6kΩ以上<br></td></tr></table></dd></dl></p></p></li></ol></ol><br clear="all"><br clear="all"><br clear="all"><a name="CD0403____00005N90000014step"></a>
+<li><p><font class="ptxt">Ig off the connector of the steering sensor (steering angle sensor).</font><br/></p></li>
+<li><p><font class="ptxt">Use SST (Toyota Electrical Tester) to inspect the resistance of each terminal of the vehicle harness connector.</font><br/></p><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030 09083-00170<br/></dd></dl><br clear="all"/><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec"><br/></dd><dd class="spec"><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="86%
+
+						"><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">Terminal number<br/></th><th align="center">item<br/></th><th align="center">Measurement conditions<br/></th><th align="center">standard<br/></th></tr><tr><td align="center">1 (Canh) ← → 6 (Canl)<br/></td><td align="center">resistance<br/></td><td align="center">IG OFF<br/></td><td align="center">108-132Ω<br/></td></tr><tr><td align="center">1 (Canh) ← → GND<br/></td><td align="center">resistance<br/></td><td align="center">IG OFF<br/></td><td align="center">200Ω or higher<br/></td></tr><tr><td align="center">6 (CANL) ← → GND<br/></td><td align="center">resistance<br/></td><td align="center">IG OFF<br/></td><td align="center">200Ω or higher<br/></td></tr><tr><td align="center">1 (Canh) ← →+B<br/></td><td align="center">resistance<br/></td><td align="center">IG OFF<br/></td><td align="center">6KΩ or higher<br/></td></tr><tr><td align="center">6 (CANL) ← →+B<br/></td><td align="center">resistance<br/></td><td align="center">IG OFF<br/></td><td align="center">6KΩ or higher<br/></td></tr></tbody></table></dd></dl><p></p><p></p></li></ol></ol><br clear="all"/><br clear="all"/><br clear="all"/><a name="CD0403____00005N90000014step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>ナビゲーションレシーバASSY(ナビゲーションECU)</li></ol>
-<ol class="ptxt"></ol><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">HDDナビゲーションシステム装着車のみ。</dd></dl></p><div class="full"><br clear="all"><img src="../../img/g100785j01.png" name="G100785J01" alt="G100785J01" border="1" class="full"></div><br clear="all">
+<li>Navigation receiver ASSY (navigation ECU)</li></ol>
+<ol class="ptxt"></ol><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">Only cars equipped with HDD navigation system.</dd></dl><p></p><div class="full"><br clear="all"/><img alt="G100785J01" border="1" class="full" name="G100785J01" src="../../img/g100785j01.png"/></div><br clear="all"/>
 <ol class="step2">
-<li><p><font class="ptxt">端子配列</font><br><table border="1" cellspacing="0" cellpadding="2" width="41.8%
-						"><colgroup align="center" width="50%
-			"><col align=""></colgroup><colgroup align="center" width="50%
-			"><col align=""></colgroup><tr><th>端子番号<br></th><th>端子記号<br></th></tr><tr><td>D2<br></td><td>CANH<br></td></tr><tr><td>D3<br></td><td>CANL<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/g100893j01.png" name="G100893J01" alt="G100893J01" border="1" class="half"><br></td></tr></table>
-<li><p><font class="ptxt">ナビゲーションレシーバASSY(ナビゲーションECU)車両ハーネスコネクター側点検</font><br></p></li><br>
+<li><p><font class="ptxt">Terminal array</font><br/><table border="1" cellpadding="2" cellspacing="0" width="41.8%
+
+						"><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><colgroup align="center" width="50%
+
+			"><col align=""/></colgroup><tbody><tr><th>Terminal number<br/></th><th>Terminal symbol<br/></th></tr><tr><td>D2<br/></td><td>Canh<br/></td></tr><tr><td>D3<br/></td><td>Canl<br/></td></tr></tbody></table></p></li><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="G100893J01" border="1" class="half" name="G100893J01" src="../../img/g100893j01.png"/><br/></td></tr></tbody></table>
+<li><p><font class="ptxt">Navigation receiver ASSY (navigation ECU) Vehicle harness connector side inspection</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">IG　OFFにして、ナビゲーションレシーバASSY(ナビゲーションECU)のコネクターを切り離す。</font><br></p></li>
-<li><p><font class="ptxt">SST(トヨタエレクトリカルテスター)を使用して、車両ハーネスコネクターの各端子の抵抗を点検する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030&nbsp;&nbsp;09083-00170&nbsp;&nbsp;<br></dd></dl><br clear="all"><p><dl class="spec"><dt class="spec">基準</dt><dd class="spec"><br></dd><dd class="spec"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="86%
-						"><colgroup align="" width="25%
-			"><col align=""></colgroup><colgroup align="" width="25%
-			"><col align=""></colgroup><colgroup align="" width="25%
-			"><col align=""></colgroup><colgroup align="" width="25%
-			"><col align=""></colgroup><tr><th align="center">端子番号<br></th><th align="center">項目<br></th><th align="center">測定条件<br></th><th align="center">基準<br></th></tr><tr><td align="center">D2(CANH)&larr;&rarr;D3(CANL)<br></td><td align="center">抵抗<br></td><td align="center">IG　OFF<br></td><td align="center">54-69Ω<br></td></tr><tr><td align="center">D2(CANH)&larr;&rarr;GND<br></td><td align="center">抵抗<br></td><td align="center">IG　OFF<br></td><td align="center">200Ω以上<br></td></tr><tr><td align="center">D3(CANL)&larr;&rarr;GND<br></td><td align="center">抵抗<br></td><td align="center">IG　OFF<br></td><td align="center">200Ω以上<br></td></tr><tr><td align="center">D2(CANH)&larr;&rarr;+B<br></td><td align="center">抵抗<br></td><td align="center">IG　OFF<br></td><td align="center">6kΩ以上<br></td></tr><tr><td align="center">D3(CANL)&larr;&rarr;+B<br></td><td align="center">抵抗<br></td><td align="center">IG　OFF<br></td><td align="center">6kΩ以上<br></td></tr></table></dd></dl></p></p></li></ol></ol><br clear="all"></body></html>
+<li><p><font class="ptxt">IG OFF and separate the connector of the navigation receiver ASSY (navigation ECU).</font><br/></p></li>
+<li><p><font class="ptxt">Use SST (Toyota Electrical Tester) to inspect the resistance of each terminal of the vehicle harness connector.</font><br/></p><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09082-00030 09083-00170<br/></dd></dl><br clear="all"/><p></p><dl class="spec"><dt class="spec">standard</dt><dd class="spec"><br/></dd><dd class="spec"><br class="beforePng" clear="all"/><table border="1" cellpadding="2" cellspacing="0" width="86%
+
+						"><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><colgroup align="" width="25%
+
+			"><col align=""/></colgroup><tbody><tr><th align="center">Terminal number<br/></th><th align="center">item<br/></th><th align="center">Measurement conditions<br/></th><th align="center">standard<br/></th></tr><tr><td align="center">D2 (Canh) ← → D3 (CANL)<br/></td><td align="center">resistance<br/></td><td align="center">IG OFF<br/></td><td align="center">54-69Ω<br/></td></tr><tr><td align="center">D2 (Canh) ← → GND<br/></td><td align="center">resistance<br/></td><td align="center">IG OFF<br/></td><td align="center">200Ω or higher<br/></td></tr><tr><td align="center">D3 (CANL) ← → GND<br/></td><td align="center">resistance<br/></td><td align="center">IG OFF<br/></td><td align="center">200Ω or higher<br/></td></tr><tr><td align="center">D2 (Canh) ← →+B<br/></td><td align="center">resistance<br/></td><td align="center">IG OFF<br/></td><td align="center">6KΩ or higher<br/></td></tr><tr><td align="center">D3 (CANL) ← →+B<br/></td><td align="center">resistance<br/></td><td align="center">IG OFF<br/></td><td align="center">6KΩ or higher<br/></td></tr></tbody></table></dd></dl><p></p><p></p></li></ol></ol><br clear="all"/></body></html>

@@ -1,34 +1,33 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="RM00000095A000X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>EBD付きABSシステム&nbsp;&nbsp;ダイアグコード点検／消去</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM00000095A000X_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="CD0403____00000WR0000011step"></a>
+		<body onload="seePageAnchor()"><a name="RM00000095A000X"></a><table cellspacing="0" width="100%"><tbody><tr><td width="93%"><h1>EBD ABS System Diag Code Inspection / Erase</h1></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr></tbody></table><br class="beforePng" clear="all"/><a name="RM00000095A000X_z0"></a><br clear="all"/><a name="1"></a><br clear="all"/><a name="CD0403____00000WR0000011step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>ダイアグノーシスコード出力点検</li></ol>
+<li>Diagnostic code output inspection</li></ol>
 <ol class="ptxt"></ol>
 <ol class="step2">
-<li><p><font class="ptxt">SST(TaSCAN)によるダイアグノーシスコード読み取り</font><br></p></li><br>
+<li><p><font class="ptxt">Diagnostic code read by SST (TASCAN)</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">IGスイッチOFF状態で、SSTをDLC3に接続する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
-<li><p><font class="ptxt">IGスイッチをONにし、TaSCANの表示画面に従って、ダイアグノーシスコードを読み取る。</font><br><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">異常がある場合は修理後ダイアグノーシスコードの記憶を消去する。</dd></dl></p></p></li></ol><br clear="all" class="beforePng"><br clear="all" class="beforePng">
-<li><p><font class="ptxt">ウォーニングランプによるダイアグノーシスコード読み取り</font><br></p></li><br>
-<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c082509.png" name="C082509" alt="C082509" border="1" class="half"><br></td></tr></table>
-<li><p><font class="ptxt">IGスイッチOFFで、SSTを使用してDLC3の13(TC)&larr;&rarr;4(CG)端子間を短絡する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br></dd></dl><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">故障の原因となるため、コネクターの接続位置を間違えない。<br></li><li class="atten3">車両停止状態で行う。<br></li></ol></p></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/g022597.png" name="G022597" alt="G022597" border="1" class="half"><br></td></tr></table>
-<li><p><font class="ptxt">IGスイッチをONにして、ABSウォーニングランプの点滅回数を読み取る。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">正常な場合は0.25秒点灯、0.25秒消灯を繰り返す。<br></li><li class="atten4">異常コードが1つの場合は4秒の間隔をおいて、同一コードを出力し、複数のコードを出力する場合は、異なるコードを2.5秒間隔で出力し、一巡すると4秒の間隔をおいて再度出力する。<br></li><li class="atten4">複数のコードを出力する場合は、コード番号の小さいものから順に出力する。<br></li></ol></p></p></li>
-<li><p><font class="ptxt">DLC3の13(TC)&larr;&rarr;4(CG)端子間を開放する。</font><br><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">異常がある場合は、修理後ダイアグノーシスコードの記憶を消去する。</dd></dl></p></p></li></ol></ol><br clear="all"><br clear="all"><a name="CD0403____00000WR0000012step"></a>
+<li><p><font class="ptxt">Connect the SST to DLC3 in the IG switch off.</font><br/></p><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200<br/></dd></dl><p></p></li>
+<li><p><font class="ptxt">Turn on the IG switch and follow the Tascan display screen to read the diagnostic cord.</font><br/></p><p></p><dl class="caution"><dt class="caution">■ Attention ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">If there is an abnormality, delete the memory of the diagnostic cord after repair.</dd></dl><p></p><p></p></li></ol><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/>
+<li><p><font class="ptxt">Diagnothesis code read by Warnin Gramp</font><br/></p></li><br/>
+<ol class="s3"><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="C082509" border="1" class="half" name="C082509" src="../../img/c082509.png"/><br/></td></tr></tbody></table>
+<li><p><font class="ptxt">In the IG switch off, use the SST to shortly use the DLC3 13 (TC) ← → 4 (CG) terminal.</font><br/></p><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040<br/></dd></dl><p></p><dl class="caution"><dt class="caution">■ Attention ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">There is no mistake in the connector connection position because it causes a failure.<br/></li><li class="atten3">Perform in the vehicle stopped.<br/></li></ol><p></p><p></p></li><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="G022597" border="1" class="half" name="G022597" src="../../img/g022597.png"/><br/></td></tr></tbody></table>
+<li><p><font class="ptxt">Turn on the IG switch and read the number of flashes of the ABS Warnin Gramp.</font><br/></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><ol style="list-style-type: disc"><li class="atten4">In the case of normal, 0.25 seconds lit and 0.25 seconds turn off.<br/></li><li class="atten4">If the abnormal code is one, output the same code at 4 seconds, output multiple code at 2.5 seconds, and once round, once a round of 4 seconds.Output.<br/></li><li class="atten4">When outputting multiple code, output in order from the small code number.<br/></li></ol><p></p><p></p></li>
+<li><p><font class="ptxt">Open between 13 (TC) ← → 4 (CG) of DLC3.</font><br/></p><p></p><dl class="caution"><dt class="caution">■ Attention ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">If there is an abnormality, delete the memory of the diagnostic cord after repair.</dd></dl><p></p><p></p></li></ol></ol><br clear="all"/><br clear="all"/><a name="CD0403____00000WR0000012step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>ダイアグノーシスコード、フリーズフレームデータ消去</li></ol>
+<li>Diagnostic code, freeze -frame data eraser</li></ol>
 <ol class="ptxt"></ol>
 <ol class="step2">
-<li><p><font class="ptxt">ダイアグノーシスコード消去方法(TaSCAN)</font><br></p></li><br>
+<li><p><font class="ptxt">Diagnothescode erasing method (TASCAN)</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">IGスイッチOFFで、SSTをDLC3に接続する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
-<li><p><font class="ptxt">IGスイッチをONにし、TaSCANの表示画面に従ってダイアグノーシスコードを消去する。</font><br></p></li></ol><br clear="all" class="beforePng"><br clear="all" class="beforePng">
-<li><p><font class="ptxt">ダイアグノーシスコード消去方法(DLC3短絡)</font><br></p></li><br>
-<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c082509.png" name="C082509" alt="C082509" border="1" class="half"><br></td></tr></table>
-<li><p><font class="ptxt">IGスイッチOFFの状態で、SSTを使用してDLC3の13(TC)&larr;&rarr;4(CG)端子間を短絡する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br></dd></dl><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">故障の原因となるため、コネクターの接続位置を間違えない。</dd></dl></p></p></li>
-<li><p><font class="ptxt">IGスイッチをONにし、5秒間に8回以上ブレーキペダルを踏み込む。</font><br></p></li>
-<li><p><font class="ptxt">正常コードが出力されていることを確認する。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">故障が継続しているときは、消去できない場合がある。</dd></dl></p></p></li></ol></ol><br clear="all"></body></html>
+<li><p><font class="ptxt">Connect the SST to DLC3 with IG switch off.</font><br/></p><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200<br/></dd></dl><p></p></li>
+<li><p><font class="ptxt">Turn on the IG switch and delete the diagnostic code according to the Tascan display screen.</font><br/></p></li></ol><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/>
+<li><p><font class="ptxt">Diagnothescode erasing method (DLC3 short circuit)</font><br/></p></li><br/>
+<ol class="s3"><br class="beforePng" clear="all"/><br class="beforePng" clear="all"/><table class="float"><tbody><tr><td><img alt="C082509" border="1" class="half" name="C082509" src="../../img/c082509.png"/><br/></td></tr></tbody></table>
+<li><p><font class="ptxt">In the state of the IG switch OFF, use the SST to shorten the DLC3 13 (TC) ← → 4 (CG) terminal.</font><br/></p><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040<br/></dd></dl><p></p><dl class="caution"><dt class="caution">■ Attention ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">There is no mistake in the connector connection position because it causes a failure.</dd></dl><p></p><p></p></li>
+<li><p><font class="ptxt">Turn on the IG switch and step on the brake pedal more than 8 times in 5 seconds.</font><br/></p></li>
+<li><p><font class="ptxt">Confirm that the normal code is output.</font><br/></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">If the failure is continuing, it may not be possible to erase it.</dd></dl><p></p><p></p></li></ol></ol><br clear="all"/></body></html>

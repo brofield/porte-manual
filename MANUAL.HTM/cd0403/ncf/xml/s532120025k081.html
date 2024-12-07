@@ -1,118 +1,117 @@
-<html>
-<head>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>オド／トリップメーター</title>
-<link type="text/css" href="../css/main2.css" rel="stylesheet">
-<link type="text/css" href="../css/style.css" rel="stylesheet">
-<script src="../js/hidden.js" language="JavaScript"></script>
+<html><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Odo / Trip meter</title>
+<link href="../css/main2.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript" src="../js/hidden.js"></script>
 </head>
 <body onload="boVis(5);printAndClose();setTab(0);changeImg(document.location.href.split('/')[document.location.href.split('/').length - 1].split('.')[0]);">
-<table id="print" style="display:none" cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td align="left"><input onClick="printCheck()" value="印刷" name="submit" type="submit"></td><td align="center">　</td><td align="right"><input onClick="closeWindow()" value="閉じる" name="submit2" type="submit"></td>
+<table cellpadding="2" cellspacing="0" id="print" style="display:none" width="100%">
+<tbody><tr>
+<td align="left"><input name="submit" onclick="printCheck()" type="submit" value="印刷"/></td><td align="center">　</td><td align="right"><input name="submit2" onclick="closeWindow()" type="submit" value="閉じる"/></td>
 </tr>
-</table>
+</tbody></table>
 <div align="left">
 
 
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0">
-<tr>
-<td class="gray" width="5%">　</td><td align="center" class="gray" width="80%">オド／トリップメーター</td><td width="15%" class="gray" align="right"></td>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td class="gray" width="5%">　</td><td align="center" class="gray" width="80%">Odo / Trip meter</td><td align="right" class="gray" width="15%"></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">オド/トリップメーターは，コンビネーションメーター中央下部の同一位置に，スイッチによる切り替えによって表示されます。走行距離を，LCDによる6セグメント構成のアラビア数字でデジタル表示します。表示範囲は，オドメーターは1km刻みで最大999999kmまで，トリップメーターは0.1km刻みで最大9999.9kmまでとしました。なお，トリップメーターはAとBの 2個の表示機能を持ち，オドメーターも含めて3チャンネル表示としました。</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">The od/trip meter is displayed by switching by switching in the same position in the lower center of the combination meter.The mileage is digitally displayed in Arabic numerals in 6 -segment configuration by LCD.The display range is up to 999999km in 1km increments, and the trip meter is 0.1km increments and up to 9999.9km.The trip meter has two display functions, A and B, and has been displayed as three channels, including the odometer.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">各モードの切り替えは，コンビネーションメーター内右側に配置された，オド/トリップ切り替え・トリップメーターリセットスイッチをONすることによって行い，オドメーター&rarr;トリップメーターA&rarr;トリップメーターB&rarr;レオスタット表示（テールランプ　ON時のみ）の順に表示します。</div>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">Switching of each mode is performed by turning on the odometer → trip meter A → Trip meter B → Leostat display (only when tail lamp ON) (only for tail lamps ON) on the Odo/Trip Switch/Trip Meter Set Switch, which is located on the right side of the combination meter.Display in order.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">●</td><td class="text">
-<div class="text">トリップメーターAまたはB表示中にオド/トリップ切り替え・トリップメーターリセットスイッチを約0.8秒以上押すことにより現在表示中のトリップメーターの走行距離表示を0.0kmに戻し，オド/トリップ切り替え・トリップメーターリセットスイッチをOFFにした時点から再び計測を開始します。</div>
+<td align="center" class="text" valign="top" width="22">●</td><td class="text">
+<div class="text">Trip -meter A or B is displayed during the indicator of Odo/Trip switching/Trip meter reset switch by pressing about 0.8 seconds or more to return the travel distance display of the current trip meter to 0.0 km to 0.0 km, and trip switch/trip meter reset switchStart measurement again when you turn it off.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 
 
-<table cellpadding="2" cellspacing="0" border="0" width="100%">
-<tr>
-<td align="center"><img src="../xml/grph_ent/a3840081b.png"></td>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center"><img src="../xml/grph_ent/a3840081b.png"/></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 
 <table cellpadding="2" cellspacing="0" width="100%">
-<tr>
-<td class="frame"><span onClick="treeMenu('tmT120025K081K084');chgImg('imT120025K081K084');" onMouseOver="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" onMouseOut="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img src="../images/detail0.gif" border="0" id="imT120025K081K084" align="absmiddle"><a name="t120025k081k084">オド/トリップメーター作動</a></span>
-<br>
+<tbody><tr>
+<td class="frame"><span onclick="treeMenu('tmT120025K081K084');chgImg('imT120025K081K084');" onmouseout="this.style.color = '#1B6384';this.style.textDecoration = 'underline'" onmouseover="this.style.color = '#3B96BF';this.style.textDecoration = 'none'" style="cursor:hand;color:#1B6384;text-decoration = 'underline'"><img align="absmiddle" border="0" id="imT120025K081K084" src="../images/detail0.gif"/><a name="t120025k081k084">Odo/Trip meter operation</a></span>
+<br/>
 <div id="tmT120025K081K084" style="display:none">
-<br>
+<br/>
 
-<br>
+<br/>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">メーターコンピューターがスキッドコントロールコンピューターからの車速パルス信号をカウント・積算することにより走行距離データを算出し，ドライバーを介して該当するLCDのセグメントを点灯させることで，走行距離の表示を行います。</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">The meter computer counts and accumulates the vehicle speed pulse signal from a skid control computer to calculate the mileage data and light the relevant LCD segment through the driver to display the mileage.</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">オド/トリップ切り替え・トリップメーターリセットスイッチの操作信号をメーターコンピューターが入力すると，オドメーター&rarr;トリップメーターA&rarr;トリップメーターB&rarr;レオスタット表示（テールランプ　ON時のみ）の各表示切り替え，またはトリップメーターのリセット（トリップメーターA・B表示時のみ）を行います。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">When the meter computer enters the Odo/Trip Switch/Trip Meter Reset Switch operation signal, the indicator of the Odometer → Trip Meter A → Trip Meter B → Leo Stat display (only when tail lamp ON), or reset the trip meter (Trip Meter)Do only when A / B is displayed).</div>
 </td>
 </tr>
 
 <tr>
-<td class="text" valign="top" align="center" width="22">・</td><td class="text">
-<div class="text">走行距離データの保持は，メーターコンピューターが行っており，オドメーターの数値は不揮発性メモリーIC<a href="#H532120025K081K08401"><sup>*
-					</sup></a>を使用して＋B電源OFF後もデータを記憶しています。</div>
+<td align="center" class="text" valign="top" width="22">・</td><td class="text">
+<div class="text">Maternal computers hold the mileage data, and the numerical value of the odometer is non -volatile memory IC.<a href="#H532120025K081K08401"><sup>*</sup></a>I remember the data even after + B powered off.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 
-<table cellpadding="0" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="blue2">参　考</td>
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+<tbody><tr>
+<td class="blue2">Attending</td>
 </tr>
-</table>
+</tbody></table>
 
-<table cellpadding="2" cellspacing="0" border="0" width="95%">
-<tr>
-<td class="text" valign="top" align="center" width="27">＊</td><td class="text"><a name="H532120025K081K08401"></a>
-<div class="text">電源が供給されなくてもデータを記憶し続けるメモリーIC。</div>
+<table border="0" cellpadding="2" cellspacing="0" width="95%">
+<tbody><tr>
+<td align="center" class="text" valign="top" width="27">*</td><td class="text"><a name="H532120025K081K08401"></a>
+<div class="text">A memory IC that keeps remembering data even if the power is supplied.</div>
 </td>
 </tr>
-</table>
+</tbody></table>
 
 
-<table cellpadding="2" cellspacing="0" border="0" width="100%">
-<tr>
-<td align="center"><img src="../xml/grph_ent/a3840082b.png"></td>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center"><img src="../xml/grph_ent/a3840082b.png"/></td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 </div>
 </td>
 </tr>
-</table>
-<br>
+</tbody></table>
+<br/>
 
 
 </div>
-</body>
-</html>
+
+
+</body></html>

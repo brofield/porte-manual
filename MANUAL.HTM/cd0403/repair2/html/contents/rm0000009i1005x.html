@@ -1,29 +1,28 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="RM0000009I1005X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>G-BOOKシステム&nbsp;&nbsp;機能説明</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000009I1005X_z0"></a><br clear="all"><a name="1"></a><br clear="all"><br clear="all"><a name="CD0403____00003IE0000011step"></a>
+		<body onload="seePageAnchor()"><a name="RM0000009I1005X"></a><table cellspacing="0" width="100%"><tbody><tr><td width="93%"><h1>G-Book system function description</h1></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr></tbody></table><br class="beforePng" clear="all"/><a name="RM0000009I1005X_z0"></a><br clear="all"/><a name="1"></a><br clear="all"/><br clear="all"/><a name="CD0403____00003IE0000011step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>AVC-LAN通信システムおよびAVC-LAN　plus通信システム</li></ol>
-<ol class="ptxt"></ol><div class="full"><br clear="all"><img src="../../img/e100440j02.png" name="E100440J02" alt="E100440J02" border="1" class="full"></div><br clear="all">
+<li>AVC-LAN communication system and AVC-LAN Plus communication system</li></ol>
+<ol class="ptxt"></ol><div class="full"><br clear="all"/><img alt="E100440J02" border="1" class="full" name="E100440J02" src="../../img/e100440j02.png"/></div><br clear="all"/>
 <ol class="step2">
-<li><p><font class="ptxt">AVC-LAN</font><br></p></li><br>
+<li><p><font class="ptxt">AVC-LAN</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">G-BOOKシステムは、AVC-LANにより機器間の通信を行う。</font><br></p></li>
-<li><p><font class="ptxt">AVC-LANのマスターとなる機器はナビゲーションレシーバASSYである。</font><br></p></li>
-<li><p><font class="ptxt">ナビゲーションレシーバASSY内部に通信伝達に必要な抵抗(TX+&larr;&rarr;TX-端子間60-80Ω)が入っている。</font><br></p></li>
-<li><p><font class="ptxt">AVC-LAN回路において、断線またはショートが起きた場合は、通信の中断に伴いG-BOOKシステムは正常に作動しない。</font><br></p></li></ol>
-<li><p><font class="ptxt">AVC-LAN　plus</font><br></p></li><br>
+<li><p><font class="ptxt">The G-Book system communicates between devices by AVC-LAN.</font><br/></p></li>
+<li><p><font class="ptxt">AVC-LAN master is the navigation receiver ASSY.</font><br/></p></li>
+<li><p><font class="ptxt">Navigation receiver ASSY contains the resistance required for communication transmission (TX+← → TX-terminal 60-80Ω).</font><br/></p></li>
+<li><p><font class="ptxt">In the AVC-LAN circuit, if a disconnected or short occurs, the G-Book system will not work properly due to the interruption of communication.</font><br/></p></li></ol>
+<li><p><font class="ptxt">AVC-Lan Plus</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">G-BOOKシステムは、AVC-LAN　plusにより機器間の通信を行う。</font><br></p></li>
-<li><p><font class="ptxt">AVC-LAN　plus回路において、断線またはショートが起きた場合は、通信の中断に伴いG-BOOKシステムは正常に作動しない。</font><br></p></li></ol></ol><br clear="all"><br clear="all"><a name="CD0403____00003IE0000012step"></a>
+<li><p><font class="ptxt">The G-Book system communicates between devices by AVC-Lan Plus.</font><br/></p></li>
+<li><p><font class="ptxt">In the AVC-Lan Plus circuit, if a disconnected or shorts occur, the G-Book system will not work properly due to interruption of communication.</font><br/></p></li></ol></ol><br clear="all"/><br clear="all"/><a name="CD0403____00003IE0000012step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>ダイアグノーシス機能</li></ol>
+<li>Diagnostic function</li></ol>
 <ol class="ptxt"></ol>
 <ol class="step2">
-<li><p><font class="ptxt">&ldquo;ワイドマルチAVステーション&rdquo;システムにはダイアグノーシス機能があり、AVC-LANおよびAVC-LAN　plusによって接続されている機器の接続確認および故障診断を行うことができる。(検査結果はディスプレイ部に表示)</font><br></p></li>
-<li><p><font class="ptxt">AVC-LANおよびAVC-LAN　plusを構成する機器には、機器コード(物理アドレス)と呼ばれる3桁(AVC-LAN接続機器）または2桁(AVC-LAN　plus接続機器)の数字(16進数で表記)が設定されている。</font><br></p></li>
-<li><p><font class="ptxt">AVC-LANおよびAVC-LAN　plusを構成する機器の内部を構成する各機能(ユニット)には、論理アドレスと呼ばれる2桁の数字(16進数で表記)が設定されている。</font><br></p></li></ol><br clear="all"></body></html>
+<li><p><font class="ptxt">The "Wide Multi-AV Station" system has a diagnostic function, and can be connected to the device connected by AVC-LAN and AVC-LAN PLUS and perform a failure diagnosis.(The test result is displayed on the display part)</font><br/></p></li>
+<li><p><font class="ptxt">For devices that make up AVC-LAN and AVC-LAN Plus, the numbers (AVC-LAN connection devices) or 2 digits (AVC-LAN Plus connection equipment), called the device code (physical address), are noted in the hexadis.) Is set.</font><br/></p></li>
+<li><p><font class="ptxt">Each function (unit) that makes up the interior of the device that makes AVC-LAN and AVC-LAN Plus is set with a two-digit number called a logical address (indicated in the hexadis).</font><br/></p></li></ol><br clear="all"/></body></html>

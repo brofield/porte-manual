@@ -1,25 +1,24 @@
-<html>
-  <head>
-  <title>[電子技術マニュアル]</title>
-  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
-  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+<html><head>
+  <title>[Electronic Technology Manual]</title>
+  <link href="../../css/contents.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/contents_p.css" media="print" rel="stylesheet" type="text/css"/>
   <script src="../../js/jaspa.js"></script>
   </head>
-		<body onload="seePageAnchor()"><a name="RM000000P2K000X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>EBD付きABS&amp;TRC&amp;VSC&amp;BAシステム&nbsp;&nbsp;メモリー関連作業</h1></td><td style="display:none" id="print_button" align="right"><a onclick="window.print()" href="#" class="subwindow-button">印刷</a></td></tr></table><br clear="all" class="beforePng"><a name="RM000000P2K000X_z0"></a><br clear="all"><a name="1"></a><br clear="all"><a name="CD0403____00004SE0000011step"></a>
+		<body onload="seePageAnchor()"><a name="RM000000P2K000X"></a><table cellspacing="0" width="100%"><tbody><tr><td width="93%"><h1>ABS &amp; TRC &amp; VSC &amp; BA System Memory Related Work with EBD</h1></td><td align="right" id="print_button" style="display:none"><a class="subwindow-button" href="#" onclick="window.print()">printing</a></td></tr></tbody></table><br class="beforePng" clear="all"/><a name="RM000000P2K000X_z0"></a><br clear="all"/><a name="1"></a><br clear="all"/><a name="CD0403____00004SE0000011step"></a>
 <ol class="step1" style="list-style-type:disc">
-<li>ヨーレートセンサ&amp;Gセンサ0点取得</li></ol>
-<ol class="ptxt"></ol><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">ブレ&#65293;キアクチュエ&#65293;タASSY、ヨーレートセンサの交換を行った場合は、0点取得を行う。<br></li><li class="atten3">0点は1度記憶されるとデータが消去されるまで取り直しは行われないため、ヨーレートセンサおよびブレーキアクチュエータＡＳＳＹを交換した場合は、0点消去後に0点取得を行う。<br></li><li class="atten3">0点取得は必ず平坦な場所(勾配率1%以内)で行い、実施中は車両を揺らしたり、ドアの開け閉め等を行わない。また、アイドリング振動を避けるため、エンジンを始動しない。<br></li></ol></p>
+<li>Obtained 0 points of yolly rate &amp; G sensor</li></ol>
+<ol class="ptxt"></ol><p></p><dl class="caution"><dt class="caution">■ Attention ■</dt><dt class="caution"></dt></dl><ol style="list-style-type: disc"><li class="atten3">If you replace the bracket cord ASSY and yorlete sensor, get 0 points.<br/></li><li class="atten3">0 points will not be re -removed until the data is erased once, so if you replace the yorrete sensor and brake actuator ASSY, you will get 0 points after extinguishing 0 points.<br/></li><li class="atten3">0 points are always performed in a flat place (within 1%of the slope rate), and during the implementation, the vehicle is not shaken or the door is opened and closed.In addition, the engine does not start to avoid idling vibration.<br/></li></ol><p></p>
 <ol class="step2">
-<li><p><font class="ptxt">ヨーレート&amp;Gセンサの0点記憶消去</font><br></p></li><br>
+<li><p><font class="ptxt">0 points and erasure of yollyite &amp; G sensor</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">IGスイッチOFFでDLC3にSST(TaSCAN)を接続する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
-<li><p><font class="ptxt">シフトレバーをＰレンジにする。</font><br></p></li>
-<li><p><font class="ptxt">IGスイッチをONにし、SST(TaSCAN)の画面表示に従って[バックアップメモリ消去]または[VSC系0点消去]を選択、実行する。このとき、VSCランプウォーニングランプが点灯することを確認する。</font><br></p></li>
-<li><p><font class="ptxt">IGスイッチをOFFにする。</font><br><p><dl class="caution"><dt class="caution">■   注   意   ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">0点消去後、シフトレバーPレンジでIGスイッチを15秒間以上ONにすると、ヨーレートセンサの0点のみ記憶されVSCウォーニングランプは消灯する。この状態で走行すると、Gセンサ異常を記憶してVSCウォーニングランプ常灯となる。</dd></dl></p></p></li></ol>
-<li><p><font class="ptxt">ヨーレート＆Ｇセンサの0点取得</font><br></p></li><br>
+<li><p><font class="ptxt">Connect SST (Tascan) to DLC3 with IG switch off.</font><br/></p><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200<br/></dd></dl><p></p></li>
+<li><p><font class="ptxt">Make the shift lever in the P range.</font><br/></p></li>
+<li><p><font class="ptxt">Turn on the IG switch, follow the SST (Tascan) screen display, and select and execute [Backup Memory Eraser] or VSC 0 -point.At this time, make sure that the VSC lamp warnin gland lights up.</font><br/></p></li>
+<li><p><font class="ptxt">Turn off the IG switch.</font><br/></p><p></p><dl class="caution"><dt class="caution">■ Attention ■</dt><dt class="caution"></dt></dl><dl class="caution"><dd class="caution">After erasing 0 points, if the IG switch is turned on for 15 seconds or more in the shift lever P range, only the 0 points of the yaw -rate sensor will be remembered and the VSC warnin gland will turn off.If you drive in this state, you will remember the G sensor abnormality and become a VSC warnin glandamp regular light.</dd></dl><p></p><p></p></li></ol>
+<li><p><font class="ptxt">Obtain 0 points of yor rate &amp; G sensor</font><br/></p></li><br/>
 <ol class="s3">
-<li><p><font class="ptxt">IGスイッチOFFでDLC3にSST(TaSCAN)を接続する。</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200&nbsp;&nbsp;<br></dd></dl></p></li>
-<li><p><font class="ptxt">シフトレバーがPレンジにあることを確認する。</font><br></p></li>
-<li><p><font class="ptxt">IGスイッチをONにし、VSCウォーニングランプが3秒間点灯後、消灯することを確認する。</font><br></p></li>
-<li><p><font class="ptxt">SST(TaSCAN)の画面に従って、テストモードを選択して約2秒間車両静止状態を保ち、VSCウォーニングランプが点灯から点滅になることを確認する。</font><br><p><dl class="reference"><dt class="reference">□   参   考   □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">0点取得中はVSCウォ&#65293;ニングランプが点灯し、取得終了後、テストモード表示を行う。</dd></dl></p></p></li>
-<li><p><font class="ptxt">SSTの画面に従い、テストモードから通常モードに移行する。</font><br></p></li></ol></ol><br clear="all"></body></html>
+<li><p><font class="ptxt">Connect SST (Tascan) to DLC3 with IG switch off.</font><br/></p><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09991-70200<br/></dd></dl><p></p></li>
+<li><p><font class="ptxt">Confirm that the shift lever is in the P range.</font><br/></p></li>
+<li><p><font class="ptxt">Turn on the IG switch and make sure that the VSC warnin gland is turned off after 3 seconds.</font><br/></p></li>
+<li><p><font class="ptxt">According to the SST (Tascan) screen, select the test mode to keep the vehicle still for about 2 seconds, and that the VSC warnin gland is blinking from the lighting.</font><br/></p><p></p><dl class="reference"><dt class="reference">□ Participation □</dt><dt class="reference"></dt></dl><dl class="reference"><dd class="reference">During the 0 points, the VSC Winning Lamp turns on, and after the acquisition, the test mode is displayed.</dd></dl><p></p><p></p></li>
+<li><p><font class="ptxt">Follow the SST screen and migrate from test mode to normal mode.</font><br/></p></li></ol></ol><br clear="all"/></body></html>
