@@ -1,10 +1,8 @@
-													### README.txt###
+The structure below prd_isp is an example and may be changed in the official version.
+However, in order to call up the contents below this directory from the table of contents,
+please make sure to place the following files.
 
-prd_isp以下の構造は例であって正式バージョンでは変更される可能性があります。
-ただし、目次からこのディレクトリ以下のコンテンツを呼び出すために、
-以下のファイルは必ず配置するようにお願いします。
-
-必須ファイル
+Required files
 ・index.html
 
-以上
+The end

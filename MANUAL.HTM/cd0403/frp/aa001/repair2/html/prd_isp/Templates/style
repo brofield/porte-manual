@@ -1,30 +1,29 @@
-h1{
-border:none;
-font-size:11pt;
-font-weight:bold;
-margin:0;
+h1 {
+    border: none;
+    font-size: 11pt;
+    font-weight: bold;
+    margin: 0;
 }
 
-h2{
-border:none;
-font-size:11pt;
-font-weight:bold;
-letter-spacing:0.5em;
-margin:0;
+h2 {
+    border: none;
+    font-size: 11pt;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    margin: 0;
 }
 
-h3{
-border:none;
-font-size:12pt;
-font-weight:bold;
+h3 {
+    border: none;
+    font-size: 12pt;
+    font-weight: bold;
 }
 
-p{
-font-size:11pt;
-font-weight:normal;
+p {
+    font-size: 11pt;
+    font-weight: normal;
 }
 
-li{
-font-size:11pt;
-.unnamed1 {  }
--->
+li {
+    font-size: 11pt;
+}
