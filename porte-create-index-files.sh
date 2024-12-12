@@ -14,7 +14,7 @@ generate_index() {
         if [ -f "$f" ] && [ "$(basename "$f")" != "index.html" ]; then
             echo "<li><a href=\"$(basename "$f")\">$(basename "$f")</a></li>" >> "$dir/index.html"
         fi
-	done
+    done
 
     echo "</ul></body></html>" >> "$dir/index.html"
 
